@@ -1,9 +1,6 @@
 "use client";
 
-import { FC, useActionState } from "react";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { FC, useEffect } from "react";
 
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -19,6 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import useSignInEmailForm from "@/features/sign-in-form/hooks/use-sign-in-email-form";
+import Image from "next/image";
 
 const SignInForm: FC = () => {
   const {
@@ -29,8 +27,14 @@ const SignInForm: FC = () => {
   return (
     <div className={cn("flex flex-col gap-6")}>
       <Card>
-        <CardHeader className="text-center">
-          <CardTitle className="text-xl">Welcome back</CardTitle>
+        <CardHeader className="text-center items-center">
+          <Image
+            src="/logos/tcgpocketlogo_en-2x.webp"
+            alt="Pokemon TCG Pocket Logo"
+            width={100}
+            height={100}
+          />
+          <CardTitle className="text-xl">Unofficial Pokemon TCG Pocket Trade Matcher</CardTitle>
           <CardDescription>Login with your Github account</CardDescription>
         </CardHeader>
         <CardContent>
