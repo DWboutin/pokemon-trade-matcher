@@ -1,11 +1,13 @@
 "use client";
 
+import { HoverableTooltip } from "@/components/hoverable-tooltip";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { useConnectedUserStore } from "@/stores/connected-user-store";
 import Link from "next/link";
 import { FC, useEffect } from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { HiOutlineLogout } from "react-icons/hi";
 
 const HeaderProfile: FC = () => {
   const isLoading = useConnectedUserStore((state) => state.isLoading);
@@ -39,7 +41,16 @@ const HeaderProfile: FC = () => {
         <AvatarFallback>{displayedName?.charAt(0)}</AvatarFallback>
       </Avatar>
       <span>{displayedName}</span>
-      <Button onClick={handleSignOut}>Logout</Button>
+      <HoverableTooltip content="Logout">
+        <Button
+          onClick={handleSignOut}
+          variant="secondary"
+          size="icon"
+          className="bg-yellow-300 hover:bg-yellow-500"
+        >
+          <HiOutlineLogout />
+        </Button>
+      </HoverableTooltip>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "@/components/ui/sonner";
 import { Lato } from "next/font/google";
 import "./globals.css";
 
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.className}antialiased`}>{children}</body>
+      <body className={`${lato.className}antialiased`}>
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }

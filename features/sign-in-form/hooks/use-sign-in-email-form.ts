@@ -5,10 +5,13 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 import { registerWithEmail } from "@/actions/register-with-email";
 import { signInFormSchema } from "@/features/sign-in-form/utils/sign-in-form-schema";
+import { toast } from "sonner";
 
 type UseSignInEmailFormSelectors = {
   isPending: boolean;
   form: UseFormReturn<z.infer<typeof signInFormSchema>>;
+  signInSubmitted: boolean;
+  error: string | null;
 };
 
 type UseSignInEmailFormActions = {
@@ -22,6 +25,8 @@ type UseSignInEmailForm = {
 
 const useSignInEmailForm = (): UseSignInEmailForm => {
   const [isPending, setIsPending] = useState(false);
+  const [signInSubmitted, setSignInSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const form = useForm<z.infer<typeof signInFormSchema>>({
     resolver: zodResolver(signInFormSchema),
     defaultValues: {
@@ -38,16 +43,22 @@ const useSignInEmailForm = (): UseSignInEmailForm => {
 
     const { data, error } = JSON.parse(response);
 
-    console.log({ data, error });
-
     if (error) {
       console.error(error);
+      toast.error("An error occurred while signing in.");
+      setError(error);
+      return;
     }
 
+    toast.success("Signed in successfully. Look for an email with a magic link to continue.");
+    setSignInSubmitted(true);
     return data;
   };
 
-  return { selectors: { isPending, form }, actions: { handleFormSubmit } };
+  return {
+    selectors: { isPending, form, signInSubmitted, error },
+    actions: { handleFormSubmit },
+  };
 };
 
 export default useSignInEmailForm;

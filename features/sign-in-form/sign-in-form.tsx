@@ -16,28 +16,20 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import useSignInEmailForm from "@/features/sign-in-form/hooks/use-sign-in-email-form";
-import Image from "next/image";
+import { SignInFormCard } from "@/features/sign-in-form/components/sign-in-form-card";
+import { SignInSubmitted } from "@/features/sign-in-form/components/sign-in-submitted";
+import { Typography } from "@/components/typography";
 
 const SignInForm: FC = () => {
   const {
-    selectors: { isPending, form },
+    selectors: { isPending, form, signInSubmitted, error },
     actions: { handleFormSubmit },
   } = useSignInEmailForm();
 
   return (
     <div className={cn("flex flex-col gap-6")}>
-      <Card>
-        <CardHeader className="text-center items-center">
-          <Image
-            src="/logos/tcgpocketlogo_en-2x.webp"
-            alt="Pokemon TCG Pocket Logo"
-            width={100}
-            height={100}
-          />
-          <CardTitle className="text-xl">Unofficial Pokemon TCG Pocket Trade Matcher</CardTitle>
-          <CardDescription>Login with your Github account</CardDescription>
-        </CardHeader>
-        <CardContent>
+      <SignInFormCard>
+        {!signInSubmitted && (
           <div className="grid gap-6">
             <SignInFormSocialButtons />
             <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
@@ -62,6 +54,13 @@ const SignInForm: FC = () => {
                         </FormItem>
                       )}
                     />
+                    {error && (
+                      <Typography
+                        variant="p"
+                        text="An error occurred while signing in. Please try again later."
+                        className="text-red-500"
+                      />
+                    )}
                     <Button type="submit" className="w-full">
                       Login
                     </Button>
@@ -70,8 +69,9 @@ const SignInForm: FC = () => {
               </form>
             </Form>
           </div>
-        </CardContent>
-      </Card>
+        )}
+        {signInSubmitted && <SignInSubmitted />}
+      </SignInFormCard>
       <div className="text-balance text-center text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary  ">
         By clicking continue, you agree to our <a href="#">Terms of Service</a> and{" "}
         <a href="#">Privacy Policy</a>.

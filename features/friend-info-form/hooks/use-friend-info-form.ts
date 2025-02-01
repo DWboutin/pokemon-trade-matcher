@@ -7,6 +7,7 @@ import { friendInfoFormSchema } from "@/features/friend-info-form/utils/friend-i
 import { updateUserFriendInfo } from "@/actions/update-user-friend-info";
 import { useConnectedUserStore } from "@/stores/connected-user-store";
 import { formatFriendId } from "@/utils/friendIdFormatters";
+import { toast } from "sonner";
 
 type UseFriendInfoFormSelectors = {
   isPending: boolean;
@@ -49,9 +50,9 @@ export const useFriendInfoForm = (): UseFriendInfoForm => {
       return;
     }
 
-    fetchUserData();
+    await fetchUserData();
 
-    console.log({ response });
+    toast.success("Your profile has been updated.");
   };
 
   useEffect(() => {

@@ -5,7 +5,7 @@ const MainLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className="container mx-auto">
       <Header />
-      {children}
+      <main>{children}</main>
     </div>
   );
 };
