@@ -2,8 +2,8 @@ import { useState } from "react";
 
 import { createClient } from "@/utils/supabase/client";
 import { useEffect } from "react";
-import { User as SupabaseUser } from "@supabase/supabase-js";
 import { getUserData } from "@/actions/get-user-data";
+import { User } from "@/types/app";
 
 type UseConnectedUserSelectors = {
   user: SupabaseUser | null;
@@ -22,7 +22,7 @@ type UseConnectedUserHook = {
 export const useConnectedUser = (): UseConnectedUserHook => {
   const supabaseBrowserClient = createClient();
   const [isLoading, setIsLoading] = useState(true);
-  const [user, setUser] = useState<SupabaseUser | null>(null);
+  const [user, setUser] = useState<User | null>(null);
 
   const fetchUserData = async () => {
     setIsLoading(true);

@@ -28,7 +28,7 @@ async function scrapeIcons() {
         // Get the image URL from the img element in the first column
         const imageUrl = $(columns[0]).find("img").attr("data-src");
         // Get the name from the second column
-        const name = $(columns[0]).text().trim();
+        const name = $(columns[0]).text().trim().replace(" Icon", "");
 
         if (name && imageUrl) {
           icons.push({

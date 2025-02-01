@@ -30,7 +30,7 @@ const HeaderProfile: FC = () => {
   return (
     <div className="flex flex-row gap-2 items-center">
       <Avatar>
-        <AvatarImage src="/icons/blue-icon.png" />
+        <AvatarImage src={`/icons/${user.icon}.png`} />
         <AvatarFallback>{user.email?.charAt(0)}</AvatarFallback>
       </Avatar>
       <span>{user.email}</span>

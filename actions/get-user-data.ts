@@ -1,7 +1,7 @@
 "use server";
 
+import { User } from "@/types/app";
 import { createClient } from "@/utils/supabase/server";
-import { User } from "@supabase/supabase-js";
 
 export const getUserData = async (): Promise<User | null> => {
   const supabase = await createClient();

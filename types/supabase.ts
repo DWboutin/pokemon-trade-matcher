@@ -14,6 +14,7 @@ export type Database = {
           created_at: string | null
           email: string
           friend_id: string | null
+          icon: string | null
           id: string
           name: string | null
           trades: string[] | null
@@ -24,6 +25,7 @@ export type Database = {
           created_at?: string | null
           email: string
           friend_id?: string | null
+          icon?: string | null
           id: string
           name?: string | null
           trades?: string[] | null
@@ -34,6 +36,7 @@ export type Database = {
           created_at?: string | null
           email?: string
           friend_id?: string | null
+          icon?: string | null
           id?: string
           name?: string | null
           trades?: string[] | null
