@@ -1,12 +1,16 @@
 {
-  "name": "mentoraplus-ui",
+  "name": "pokemon-tcg-pocket-trade-matcher",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fetch-card-table": "node scripts/fetch-card-table.js",
+    "parse-card-table": "node scripts/card-parser.js",
+    "download-cards": "node scripts/download-cards.js",
+    "update-cards": "npm run fetch-card-table && npm run parse-card-table && npm run download-cards"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -14,6 +18,7 @@
     "@radix-ui/react-slot": "^1.1.1",
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.48.1",
+    "cheerio": "^1.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.474.0",
@@ -36,5 +41,6 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  }
+  },
+  "type": "module"
 }
