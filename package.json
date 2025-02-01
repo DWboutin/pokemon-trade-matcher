@@ -11,10 +11,12 @@
     "parse-card-table": "node scripts/card-parser.js",
     "download-cards": "node scripts/download-cards.js",
     "update-cards": "npm run fetch-card-table && npm run parse-card-table && npm run download-cards",
-    "update-icons": "node scripts/scrape-icons.js"
+    "update-icons": "node scripts/scrape-icons.js",
+    "update-types": "bunx supabase gen types typescript --project-id \"ipefhkokewqpgfagtimu\" --schema public > types/supabase.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
+    "@radix-ui/react-avatar": "^1.1.2",
     "@radix-ui/react-label": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.1",
     "@supabase/ssr": "^0.5.2",

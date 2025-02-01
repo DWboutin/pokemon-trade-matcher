@@ -1,8 +1,18 @@
+import { cn } from "@/lib/utils";
 import { FC } from "react";
 
-export const TradeMatcherLogo: FC = () => {
+type TradeMatcherLogoProps = {
+  className?: string;
+};
+
+export const TradeMatcherLogo: FC<TradeMatcherLogoProps> = ({ className }) => {
   return (
-    <svg viewBox="0 0 1620 1620" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      viewBox="0 0 1620 1620"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn(className)}
+    >
       <circle cx="810" cy="810" r="760" fill="white" stroke="black" strokeWidth="100" />
       <path
         d="M51.6185 761C77.3648 364.571 407.063 51 810 51C1212.94 51 1542.64 364.571 1568.38 761H51.6185Z"

@@ -1,3 +1,5 @@
+"use client";
+
 import { TradeMatcherLogo } from "@/components/icons/trade-matcher-logo";
 import { Typography } from "@/components/typography";
 import SignInForm from "@/features/sign-in-form/sign-in-form";
