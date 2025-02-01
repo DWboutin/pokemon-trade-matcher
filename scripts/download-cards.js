@@ -3,7 +3,7 @@ import path from "path";
 import https from "https";
 
 // Read and parse the JSON file
-const cardsData = JSON.parse(fs.readFileSync("cards.json", "utf8"));
+const cardsData = JSON.parse(fs.readFileSync("scripts/data/cards.json", "utf8"));
 
 // Create the cards directory if it doesn't exist
 const downloadDir = path.join("public", "cards");

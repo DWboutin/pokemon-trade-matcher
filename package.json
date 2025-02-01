@@ -10,7 +10,8 @@
     "fetch-card-table": "node scripts/fetch-card-table.js",
     "parse-card-table": "node scripts/card-parser.js",
     "download-cards": "node scripts/download-cards.js",
-    "update-cards": "npm run fetch-card-table && npm run parse-card-table && npm run download-cards"
+    "update-cards": "npm run fetch-card-table && npm run parse-card-table && npm run download-cards",
+    "update-icons": "node scripts/scrape-icons.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

@@ -16,7 +16,7 @@ async function fetchCardTable() {
     );
 
     // Save the table HTML to a file
-    await fs.writeFile("card-table.html", table.toString());
+    await fs.writeFile("scripts/data/card-table.html", table.toString());
 
     console.log("Successfully saved card table to card-table.html");
   } catch (error) {
