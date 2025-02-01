@@ -1,6 +1,6 @@
 "use client";
 
-import * as React from "react";
+import { useState, useMemo } from "react";
 import { Check, ChevronsUpDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -16,36 +16,22 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import Image from "next/image";
 
 import iconsDataJson from "@/scripts/data/icons-data.json";
-import { useEffect, useMemo } from "react";
 import { IconsData } from "@/types/app";
 import { ControllerRenderProps } from "react-hook-form";
-import { useConnectedUser } from "@/hooks/use-connected-user";
+import { friendInfoFormSchema } from "@/features/friend-info-form/utils/friend-info-form-schema";
+import { z } from "zod";
 
 const iconsData: IconsData = iconsDataJson;
 
-interface PlayerIconDropdownProps {
-  onChange: (value: string) => void;
-}
-
-export const PlayerIconDropdown: React.FC<ControllerRenderProps> = ({
-  onBlur,
-  onChange,
-  ...props
-}) => {
-  const {
-    selectors: { user },
-  } = useConnectedUser();
-  const [open, setOpen] = React.useState(false);
-  const [value, setValue] = React.useState(user?.icon ?? "Blue");
+export const PlayerIconDropdown: React.FC<
+  ControllerRenderProps<z.infer<typeof friendInfoFormSchema>>
+> = ({ onChange, value }) => {
+  const [open, setOpen] = useState(false);
   const selectedValue = useMemo(() => {
     const foundIcon = iconsData.icons.find((icon) => icon.name === value);
 
     return foundIcon;
   }, [value]);
-
-  useEffect(() => {
-    onChange(selectedValue?.name ?? "Blue");
-  }, [selectedValue]);
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -56,7 +42,7 @@ export const PlayerIconDropdown: React.FC<ControllerRenderProps> = ({
           aria-expanded={open}
           className="w-[300px] justify-between gap-4"
         >
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 capitalize">
             {value ? selectedValue?.name : "Select your icon..."}
           </div>
           <ChevronsUpDown className="opacity-50" />
@@ -73,12 +59,12 @@ export const PlayerIconDropdown: React.FC<ControllerRenderProps> = ({
                   key={icon.name}
                   value={icon.name}
                   onSelect={(currentValue) => {
-                    setValue(currentValue === value ? "" : currentValue);
+                    onChange(currentValue);
                     setOpen(false);
                   }}
                 >
                   <Image src={icon.imageUrl} alt={icon.name} width={32} height={32} />
-                  {icon.name}
+                  <span className="capitalize">{icon.name}</span>
                   <Check
                     className={cn("ml-auto", value === icon.name ? "opacity-100" : "opacity-0")}
                   />

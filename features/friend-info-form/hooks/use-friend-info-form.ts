@@ -5,7 +5,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 import { friendInfoFormSchema } from "@/features/friend-info-form/utils/friend-info-form-schema";
 import { updateUserFriendInfo } from "@/actions/update-user-friend-info";
-import { useConnectedUser } from "@/hooks/use-connected-user";
+import { useConnectedUserStore } from "@/stores/connected-user-store";
+import { formatFriendId } from "@/utils/friendIdFormatters";
 
 type UseFriendInfoFormSelectors = {
   isPending: boolean;
@@ -24,13 +25,13 @@ type UseFriendInfoForm = {
 
 export const useFriendInfoForm = (): UseFriendInfoForm => {
   const [isPending, setIsPending] = useState(false);
-  const {
-    selectors: { user },
-  } = useConnectedUser();
+  const isLoading = useConnectedUserStore((state) => state.isLoading);
+  const user = useConnectedUserStore((state) => state.user);
+  const fetchUserData = useConnectedUserStore((state) => state.fetchUserData);
   const form = useForm<z.infer<typeof friendInfoFormSchema>>({
     resolver: zodResolver(friendInfoFormSchema),
     defaultValues: {
-      friendId: user?.friend_id ?? "",
+      friendId: user?.friend_id ? formatFriendId(user.friend_id) : "",
       username: user?.username ?? "",
       icon: user?.icon ?? "",
     },
@@ -48,16 +49,21 @@ export const useFriendInfoForm = (): UseFriendInfoForm => {
       return;
     }
 
+    fetchUserData();
+
     console.log({ response });
   };
 
   useEffect(() => {
     if (user) {
-      form.setValue("friendId", user.friend_id);
-      form.setValue("username", user.username);
-      form.setValue("icon", user.icon);
+      form.setValue("friendId", user.friend_id ? formatFriendId(user.friend_id) : "");
+      form.setValue("username", user.username!);
+      form.setValue("icon", user.icon!);
     }
   }, [user]);
 
-  return { selectors: { isPending, form, selectedIcon }, actions: { handleFormSubmit } };
+  return {
+    selectors: { isPending: isPending || isLoading, form, selectedIcon },
+    actions: { handleFormSubmit },
+  };
 };

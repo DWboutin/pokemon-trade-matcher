@@ -1,75 +1,75 @@
 {
   "icons": [
     {
-      "name": "Electrode",
+      "name": "electrode",
       "imageUrl": "/icons/electrode.png"
     },
     {
-      "name": "Charizard",
+      "name": "charizard",
       "imageUrl": "/icons/charizard.png"
     },
     {
-      "name": "Gardevoir",
+      "name": "gardevoir",
       "imageUrl": "/icons/gardevoir.png"
     },
     {
-      "name": "Mewtwo",
+      "name": "mewtwo",
       "imageUrl": "/icons/mewtwo.png"
     },
     {
-      "name": "Blue",
+      "name": "blue",
       "imageUrl": "/icons/blue.png"
     },
     {
-      "name": "Chimchar",
+      "name": "chimchar",
       "imageUrl": "/icons/chimchar.png"
     },
     {
-      "name": "Mew",
+      "name": "mew",
       "imageUrl": "/icons/mew.png"
     },
     {
-      "name": "Piplup",
+      "name": "piplup",
       "imageUrl": "/icons/piplup.png"
     },
     {
-      "name": "Turtwig",
+      "name": "turtwig",
       "imageUrl": "/icons/turtwig.png"
     },
     {
-      "name": "Meowth",
+      "name": "meowth",
       "imageUrl": "/icons/meowth.png"
     },
     {
-      "name": "Venusaur",
+      "name": "venusaur",
       "imageUrl": "/icons/venusaur.png"
     },
     {
-      "name": "Blastoise",
+      "name": "blastoise",
       "imageUrl": "/icons/blastoise.png"
     },
     {
-      "name": "Giovanni",
+      "name": "giovanni",
       "imageUrl": "/icons/giovanni.png"
     },
     {
-      "name": "Erika",
+      "name": "erika",
       "imageUrl": "/icons/erika.png"
     },
     {
-      "name": "Slowpoke",
+      "name": "slowpoke",
       "imageUrl": "/icons/slowpoke.png"
     },
     {
-      "name": "Snorlax",
+      "name": "snorlax",
       "imageUrl": "/icons/snorlax.png"
     },
     {
-      "name": "Eevee",
+      "name": "eevee",
       "imageUrl": "/icons/eevee.png"
     },
     {
-      "name": "Pikachu",
+      "name": "pikachu",
       "imageUrl": "/icons/pikachu.png"
     }
   ]

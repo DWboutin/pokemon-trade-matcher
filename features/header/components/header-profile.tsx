@@ -2,16 +2,21 @@
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { useConnectedUser } from "@/hooks/use-connected-user";
+import { useConnectedUserStore } from "@/stores/connected-user-store";
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const HeaderProfile: FC = () => {
-  const {
-    selectors: { user, isLoading },
-    actions: { handleSignOut },
-  } = useConnectedUser();
+  const isLoading = useConnectedUserStore((state) => state.isLoading);
+  const user = useConnectedUserStore((state) => state.user);
+  const handleSignOut = useConnectedUserStore((state) => state.handleSignOut);
+  const fetchUserData = useConnectedUserStore((state) => state.fetchUserData);
+  const displayedName = user?.username ?? user?.email;
+
+  useEffect(() => {
+    fetchUserData();
+  }, []);
 
   if (!user) {
     return (
@@ -31,9 +36,9 @@ const HeaderProfile: FC = () => {
     <div className="flex flex-row gap-2 items-center">
       <Avatar>
         <AvatarImage src={`/icons/${user.icon}.png`} />
-        <AvatarFallback>{user.email?.charAt(0)}</AvatarFallback>
+        <AvatarFallback>{displayedName?.charAt(0)}</AvatarFallback>
       </Avatar>
-      <span>{user.email}</span>
+      <span>{displayedName}</span>
       <Button onClick={handleSignOut}>Logout</Button>
     </div>
   );

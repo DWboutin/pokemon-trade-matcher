@@ -1,11 +1,12 @@
-import { getUserData } from "@/actions/get-user-data";
-import { Header } from "@/features/header/header";
+import { useConnectedUserStore } from "@/stores/connected-user-store";
 import { redirect } from "next/navigation";
 
 export default async function Home() {
-  const user = await getUserData();
+  const user = await useConnectedUserStore.getState().fetchUserData();
+  useConnectedUserStore.setState({ user });
 
-  console.log(user);
+  console.log({ user });
+
   if (!user) {
     return redirect("/auth");
   }
