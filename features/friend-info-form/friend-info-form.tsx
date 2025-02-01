@@ -16,13 +16,25 @@ import { useFriendInfoForm } from "@/features/friend-info-form/hooks/use-friend-
 import { PlayerIconDropdown } from "@/features/player-icon-dropdown/player-icon-dropdown";
 import { cn } from "@/lib/utils";
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
+import { useSearchParams } from "next/navigation";
+import { useEffect } from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { toast } from "sonner";
 
 export const FriendInfoForm = () => {
   const {
     selectors: { form, isPending, selectedIcon },
     actions: { handleFormSubmit },
   } = useFriendInfoForm();
+
+  const searchParams = useSearchParams();
+  const redirected = searchParams.get("redirected");
+
+  useEffect(() => {
+    if (redirected) {
+      toast.warning("You need to fill in your friend info to continue.");
+    }
+  }, [redirected]);
 
   return (
     <div className={cn("flex flex-col gap-6 mt-4", "className")}>
