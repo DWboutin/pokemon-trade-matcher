@@ -26,5 +26,5 @@ export const getPaginatedTrades = async (page: number, limit: number) => {
 
   const trades = data.map((trade) => populateTradeWithCardsData(trade));
 
-  return { data: [...trades, ...trades, ...trades, ...trades, ...trades] };
+  return { data: trades };
 };

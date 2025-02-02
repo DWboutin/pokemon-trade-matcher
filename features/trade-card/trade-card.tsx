@@ -1,4 +1,6 @@
 import { Typography } from "@/components/typography";
+import TimeAgo from "javascript-time-ago";
+import en from "javascript-time-ago/locale/en";
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { CardContent } from "@/components/ui/card";
@@ -7,6 +9,9 @@ import { CardData } from "@/types/app";
 import Image from "next/image";
 import { useMemo } from "react";
 import { MdCatchingPokemon } from "react-icons/md";
+
+TimeAgo.addDefaultLocale(en);
+const timeAgo = new TimeAgo("en-US");
 
 type TradeCardProps = {
   mainCard: CardData | null;
@@ -78,7 +83,7 @@ export const TradeCard = ({
           </CardContent>
           <CardFooter>
             <div className="flex flex-1 flex-row gap-2 items-center justify-end">
-              <div className="text-sm text-gray-500">{time}</div>
+              <div className="text-sm text-gray-500">{timeAgo.format(new Date(time))}</div>
               <div className="text-sm text-gray-500">-</div>
               <UserProfileInfo username={username} icon={icon} friendId={friendId} />
             </div>

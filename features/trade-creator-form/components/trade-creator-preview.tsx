@@ -24,7 +24,7 @@ export const TradeCreatorPreview = ({ searchedCard, offeredCards }: TradeCreator
         friendId={friendId}
         icon={user?.icon ?? ""}
         username={user?.username ?? ""}
-        time="few seconds ago"
+        time={new Date().toISOString()}
       />
     </div>
   );
