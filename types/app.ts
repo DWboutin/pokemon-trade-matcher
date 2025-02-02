@@ -43,3 +43,4 @@ export type CardType =
   | "Water";
 
 export type User = Database["public"]["Tables"]["users"]["Row"];
+export type Trade = Database["public"]["Tables"]["trades"]["Row"];

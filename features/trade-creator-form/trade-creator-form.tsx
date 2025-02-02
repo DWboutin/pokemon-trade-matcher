@@ -17,13 +17,14 @@ import { TradeCreatorPreview } from "@/features/trade-creator-form/components/tr
 
 export const TradeCreatorForm: FC = () => {
   const {
-    selectors: { isModalOpen, searchedCard, offeredCards },
+    selectors: { isModalOpen, searchedCard, offeredCards, tradeIsValid },
     actions: {
       handleCardClick,
       handleModalOpenChange,
       handleSearchedCardChange,
       handleOfferedCardsChange,
       handleTradeReset,
+      handleTradeCreation,
     },
   } = useTradeCreator();
 
@@ -46,7 +47,9 @@ export const TradeCreatorForm: FC = () => {
             <Button variant="outline" onClick={handleTradeReset}>
               Reset
             </Button>
-            <Button>Create trade</Button>
+            <Button disabled={!tradeIsValid} onClick={handleTradeCreation}>
+              Create trade
+            </Button>
           </CardFooter>
         </Card>
       </div>
