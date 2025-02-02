@@ -27,7 +27,9 @@ const typesData = cardsData.cards
     return a.localeCompare(b);
   });
 
-export const CardsTypeDropdown: React.FC<ControllerRenderProps<{ type: string }>> = (props) => {
+export const CardsTypeDropdown: React.FC<ControllerRenderProps<{ type: string | undefined }>> = (
+  props
+) => {
   return (
     <SelectDropdown
       {...props}

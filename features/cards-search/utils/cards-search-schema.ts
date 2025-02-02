@@ -1,11 +1,14 @@
 import { z } from "zod";
 
 export const cardsSearchSchema = z.object({
-  cardName: z.string().min(1),
-  rarity: z.string().min(1),
-  exclusivePackName: z.string().min(1),
-  exclusivePackSeries: z.string().min(1),
-  type: z.string().min(1),
-  hp: z.number().min(1),
-  stage: z.string().min(1),
+  cardName: z.string().optional(),
+  rarity: z.string().optional(),
+  exclusivePackName: z.string().optional(),
+  exclusivePackSeries: z.string().optional(),
+  type: z.string().optional(),
+  hp: z
+    .any()
+    .optional()
+    .transform((val) => (val ? parseInt(val, 10) : undefined)),
+  stage: z.string().optional(),
 });

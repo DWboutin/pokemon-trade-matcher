@@ -12,7 +12,7 @@ type SelectDropdownProps = {
   valueRenderer?: (value: string) => React.ReactNode;
   options: string[];
   placeholder: string;
-} & ControllerRenderProps<Record<string, string>>;
+} & ControllerRenderProps<Record<string, string | undefined>>;
 
 export const SelectDropdown: React.FC<SelectDropdownProps> = ({
   onChange,
@@ -34,8 +34,6 @@ export const SelectDropdown: React.FC<SelectDropdownProps> = ({
 
     return value;
   }, [value, valueRenderer, placeholder]);
-
-  console.log({ name, value, valueRenderer });
 
   return (
     <Popover open={open} onOpenChange={setOpen}>

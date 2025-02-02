@@ -17,7 +17,9 @@ const raritiesData = cardsData.cards.reduce<string[]>(
   ["All"]
 );
 
-export const CardsRarityDropdown: React.FC<ControllerRenderProps<{ rarity: string }>> = (props) => {
+export const CardsRarityDropdown: React.FC<
+  ControllerRenderProps<{ rarity: string | undefined }>
+> = (props) => {
   return (
     <SelectDropdown
       {...props}

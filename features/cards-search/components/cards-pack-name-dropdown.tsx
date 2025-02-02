@@ -19,7 +19,7 @@ const packNamesData = cardsData.cards
   .sort((a, b) => a.localeCompare(b));
 
 export const CardsPackNameDropdown: React.FC<
-  ControllerRenderProps<{ exclusivePackName: string }>
+  ControllerRenderProps<{ exclusivePackName: string | undefined }>
 > = (props) => {
   return <SelectDropdown {...props} options={packNamesData} placeholder="Select your pack name" />;
 };

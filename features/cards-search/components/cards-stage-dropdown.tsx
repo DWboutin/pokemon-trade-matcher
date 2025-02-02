@@ -13,7 +13,6 @@ const stagesData = cardsData.cards
   .reduce<string[]>(
     (acc, card) => {
       if (!acc.find((stage) => stage === card.stage)) {
-        console.log({ card });
         acc.push(card.stage);
       }
       return acc;
@@ -22,6 +21,8 @@ const stagesData = cardsData.cards
   )
   .sort((a, b) => a.localeCompare(b));
 
-export const CardsStageDropdown: React.FC<ControllerRenderProps<{ stage: string }>> = (props) => {
+export const CardsStageDropdown: React.FC<ControllerRenderProps<{ stage: string | undefined }>> = (
+  props
+) => {
   return <SelectDropdown {...props} options={stagesData} placeholder="Select your stage" />;
 };

@@ -24,9 +24,7 @@ export const TradeCreatorForm: FC = () => {
         <Card>
           <CardHeader>
             <CardTitle>Search</CardTitle>
-            <CardDescription>
-              Make changes to your account here. Click save when you're done.
-            </CardDescription>
+            <CardDescription>Choose the card you want to obtain.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
             <CardsSearch />
