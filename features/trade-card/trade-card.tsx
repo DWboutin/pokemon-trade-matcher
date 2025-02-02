@@ -5,6 +5,7 @@ import { CardContent } from "@/components/ui/card";
 import { UserProfileInfo } from "@/features/user-profile-info/user-profile-info";
 import { CardData } from "@/types/app";
 import Image from "next/image";
+import { useMemo } from "react";
 import { MdCatchingPokemon } from "react-icons/md";
 
 type TradeCardProps = {
@@ -24,6 +25,18 @@ export const TradeCard = ({
   friendId,
   time,
 }: TradeCardProps) => {
+  const descriptionText = useMemo(() => {
+    if (mainCard && offeredCards.length <= 0) {
+      return `${username} searches for any trade offers to get ${mainCard.cardName} ${mainCard.exclusivePack.name} ${mainCard.exclusivePack.series}.`;
+    }
+
+    if (mainCard && offeredCards.length > 0) {
+      return `${username} offers theses cards below to get ${mainCard.cardName} ${mainCard.exclusivePack.name} ${mainCard.exclusivePack.series}.`;
+    }
+
+    return `${username} offers theses cards below to get any trade offers.`;
+  }, [mainCard, offeredCards]);
+
   return (
     <Card className="cursor-pointer hover:shadow-lg transition-shadow duration-300">
       <div className="flex flex-row">
@@ -47,18 +60,11 @@ export const TradeCard = ({
           <CardHeader>
             <CardTitle className="text-xl">{mainCard ? "Search" : "Offers"}</CardTitle>
             <CardDescription>
-              <Typography
-                variant="p"
-                text={
-                  mainCard
-                    ? "The user offers theses cards below to get the card on the left."
-                    : "The user offers theses cards below to get any trade offers."
-                }
-              />
+              <Typography variant="p" text={descriptionText} />
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
-            <div className="flex flex-row gap-2 overflow-x-auto">
+            <div className="flex flex-row gap-2 overflow-x-auto h-[85px]">
               {offeredCards.map((card) => (
                 <Image
                   key={card.cardNumber}

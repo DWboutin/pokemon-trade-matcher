@@ -37,7 +37,7 @@ export const useTradeCreator = (): UseTradeCreator => {
   const setSelectedCardId = useCardsSearchStore((state) => state.setSelectedCardId);
   const [searchedCard, setSearchedCard] = useState<CardData | null>(null);
   const [offeredCards, setOfferedCards] = useState<CardData[]>([]);
-  const tradeIsValid = searchedCard || offeredCards.length > 0;
+  const tradeIsValid = !!searchedCard || offeredCards.length > 0;
 
   const handleCardClick = (e: MouseEvent<HTMLDivElement>) => {
     const cardId = e.currentTarget.dataset.cardId;
@@ -94,7 +94,7 @@ export const useTradeCreator = (): UseTradeCreator => {
     toast.success("Trade created successfully");
     handleTradeReset();
     console.log(data);
-    // router.push(`/trade/${data.id}`);
+    router.push(`/trades/${data.id}`);
   };
 
   return {
