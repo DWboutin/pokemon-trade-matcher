@@ -15,7 +15,7 @@ import { CardsSearch } from "@/features/cards-search/cards-search";
 
 export const TradeCreatorForm: FC = () => {
   return (
-    <Tabs defaultValue="search" className="w-[400px]">
+    <Tabs defaultValue="search" className="w-full">
       <TabsList className="grid w-full grid-cols-2">
         <TabsTrigger value="search">Search</TabsTrigger>
         <TabsTrigger value="offer">Offer</TabsTrigger>
@@ -30,14 +30,6 @@ export const TradeCreatorForm: FC = () => {
           </CardHeader>
           <CardContent className="space-y-2">
             <CardsSearch />
-            <div className="space-y-1">
-              <Label htmlFor="name">Name</Label>
-              <Input id="name" defaultValue="Pedro Duarte" />
-            </div>
-            <div className="space-y-1">
-              <Label htmlFor="username">Username</Label>
-              <Input id="username" defaultValue="@peduarte" />
-            </div>
           </CardContent>
           <CardFooter>
             <Button>Save changes</Button>

@@ -27,4 +27,19 @@ export type CardsData = {
   cards: CardData[];
 };
 
+export type CardType =
+  | "Colorless"
+  | "Darkness"
+  | "Dragon"
+  | "Fighting"
+  | "Fire"
+  | "Grass"
+  | "Item"
+  | "Lightning"
+  | "Metal"
+  | "Pokemon Tool"
+  | "Psychic"
+  | "Supporter"
+  | "Water";
+
 export type User = Database["public"]["Tables"]["users"]["Row"];

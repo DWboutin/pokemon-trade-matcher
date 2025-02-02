@@ -41,16 +41,14 @@ const HeaderProfile: FC = () => {
         <AvatarFallback>{displayedName?.charAt(0)}</AvatarFallback>
       </Avatar>
       <span>{displayedName}</span>
-      <HoverableTooltip content="Logout">
-        <Button
-          onClick={handleSignOut}
-          variant="secondary"
-          size="icon"
-          className="bg-yellow-300 hover:bg-yellow-500"
-        >
-          <HiOutlineLogout />
-        </Button>
-      </HoverableTooltip>
+      <Button
+        onClick={handleSignOut}
+        variant="secondary"
+        size="icon"
+        className="bg-yellow-300 hover:bg-yellow-500"
+      >
+        <HiOutlineLogout />
+      </Button>
     </div>
   );
 };
