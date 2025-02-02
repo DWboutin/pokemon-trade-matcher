@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 type CardsSearchResultsImageProps = {
   card: CardData;
-  handleClick: (e: React.MouseEvent<HTMLDivElement>) => void;
+  handleClick?: (e: React.MouseEvent<HTMLDivElement>) => void;
   selectedCardId: string | null;
 };
 

@@ -4,10 +4,14 @@ import { CardsSearchForm } from "@/features/cards-search/components/cards-search
 import { CardsSearchResults } from "@/features/cards-search/components/cards-search-results";
 import { useCardsSearch } from "@/features/cards-search/hooks/use-cards-search";
 
-export const CardsSearch = () => {
+type CardsSearchProps = {
+  handleCardClick: (e: React.MouseEvent<HTMLDivElement>) => void;
+};
+
+export const CardsSearch = ({ handleCardClick }: CardsSearchProps) => {
   const {
     selectors: { form, cards, isLoading, selectedCardId },
-    actions: { handleSubmit, handleCardClick },
+    actions: { handleSubmit },
   } = useCardsSearch();
 
   return (

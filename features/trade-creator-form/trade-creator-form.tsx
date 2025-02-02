@@ -1,4 +1,5 @@
-import { Input } from "@/components/ui/input";
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -8,55 +9,55 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FC } from "react";
-import { Label } from "@/components/ui/label";
 import { CardsSearch } from "@/features/cards-search/cards-search";
+import { useTradeCreator } from "@/features/trade-creator-form/hooks/useTradeCreator";
+import { TradeCreatorCardModal } from "@/features/trade-creator-form/components/trade-creator-card-modal";
+import { TradeCreatorPreview } from "@/features/trade-creator-form/components/trade-creator-preview";
 
 export const TradeCreatorForm: FC = () => {
+  const {
+    selectors: { isModalOpen, searchedCard, offeredCards },
+    actions: {
+      handleCardClick,
+      handleModalOpenChange,
+      handleSearchedCardChange,
+      handleOfferedCardsChange,
+      handleTradeReset,
+    },
+  } = useTradeCreator();
+
   return (
-    <Tabs defaultValue="search" className="w-full">
-      <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="search">Search</TabsTrigger>
-        <TabsTrigger value="offer">Offer</TabsTrigger>
-      </TabsList>
-      <TabsContent value="search">
+    <>
+      <div className="w-full">
         <Card>
           <CardHeader>
             <CardTitle>Search</CardTitle>
-            <CardDescription>Choose the card you want to obtain.</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <CardsSearch />
-          </CardContent>
-          <CardFooter>
-            <Button>Save changes</Button>
-          </CardFooter>
-        </Card>
-      </TabsContent>
-      <TabsContent value="offer">
-        <Card>
-          <CardHeader>
-            <CardTitle>Password</CardTitle>
             <CardDescription>
-              Change your password here. After saving, you'll be logged out.
+              Search for cards and click on them to add them as your searched card or cards you want
+              to offer for a trade.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
-            <div className="space-y-1">
-              <Label htmlFor="current">Current password</Label>
-              <Input id="current" type="password" />
-            </div>
-            <div className="space-y-1">
-              <Label htmlFor="new">New password</Label>
-              <Input id="new" type="password" />
-            </div>
+            <CardsSearch handleCardClick={handleCardClick} />
+            <TradeCreatorPreview searchedCard={searchedCard} offeredCards={offeredCards} />
           </CardContent>
-          <CardFooter>
-            <Button>Save password</Button>
+          <CardFooter className="flex flex-row justify-end gap-2">
+            <Button variant="outline" onClick={handleTradeReset}>
+              Reset
+            </Button>
+            <Button>Create trade</Button>
           </CardFooter>
         </Card>
-      </TabsContent>
-    </Tabs>
+      </div>
+      <TradeCreatorCardModal
+        isOpen={isModalOpen}
+        searchedCard={searchedCard}
+        offeredCards={offeredCards}
+        onOpenChange={handleModalOpenChange}
+        handleSearchedCardChange={handleSearchedCardChange}
+        handleOfferedCardsChange={handleOfferedCardsChange}
+      />
+    </>
   );
 };
