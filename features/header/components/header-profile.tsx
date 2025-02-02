@@ -35,12 +35,14 @@ const HeaderProfile: FC = () => {
   }
 
   return (
-    <div className="flex flex-row gap-2 items-center">
-      <Avatar>
-        <AvatarImage src={`/icons/${user.icon}.png`} />
-        <AvatarFallback>{displayedName?.charAt(0)}</AvatarFallback>
-      </Avatar>
-      <span>{displayedName}</span>
+    <div className="flex flex-1 flex-row gap-2 items-center justify-between">
+      <div className="flex flex-row gap-2 items-center">
+        <Avatar>
+          <AvatarImage src={`/icons/${user.icon}.png`} />
+          <AvatarFallback>{displayedName?.charAt(0)}</AvatarFallback>
+        </Avatar>
+        <span>{displayedName}</span>
+      </div>
       <Button
         onClick={handleSignOut}
         variant="secondary"
