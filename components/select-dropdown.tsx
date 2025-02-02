@@ -20,7 +20,6 @@ export const SelectDropdown: React.FC<SelectDropdownProps> = ({
   options,
   placeholder,
   valueRenderer,
-  name,
 }) => {
   const [open, setOpen] = useState(false);
   const displayedValue = useMemo(() => {

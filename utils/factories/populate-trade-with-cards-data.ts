@@ -23,7 +23,7 @@ const populateTradeWithCardsData = (trade: Trade): PopulatedTrade => {
     ...trade,
     mainCard,
     offeredCards,
-  };
+  } as PopulatedTrade;
 };
 
 export default populateTradeWithCardsData;
