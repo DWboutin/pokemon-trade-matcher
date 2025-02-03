@@ -1,5 +1,6 @@
 import { Typography } from "@/components/typography";
 import { TradesListing } from "@/features/trades-listing/trades-listing";
+import { currentOrigin } from "@/utils/contants";
 import { getPaginatedTrades } from "@/utils/requests/get-paginated-trades";
 
 export const dynamic = "force-dynamic";
@@ -9,6 +10,8 @@ export default async function TradesPage() {
     page: 1,
     limit: 10,
   });
+
+  console.log({ currentOrigin });
 
   return (
     <div className="container mx-auto">
