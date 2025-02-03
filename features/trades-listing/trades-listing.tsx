@@ -1,10 +1,10 @@
 "use client";
 
-import { getPaginatedTrades } from "@/actions/get-paginated-trades";
 import { TradeCard } from "@/features/trade-card/trade-card";
 import { PopulatedTrade } from "@/utils/factories/populate-trade-with-cards-data";
+import { getPaginatedTrades } from "@/utils/requests/get-paginated-trades";
 import { useInfiniteQuery } from "@tanstack/react-query";
-import { useVirtualizer, useWindowVirtualizer } from "@tanstack/react-virtual";
+import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import Link from "next/link";
 import { FC, useEffect, useRef } from "react";
 
@@ -19,13 +19,12 @@ export const TradesListing: FC<TradesListingProps> = ({ initialData }) => {
     useInfiniteQuery({
       queryKey: ["trades"],
       queryFn: async ({ pageParam = 1 }) => {
-        const response = await getPaginatedTrades(pageParam, PAGINATION_LIMIT);
+        const response = await getPaginatedTrades({
+          page: pageParam,
+          limit: PAGINATION_LIMIT,
+        });
 
-        if (response.error) {
-          throw new Error(response.error);
-        }
-
-        return response.data;
+        return response;
       },
       getNextPageParam: (lastPage, pages) => {
         return lastPage?.length === PAGINATION_LIMIT ? pages.length + 1 : undefined;

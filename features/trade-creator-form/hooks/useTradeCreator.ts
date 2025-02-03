@@ -93,7 +93,7 @@ export const useTradeCreator = (): UseTradeCreator => {
 
     toast.success("Trade created successfully");
     handleTradeReset();
-    console.log(data);
+
     router.push(`/trades/${data.id}`);
   };
 

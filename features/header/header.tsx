@@ -8,7 +8,7 @@ import { FC } from "react";
 export const Header: FC = () => {
   return (
     <header className="w-full py-4 border-b">
-      <div className="flex flex-row justify-between items-center w-full">
+      <div className="flex flex-row justify-between items-center w-full max-sm:px-4">
         <div className="flex flex-row gap-10 items-center">
           <Link href="/" className="flex flex-row gap-2 items-center">
             <div className="w-10 h-10">

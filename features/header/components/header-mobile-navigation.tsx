@@ -30,7 +30,7 @@ export const HeaderMobileNavigation = () => {
     <div className="hidden max-md:block mt-2">
       <Drawer direction="right" open={isOpen} onOpenChange={setIsOpen}>
         <DrawerTrigger>
-          <div className="flex flex-row gap-2 items-center w-8 h-8 mr-4">
+          <div className="flex flex-row gap-2 items-center w-8 h-8">
             <RxHamburgerMenu className="w-8 h-8" />
           </div>
         </DrawerTrigger>

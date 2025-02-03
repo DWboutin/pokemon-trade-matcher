@@ -1,13 +1,12 @@
-import { getPaginatedTrades } from "@/actions/get-paginated-trades";
 import { Typography } from "@/components/typography";
 import { TradesListing } from "@/features/trades-listing/trades-listing";
+import { getPaginatedTrades } from "@/utils/requests/get-paginated-trades";
 
 export default async function TradesPage() {
-  const { data: initialData, error } = await getPaginatedTrades(1, 10);
-
-  if (error || !initialData) {
-    return <div>Error: {error}</div>;
-  }
+  const initialData = await getPaginatedTrades({
+    page: 1,
+    limit: 10,
+  });
 
   return (
     <div className="container mx-auto">

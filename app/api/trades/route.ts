@@ -1,9 +1,12 @@
-"use server";
-
+import { NextResponse } from "next/server";
 import populateTradeWithCardsData from "@/utils/factories/populate-trade-with-cards-data";
 import { createClient } from "@/utils/supabase/server";
 
-export const getPaginatedTrades = async (page: number, limit: number) => {
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const page = parseInt(searchParams.get("page") || "1");
+  const limit = parseInt(searchParams.get("limit") || "10");
+
   const supabase = await createClient();
   const { data, error } = await supabase
     .from("trades")
@@ -21,10 +24,10 @@ export const getPaginatedTrades = async (page: number, limit: number) => {
 
   if (error) {
     console.error(error);
-    return { error: error.message };
+    return NextResponse.json({ error: error.message }, { status: 400 });
   }
 
   const trades = data.map((trade) => populateTradeWithCardsData(trade));
 
-  return { data: trades };
-};
+  return NextResponse.json({ data: trades });
+}

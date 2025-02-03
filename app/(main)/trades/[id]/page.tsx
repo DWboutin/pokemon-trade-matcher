@@ -1,12 +1,12 @@
-import { getSingleTrade } from "@/actions/get-single-trade";
 import { TradePageContent } from "@/features/trade-page-content/trade-page-content";
+import { getSingleTrade } from "@/utils/requests/get-single-trade";
 import { notFound } from "next/navigation";
 
 export const generateMetadata = async ({ params }: { params: Promise<{ id: string }> }) => {
   const paramsValues = await params;
-  const { data, error } = await getSingleTrade(paramsValues.id);
+  const data = await getSingleTrade(paramsValues.id);
 
-  if (error || !data) {
+  if (!data) {
     return notFound();
   }
 
@@ -27,9 +27,9 @@ export const generateMetadata = async ({ params }: { params: Promise<{ id: strin
 
 const TradePage = async ({ params }: { params: Promise<{ id: string }> }) => {
   const paramsValues = await params;
-  const { data, error } = await getSingleTrade(paramsValues.id);
+  const data = await getSingleTrade(paramsValues.id);
 
-  if (error || !data) {
+  if (!data) {
     return notFound();
   }
 
