@@ -2,6 +2,8 @@ import { Typography } from "@/components/typography";
 import { TradesListing } from "@/features/trades-listing/trades-listing";
 import { getPaginatedTrades } from "@/utils/requests/get-paginated-trades";
 
+export const dynamic = "force-dynamic";
+
 export default async function TradesPage() {
   const initialData = await getPaginatedTrades({
     page: 1,
