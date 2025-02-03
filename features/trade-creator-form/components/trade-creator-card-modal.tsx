@@ -38,14 +38,15 @@ export const TradeCreatorCardModal = ({
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>How do you want to trade this card?</DialogTitle>
+          <DialogTitle className="mr-4">How do you want to trade this card?</DialogTitle>
         </DialogHeader>
-        <div className="flex flex-row gap-4 py-4">
+        <div className="flex flex-row gap-4 py-4 max-md:flex-col max-md:items-center">
           <Image
             src={`/cards/${selectedCard?.cardNumber.replace(/\s/g, "_")}.png`}
             alt={`${selectedCard?.cardName} ${selectedCard?.exclusivePack.name} ${selectedCard?.exclusivePack.series}`}
             width={200}
             height={279}
+            className="max-md:w-[120px]"
           />
           <div className="text-center flex flex-col gap-4">
             <Typography

@@ -14,7 +14,9 @@ export const TradePageContent = ({ trade }: TradePageContentProps) => {
       <TradePageHeading trade={trade} />
       <Card className="w-full cursor-pointer hover:shadow-lg transition-shadow duration-300">
         <div className="flex flex-row max-md:flex-col max-md:items-center gap-4">
-          <TradePageMainImage mainCard={trade.mainCard} />
+          <div className="py-6 pl-6 max-md:pb-0">
+            <TradePageMainImage mainCard={trade.mainCard} />
+          </div>
           <CardHeader>
             <CardTitle>
               <TradePageCardTitle trade={trade} />
