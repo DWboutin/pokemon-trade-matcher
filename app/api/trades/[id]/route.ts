@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import populateTradeWithCardsData from "@/utils/factories/populate-trade-with-cards-data";
 import { createClient } from "@/utils/supabase/server";
 
-export async function GET(request: Request, { params }: { params: { id: string } }) {
+export async function GET(request: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const supabase = await createClient();
 
