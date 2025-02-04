@@ -10,34 +10,51 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { CardsPackNameDropdown } from "@/features/cards-search/components/cards-pack-name-dropdown";
-import { CardsPackSerieDropdown } from "@/features/cards-search/components/cards-pack-serie-dropdown";
-import { CardsRarityDropdown } from "@/features/cards-search/components/cards-rarity-dropdown";
-import { CardsStageDropdown } from "@/features/cards-search/components/cards-stage-dropdown";
-import { CardsTypeDropdown } from "@/features/cards-search/components/cards-type-dropdown";
 import { UseFormReturn } from "react-hook-form";
 import { z } from "zod";
 import { cardsSearchSchema } from "@/features/cards-search/utils/cards-search-schema";
-import { FC } from "react";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { FC, useState } from "react";
+import { AiFillFilter, AiOutlineLoading3Quarters } from "react-icons/ai";
+import dynamic from "next/dynamic";
+
+const CardsSearchModal = dynamic(
+  () =>
+    import("@/features/cards-search/components/cards-search-modal").then(
+      (mod) => mod.CardsSearchModal
+    ),
+  { ssr: false }
+);
 
 type CardsSearchFormProps = {
   form: UseFormReturn<z.infer<typeof cardsSearchSchema>>;
   handleSubmit: (values: z.infer<typeof cardsSearchSchema>) => Promise<void>;
   isLoading: boolean;
+  isDisabled: boolean;
 };
 
-export const CardsSearchForm: FC<CardsSearchFormProps> = ({ form, handleSubmit, isLoading }) => {
+export const CardsSearchForm: FC<CardsSearchFormProps> = ({
+  form,
+  handleSubmit,
+  isLoading,
+  isDisabled,
+}) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleApply = () => {
+    form.handleSubmit(handleSubmit)();
+    setIsOpen(false);
+  };
+
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(handleSubmit)}>
         <fieldset disabled={isLoading}>
-          <div className="grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-2xl:grid-cols-3 gap-4 mb-6">
+          <div className="flex flex-1 flex-row gap-4 mb-6 items-end w-full">
             <FormField
               control={form.control}
               name="cardName"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="flex-1">
                   <FormLabel>Card Name</FormLabel>
                   <FormControl>
                     <Input type="text" placeholder="Bulbasaur" {...field} />
@@ -46,104 +63,18 @@ export const CardsSearchForm: FC<CardsSearchFormProps> = ({ form, handleSubmit, 
                 </FormItem>
               )}
             />
-            <FormField
-              control={form.control}
-              name="rarity"
-              render={({ field }) => (
-                <div className="flex flex-1 flex-row justify-between">
-                  <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                    <FormLabel>Rarity</FormLabel>
-                    <FormControl>
-                      <CardsRarityDropdown {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                </div>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="exclusivePackName"
-              render={({ field }) => (
-                <div className="flex flex-1 flex-row justify-between">
-                  <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                    <FormLabel>Pack Name</FormLabel>
-                    <FormControl>
-                      <div className="min-w-64">
-                        <CardsPackNameDropdown {...field} />
-                      </div>
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                </div>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="exclusivePackSeries"
-              render={({ field }) => (
-                <div className="flex flex-1 flex-row justify-between">
-                  <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                    <FormLabel>Pack Serie</FormLabel>
-                    <FormControl>
-                      <div className="min-w-52">
-                        <CardsPackSerieDropdown {...field} />
-                      </div>
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                </div>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="type"
-              render={({ field }) => (
-                <div className="flex flex-1 flex-row justify-between">
-                  <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                    <FormLabel>Type</FormLabel>
-                    <FormControl>
-                      <div className="min-w-48">
-                        <CardsTypeDropdown {...field} />
-                      </div>
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                </div>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="hp"
-              render={({ field }) => (
-                <div className="flex flex-1 flex-row justify-between">
-                  <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                    <FormLabel>HP</FormLabel>
-                    <FormControl>
-                      <Input type="number" placeholder="100" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                </div>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="stage"
-              render={({ field }) => (
-                <div className="flex flex-1 flex-row justify-between">
-                  <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                    <FormLabel>Stage</FormLabel>
-                    <FormControl>
-                      <CardsStageDropdown {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                </div>
-              )}
+            <Button variant="secondary" type="button" onClick={() => setIsOpen(true)}>
+              <AiFillFilter />
+              <span className="sr-only">Refine my search</span>
+            </Button>
+            <CardsSearchModal
+              isOpen={isOpen}
+              onOpenChange={setIsOpen}
+              form={form}
+              handleApply={handleApply}
             />
           </div>
-          <Button type="submit" className="w-full" disabled={isLoading}>
+          <Button type="submit" className="w-full" disabled={isLoading || isDisabled}>
             {isLoading && (
               <>
                 <AiOutlineLoading3Quarters className="animate-spin" />
