@@ -4,7 +4,7 @@ import { getUserData } from "@/actions/get-user-data";
 import { Offer } from "@/types/app";
 import { createClient } from "@/utils/supabase/server";
 
-type CreateOfferArgs = Omit<Offer, "id" | "created_at" | "author">;
+type CreateOfferArgs = Omit<Offer, "id" | "created_at" | "author" | "status">;
 
 export const createOffer = async (offer: CreateOfferArgs) => {
   const supabase = await createClient();

@@ -6,7 +6,7 @@ import { ControllerRenderProps } from "react-hook-form";
 import { SelectDropdown } from "@/components/select-dropdown";
 import { CardRarityWithImages } from "@/components/card-rarity-with-images";
 
-const cardsData: CardsData = cardsDataJson;
+const cardsData = cardsDataJson as CardsData;
 const raritiesData = cardsData.cards.reduce<string[]>(
   (acc, card) => {
     if (!acc.find((rarity) => rarity === card.rarity)) {

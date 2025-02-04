@@ -5,7 +5,7 @@ import { cardsSearchSchema } from "@/features/cards-search/utils/cards-search-sc
 import cardsDataJson from "@/scripts/data/cards.json";
 import { CardsData } from "@/types/app";
 
-const cardsData: CardsData = cardsDataJson;
+const cardsData = cardsDataJson as CardsData;
 
 export const searchCardsData = async (values: z.infer<typeof cardsSearchSchema>) => {
   const { cardName, rarity, exclusivePackName, exclusivePackSeries, type, hp, stage } = values;

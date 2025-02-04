@@ -17,7 +17,7 @@ type MakeTradeOfferModalProps = {
   isOpen: boolean;
   isLoading: boolean;
   onOpenChange: (open: boolean) => void;
-  mainCard: CardData;
+  mainCard: CardData | null;
   handleCreateOffer: (selectedCardNumber: string) => Promise<void>;
 };
 

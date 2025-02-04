@@ -1,9 +1,9 @@
 import { CardInfoHeading } from "@/components/sections/card-info-heading";
 import { TradeOffersSection } from "@/components/sections/trade-offers-section";
-import { MakeTradeOffer } from "@/features/make-trade-offer/make-trade-offer";
 import { TradePageCardTitle } from "@/features/trade-page-content/components/trade-page-card-title";
 import { TradePageHeading } from "@/features/trade-page-content/components/trade-page-heading";
 import { TradePageMainImage } from "@/features/trade-page-content/components/trade-page-main-image";
+import { PopulatedOffer } from "@/utils/factories/populate-offer-with-card-data";
 import { PopulatedTrade } from "@/utils/factories/populate-trade-with-cards-data";
 
 type TradePageContentProps = {

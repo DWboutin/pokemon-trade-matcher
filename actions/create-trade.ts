@@ -4,7 +4,7 @@ import { getUserData } from "@/actions/get-user-data";
 import { Trade } from "@/types/app";
 import { createClient } from "@/utils/supabase/server";
 
-type CreateTradeArgs = Omit<Trade, "id" | "created_at" | "author" | "offers">;
+type CreateTradeArgs = Omit<Trade, "id" | "created_at" | "author" | "offers" | "accepts_offers">;
 
 export const createTrade = async (trade: CreateTradeArgs) => {
   const supabase = await createClient();

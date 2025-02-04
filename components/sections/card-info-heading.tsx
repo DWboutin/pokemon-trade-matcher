@@ -1,7 +1,6 @@
 import { CardRarityWithImages } from "@/components/card-rarity-with-images";
-import { CardTypeWithImage } from "@/components/card-type-with-image";
-import { CardData, CardType } from "@/types/app";
-import { typeColors, valueToImages } from "@/utils/contants";
+import { CardData } from "@/types/app";
+import { valueToImages } from "@/utils/contants";
 import Image from "next/image";
 
 type CardInfoHeadingProps = {

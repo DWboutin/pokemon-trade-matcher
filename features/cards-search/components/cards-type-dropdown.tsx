@@ -6,7 +6,7 @@ import { ControllerRenderProps } from "react-hook-form";
 import { SelectDropdown } from "@/components/select-dropdown";
 import { CardTypeWithImage } from "@/components/card-type-with-image";
 
-const cardsData: CardsData = cardsDataJson;
+const cardsData = cardsDataJson as CardsData;
 const typesData = cardsData.cards
   .reduce<string[]>(
     (acc, card) => {

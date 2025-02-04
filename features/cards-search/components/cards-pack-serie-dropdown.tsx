@@ -3,7 +3,7 @@ import { CardsData } from "@/types/app";
 import { ControllerRenderProps } from "react-hook-form";
 import { SelectDropdown } from "@/components/select-dropdown";
 
-const cardsData: CardsData = cardsDataJson;
+const cardsData = cardsDataJson as CardsData;
 const packSeriesData = cardsData.cards
   .reduce<string[]>(
     (acc, card) => {
