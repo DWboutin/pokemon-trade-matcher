@@ -1,0 +1,24 @@
+import { CardData, CardsData, Offer } from "@/types/app";
+import cardsDataJson from "@/scripts/data/cards.json";
+
+export type PopulatedOffer = Offer & {
+  offeredCard: CardData;
+  author: {
+    id: string;
+    username: string;
+    icon: string;
+  };
+};
+
+const populateOfferWithCardData = (offer: Offer): PopulatedOffer => {
+  const cardsData = cardsDataJson as CardsData;
+
+  const offeredCard = cardsData.cards.find((card) => card.cardNumber === offer.offered_card);
+
+  return {
+    ...offer,
+    offeredCard,
+  } as PopulatedOffer;
+};
+
+export default populateOfferWithCardData;

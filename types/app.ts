@@ -44,3 +44,4 @@ export type CardType =
 
 export type User = Database["public"]["Tables"]["users"]["Row"];
 export type Trade = Database["public"]["Tables"]["trades"]["Row"];
+export type Offer = Database["public"]["Tables"]["offers"]["Row"];

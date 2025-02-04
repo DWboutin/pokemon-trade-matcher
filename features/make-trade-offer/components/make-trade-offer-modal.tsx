@@ -11,18 +11,22 @@ import { CardData } from "@/types/app";
 import { Button } from "@/components/ui/button";
 import { useCardsSearchStore } from "@/stores/cards-search-store";
 import { TradeMatcherLogo } from "@/components/icons/trade-matcher-logo";
-import { Typography } from "@/components/typography";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 type MakeTradeOfferModalProps = {
   isOpen: boolean;
+  isLoading: boolean;
   onOpenChange: (open: boolean) => void;
   mainCard: CardData;
+  handleCreateOffer: (selectedCardNumber: string) => Promise<void>;
 };
 
 export const MakeTradeOfferModal = ({
   isOpen,
+  isLoading,
   onOpenChange,
   mainCard,
+  handleCreateOffer,
 }: MakeTradeOfferModalProps) => {
   const selectedCardId = useCardsSearchStore((state) => state.selectedCardId);
   const selectedCard = useCardsSearchStore((state) =>
@@ -62,7 +66,19 @@ export const MakeTradeOfferModal = ({
           <DialogClose asChild>
             <div className="flex flex-row gap-2">
               <Button variant="outline">Cancel</Button>
-              <Button variant="default">Create trade offer</Button>
+              <Button
+                variant="default"
+                disabled={!selectedCard}
+                onClick={() => handleCreateOffer(selectedCard?.cardNumber as string)}
+              >
+                {isLoading && (
+                  <>
+                    <AiOutlineLoading3Quarters className="animate-spin" />
+                    Creating trade offer...
+                  </>
+                )}
+                {!isLoading && "Create trade offer"}
+              </Button>
             </div>
           </DialogClose>
         </DialogFooter>

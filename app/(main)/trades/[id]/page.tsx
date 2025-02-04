@@ -1,4 +1,5 @@
 import { TradePageContent } from "@/features/trade-page-content/trade-page-content";
+import { getPaginatedOffersForTradeId } from "@/utils/requests/get-paginated-offers-for-trade-id";
 import { getSingleTrade } from "@/utils/requests/get-single-trade";
 import { notFound } from "next/navigation";
 
@@ -27,7 +28,10 @@ export const generateMetadata = async ({ params }: { params: Promise<{ id: strin
 
 const TradePage = async ({ params }: { params: Promise<{ id: string }> }) => {
   const paramsValues = await params;
-  const data = await getSingleTrade(paramsValues.id);
+  const [data, initialOffers] = await Promise.all([
+    getSingleTrade(paramsValues.id),
+    getPaginatedOffersForTradeId({ tradeId: paramsValues.id }),
+  ]);
 
   if (!data) {
     return notFound();
@@ -35,7 +39,7 @@ const TradePage = async ({ params }: { params: Promise<{ id: string }> }) => {
 
   return (
     <div className="container mx-auto">
-      <TradePageContent trade={data} />
+      <TradePageContent trade={data} initialOffers={initialOffers} />
     </div>
   );
 };

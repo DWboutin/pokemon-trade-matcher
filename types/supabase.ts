@@ -9,30 +9,72 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      trades: {
+      offers: {
         Row: {
           author: string
           created_at: string
           id: string
-          main_card: string | null
-          offered_cards: string[]
-          offers: string[]
+          offered_card: string
+          status: string | null
+          trade_id: string
         }
         Insert: {
           author?: string
           created_at?: string
           id?: string
-          main_card?: string | null
-          offered_cards: string[]
-          offers: string[]
+          offered_card: string
+          status?: string | null
+          trade_id?: string
         }
         Update: {
           author?: string
           created_at?: string
           id?: string
+          offered_card?: string
+          status?: string | null
+          trade_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "offers_author_fkey"
+            columns: ["author"]
+            isOneToOne: false
+            referencedRelation: "users"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "offers_trade_id_fkey"
+            columns: ["trade_id"]
+            isOneToOne: false
+            referencedRelation: "trades"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      trades: {
+        Row: {
+          accepts_offers: boolean | null
+          author: string
+          created_at: string
+          id: string
+          main_card: string | null
+          offered_cards: string[]
+        }
+        Insert: {
+          accepts_offers?: boolean | null
+          author?: string
+          created_at?: string
+          id?: string
+          main_card?: string | null
+          offered_cards: string[]
+        }
+        Update: {
+          accepts_offers?: boolean | null
+          author?: string
+          created_at?: string
+          id?: string
           main_card?: string | null
           offered_cards?: string[]
-          offers?: string[]
         }
         Relationships: [
           {

@@ -1,4 +1,5 @@
 import { createTrade } from "@/actions/create-trade";
+import { queryClient } from "@/providers/providers";
 import { useCardsSearchStore } from "@/stores/cards-search-store";
 import { CardData } from "@/types/app";
 import { useRouter } from "next/navigation";
@@ -91,6 +92,8 @@ export const useTradeCreator = (): UseTradeCreator => {
       toast.error("Error creating trade");
       return;
     }
+
+    await queryClient.invalidateQueries({ queryKey: ["trades"] });
 
     toast.success("Trade created successfully");
     handleTradeReset();

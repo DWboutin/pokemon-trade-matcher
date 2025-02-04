@@ -8,9 +8,10 @@ import { PopulatedTrade } from "@/utils/factories/populate-trade-with-cards-data
 
 type TradePageContentProps = {
   trade: PopulatedTrade;
+  initialOffers: PopulatedOffer[];
 };
 
-export const TradePageContent = ({ trade }: TradePageContentProps) => {
+export const TradePageContent = ({ trade, initialOffers }: TradePageContentProps) => {
   return (
     <div className="w-full">
       <div className="flex flex-col gap-2 py-10 items-center max-md:px-4">
@@ -23,7 +24,11 @@ export const TradePageContent = ({ trade }: TradePageContentProps) => {
           </div>
         </div>
       </div>
-      <TradeOffersSection mainCard={trade.mainCard} />
+      <TradeOffersSection
+        tradeId={trade.id}
+        mainCard={trade.mainCard}
+        initialOffers={initialOffers}
+      />
     </div>
   );
 };

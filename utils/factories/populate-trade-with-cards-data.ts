@@ -12,7 +12,7 @@ export type PopulatedTrade = Trade & {
 };
 
 const populateTradeWithCardsData = (trade: Trade): PopulatedTrade => {
-  const cardsData: CardsData = cardsDataJson;
+  const cardsData = cardsDataJson as CardsData;
 
   const mainCard = cardsData.cards.find((card) => card.cardNumber === trade.main_card) ?? null;
   const offeredCards = cardsData.cards.filter((card) =>

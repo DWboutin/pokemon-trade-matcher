@@ -5,9 +5,10 @@ import { FC } from "react";
 
 type CardTypeWithImageProps = {
   type: CardType;
+  showTypeName?: boolean;
 };
 
-export const CardTypeWithImage: FC<CardTypeWithImageProps> = ({ type }) => {
+export const CardTypeWithImage: FC<CardTypeWithImageProps> = ({ type, showTypeName = true }) => {
   const image = valueToImages[type];
 
   if (!image) {
@@ -17,7 +18,7 @@ export const CardTypeWithImage: FC<CardTypeWithImageProps> = ({ type }) => {
   return (
     <div className="flex items-center gap-2">
       <Image src={image} alt={type} width={20} height={20} className="w-5 h-5" />
-      {type}
+      {showTypeName && type}
     </div>
   );
 };
