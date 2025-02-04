@@ -27,6 +27,8 @@ export const createOffer = async (offer: CreateOfferArgs) => {
 
   revalidateTag(`trade-${offer.trade_id}-offers`);
 
+  await new Promise((resolve) => setTimeout(resolve, 500));
+
   if (error) {
     return { error: error.message };
   }
