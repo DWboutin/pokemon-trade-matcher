@@ -13,7 +13,7 @@ export const TradePageCardTitle = ({ trade }: TradePageCardTitleProps) => {
   }
 
   if (mainCard && offeredCards.length <= 0) {
-    return <Typography variant="h2" text="Looking to trade this card, accepting any offers" />;
+    return <Typography variant="h2" text="accepting any offers" />;
   }
 
   return <Typography variant="h2" text="Trade" />;

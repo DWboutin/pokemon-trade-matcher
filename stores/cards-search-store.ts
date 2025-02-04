@@ -9,7 +9,7 @@ type CardsSearchStore = {
   isLoading: boolean;
   selectedCardId: string | null;
   searchCards: (values: z.infer<typeof cardsSearchSchema>) => Promise<CardData[]>;
-  setSelectedCardId: (cardId: string) => void;
+  setSelectedCardId: (cardId: string | null) => void;
 };
 
 export const useCardsSearchStore = create<CardsSearchStore>((set) => ({
@@ -23,7 +23,7 @@ export const useCardsSearchStore = create<CardsSearchStore>((set) => ({
     set({ cards, isLoading: false });
     return cards;
   },
-  setSelectedCardId: (cardId: string) => {
+  setSelectedCardId: (cardId: string | null) => {
     set({ selectedCardId: cardId });
   },
 }));

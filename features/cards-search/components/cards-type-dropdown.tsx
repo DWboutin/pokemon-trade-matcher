@@ -4,7 +4,7 @@ import cardsDataJson from "@/scripts/data/cards.json";
 import { CardsData, CardType } from "@/types/app";
 import { ControllerRenderProps } from "react-hook-form";
 import { SelectDropdown } from "@/components/select-dropdown";
-import { CardsTypeOptionContent } from "@/features/cards-search/components/cards-type-option-content";
+import { CardTypeWithImage } from "@/components/card-type-with-image";
 
 const cardsData: CardsData = cardsDataJson;
 const typesData = cardsData.cards
@@ -35,7 +35,7 @@ export const CardsTypeDropdown: React.FC<ControllerRenderProps<{ type: string | 
       {...props}
       options={typesData}
       placeholder="Select your type"
-      valueRenderer={(value) => <CardsTypeOptionContent type={value as CardType} />}
+      valueRenderer={(value) => <CardTypeWithImage type={value as CardType} />}
     />
   );
 };

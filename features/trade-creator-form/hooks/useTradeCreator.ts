@@ -68,6 +68,7 @@ export const useTradeCreator = (): UseTradeCreator => {
 
   const handleTradeReset = () => {
     setSearchedCard(null);
+    setSelectedCardId(null);
     setOfferedCards([]);
     setIsModalOpen(false);
   };

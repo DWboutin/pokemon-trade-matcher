@@ -2,9 +2,9 @@
 
 import cardsDataJson from "@/scripts/data/cards.json";
 import { CardsData } from "@/types/app";
-import { CardsRarityOptionContent } from "@/features/cards-search/components/cards-rarity-option-content";
 import { ControllerRenderProps } from "react-hook-form";
 import { SelectDropdown } from "@/components/select-dropdown";
+import { CardRarityWithImages } from "@/components/card-rarity-with-images";
 
 const cardsData: CardsData = cardsDataJson;
 const raritiesData = cardsData.cards.reduce<string[]>(
@@ -25,7 +25,7 @@ export const CardsRarityDropdown: React.FC<
       {...props}
       options={raritiesData}
       placeholder="Select your rarity"
-      valueRenderer={(value) => <CardsRarityOptionContent rarity={value} />}
+      valueRenderer={(value) => <CardRarityWithImages rarity={value} />}
     />
   );
 };

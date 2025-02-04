@@ -6,6 +6,7 @@ import {
   DrawerContent,
   DrawerFooter,
   DrawerHeader,
+  DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import Link from "next/link";
@@ -35,6 +36,7 @@ export const HeaderMobileNavigation = () => {
           </div>
         </DrawerTrigger>
         <DrawerContent>
+          <DrawerTitle className="sr-only">Trade Matcher</DrawerTitle>
           <DrawerHeader>
             <div className="flex flex-row gap-2 justify-center">
               <Link href="/" className="flex flex-row gap-2 items-center">

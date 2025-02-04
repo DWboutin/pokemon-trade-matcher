@@ -7,11 +7,11 @@ const valueToImages = {
   "♛": "/rarities/crown.png",
 };
 
-type CardsRarityOptionContentProps = {
+type CardRarityWithImagesProps = {
   rarity: string;
 };
 
-export const CardsRarityOptionContent: FC<CardsRarityOptionContentProps> = ({ rarity }) => {
+export const CardRarityWithImages: FC<CardRarityWithImagesProps> = ({ rarity }) => {
   const firstChar = rarity[0] as keyof typeof valueToImages;
   const rarityLength = rarity.length;
   const image = firstChar in valueToImages ? valueToImages[firstChar] : null;

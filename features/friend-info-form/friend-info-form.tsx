@@ -57,7 +57,7 @@ export const FriendInfoForm = () => {
                       <FormItem>
                         <FormLabel>Friend Id</FormLabel>
                         <FormControl>
-                          <Input type="text" placeholder="0123-4567-8901-2345" {...field} />
+                          <Input type="number" placeholder="0123-4567-8901-2345" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>

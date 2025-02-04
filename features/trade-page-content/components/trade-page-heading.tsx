@@ -10,26 +10,21 @@ export const TradePageHeading = ({ trade }: TradePageHeadingProps) => {
   const { mainCard, offeredCards } = trade;
   const title = useMemo(() => {
     if (mainCard) {
-      return `Searching for ${mainCard.cardName} card`;
+      return `Searching for`;
     }
 
     if (offeredCards.length > 0) {
-      return `Offering ${offeredCards.map((card) => card.cardName).join(", ")} cards for a trade`;
+      return `Offering ${
+        offeredCards.length === 1 ? "1 card" : `${offeredCards.length} cards`
+      } for a trade`;
     }
 
     return `${trade.author.username} wants to trade`;
   }, [mainCard, offeredCards, trade.author.username]);
 
-  const subtitle = useMemo(() => {
-    if (mainCard) {
-      return "To trade for the offered cards";
-    }
-  }, [mainCard]);
-
   return (
-    <div className="flex flex-col gap-4 py-10 items-center text-center">
+    <div className="flex flex-col gap-4 py-4 items-center text-center">
       <Typography variant="h1" text={title} />
-      <Typography variant="p" text="Select one of the cards the user is offering" />
     </div>
   );
 };

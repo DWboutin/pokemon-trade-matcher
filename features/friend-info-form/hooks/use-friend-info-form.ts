@@ -32,7 +32,7 @@ export const useFriendInfoForm = (): UseFriendInfoForm => {
   const form = useForm<z.infer<typeof friendInfoFormSchema>>({
     resolver: zodResolver(friendInfoFormSchema),
     defaultValues: {
-      friendId: user?.friend_id ? formatFriendId(user.friend_id) : "",
+      friendId: user?.friend_id ?? "",
       username: user?.username ?? "",
       icon: user?.icon ?? "",
     },
@@ -57,7 +57,7 @@ export const useFriendInfoForm = (): UseFriendInfoForm => {
 
   useEffect(() => {
     if (user) {
-      form.setValue("friendId", user.friend_id ? formatFriendId(user.friend_id) : "");
+      form.setValue("friendId", user.friend_id ?? "");
       form.setValue("username", user.username!);
       form.setValue("icon", user.icon!);
     }

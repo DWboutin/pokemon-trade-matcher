@@ -17,7 +17,7 @@ export type CardData = {
     name: string;
     series: string;
   };
-  type: string;
+  type: CardType;
   hp: number;
   stage: string;
   imageUrl: string;
