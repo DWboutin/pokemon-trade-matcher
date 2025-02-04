@@ -38,7 +38,7 @@ const formDefaultValues: z.infer<typeof cardsSearchSchema> = {
 };
 
 export const useCardsSearch = (): UseCardsSearch => {
-  const lastSubmittedValues = useRef<z.infer<typeof cardsSearchSchema>>(formDefaultValues);
+  const lastSubmittedValues = useRef<z.infer<typeof cardsSearchSchema>>({});
   const cards = useCardsSearchStore((state) => state.cards);
   const searchCards = useCardsSearchStore((state) => state.searchCards);
   const isLoading = useCardsSearchStore((state) => state.isLoading);
