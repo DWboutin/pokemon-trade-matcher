@@ -17,6 +17,7 @@ export type Database = {
           offered_card: string
           status: string | null
           trade_id: string
+          wanted_card: string | null
         }
         Insert: {
           author?: string
@@ -25,6 +26,7 @@ export type Database = {
           offered_card: string
           status?: string | null
           trade_id?: string
+          wanted_card?: string | null
         }
         Update: {
           author?: string
@@ -33,6 +35,7 @@ export type Database = {
           offered_card?: string
           status?: string | null
           trade_id?: string
+          wanted_card?: string | null
         }
         Relationships: [
           {

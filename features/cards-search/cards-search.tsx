@@ -1,7 +1,8 @@
 "use client";
 
+import { Typography } from "@/components/typography";
 import { CardsSearchForm } from "@/features/cards-search/components/cards-search-form";
-import { CardsSearchResults } from "@/features/cards-search/components/cards-search-results";
+import { CardsListing } from "@/components/cards-listing";
 import { useCardsSearch } from "@/features/cards-search/hooks/use-cards-search";
 import dynamic from "next/dynamic";
 
@@ -39,11 +40,17 @@ export const CardsSearch = ({ handleCardClick }: CardsSearchProps) => {
         />
       )}
       <div id="cards-search-results">
-        <CardsSearchResults
+        <CardsListing
           cards={cards}
           selectedCardId={selectedCardId}
           handleCardClick={handleCardClick}
-        />
+        >
+          <Typography
+            variant="h3"
+            text="Refine your search for cards to show here"
+            className="text-muted-foreground"
+          />
+        </CardsListing>
       </div>
     </div>
   );

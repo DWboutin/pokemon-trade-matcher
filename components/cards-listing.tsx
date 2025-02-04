@@ -4,19 +4,20 @@ import { useRef } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { CardData } from "@/types/app";
 import { FC } from "react";
-import { Typography } from "@/components/typography";
-import { CardsSearchResultsImage } from "@/features/cards-search/components/cards-search-results-image";
+import { CardImage } from "@/components/card-image";
 
-type CardsSearchResultsProps = {
+type CardsListingProps = {
   cards: CardData[];
   selectedCardId: string | null;
   handleCardClick: (e: React.MouseEvent<HTMLDivElement>) => void;
+  children: React.ReactNode;
 };
 
-export const CardsSearchResults: FC<CardsSearchResultsProps> = ({
+export const CardsListing: FC<CardsListingProps> = ({
   cards,
   selectedCardId,
   handleCardClick,
+  children,
 }) => {
   const parentRef = useRef(null);
 
@@ -29,15 +30,7 @@ export const CardsSearchResults: FC<CardsSearchResultsProps> = ({
   });
 
   if (cards.length === 0) {
-    return (
-      <div className="w-full flex items-center justify-center py-9">
-        <Typography
-          variant="h3"
-          text="Refine your search for cards to show here"
-          className="text-muted-foreground"
-        />
-      </div>
-    );
+    return <div className="w-full flex items-center justify-center py-9">{children}</div>;
   }
 
   return (
@@ -63,7 +56,7 @@ export const CardsSearchResults: FC<CardsSearchResultsProps> = ({
                 transform: `translateX(${virtualColumn.start}px)`,
               }}
             >
-              <CardsSearchResultsImage
+              <CardImage
                 card={cards[virtualColumn.index]}
                 handleClick={handleCardClick}
                 selectedCardId={selectedCardId}

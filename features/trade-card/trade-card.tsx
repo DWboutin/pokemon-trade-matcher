@@ -5,6 +5,7 @@ import { CardContent } from "@/components/ui/card";
 import { UserProfileInfo } from "@/features/user-profile-info/user-profile-info";
 import { CardData } from "@/types/app";
 import { timeAgo } from "@/utils/contants";
+import { getTradeType } from "@/utils/get-trade-type";
 import Image from "next/image";
 import { useMemo } from "react";
 import { MdCatchingPokemon } from "react-icons/md";
@@ -26,17 +27,21 @@ export const TradeCard = ({
   friendId,
   time,
 }: TradeCardProps) => {
+  const tradeType = useMemo(() => {
+    return getTradeType(mainCard, offeredCards);
+  }, [mainCard, offeredCards]);
+
   const descriptionText = useMemo(() => {
-    if (mainCard && offeredCards.length <= 0) {
-      return `${username} searches for any trade offers to get ${mainCard.cardName} ${mainCard.exclusivePack.name} ${mainCard.exclusivePack.series}.`;
+    if (tradeType === "want") {
+      return `${username} searches for any trade offers to get ${mainCard?.cardName} ${mainCard?.exclusivePack.name} ${mainCard?.exclusivePack.series}.`;
     }
 
-    if (mainCard && offeredCards.length > 0) {
-      return `${username} offers theses cards below to get ${mainCard.cardName} ${mainCard.exclusivePack.name} ${mainCard.exclusivePack.series}.`;
+    if (tradeType === "offer") {
+      return `${username} offers theses cards below to get ${mainCard?.cardName} ${mainCard?.exclusivePack.name} ${mainCard?.exclusivePack.series}.`;
     }
 
     return `${username} offers theses cards below to get any trade offers.`;
-  }, [mainCard, offeredCards, username]);
+  }, [mainCard, username, tradeType]);
 
   return (
     <Card className="hover:shadow-lg transition-shadow duration-300">
@@ -59,7 +64,7 @@ export const TradeCard = ({
         </div>
         <div className="flex flex-col flex-1 w-full max-sm:items-start">
           <CardHeader>
-            <CardTitle className="text-xl">{mainCard ? "Search" : "Offers"}</CardTitle>
+            <CardTitle className="text-xl capitalize">{tradeType}</CardTitle>
             <CardDescription>
               <Typography variant="p" text={descriptionText} />
             </CardDescription>

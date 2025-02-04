@@ -27,6 +27,7 @@ export const TradePageContent = ({ trade, initialOffers }: TradePageContentProps
       <TradeOffersSection
         tradeId={trade.id}
         mainCard={trade.mainCard}
+        offeredCards={trade.offeredCards}
         initialOffers={initialOffers}
       />
     </div>

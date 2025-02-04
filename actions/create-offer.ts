@@ -3,6 +3,7 @@
 import { getUserData } from "@/actions/get-user-data";
 import { Offer } from "@/types/app";
 import { createClient } from "@/utils/supabase/server";
+import { revalidateTag } from "next/cache";
 
 type CreateOfferArgs = Omit<Offer, "id" | "created_at" | "author" | "status">;
 
@@ -14,12 +15,6 @@ export const createOffer = async (offer: CreateOfferArgs) => {
     return { error: "No user data" };
   }
 
-  console.log({
-    author: userData.id,
-    offered_card: offer.offered_card,
-    trade_id: offer.trade_id,
-  });
-
   const { data, error } = await supabase
     .from("offers")
     .insert({
@@ -30,7 +25,7 @@ export const createOffer = async (offer: CreateOfferArgs) => {
     .select()
     .single();
 
-  console.log({ data, error });
+  revalidateTag(`trade-${offer.trade_id}`);
 
   if (error) {
     return { error: error.message };

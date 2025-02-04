@@ -11,12 +11,14 @@ type TradeOffersSectionProps = {
   tradeId: string;
   mainCard: CardData | null;
   initialOffers: PopulatedOffer[];
+  offeredCards: CardData[];
 };
 
 export const TradeOffersSection = ({
   tradeId,
   mainCard,
   initialOffers,
+  offeredCards,
 }: TradeOffersSectionProps) => {
   const [activeTab, setActiveTab] = useState<"offers" | "create-offer">("offers");
 
@@ -45,6 +47,7 @@ export const TradeOffersSection = ({
           <MakeTradeOffer
             tradeId={tradeId}
             mainCard={mainCard}
+            offeredCards={offeredCards}
             handleChangeTabToOffers={handleChangeTabToOffers}
           />
         </div>

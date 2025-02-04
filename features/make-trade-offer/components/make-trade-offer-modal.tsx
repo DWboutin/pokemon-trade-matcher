@@ -17,7 +17,8 @@ type MakeTradeOfferModalProps = {
   isOpen: boolean;
   isLoading: boolean;
   onOpenChange: (open: boolean) => void;
-  mainCard: CardData | null;
+  mainCard: CardData | undefined;
+  selectedCard: CardData | undefined;
   handleCreateOffer: (selectedCardNumber: string) => Promise<void>;
 };
 
@@ -26,13 +27,9 @@ export const MakeTradeOfferModal = ({
   isLoading,
   onOpenChange,
   mainCard,
+  selectedCard,
   handleCreateOffer,
 }: MakeTradeOfferModalProps) => {
-  const selectedCardId = useCardsSearchStore((state) => state.selectedCardId);
-  const selectedCard = useCardsSearchStore((state) =>
-    state.cards.find((card) => card.cardNumber === selectedCardId)
-  );
-
   return (
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
       <DialogContent>
@@ -64,7 +61,7 @@ export const MakeTradeOfferModal = ({
         </div>
         <DialogFooter>
           <DialogClose asChild>
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-row gap-2 justify-end">
               <Button variant="outline">Cancel</Button>
               <Button
                 variant="default"

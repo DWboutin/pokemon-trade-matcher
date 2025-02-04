@@ -10,6 +10,7 @@ export const getSingleTrade = async (id: string): Promise<PopulatedTrade | null>
     },
     next: {
       revalidate: 300,
+      tags: [`trade-${id}`],
     },
   });
 
