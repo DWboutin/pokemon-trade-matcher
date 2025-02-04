@@ -2,8 +2,8 @@ import { NextResponse } from "next/server";
 import { createClient } from "@/utils/supabase/server";
 import populateOfferWithCardData from "@/utils/factories/populate-offer-with-card-data";
 
-export async function GET(request: Request, { params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+export async function GET(request: Request, { params }: { params: Promise<{ trade_id: string }> }) {
+  const { trade_id } = await params;
   const { searchParams } = new URL(request.url);
   const page = parseInt(searchParams.get("page") || "1");
   const limit = parseInt(searchParams.get("limit") || "10");
@@ -20,7 +20,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ id: 
       )
     `
     )
-    .eq("trade_id", id)
+    .eq("trade_id", trade_id)
     .range((page - 1) * limit, page * limit - 1);
 
   if (error) {

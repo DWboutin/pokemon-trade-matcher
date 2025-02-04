@@ -24,6 +24,7 @@ export const getPaginatedOffersForTradeId = async ({
     },
     next: {
       revalidate: 60,
+      tags: [`trade-${tradeId}-offers`],
     },
   });
 

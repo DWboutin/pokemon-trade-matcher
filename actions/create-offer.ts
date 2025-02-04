@@ -25,7 +25,7 @@ export const createOffer = async (offer: CreateOfferArgs) => {
     .select()
     .single();
 
-  revalidateTag(`trade-${offer.trade_id}`);
+  revalidateTag(`trade-${offer.trade_id}-offers`);
 
   if (error) {
     return { error: error.message };
