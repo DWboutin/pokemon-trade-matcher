@@ -28,8 +28,6 @@ export const OffersListing: FC<OffersListingProps> = ({ tradeId, initialData }) 
 
         return response;
       },
-      refetchOnMount: false,
-      refetchOnWindowFocus: false,
       getNextPageParam: (lastPage, pages) => {
         return lastPage?.length === PAGINATION_LIMIT ? pages.length + 1 : undefined;
       },
