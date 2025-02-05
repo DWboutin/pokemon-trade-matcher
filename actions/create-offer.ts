@@ -3,7 +3,7 @@
 import { getUserData } from "@/actions/get-user-data";
 import { Offer } from "@/types/app";
 import { createClient } from "@/utils/supabase/server";
-import { revalidateTag } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 
 type CreateOfferArgs = Omit<Offer, "id" | "created_at" | "author" | "status">;
 
@@ -26,6 +26,7 @@ export const createOffer = async (offer: CreateOfferArgs) => {
     .single();
 
   revalidateTag(`trade-${offer.trade_id}-offers`);
+  revalidatePath(`/trades/${offer.trade_id}`);
 
   if (error) {
     return { error: error.message };
