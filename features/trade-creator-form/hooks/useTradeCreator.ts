@@ -1,7 +1,7 @@
 import { createTrade } from "@/actions/create-trade";
-import { queryClient } from "@/providers/providers";
 import { useCardsSearchStore } from "@/stores/cards-search-store";
 import { CardData } from "@/types/app";
+import { useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { MouseEvent, useState } from "react";
 import { toast } from "sonner";
@@ -30,6 +30,7 @@ type UseTradeCreator = {
 
 export const useTradeCreator = (): UseTradeCreator => {
   const router = useRouter();
+  const queryClient = useQueryClient();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const selectedCardId = useCardsSearchStore((state) => state.selectedCardId);
   const selectedCard = useCardsSearchStore(

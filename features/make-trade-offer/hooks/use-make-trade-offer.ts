@@ -1,7 +1,7 @@
 import { createOffer } from "@/actions/create-offer";
-import { queryClient } from "@/providers/providers";
 import { useCardsSearchStore } from "@/stores/cards-search-store";
 import { CardData } from "@/types/app";
+import { useQueryClient } from "@tanstack/react-query";
 import { MouseEvent, useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
 
@@ -39,6 +39,7 @@ export const useMakeTradeOffer = ({
   offeredCards,
   handleChangeTabToOffers,
 }: UseMakeTradeOfferParams): UseMakeTradeOffer => {
+  const queryClient = useQueryClient();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [wantedCardId, setWantedCardId] = useState<string | null>(null);
