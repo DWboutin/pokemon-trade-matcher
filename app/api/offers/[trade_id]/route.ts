@@ -8,6 +8,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ trad
   const page = parseInt(searchParams.get("page") || "1");
   const limit = parseInt(searchParams.get("limit") || "10");
   const supabase = await createClient();
+
   const { data, error } = await supabase
     .from("offers")
     .select(

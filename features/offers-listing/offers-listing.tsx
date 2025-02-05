@@ -33,6 +33,7 @@ export const OffersListing: FC<OffersListingProps> = ({ tradeId, initialData }) 
       },
       refetchOnMount: false,
       refetchOnWindowFocus: false,
+      staleTime: 0,
       initialPageParam: 1,
       initialData: {
         pages: [initialData],
