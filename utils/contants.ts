@@ -2,8 +2,8 @@ import { CardType } from "@/types/app";
 import TimeAgo from "javascript-time-ago";
 import en from "javascript-time-ago/locale/en";
 
-export const currentOrigin = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+export const currentOrigin = process.env.NEXT_PUBLIC_VERCEL_URL
+  ? `https://${process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL}`
   : process.env.NEXT_PUBLIC_CURRENT_ORIGIN;
 
 TimeAgo.addDefaultLocale(en);
