@@ -28,6 +28,8 @@ export const OffersListing: FC<OffersListingProps> = ({ tradeId, initialData }) 
 
         return response;
       },
+      refetchOnMount: false,
+      refetchOnWindowFocus: false,
       getNextPageParam: (lastPage, pages) => {
         return lastPage?.length === PAGINATION_LIMIT ? pages.length + 1 : undefined;
       },
@@ -45,7 +47,8 @@ export const OffersListing: FC<OffersListingProps> = ({ tradeId, initialData }) 
   const rowVirtualizer = useWindowVirtualizer({
     count: hasNextPage ? allRows.length + 1 : allRows.length,
     estimateSize: () => 280,
-    overscan: 3,
+    overscan: 5,
+    scrollMargin: 0,
     measureElement: (element) => {
       return (element as HTMLElement).offsetHeight;
     },

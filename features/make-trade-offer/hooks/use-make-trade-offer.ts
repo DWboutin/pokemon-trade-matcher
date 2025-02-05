@@ -87,8 +87,8 @@ export const useMakeTradeOffer = ({
       return;
     }
 
-    toast.success("Trade offer created successfully");
     await queryClient.invalidateQueries({ queryKey: ["offers", tradeId] });
+    toast.success("Trade offer created successfully");
 
     setSelectedCardId(null);
     handleChangeTabToOffers();
