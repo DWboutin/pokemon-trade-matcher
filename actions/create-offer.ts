@@ -26,7 +26,7 @@ export const createOffer = async (offer: CreateOfferArgs) => {
     .single();
 
   revalidateTag(`trade-${offer.trade_id}-offers`);
-  revalidatePath(`/trades/${offer.trade_id}`);
+  // revalidatePath(`/trades/${offer.trade_id}`);
 
   if (error) {
     return { error: error.message };

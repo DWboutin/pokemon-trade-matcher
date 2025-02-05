@@ -31,6 +31,8 @@ export const OffersListing: FC<OffersListingProps> = ({ tradeId, initialData }) 
       getNextPageParam: (lastPage, pages) => {
         return lastPage?.length === PAGINATION_LIMIT ? pages.length + 1 : undefined;
       },
+      refetchOnMount: false,
+      refetchOnWindowFocus: false,
       initialPageParam: 1,
       initialData: {
         pages: [initialData],
