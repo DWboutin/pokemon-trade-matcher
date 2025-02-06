@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { useCardsSearchStore } from "@/stores/cards-search-store";
 import { TradeMatcherLogo } from "@/components/icons/trade-matcher-logo";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { ButtonLoading } from "@/components/ui/button-loading";
 
 type MakeTradeOfferModalProps = {
   isOpen: boolean;
@@ -68,12 +69,7 @@ export const MakeTradeOfferModal = ({
                 disabled={!selectedCard}
                 onClick={() => handleCreateOffer(selectedCard?.cardNumber as string)}
               >
-                {isLoading && (
-                  <>
-                    <AiOutlineLoading3Quarters className="animate-spin" />
-                    Creating trade offer...
-                  </>
-                )}
+                {isLoading && <ButtonLoading>Creating trade offer...</ButtonLoading>}
                 {!isLoading && "Create trade offer"}
               </Button>
             </div>

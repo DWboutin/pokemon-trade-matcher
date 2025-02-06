@@ -1,4 +1,5 @@
 import { Typography } from "@/components/typography";
+import { TradePageOwnerActions } from "@/features/trade-page-content/components/trade-page-owner-actions";
 import { PopulatedTrade } from "@/utils/factories/populate-trade-with-cards-data";
 import { useMemo } from "react";
 
@@ -23,8 +24,11 @@ export const TradePageHeading = ({ trade }: TradePageHeadingProps) => {
   }, [mainCard, offeredCards, trade.author.username]);
 
   return (
-    <div className="flex flex-col gap-4 py-4 items-center text-center">
-      <Typography variant="h1" text={title} />
+    <div className="w-full flex flex-1 flex-col gap-4">
+      <div className="w-full flex flex-col gap-4 py-4 items-center text-center">
+        <Typography variant="h1" text={title} />
+      </div>
+      <TradePageOwnerActions authorId={trade.author.id} />
     </div>
   );
 };

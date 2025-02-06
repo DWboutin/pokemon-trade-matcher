@@ -14,7 +14,7 @@ type TradePageContentProps = {
 export const TradePageContent = ({ trade, initialOffers }: TradePageContentProps) => {
   return (
     <div className="w-full">
-      <div className="flex flex-col gap-2 py-10 items-center max-md:px-4">
+      <div className="flex flex-1 flex-col gap-2 py-10 items-center max-md:px-4">
         <TradePageHeading trade={trade} />
         <div className="flex flex-col w-full max-w-[640px] items-center gap-4">
           {trade.mainCard && <CardInfoHeading card={trade.mainCard} />}

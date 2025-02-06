@@ -3,6 +3,7 @@
 import { HoverableTooltip } from "@/components/hoverable-tooltip";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { ButtonLoading } from "@/components/ui/button-loading";
 import { useConnectedUserStore } from "@/stores/connected-user-store";
 import Link from "next/link";
 import { FC, useEffect } from "react";
@@ -23,12 +24,7 @@ const HeaderProfile: FC = () => {
   if (!user) {
     return (
       <Button variant={isLoading ? "outline" : "default"} disabled={isLoading}>
-        {isLoading && (
-          <>
-            <AiOutlineLoading3Quarters className="animate-spin" />
-            <span>Loading profile...</span>
-          </>
-        )}
+        {isLoading && <ButtonLoading>Loading profile...</ButtonLoading>}
         {!isLoading && <Link href="/auth">Login</Link>}
       </Button>
     );

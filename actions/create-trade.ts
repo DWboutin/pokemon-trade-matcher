@@ -4,7 +4,7 @@ import { getUserData } from "@/actions/get-user-data";
 import { Trade } from "@/types/app";
 import { createClient } from "@/utils/supabase/server";
 
-type CreateTradeArgs = Omit<Trade, "id" | "created_at" | "author" | "offers" | "accepts_offers">;
+type CreateTradeArgs = Omit<Trade, "id" | "created_at" | "author" | "accepts_offers">;
 
 export const createTrade = async (trade: CreateTradeArgs) => {
   const supabase = await createClient();
@@ -20,7 +20,6 @@ export const createTrade = async (trade: CreateTradeArgs) => {
       author: userData.id,
       main_card: trade.main_card,
       offered_cards: trade.offered_cards ?? [],
-      offers: [],
     })
     .select()
     .single();

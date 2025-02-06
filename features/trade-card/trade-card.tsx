@@ -58,14 +58,16 @@ export const TradeCard = ({
           )}
           {!mainCard && (
             <div className="w-[135px] h-[190px] bg-gray-200 rounded-md flex flex-col items-center justify-center gap-2">
-              <MdCatchingPokemon className="w-20 h-20 text-gray-500" />
-              <div className="text-xl font-bold">Any</div>
+              <div className="[text-shadow:_0px_1px_1px_#ffffff]">
+                <MdCatchingPokemon className="w-20 h-20 text-gray-500" />
+              </div>
+              <div className="text-xl font-bold text-gray-500 text-shadow-embossed">Any</div>
             </div>
           )}
         </div>
         <div className="flex flex-col flex-1 w-full max-sm:items-start">
           <CardHeader>
-            <CardTitle className="text-xl capitalize">{tradeType}</CardTitle>
+            <CardTitle className="text-xl capitalize text-shadow-embossed">{tradeType}</CardTitle>
             <CardDescription>
               <Typography variant="p" text={descriptionText} />
             </CardDescription>

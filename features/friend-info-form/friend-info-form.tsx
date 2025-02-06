@@ -2,6 +2,7 @@
 
 import { AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { ButtonLoading } from "@/components/ui/button-loading";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Form,
@@ -96,12 +97,7 @@ export const FriendInfoForm = () => {
                     )}
                   />
                   <Button type="submit" className="w-full">
-                    {isPending && (
-                      <>
-                        <AiOutlineLoading3Quarters className="animate-spin" />
-                        Updating...
-                      </>
-                    )}
+                    {isPending && <ButtonLoading>Updating...</ButtonLoading>}
                     {!isPending && "Update"}
                   </Button>
                 </div>

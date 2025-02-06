@@ -16,6 +16,7 @@ import { cardsSearchSchema } from "@/features/cards-search/utils/cards-search-sc
 import { FC, useState } from "react";
 import { AiFillFilter, AiOutlineLoading3Quarters } from "react-icons/ai";
 import dynamic from "next/dynamic";
+import { ButtonLoading } from "@/components/ui/button-loading";
 
 const CardsSearchModal = dynamic(
   () =>
@@ -75,12 +76,7 @@ export const CardsSearchForm: FC<CardsSearchFormProps> = ({
             />
           </div>
           <Button type="submit" className="w-full" disabled={isLoading || isDisabled}>
-            {isLoading && (
-              <>
-                <AiOutlineLoading3Quarters className="animate-spin" />
-                Searching...
-              </>
-            )}
+            {isLoading && <ButtonLoading>Searching...</ButtonLoading>}
             {!isLoading && "Search"}
           </Button>
         </fieldset>
