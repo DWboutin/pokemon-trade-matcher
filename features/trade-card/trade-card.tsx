@@ -44,7 +44,7 @@ export const TradeCard = ({
   }, [mainCard, username, tradeType]);
 
   return (
-    <Card className="shadow-lg border-2 border-gray-50 hover:shadow-2xl transition-shadow duration-300 rounded-tl-3xl rounded-br-3xl bg-gradient-to-br from-gray-50 to-gray-100">
+    <Card className="shadow-lg border-2 border-gray-50 border-t-white border-l-white hover:shadow-2xl transition-shadow duration-300 rounded-tl-3xl rounded-br-3xl bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="flex flex-row max-sm:flex-col max-sm:items-center">
         <div className="py-6 pl-6 max-sm:pb-0">
           {mainCard && (

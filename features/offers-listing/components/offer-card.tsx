@@ -10,7 +10,7 @@ type OfferCardProps = {
 
 const OfferCard = ({ offer }: OfferCardProps) => {
   return (
-    <div className="flex flex-col gap-4 p-4 border-2 border-t-white border-l-gray-50 border-r-gray-100 border-b-gray-100 shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-xl rounded-tl-3xl rounded-br-3xl bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="flex flex-col gap-4 p-4 border-2 border-gray-50 border-t-white border-l-white shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-xl rounded-tl-3xl rounded-br-3xl bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="flex flex-row gap-4 max-md:flex-col max-md:items-center">
         <div>
           <Image
