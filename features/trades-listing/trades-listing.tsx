@@ -64,7 +64,7 @@ export const TradesListing: FC<TradesListingProps> = ({ initialData }) => {
   }, [hasNextPage, fetchNextPage, allRows.length, isFetchingNextPage, items]);
 
   return (
-    <div ref={parentRef} className="w-full h-full">
+    <div ref={parentRef} className="w-full h-full max-md:px-4">
       <div
         style={{
           height: `${rowVirtualizer.getTotalSize()}px`,

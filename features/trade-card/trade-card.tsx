@@ -37,14 +37,14 @@ export const TradeCard = ({
     }
 
     if (tradeType === "offer") {
-      return `${username} offers theses cards below to get ${mainCard?.cardName} ${mainCard?.exclusivePack.name} ${mainCard?.exclusivePack.series}.`;
+      return `${username} offers theses cards below to get any trade offers.`;
     }
 
-    return `${username} offers theses cards below to get any trade offers.`;
+    return `${username} offers theses cards below to get ${mainCard?.cardName} ${mainCard?.exclusivePack.name} ${mainCard?.exclusivePack.series}.`;
   }, [mainCard, username, tradeType]);
 
   return (
-    <Card className="hover:shadow-lg transition-shadow duration-300">
+    <Card className="shadow-lg border-2 border-gray-50 hover:shadow-2xl transition-shadow duration-300 rounded-tl-3xl rounded-br-3xl bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="flex flex-row max-sm:flex-col max-sm:items-center">
         <div className="py-6 pl-6 max-sm:pb-0">
           {mainCard && (
@@ -53,6 +53,7 @@ export const TradeCard = ({
               alt={`${mainCard.cardName} ${mainCard.exclusivePack.name} ${mainCard.exclusivePack.series}`}
               width={135}
               height={190}
+              className="filter drop-shadow-md"
             />
           )}
           {!mainCard && (
@@ -79,6 +80,7 @@ export const TradeCard = ({
                     alt={`${card.cardName} ${card.exclusivePack.name} ${card.exclusivePack.series}`}
                     width={60}
                     height={87}
+                    className="filter drop-shadow-md"
                   />
                 ))}
               </div>
