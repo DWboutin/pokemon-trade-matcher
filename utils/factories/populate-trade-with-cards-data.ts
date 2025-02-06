@@ -1,4 +1,4 @@
-import { CardData, CardsData, Trade, User } from "@/types/app";
+import { CardData, CardsData, Trade } from "@/types/app";
 import cardsDataJson from "@/scripts/data/cards.json";
 
 export type PopulatedTrade = Trade & {

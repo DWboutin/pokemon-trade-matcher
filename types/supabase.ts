@@ -56,7 +56,7 @@ export type Database = {
       }
       trades: {
         Row: {
-          accepts_offers: boolean | null
+          accepts_offers: boolean
           author: string
           created_at: string
           id: string
@@ -64,7 +64,7 @@ export type Database = {
           offered_cards: string[]
         }
         Insert: {
-          accepts_offers?: boolean | null
+          accepts_offers?: boolean
           author?: string
           created_at?: string
           id?: string
@@ -72,7 +72,7 @@ export type Database = {
           offered_cards: string[]
         }
         Update: {
-          accepts_offers?: boolean | null
+          accepts_offers?: boolean
           author?: string
           created_at?: string
           id?: string
