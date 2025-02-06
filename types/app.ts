@@ -43,6 +43,7 @@ export type CardType =
   | "Water";
 
 export type TradeType = "want" | "offer" | "trade";
+export type OfferStatus = "pending" | "accepted" | "rejected";
 
 export type User = Database["public"]["Tables"]["users"]["Row"];
 export type Trade = Database["public"]["Tables"]["trades"]["Row"];

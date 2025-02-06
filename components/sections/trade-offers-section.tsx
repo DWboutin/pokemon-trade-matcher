@@ -12,6 +12,8 @@ type TradeOffersSectionProps = {
   mainCard: CardData | null;
   initialOffers: PopulatedOffer[];
   offeredCards: CardData[];
+  tradeOwnerId: string;
+  acceptsOffers: boolean;
 };
 
 export const TradeOffersSection = ({
@@ -19,6 +21,8 @@ export const TradeOffersSection = ({
   mainCard,
   initialOffers,
   offeredCards,
+  tradeOwnerId,
+  acceptsOffers,
 }: TradeOffersSectionProps) => {
   const [activeTab, setActiveTab] = useState<"offers" | "create-offer">("offers");
 
@@ -39,7 +43,13 @@ export const TradeOffersSection = ({
       </TabsList>
       <TabsContent value="offers">
         <div className="py-6">
-          <OffersListing tradeId={tradeId} initialData={initialOffers} />
+          <OffersListing
+            tradeId={tradeId}
+            ownerCard={mainCard}
+            initialData={initialOffers}
+            tradeOwnerId={tradeOwnerId}
+            acceptsOffers={acceptsOffers}
+          />
         </div>
       </TabsContent>
       <TabsContent value="create-offer">
