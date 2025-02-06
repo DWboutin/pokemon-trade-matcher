@@ -21,10 +21,7 @@ export const updateOfferStatus = async ({
     return { error: "No user data" };
   }
 
-  const { error: offerError, ...rest } = await supabase
-    .from("offers")
-    .update({ status })
-    .eq("id", offerId);
+  const { error: offerError } = await supabase.from("offers").update({ status }).eq("id", offerId);
 
   if (offerError) {
     return { error: offerError.message };
@@ -35,10 +32,6 @@ export const updateOfferStatus = async ({
       .from("trades")
       .update({ accepts_offers: false })
       .eq("id", tradeId);
-
-    console.log({
-      tradeError,
-    });
 
     if (tradeError) {
       return { error: tradeError.message };

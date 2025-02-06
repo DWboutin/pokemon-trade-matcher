@@ -53,19 +53,28 @@ export function useOfferActionModal({
     const status = e.currentTarget.dataset.offerStatus as Omit<OfferStatus, "pending">;
 
     setIsStatusUpdating(status);
-    await updateOfferStatus({ tradeId, offerId: offerData.id, status });
+    const { error, success } = await updateOfferStatus({ tradeId, offerId: offerData.id, status });
     setIsStatusUpdating(null);
-    setIsModalOpen(false);
-    setOfferData(null);
 
-    await queryClient.invalidateQueries({ queryKey: ["offers", tradeId] });
+    if (success) {
+      setIsModalOpen(false);
+      setOfferData(null);
 
-    if (status === "accepted") {
-      toast.success(
-        "The offer has been accepted! Connect with the other user in the application to complete the trade."
-      );
-    } else {
-      toast.success("The offer has been rejected.");
+      await queryClient.invalidateQueries({ queryKey: ["offers", tradeId] });
+
+      if (status === "accepted") {
+        toast.success(
+          "The offer has been accepted! Connect with the other user in the application to complete the trade."
+        );
+      } else {
+        toast.success("The offer has been rejected.");
+      }
+
+      return;
+    }
+
+    if (error) {
+      toast.error(error);
     }
   };
 
