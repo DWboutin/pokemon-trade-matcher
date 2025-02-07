@@ -1,7 +1,15 @@
 import { Typography } from "@/components/typography";
-import { TradePageOwnerActions } from "@/features/trade-page-content/components/trade-page-owner-actions";
 import { PopulatedTrade } from "@/utils/factories/populate-trade-with-cards-data";
+import dynamic from "next/dynamic";
 import { useMemo } from "react";
+
+const TradePageOwnerActions = dynamic(
+  () =>
+    import("@/features/trade-page-content/components/trade-page-owner-actions").then(
+      (mod) => mod.TradePageOwnerActions
+    ),
+  { ssr: true }
+);
 
 type TradePageHeadingProps = {
   trade: PopulatedTrade;
@@ -28,7 +36,7 @@ export const TradePageHeading = ({ trade }: TradePageHeadingProps) => {
       <div className="w-full flex flex-col gap-4 py-4 items-center text-center">
         <Typography variant="h1" text={title} />
       </div>
-      <TradePageOwnerActions authorId={trade.author.id} />
+      {trade.accepts_offers && <TradePageOwnerActions authorId={trade.author.id} />}
     </div>
   );
 };

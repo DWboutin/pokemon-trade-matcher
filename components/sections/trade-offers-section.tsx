@@ -33,7 +33,7 @@ export const TradeOffersSection = ({
   return (
     <Tabs
       defaultValue="offers"
-      className="w-full"
+      className="w-full px-4"
       value={activeTab}
       onValueChange={(value) => setActiveTab(value as "offers" | "create-offer")}
     >
