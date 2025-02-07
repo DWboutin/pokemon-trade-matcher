@@ -32,6 +32,10 @@ export const TradeCard = ({
   }, [mainCard, offeredCards]);
 
   const descriptionText = useMemo(() => {
+    if (mainCard === null) {
+      return `${username} searches for any trade.`;
+    }
+
     if (tradeType === "want") {
       return `${username} searches for any trade offers to get ${mainCard?.cardName} ${mainCard?.exclusivePack.name} ${mainCard?.exclusivePack.series}.`;
     }
