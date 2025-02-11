@@ -1,5 +1,6 @@
 import { Typography } from "@/components/typography";
-import { TradesListing } from "@/features/trades-listing/trades-listing";
+import { TradesInfiniteListing } from "@/features/trades-listing/components/trades-infinite-listing";
+import { TradesListingSearch } from "@/features/trades-listing/components/trades-listing-search";
 import { getPaginatedTrades } from "@/utils/requests/get-paginated-trades";
 
 export const dynamic = "force-dynamic";
@@ -14,7 +15,11 @@ export default async function TradesPage() {
     <div className="container mx-auto">
       <div className="flex flex-col gap-4 py-10 items-center">
         <Typography variant="h1" text="Trades" />
-        <TradesListing initialData={initialData} />
+
+        <div className="flex flex-1 w-full flex-col gap-4">
+          <TradesListingSearch />
+          <TradesInfiniteListing initialData={initialData} />
+        </div>
       </div>
     </div>
   );

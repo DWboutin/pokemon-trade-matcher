@@ -27,8 +27,6 @@ const OfferCard = ({ offer, handleClick, isOwner, acceptsOffers }: OfferCardProp
     return "destructive";
   }, [offer.status]);
 
-  console.log({ acceptsOffers });
-
   return (
     <div
       className={cn(

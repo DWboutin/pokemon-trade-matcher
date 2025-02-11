@@ -18,7 +18,7 @@ const CardsSearchTags = dynamic(
 
 type CardsSearchProps = {
   isLoading: boolean;
-  handleSearchSubmit: (values: z.infer<typeof cardsSearchSchema>) => Promise<void>;
+  handleSearchSubmit: (values: z.infer<typeof cardsSearchSchema>) => Promise<void> | void;
 };
 
 export const CardsSearch = ({ isLoading, handleSearchSubmit }: CardsSearchProps) => {

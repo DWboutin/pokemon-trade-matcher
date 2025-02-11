@@ -1,18 +1,23 @@
+import { cardsSearchSchema } from "@/features/cards-search/utils/cards-search-schema";
 import { currentOrigin } from "@/utils/contants";
 import { PopulatedTrade } from "@/utils/factories/populate-trade-with-cards-data";
+import { z } from "zod";
 
 interface GetPaginatedTradesParams {
   page?: number;
   limit?: number;
+  filters?: z.infer<typeof cardsSearchSchema>;
 }
 
 export const getPaginatedTrades = async ({
   page = 1,
   limit = 10,
+  filters = {},
 }: GetPaginatedTradesParams = {}): Promise<PopulatedTrade[]> => {
   const queryParams = new URLSearchParams({
     page: page.toString(),
     limit: limit.toString(),
+    filters: JSON.stringify(filters),
   });
 
   const response = await fetch(`${currentOrigin}/api/trades?${queryParams.toString()}`, {

@@ -2,6 +2,7 @@
 
 import { CardsListing } from "@/components/cards-listing";
 import { Typography } from "@/components/typography";
+import { CardsSearchListing } from "@/features/cards-search-listing/cards-search-listing";
 import { CardsSearch } from "@/features/cards-search/cards-search";
 import { MakeTradeAuthorOffers } from "@/features/make-trade-offer/components/make-trade-author-offers";
 import { MakeTradeOfferModal } from "@/features/make-trade-offer/components/make-trade-offer-modal";
@@ -24,8 +25,22 @@ export const MakeTradeOffer = ({
   handleChangeTabToOffers,
 }: MakeTradeOfferProps) => {
   const {
-    selectors: { isModalOpen, isLoading, wantedCardId, wantedCard, selectedCardId, selectedCard },
-    actions: { handleCardClick, handleCreateOffer, setIsModalOpen, handleWantedCardClick },
+    selectors: {
+      isModalOpen,
+      isLoading,
+      wantedCardId,
+      wantedCard,
+      selectedCardId,
+      selectedCard,
+      isLoadingSearchCards,
+    },
+    actions: {
+      handleCardClick,
+      handleCreateOffer,
+      setIsModalOpen,
+      handleWantedCardClick,
+      handleSearchSubmit,
+    },
   } = useMakeTradeOffer({
     tradeId,
     offeredCards,
@@ -52,7 +67,8 @@ export const MakeTradeOffer = ({
           <div className="text-center">
             <Typography variant="h3" text="Search the card you want to offer" />
           </div>
-          <CardsSearch handleCardClick={handleCardClick} />
+          <CardsSearch handleSearchSubmit={handleSearchSubmit} isLoading={isLoadingSearchCards} />
+          <CardsSearchListing handleCardClick={handleCardClick} />
         </>
       )}
       <MakeTradeOfferModal

@@ -50,14 +50,16 @@ export const TradeCard = ({
   return (
     <Card className="shadow-lg border-2 border-gray-50 border-t-white border-l-white hover:shadow-2xl transition-shadow duration-300 rounded-tl-3xl rounded-br-3xl bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="flex flex-row max-sm:flex-col max-sm:items-center">
-        <div className="py-6 pl-6 max-sm:pb-0">
+        <div className="py-6 pl-6 max-sm:pb-0 flex-shrink-0">
           {mainCard && (
             <Image
               src={`/cards/${mainCard.cardNumber.replace(/\s/g, "_")}.png`}
               alt={`${mainCard.cardName} ${mainCard.exclusivePack.name} ${mainCard.exclusivePack.series}`}
               width={135}
               height={190}
+              style={{ width: "135px", height: "190px" }}
               className="filter drop-shadow-md"
+              priority
             />
           )}
           {!mainCard && (
@@ -76,9 +78,9 @@ export const TradeCard = ({
               <Typography variant="p" text={descriptionText} />
             </CardDescription>
           </CardHeader>
-          {offeredCards.length > 0 && (
-            <CardContent className="space-y-2 empty:hidden">
-              <div className="flex flex-row gap-2 overflow-x-auto md:h-[85px]">
+          <CardContent className="space-y-2 flex-1" aria-description="offered cards">
+            {offeredCards.length > 0 && (
+              <div className="flex flex-row gap-2 overflow-x-auto flex-shrink-0">
                 {offeredCards.map((card) => (
                   <Image
                     key={card.cardNumber}
@@ -86,12 +88,13 @@ export const TradeCard = ({
                     alt={`${card.cardName} ${card.exclusivePack.name} ${card.exclusivePack.series}`}
                     width={60}
                     height={87}
+                    style={{ width: "60px", height: "87px" }}
                     className="filter drop-shadow-md"
                   />
                 ))}
               </div>
-            </CardContent>
-          )}
+            )}
+          </CardContent>
           <CardFooter className="flex flex-row w-full">
             <div className="flex w-full flex-row gap-2 items-center justify-end">
               <div className="text-sm text-gray-500">{timeAgo.format(new Date(time))}</div>

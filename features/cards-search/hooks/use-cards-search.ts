@@ -32,7 +32,7 @@ const formDefaultValues: z.infer<typeof cardsSearchSchema> = {
 };
 
 type UseCardsSearchArgs = {
-  handleSearchSubmit: (values: z.infer<typeof cardsSearchSchema>) => Promise<void>;
+  handleSearchSubmit: (values: z.infer<typeof cardsSearchSchema>) => Promise<void> | void;
 };
 
 export const useCardsSearch = ({ handleSearchSubmit }: UseCardsSearchArgs): UseCardsSearch => {

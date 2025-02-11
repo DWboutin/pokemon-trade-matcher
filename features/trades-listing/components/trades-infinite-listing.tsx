@@ -1,67 +1,20 @@
 "use client";
 
 import { TradeCard } from "@/features/trade-card/trade-card";
+import { useTradeListing } from "@/features/trades-listing/hooks/use-trade-listing";
 import { PopulatedTrade } from "@/utils/factories/populate-trade-with-cards-data";
-import { getPaginatedTrades } from "@/utils/requests/get-paginated-trades";
-import { useInfiniteQuery } from "@tanstack/react-query";
-import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import Link from "next/link";
-import { FC, useEffect, useRef } from "react";
+import { FC } from "react";
 
-type TradesListingProps = {
+type TradesInfiniteListingProps = {
   initialData: PopulatedTrade[];
 };
 
-const PAGINATION_LIMIT = 10;
-
-export const TradesListing: FC<TradesListingProps> = ({ initialData }) => {
-  const { status, data, error, isFetching, isFetchingNextPage, fetchNextPage, hasNextPage } =
-    useInfiniteQuery({
-      queryKey: ["trades"],
-      queryFn: async ({ pageParam = 1 }) => {
-        const response = await getPaginatedTrades({
-          page: pageParam,
-          limit: PAGINATION_LIMIT,
-        });
-
-        return response;
-      },
-      getNextPageParam: (lastPage, pages) => {
-        return lastPage?.length === PAGINATION_LIMIT ? pages.length + 1 : undefined;
-      },
-      initialPageParam: 1,
-      initialData: {
-        pages: [initialData],
-        pageParams: [1],
-      },
-    });
-
-  const allRows = data ? data.pages.flatMap((d) => d) : [];
-
-  const parentRef = useRef<HTMLDivElement>(null);
-
-  const rowVirtualizer = useWindowVirtualizer({
-    count: hasNextPage ? allRows.length + 1 : allRows.length,
-    estimateSize: () => 280,
-    overscan: 3,
-    measureElement: (element) => {
-      return (element as HTMLElement).offsetHeight;
-    },
-  });
-
-  const items = rowVirtualizer.getVirtualItems();
-
-  useEffect(() => {
-    const [lastItem] = [...items].reverse();
-
-    if (!lastItem) {
-      return;
-    }
-
-    if (lastItem.index >= allRows.length - 1 && hasNextPage && !isFetchingNextPage) {
-      fetchNextPage();
-    }
-  }, [hasNextPage, fetchNextPage, allRows.length, isFetchingNextPage, items]);
+export const TradesInfiniteListing: FC<TradesInfiniteListingProps> = ({ initialData }) => {
+  const {
+    selectors: { parentRef, rowVirtualizer, items, allRows, hasNextPage },
+    actions: {},
+  } = useTradeListing({ initialData });
 
   return (
     <div ref={parentRef} className="w-full h-full max-md:px-4">

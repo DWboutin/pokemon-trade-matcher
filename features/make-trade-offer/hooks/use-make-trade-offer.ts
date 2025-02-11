@@ -1,13 +1,16 @@
 import { createOffer } from "@/actions/create-offer";
+import { cardsSearchSchema } from "@/features/cards-search/utils/cards-search-schema";
 import { useCardsSearchStore } from "@/stores/cards-search-store";
 import { CardData } from "@/types/app";
 import { useQueryClient } from "@tanstack/react-query";
 import { MouseEvent, useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
+import { z } from "zod";
 
 type UseMakeTradeOfferSelectors = {
   isModalOpen: boolean;
   isLoading: boolean;
+  isLoadingSearchCards: boolean;
   wantedCardId: string | null;
   wantedCard: CardData | undefined;
   selectedCardId: string | null;
@@ -19,6 +22,7 @@ type UseMakeTradeOfferActions = {
   handleCreateOffer: (selectedCardName: string) => Promise<void>;
   setIsModalOpen: (isModalOpen: boolean) => void;
   handleWantedCardClick: (e: MouseEvent<HTMLDivElement>) => void;
+  handleSearchSubmit: (values: z.infer<typeof cardsSearchSchema>) => Promise<void> | void;
 };
 
 type UseMakeTradeOffer = {
@@ -48,6 +52,8 @@ export const useMakeTradeOffer = ({
     state.cards.find((card) => card.cardNumber === selectedCardId)
   );
   const setSelectedCardId = useCardsSearchStore((state) => state.setSelectedCardId);
+  const isLoadingSearchCards = useCardsSearchStore((state) => state.isLoading);
+  const searchCards = useCardsSearchStore((state) => state.searchCards);
   const wantedCard = useMemo(
     () => offeredCards.find((card) => card.cardNumber === wantedCardId),
     [offeredCards, wantedCardId]
@@ -95,6 +101,10 @@ export const useMakeTradeOffer = ({
     handleChangeTabToOffers();
   };
 
+  const handleSearchSubmit = async (values: z.infer<typeof cardsSearchSchema>) => {
+    await searchCards(values);
+  };
+
   useEffect(() => {
     if (
       (!!mainCardId && !!selectedCardId && !wantedCardId) ||
@@ -114,6 +124,7 @@ export const useMakeTradeOffer = ({
     selectors: {
       isModalOpen,
       isLoading,
+      isLoadingSearchCards,
       wantedCardId,
       wantedCard,
       selectedCardId,
@@ -124,6 +135,7 @@ export const useMakeTradeOffer = ({
       handleCreateOffer,
       setIsModalOpen,
       handleWantedCardClick,
+      handleSearchSubmit,
     },
   };
 };
