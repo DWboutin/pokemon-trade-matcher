@@ -14,10 +14,13 @@ import { CardsSearch } from "@/features/cards-search/cards-search";
 import { useTradeCreator } from "@/features/trade-creator-form/hooks/useTradeCreator";
 import { TradeCreatorCardModal } from "@/features/trade-creator-form/components/trade-creator-card-modal";
 import { TradeCreatorPreview } from "@/features/trade-creator-form/components/trade-creator-preview";
+import { CardsListing } from "@/components/cards-listing";
+import { Typography } from "@/components/typography";
+import { CardsSearchListing } from "@/features/cards-search-listing/cards-search-listing";
 
 export const TradeCreatorForm: FC = () => {
   const {
-    selectors: { isModalOpen, searchedCard, offeredCards, tradeIsValid },
+    selectors: { isModalOpen, searchedCard, offeredCards, tradeIsValid, isLoading },
     actions: {
       handleCardClick,
       handleModalOpenChange,
@@ -25,6 +28,7 @@ export const TradeCreatorForm: FC = () => {
       handleOfferedCardsChange,
       handleTradeReset,
       handleTradeCreation,
+      handleSearchSubmit,
     },
   } = useTradeCreator();
 
@@ -40,7 +44,8 @@ export const TradeCreatorForm: FC = () => {
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
-            <CardsSearch handleCardClick={handleCardClick} />
+            <CardsSearch isLoading={isLoading} handleSearchSubmit={handleSearchSubmit} />
+            <CardsSearchListing handleCardClick={handleCardClick} />
             <TradeCreatorPreview searchedCard={searchedCard} offeredCards={offeredCards} />
           </CardContent>
           <CardFooter className="flex flex-row justify-end gap-2">

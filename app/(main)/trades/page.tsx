@@ -14,7 +14,6 @@ export default async function TradesPage() {
     <div className="container mx-auto">
       <div className="flex flex-col gap-4 py-10 items-center">
         <Typography variant="h1" text="Trades" />
-
         <TradesListing initialData={initialData} />
       </div>
     </div>

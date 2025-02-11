@@ -5,6 +5,8 @@ import { CardsSearchForm } from "@/features/cards-search/components/cards-search
 import { CardsListing } from "@/components/cards-listing";
 import { useCardsSearch } from "@/features/cards-search/hooks/use-cards-search";
 import dynamic from "next/dynamic";
+import { cardsSearchSchema } from "@/features/cards-search/utils/cards-search-schema";
+import { z } from "zod";
 
 const CardsSearchTags = dynamic(
   () =>
@@ -15,14 +17,15 @@ const CardsSearchTags = dynamic(
 );
 
 type CardsSearchProps = {
-  handleCardClick: (e: React.MouseEvent<HTMLDivElement>) => void;
+  isLoading: boolean;
+  handleSearchSubmit: (values: z.infer<typeof cardsSearchSchema>) => Promise<void>;
 };
 
-export const CardsSearch = ({ handleCardClick }: CardsSearchProps) => {
+export const CardsSearch = ({ isLoading, handleSearchSubmit }: CardsSearchProps) => {
   const {
-    selectors: { form, cards, isLoading, selectedCardId, isSameValues, tagValues },
+    selectors: { form, isSameValues, tagValues },
     actions: { handleSubmit, handleRemoveTag },
-  } = useCardsSearch();
+  } = useCardsSearch({ handleSearchSubmit });
 
   return (
     <div className="flex flex-col gap-4">
@@ -39,19 +42,6 @@ export const CardsSearch = ({ handleCardClick }: CardsSearchProps) => {
           dirtyFields={form.formState.dirtyFields}
         />
       )}
-      <div id="cards-search-results">
-        <CardsListing
-          cards={cards}
-          selectedCardId={selectedCardId}
-          handleCardClick={handleCardClick}
-        >
-          <Typography
-            variant="h3"
-            text="Refine your search for cards to show here"
-            className="text-muted-foreground"
-          />
-        </CardsListing>
-      </div>
     </div>
   );
 };

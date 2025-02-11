@@ -1,10 +1,12 @@
 import { createTrade } from "@/actions/create-trade";
+import { cardsSearchSchema } from "@/features/cards-search/utils/cards-search-schema";
 import { useCardsSearchStore } from "@/stores/cards-search-store";
 import { CardData } from "@/types/app";
 import { useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { MouseEvent, useState } from "react";
 import { toast } from "sonner";
+import { z } from "zod";
 
 type UseTradeCreatorSelectors = {
   selectedCardId: string | null;
@@ -12,6 +14,7 @@ type UseTradeCreatorSelectors = {
   searchedCard: CardData | null;
   offeredCards: CardData[];
   tradeIsValid: boolean;
+  isLoading: boolean;
 };
 
 type UseTradeCreatorActions = {
@@ -21,6 +24,7 @@ type UseTradeCreatorActions = {
   handleOfferedCardsChange: () => void;
   handleTradeReset: () => void;
   handleTradeCreation: () => void;
+  handleSearchSubmit: (values: z.infer<typeof cardsSearchSchema>) => Promise<void>;
 };
 
 type UseTradeCreator = {
@@ -33,10 +37,12 @@ export const useTradeCreator = (): UseTradeCreator => {
   const queryClient = useQueryClient();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const selectedCardId = useCardsSearchStore((state) => state.selectedCardId);
+  const isLoading = useCardsSearchStore((state) => state.isLoading);
   const selectedCard = useCardsSearchStore(
     (state) => state.cards.find((card) => card.cardNumber === selectedCardId) || null
   );
   const setSelectedCardId = useCardsSearchStore((state) => state.setSelectedCardId);
+  const searchCards = useCardsSearchStore((state) => state.searchCards);
   const [searchedCard, setSearchedCard] = useState<CardData | null>(null);
   const [offeredCards, setOfferedCards] = useState<CardData[]>([]);
   const tradeIsValid = !!searchedCard || offeredCards.length > 0;
@@ -102,8 +108,17 @@ export const useTradeCreator = (): UseTradeCreator => {
     router.push(`/trades/${data.id}`);
   };
 
+  const handleSearchSubmit = async (values: z.infer<typeof cardsSearchSchema>) => {
+    await searchCards(values);
+
+    window.scrollTo({
+      top: document.querySelector("#cards-search-results")?.getBoundingClientRect().top,
+      behavior: "smooth",
+    });
+  };
+
   return {
-    selectors: { selectedCardId, isModalOpen, searchedCard, offeredCards, tradeIsValid },
+    selectors: { selectedCardId, isModalOpen, searchedCard, offeredCards, tradeIsValid, isLoading },
     actions: {
       handleCardClick,
       handleModalOpenChange,
@@ -111,6 +126,7 @@ export const useTradeCreator = (): UseTradeCreator => {
       handleOfferedCardsChange,
       handleTradeReset,
       handleTradeCreation,
+      handleSearchSubmit,
     },
   };
 };
