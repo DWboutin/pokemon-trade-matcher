@@ -75,3 +75,24 @@ body {
   text-shadow: 0px 1px 1px #ffffff;
 }
 
+.with-diagonal-gradient {
+  @apply before:absolute before:z-0 before:content-[''] before:top-[-60%] before:left-[-10%] before:w-[200%] before:h-[100%] before:transform before:rotate-[-5deg] before:overflow-hidden;
+}
+
+.with-diagonal-gradient.status-pending {
+  @apply before:bg-gradient-to-br before:from-gray-50 before:to-gray-100
+}
+
+.with-diagonal-gradient.status-accepted {
+  @apply before:bg-gradient-to-br before:from-green-50 before:to-green-100
+}
+
+.with-diagonal-gradient.status-rejected {
+  @apply before:bg-gradient-to-br before:from-red-50 before:to-red-100
+}
+
+.with-diagonal-gradient.status-ended {
+  @apply before:bg-gradient-to-br before:from-gray-200 before:to-gray-300
+}
+
+

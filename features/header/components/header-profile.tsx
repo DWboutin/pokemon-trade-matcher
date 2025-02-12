@@ -1,13 +1,11 @@
 "use client";
 
-import { HoverableTooltip } from "@/components/hoverable-tooltip";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { ButtonLoading } from "@/components/ui/button-loading";
 import { useConnectedUserStore } from "@/stores/connected-user-store";
 import Link from "next/link";
 import { FC, useEffect } from "react";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { HiOutlineLogout } from "react-icons/hi";
 
 const HeaderProfile: FC = () => {
@@ -31,14 +29,17 @@ const HeaderProfile: FC = () => {
   }
 
   return (
-    <div className="flex flex-1 flex-row gap-2 items-center justify-between">
-      <div className="flex flex-row gap-2 items-center">
+    <div className="flex flex-1 flex-row gap-4 items-center justify-between">
+      <Link
+        href={`/profile/${user.id}/trades`}
+        className="flex flex-row gap-2 items-center hover:opacity-60"
+      >
         <Avatar>
           <AvatarImage src={`/icons/${user.icon}.png`} />
           <AvatarFallback>{displayedName?.charAt(0)}</AvatarFallback>
         </Avatar>
-        <span>{displayedName}</span>
-      </div>
+        <span className="font-medium">{displayedName}</span>
+      </Link>
       <Button
         onClick={handleSignOut}
         variant="secondary"

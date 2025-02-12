@@ -48,3 +48,6 @@ export type OfferStatus = "pending" | "accepted" | "rejected";
 export type User = Database["public"]["Tables"]["users"]["Row"];
 export type Trade = Database["public"]["Tables"]["trades"]["Row"];
 export type Offer = Database["public"]["Tables"]["offers"]["Row"];
+export type Author = {
+  [K in keyof Omit<User, "name" | "type" | "email" | "trades">]-?: NonNullable<User[K]>;
+};

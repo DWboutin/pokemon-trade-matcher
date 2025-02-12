@@ -9,6 +9,8 @@ export async function GET(request: Request) {
   const page = parseInt(searchParams.get("page") || "1");
   const limit = parseInt(searchParams.get("limit") || "10");
   const filters = JSON.parse(searchParams.get("filters") || "{}");
+  const authorId = searchParams.get("authorId") || "";
+  const status = searchParams.get("status") || "all";
   const containsValidFilters = Object.values(filters).filter(Boolean).length > 0;
 
   const filteredCards = containsValidFilters ? await searchCardsData(filters) : "[]";
@@ -31,7 +33,16 @@ export async function GET(request: Request) {
     `
     )
     .order("created_at", { ascending: false });
-  // .eq("accepts_offers", true);
+
+  if (authorId) {
+    query = query.eq("author", authorId);
+  }
+
+  if (status === "pending") {
+    query = query.eq("accepts_offers", true);
+  } else if (status === "ended") {
+    query = query.eq("accepts_offers", false);
+  }
 
   if (cardsToSearchOn) {
     query = query.or(`main_card.in.(${cardsToSearchOn}),offered_cards.ov.{${cardsToSearchOn}}`);

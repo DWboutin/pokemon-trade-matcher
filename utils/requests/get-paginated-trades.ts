@@ -7,17 +7,23 @@ interface GetPaginatedTradesParams {
   page?: number;
   limit?: number;
   filters?: z.infer<typeof cardsSearchSchema>;
+  authorId?: string;
+  status?: "all" | "pending" | "ended";
 }
 
 export const getPaginatedTrades = async ({
   page = 1,
   limit = 10,
   filters = {},
+  authorId,
+  status = "all",
 }: GetPaginatedTradesParams = {}): Promise<PopulatedTrade[]> => {
   const queryParams = new URLSearchParams({
     page: page.toString(),
     limit: limit.toString(),
     filters: JSON.stringify(filters),
+    authorId: authorId || "",
+    status,
   });
 
   const response = await fetch(`${currentOrigin}/api/trades?${queryParams.toString()}`, {

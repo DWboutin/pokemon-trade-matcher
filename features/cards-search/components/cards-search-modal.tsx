@@ -143,7 +143,7 @@ export const CardsSearchModal = ({
             )}
           />
         </div>
-        <DialogFooter>
+        <DialogFooter className="flex flex-row gap-2 justify-end">
           <DialogClose asChild>
             <Button variant="outline">Cancel</Button>
           </DialogClose>

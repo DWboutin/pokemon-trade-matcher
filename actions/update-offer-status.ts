@@ -28,13 +28,24 @@ export const updateOfferStatus = async ({
   }
 
   if (status === "accepted") {
-    const { error: tradeError } = await supabase
-      .from("trades")
-      .update({ accepts_offers: false })
-      .eq("id", tradeId);
+    const rejectOtherOffers = supabase
+      .from("offers")
+      .update({ status: "rejected" })
+      .eq("trade_id", tradeId)
+      .neq("id", offerId);
 
-    if (tradeError) {
-      return { error: tradeError.message };
+    const updateTrade = supabase.from("trades").update({ accepts_offers: false }).eq("id", tradeId);
+
+    const [rejectOtherOffersError, updateTradeError] = await Promise.all([
+      rejectOtherOffers,
+      updateTrade,
+    ]);
+
+    if (updateTradeError.error) {
+      return { error: updateTradeError.error.message };
+    }
+    if (rejectOtherOffersError.error) {
+      return { error: rejectOtherOffersError.error.message };
     }
   }
 

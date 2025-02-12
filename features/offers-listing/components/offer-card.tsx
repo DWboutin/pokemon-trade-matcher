@@ -31,14 +31,11 @@ const OfferCard = ({ offer, handleClick, isOwner, acceptsOffers }: OfferCardProp
     <div
       className={cn(
         "relative flex flex-col gap-4 p-4 overflow-hidden border-2 border-gray-50 border-t-white border-l-white shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-xl rounded-tl-3xl rounded-br-3xl bg-gradient-to-br from-gray-50 to-gray-100",
-        "before:absolute before:content-[''] before:top-[-60%] before:left-[-10%] before:w-[200%] before:h-[100%] before:transform before:rotate-[-5deg] before:overflow-hidden",
+        "with-diagonal-gradient",
         isOwner && acceptsOffers && "cursor-pointer",
-        offer.status === "pending" &&
-          "before:bg-gradient-to-br before:from-gray-50 before:to-gray-100",
-        offer.status === "accepted" &&
-          "before:bg-gradient-to-br before:from-green-50 before:to-green-100",
-        offer.status === "rejected" &&
-          "before:bg-gradient-to-br before:from-red-50 before:to-red-100"
+        offer.status === "pending" && "status-pending",
+        offer.status === "accepted" && "status-accepted",
+        offer.status === "rejected" && "status-rejected"
       )}
       onClick={acceptsOffers ? handleClick : undefined}
     >

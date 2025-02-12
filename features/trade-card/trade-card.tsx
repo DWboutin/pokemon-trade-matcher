@@ -1,8 +1,10 @@
 import { Typography } from "@/components/typography";
+import { Badge } from "@/components/ui/badge";
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { CardContent } from "@/components/ui/card";
 import { UserProfileInfo } from "@/features/user-profile-info/user-profile-info";
+import { cn } from "@/lib/utils";
 import { CardData } from "@/types/app";
 import { timeAgo } from "@/utils/contants";
 import { getTradeType } from "@/utils/get-trade-type";
@@ -17,6 +19,7 @@ type TradeCardProps = {
   icon: string;
   friendId: string;
   time: string;
+  acceptsOffers: boolean;
 };
 
 export const TradeCard = ({
@@ -26,6 +29,7 @@ export const TradeCard = ({
   icon,
   friendId,
   time,
+  acceptsOffers,
 }: TradeCardProps) => {
   const tradeType = useMemo(() => {
     return getTradeType(mainCard, offeredCards);
@@ -48,8 +52,19 @@ export const TradeCard = ({
   }, [mainCard, username, tradeType]);
 
   return (
-    <Card className="shadow-lg border-2 border-gray-50 border-t-white border-l-white hover:shadow-2xl transition-shadow duration-300 rounded-tl-3xl rounded-br-3xl bg-gradient-to-br from-gray-50 to-gray-100">
-      <div className="flex flex-row max-sm:flex-col max-sm:items-center">
+    <Card
+      className={cn(
+        "shadow-lg relative overflow-hidden border-2 border-gray-50 border-t-white border-l-white hover:shadow-2xl transition-shadow duration-300 rounded-tl-3xl rounded-br-3xl bg-gradient-to-br from-gray-50 to-gray-100",
+        "with-diagonal-gradient",
+        !acceptsOffers && "status-ended"
+      )}
+    >
+      {!acceptsOffers && (
+        <div className="absolute top-4 right-4">
+          <Badge variant="default">Ended</Badge>
+        </div>
+      )}
+      <div className="flex flex-row max-sm:flex-col max-sm:items-center z-10">
         <div className="py-6 pl-6 max-sm:pb-0 flex-shrink-0">
           {mainCard && (
             <Image
@@ -71,7 +86,7 @@ export const TradeCard = ({
             </div>
           )}
         </div>
-        <div className="flex flex-col flex-1 w-full max-sm:items-start">
+        <div className="flex flex-col flex-1 w-full max-sm:items-start z-10">
           <CardHeader>
             <CardTitle className="text-xl capitalize text-shadow-embossed">{tradeType}</CardTitle>
             <CardDescription>

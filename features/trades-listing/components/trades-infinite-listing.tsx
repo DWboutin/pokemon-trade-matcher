@@ -8,16 +8,22 @@ import { FC } from "react";
 
 type TradesInfiniteListingProps = {
   initialData: PopulatedTrade[];
+  authorId?: string;
+  status?: "all" | "pending" | "ended";
 };
 
-export const TradesInfiniteListing: FC<TradesInfiniteListingProps> = ({ initialData }) => {
+export const TradesInfiniteListing: FC<TradesInfiniteListingProps> = ({
+  initialData,
+  authorId,
+  status,
+}) => {
   const {
     selectors: { parentRef, rowVirtualizer, items, allRows, hasNextPage },
     actions: {},
-  } = useTradeListing({ initialData });
+  } = useTradeListing({ initialData, authorId, status });
 
   return (
-    <div ref={parentRef} className="w-full h-full max-md:px-4">
+    <div ref={parentRef} className="w-full h-full">
       <div
         style={{
           height: `${rowVirtualizer.getTotalSize()}px`,
@@ -56,6 +62,7 @@ export const TradesInfiniteListing: FC<TradesInfiniteListingProps> = ({ initialD
                         icon={trade.author.icon}
                         friendId={trade.author.id}
                         time={trade.created_at}
+                        acceptsOffers={trade.accepts_offers}
                       />
                     </Link>
                   )}

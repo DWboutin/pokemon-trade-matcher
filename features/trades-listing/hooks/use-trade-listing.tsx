@@ -25,18 +25,26 @@ type UseTradeListingHook = {
 
 type UseTradeListingArgs = {
   initialData: PopulatedTrade[];
+  authorId?: string;
+  status?: "all" | "pending" | "ended";
 };
 
-export const useTradeListing = ({ initialData }: UseTradeListingArgs): UseTradeListingHook => {
+export const useTradeListing = ({
+  initialData,
+  authorId,
+  status,
+}: UseTradeListingArgs): UseTradeListingHook => {
   const filters = useTradesListingStore((state) => state.filters);
-  const { status, data, error, isFetching, isFetchingNextPage, fetchNextPage, hasNextPage } =
+  const { data, error, isFetching, isFetchingNextPage, fetchNextPage, hasNextPage } =
     useInfiniteQuery({
-      queryKey: ["trades", filters],
+      queryKey: ["trades", { ...filters, authorId, status }],
       queryFn: async ({ pageParam = 1 }) => {
         const response = await getPaginatedTrades({
           page: pageParam,
           limit: PAGINATION_LIMIT,
           filters,
+          authorId,
+          status,
         });
 
         return response;
