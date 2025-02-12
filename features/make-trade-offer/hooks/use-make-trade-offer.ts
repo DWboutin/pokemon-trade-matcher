@@ -83,7 +83,7 @@ export const useMakeTradeOffer = ({
     const { error } = await createOffer({
       offered_card: selectedCardName,
       trade_id: tradeId,
-      wanted_card: wantedCardId,
+      wanted_card: wantedCardId || mainCardId!,
     });
     setIsModalOpen(false);
     setIsLoading(false);

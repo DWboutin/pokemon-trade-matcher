@@ -22,11 +22,12 @@ export const ProfileNavigationMenuItem = ({ href, label }: ProfileNavigationMenu
       <NavigationMenuLink
         asChild
         className={cn(
+          "border-2 border-white",
           navigationMenuTriggerStyle(),
-          pathname === href && "text-accent-foreground bg-accent"
+          pathname === href && "text-accent-foreground bg-accent font-bold border-gray-200"
         )}
       >
-        <Link href={href} className="text-xl font-medium">
+        <Link href={href} className="text-xl">
           {label}
         </Link>
       </NavigationMenuLink>

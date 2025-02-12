@@ -59,7 +59,6 @@ export const TradeOffersSection = ({
         <div className="py-6">
           <OffersListing
             tradeId={tradeId}
-            ownerCard={mainCard}
             initialData={initialOffers}
             tradeOwnerId={tradeOwnerId}
             acceptsOffers={acceptsOffers}

@@ -3,6 +3,7 @@ import cardsDataJson from "@/scripts/data/cards.json";
 
 export type PopulatedOffer = Offer & {
   offeredCard: CardData;
+  wantedCard: CardData;
   author: {
     id: string;
     username: string;
@@ -14,10 +15,11 @@ const populateOfferWithCardData = (offer: Offer): PopulatedOffer => {
   const cardsData = cardsDataJson as CardsData;
 
   const offeredCard = cardsData.cards.find((card) => card.cardNumber === offer.offered_card);
-
+  const wantedCard = cardsData.cards.find((card) => card.cardNumber === offer.wanted_card);
   return {
     ...offer,
     offeredCard,
+    wantedCard,
   } as PopulatedOffer;
 };
 

@@ -21,6 +21,7 @@ export const createOffer = async (offer: CreateOfferArgs) => {
       author: userData.id,
       offered_card: offer.offered_card,
       trade_id: offer.trade_id,
+      wanted_card: offer.wanted_card,
     })
     .select()
     .single();

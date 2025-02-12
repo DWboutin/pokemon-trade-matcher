@@ -3,7 +3,6 @@
 import OfferCard from "@/features/offers-listing/components/offer-card";
 import { useOfferActionModal } from "@/features/offers-listing/hooks/use-offer-action-modal";
 import { useOffersListing } from "@/features/offers-listing/hooks/use-offers-listing";
-import { CardData } from "@/types/app";
 import { PopulatedOffer } from "@/utils/factories/populate-offer-with-card-data";
 import dynamic from "next/dynamic";
 import { FC } from "react";
@@ -20,7 +19,6 @@ type OffersListingProps = {
   tradeId: string;
   initialData: PopulatedOffer[];
   tradeOwnerId: string;
-  ownerCard: CardData | null;
   acceptsOffers: boolean;
 };
 
@@ -28,7 +26,6 @@ export const OffersListing: FC<OffersListingProps> = ({
   tradeId,
   initialData,
   tradeOwnerId,
-  ownerCard,
   acceptsOffers,
 }) => {
   const {
@@ -38,6 +35,8 @@ export const OffersListing: FC<OffersListingProps> = ({
     selectors: { isModalOpen, isStatusUpdating, offerData, isOwner },
     actions: { setIsModalOpen, handleOfferCardClick, handleOfferStatusUpdate },
   } = useOfferActionModal({ tradeId, tradeOwnerId });
+
+  console.log({ offerData });
 
   return (
     <>
@@ -84,12 +83,13 @@ export const OffersListing: FC<OffersListingProps> = ({
           })}
         </div>
       </div>
-      {isOwner && offerData && ownerCard && (
+      {isOwner && offerData && (
         <OfferCardActionModal
           isOpen={isModalOpen}
+          username={offerData.author.username}
           onOpenChange={setIsModalOpen}
-          ownerCard={ownerCard}
-          offeredCard={offerData?.offeredCard}
+          exchangedCard={offerData.offeredCard}
+          wantedCard={offerData.wantedCard}
           handleOfferStatusUpdate={handleOfferStatusUpdate}
           isStatusUpdating={isStatusUpdating}
         />

@@ -14,9 +14,10 @@ import { ButtonLoading } from "@/components/ui/button-loading";
 
 type OfferCardActionModalProps = {
   isOpen: boolean;
+  username: string;
   onOpenChange: (open: boolean) => void;
-  ownerCard: CardData;
-  offeredCard: CardData;
+  exchangedCard: CardData;
+  wantedCard: CardData;
   handleOfferStatusUpdate: (e: React.MouseEvent<HTMLButtonElement>) => void;
   isStatusUpdating: Omit<OfferStatus, "pending"> | null;
 };
@@ -24,8 +25,9 @@ type OfferCardActionModalProps = {
 export const OfferCardActionModal = ({
   isOpen,
   onOpenChange,
-  ownerCard,
-  offeredCard,
+  username,
+  exchangedCard,
+  wantedCard,
   handleOfferStatusUpdate,
   isStatusUpdating,
 }: OfferCardActionModalProps) => {
@@ -33,14 +35,14 @@ export const OfferCardActionModal = ({
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle className="mr-4">Offer details</DialogTitle>
+          <DialogTitle className="mr-4">{username} offers you this trade</DialogTitle>
         </DialogHeader>
         <div className="flex flex-row justify-between items-center gap-4 py-4">
           <div className="flex flex-col gap-2 text-center">
             <span className="text-sm font-bold text-gray-600">Exchanging this card</span>
             <Image
-              src={`/cards/${ownerCard?.cardNumber.replace(/\s/g, "_")}.png`}
-              alt={`${ownerCard?.cardName} ${ownerCard?.exclusivePack.name} ${ownerCard?.exclusivePack.series}`}
+              src={`/cards/${exchangedCard?.cardNumber.replace(/\s/g, "_")}.png`}
+              alt={`${exchangedCard?.cardName} ${exchangedCard?.exclusivePack.name} ${exchangedCard?.exclusivePack.series}`}
               width={200}
               height={279}
               className="max-md:w-[120px]"
@@ -50,8 +52,8 @@ export const OfferCardActionModal = ({
           <div className="flex flex-col gap-2 text-center">
             <span className="text-sm font-bold text-gray-600">To get</span>
             <Image
-              src={`/cards/${offeredCard?.cardNumber.replace(/\s/g, "_")}.png`}
-              alt={`${offeredCard?.cardName} ${offeredCard?.exclusivePack.name} ${offeredCard?.exclusivePack.series}`}
+              src={`/cards/${wantedCard?.cardNumber.replace(/\s/g, "_")}.png`}
+              alt={`${wantedCard?.cardName} ${wantedCard?.exclusivePack.name} ${wantedCard?.exclusivePack.series}`}
               width={200}
               height={279}
               className="max-md:w-[120px]"

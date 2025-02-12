@@ -4,7 +4,6 @@ import { CardsListing } from "@/components/cards-listing";
 import { Typography } from "@/components/typography";
 import { CardsSearchListing } from "@/features/cards-search-listing/cards-search-listing";
 import { CardsSearch } from "@/features/cards-search/cards-search";
-import { MakeTradeAuthorOffers } from "@/features/make-trade-offer/components/make-trade-author-offers";
 import { MakeTradeOfferModal } from "@/features/make-trade-offer/components/make-trade-offer-modal";
 import { useMakeTradeOffer } from "@/features/make-trade-offer/hooks/use-make-trade-offer";
 import { CardData } from "@/types/app";
@@ -54,13 +53,18 @@ export const MakeTradeOffer = ({
   return (
     <div className="flex flex-col px-4 gap-4">
       {(tradeType === "offer" || tradeType === "trade") && (
-        <CardsListing
-          cards={offeredCards}
-          selectedCardId={tradeType === "offer" ? wantedCardId : selectedCardId}
-          handleCardClick={tradeType === "offer" ? handleWantedCardClick : handleCardClick}
-        >
-          <Typography variant="h3" text="No cards offered" />
-        </CardsListing>
+        <>
+          <div className="text-center">
+            <Typography variant="h3" text="Choose the card you want to get" />
+          </div>
+          <CardsListing
+            cards={offeredCards}
+            selectedCardId={tradeType === "offer" ? wantedCardId : selectedCardId}
+            handleCardClick={tradeType === "offer" ? handleWantedCardClick : handleCardClick}
+          >
+            <Typography variant="h3" text="No cards offered" />
+          </CardsListing>
+        </>
       )}
       {(tradeType === "want" || tradeType === "offer") && (
         <>
