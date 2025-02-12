@@ -9,6 +9,7 @@ export default async function TradesPage() {
   const initialData = await getPaginatedTrades({
     page: 1,
     limit: 10,
+    status: "pending",
   });
 
   return (
