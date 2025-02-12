@@ -65,7 +65,7 @@ export const TradeCard = ({
         </div>
       )}
       <div className="flex flex-row max-sm:flex-col max-sm:items-center z-10">
-        <div className="py-6 pl-6 max-sm:pb-0 flex-shrink-0">
+        <div className="py-6 pl-6 max-sm:pb-0 flex-shrink-0 z-10">
           {mainCard && (
             <Image
               src={`/cards/${mainCard.cardNumber.replace(/\s/g, "_")}.png`}
@@ -78,7 +78,7 @@ export const TradeCard = ({
             />
           )}
           {!mainCard && (
-            <div className="w-[135px] h-[190px] bg-gray-200 rounded-md flex flex-col items-center justify-center gap-2">
+            <div className="w-[135px] h-[190px] bg-gray-200 rounded-md flex flex-col items-center justify-center gap-2 drop-shadow-md">
               <div className="[text-shadow:_0px_1px_1px_#ffffff]">
                 <MdCatchingPokemon className="w-20 h-20 text-gray-500" />
               </div>

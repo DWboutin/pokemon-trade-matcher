@@ -1,7 +1,6 @@
 "use client";
 
 import { deleteTrade } from "@/actions/delete-trade";
-import { HoverableTooltip } from "@/components/hoverable-tooltip";
 import { Typography } from "@/components/typography";
 import { Button } from "@/components/ui/button";
 import { ButtonLoading } from "@/components/ui/button-loading";

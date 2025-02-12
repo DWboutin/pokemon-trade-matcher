@@ -14,8 +14,8 @@ export const HeaderNavigation: FC = () => {
       <Link
         href="/trades"
         className={cn(
-          "mt-2 pb-1",
-          isActive("/trades") && "font-bold text-[#F01616] border-b-2 border-[#F01616]"
+          "mt-2 pb-1 border-b-2 border-transparent hover:text-[#F01616] hover:border-b-2 hover:border-[#F01616]",
+          isActive("/trades") && "font-bold text-[#F01616] border-[#F01616]"
         )}
       >
         Trades
@@ -23,7 +23,7 @@ export const HeaderNavigation: FC = () => {
       <Link
         href="/trades/create"
         className={cn(
-          "mt-2 pb-1",
+          "mt-2 pb-1 border-b-2 border-transparent hover:text-[#F01616] hover:border-b-2 hover:border-[#F01616]",
           isActive("/trades/create") && "font-bold text-[#F01616] border-b-2 border-[#F01616]"
         )}
       >
