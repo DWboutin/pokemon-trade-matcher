@@ -19,7 +19,7 @@ type TradeCardProps = {
   icon: string;
   friendId: string;
   time: string;
-  acceptsOffers: boolean;
+  acceptsOffers?: boolean;
 };
 
 export const TradeCard = ({
@@ -59,7 +59,7 @@ export const TradeCard = ({
         !acceptsOffers && "status-ended"
       )}
     >
-      {!acceptsOffers && (
+      {acceptsOffers !== undefined && !acceptsOffers && (
         <div className="absolute top-4 right-4">
           <Badge variant="default">Ended</Badge>
         </div>

@@ -6,9 +6,11 @@ import { TradesInfiniteListing } from "@/features/trades-listing/components/trad
 import { TradesListingSearch } from "@/features/trades-listing/components/trades-listing-search";
 import { getPaginatedTrades } from "@/utils/requests/get-paginated-trades";
 
-export const dynamic = "force-dynamic";
-
-export default async function ProfileTradesPage({ params }: { params: { user_id: string } }) {
+export default async function ProfileTradesPage({
+  params,
+}: {
+  params: Promise<{ user_id: string }>;
+}) {
   const { user_id } = await params;
   const initialData = await getPaginatedTrades({
     page: 1,
