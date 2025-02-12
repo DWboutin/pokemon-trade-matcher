@@ -12,7 +12,7 @@ export default async function ProfileOffersPage({
   params: Promise<{ user_id: string }>;
 }) {
   const { user_id } = await params;
-  const { id } = await getUserData();
+  const user = await getUserData();
   const initialData = await getPaginatedOffersForUserId({
     page: 1,
     limit: 10,
@@ -40,7 +40,7 @@ export default async function ProfileOffersPage({
           <OffersTableListing
             initialData={initialData}
             authorId={user_id}
-            isOwner={id === user_id}
+            isOwner={user?.id === user_id}
           />
         </TabsContent>
         <TabsContent value="pending">Pending offers</TabsContent>
