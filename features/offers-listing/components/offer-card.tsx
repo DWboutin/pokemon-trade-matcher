@@ -1,6 +1,7 @@
 import { CardRarityWithImages } from "@/components/card-rarity-with-images";
 import { CardTypeWithImage } from "@/components/card-type-with-image";
 import { Badge } from "@/components/ui/badge";
+import { OfferCardBadge } from "@/features/offers-listing/components/offer-card-badge";
 import { UserProfileInfo } from "@/features/user-profile-info/user-profile-info";
 import { cn } from "@/lib/utils";
 import { PopulatedOffer } from "@/utils/factories/populate-offer-with-card-data";
@@ -15,18 +16,6 @@ type OfferCardProps = {
 };
 
 const OfferCard = ({ offer, handleClick, isOwner, acceptsOffers }: OfferCardProps) => {
-  const badgeVariant = useMemo(() => {
-    if (offer.status === "pending") {
-      return "default";
-    }
-
-    if (offer.status === "accepted") {
-      return "success";
-    }
-
-    return "destructive";
-  }, [offer.status]);
-
   return (
     <div
       className={cn(
@@ -52,7 +41,7 @@ const OfferCard = ({ offer, handleClick, isOwner, acceptsOffers }: OfferCardProp
           <div className="flex flex-row justify-between gap-2">
             <CardRarityWithImages rarity={offer.offeredCard.rarity} />
             <div className="text-sm text-gray-500">
-              <Badge variant={badgeVariant}>{offer.status}</Badge>
+              <OfferCardBadge status={offer.status ?? "pending"} />
             </div>
           </div>
           <div className="flex flex-1 flex-row gap-2">
