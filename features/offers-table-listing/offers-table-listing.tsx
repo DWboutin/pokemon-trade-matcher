@@ -38,7 +38,7 @@ export const OffersTableListing: FC<OffersTableListingProps> = ({
   };
 
   return (
-    <div ref={parentRef} className="w-full h-full overflow-hidden">
+    <div ref={parentRef} className="w-full">
       <div className="overflow-x-auto">
         <Table className="table-fixed overflow-hidden min-w-[600px]">
           <TableHeader>
