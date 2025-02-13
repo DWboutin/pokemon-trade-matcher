@@ -5,17 +5,20 @@ interface GetPaginatedOffersForUserIdParams {
   page?: number;
   limit?: number;
   authorId?: string;
+  status?: "pending" | "accepted" | "rejected";
 }
 
 export const getPaginatedOffersForUserId = async ({
   page = 1,
   limit = 10,
   authorId,
+  status = "pending",
 }: GetPaginatedOffersForUserIdParams = {}): Promise<PopulatedOffer[]> => {
   const queryParams = new URLSearchParams({
     page: page.toString(),
     limit: limit.toString(),
     authorId: authorId || "",
+    status: status,
   });
 
   const response = await fetch(`${currentOrigin}/api/offers?${queryParams.toString()}`, {

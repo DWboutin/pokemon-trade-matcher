@@ -3,12 +3,13 @@
 import { User } from "@/types/app";
 import { removeFriendIdDashes } from "@/utils/friendIdFormatters";
 import { createClient } from "@/utils/supabase/server";
+import { revalidatePath } from "next/cache";
 
 export const updateUserFriendInfo = async (
   friendId: string,
   username: string,
   icon: string
-): Promise<User | null> => {
+): Promise<User | { error: string } | null> => {
   const supabase = await createClient();
 
   const {
@@ -29,9 +30,14 @@ export const updateUserFriendInfo = async (
     .select();
 
   if (error) {
-    console.error(error);
-    return null;
+    if (error.code === "23505") {
+      return { error: "Friend ID already in use" };
+    }
+
+    return { error: error.message };
   }
+
+  revalidatePath(`/profile/${user.id}/account`);
 
   return data ? data[0] : null;
 };

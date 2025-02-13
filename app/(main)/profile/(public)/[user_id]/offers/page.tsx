@@ -17,6 +17,7 @@ export default async function ProfileOffersPage({
     page: 1,
     limit: 10,
     authorId: user_id,
+    status: "pending",
   });
 
   return (
@@ -24,27 +25,42 @@ export default async function ProfileOffersPage({
       <div className="flex flex-col gap-4">
         <Typography variant="h2" text="Offers" />
       </div>
-      <Tabs defaultValue="all" className="w-full">
+      <Tabs defaultValue="pending" className="w-full">
         <TabsList className="grid grid-cols-3 mb-8">
-          <TabsTrigger value="all" className="text-lg font-semibold">
-            All
-          </TabsTrigger>
           <TabsTrigger value="pending" className="text-lg font-semibold">
             Pending
           </TabsTrigger>
-          <TabsTrigger value="ended" className="text-lg font-semibold">
-            Ended
+          <TabsTrigger value="accepted" className="text-lg font-semibold">
+            Accepted
+          </TabsTrigger>
+          <TabsTrigger value="rejected" className="text-lg font-semibold">
+            Rejected
           </TabsTrigger>
         </TabsList>
-        <TabsContent value="all">
+        <TabsContent value="pending">
           <OffersTableListing
             initialData={initialData}
             authorId={user_id}
             isOwner={user?.id === user_id}
+            status="pending"
           />
         </TabsContent>
-        <TabsContent value="pending">Pending offers</TabsContent>
-        <TabsContent value="ended">Ended offers</TabsContent>
+        <TabsContent value="accepted">
+          <OffersTableListing
+            initialData={[]}
+            authorId={user_id}
+            isOwner={user?.id === user_id}
+            status="accepted"
+          />
+        </TabsContent>
+        <TabsContent value="rejected">
+          <OffersTableListing
+            initialData={[]}
+            authorId={user_id}
+            isOwner={user?.id === user_id}
+            status="rejected"
+          />
+        </TabsContent>
       </Tabs>
     </div>
   );

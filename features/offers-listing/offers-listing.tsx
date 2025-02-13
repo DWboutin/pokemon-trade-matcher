@@ -36,8 +36,6 @@ export const OffersListing: FC<OffersListingProps> = ({
     actions: { setIsModalOpen, handleOfferCardClick, handleOfferStatusUpdate },
   } = useOfferActionModal({ tradeId, tradeOwnerId });
 
-  console.log({ offerData });
-
   return (
     <>
       <div ref={parentRef} className="w-full h-full">

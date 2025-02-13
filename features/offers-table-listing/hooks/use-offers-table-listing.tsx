@@ -25,20 +25,23 @@ type UseOffersTableListingHook = {
 type UseOffersTableListingArgs = {
   initialData: PopulatedOffer[];
   authorId?: string;
+  status?: "pending" | "accepted" | "rejected";
 };
 
 export const useOffersTableListing = ({
   initialData,
   authorId,
+  status = "pending",
 }: UseOffersTableListingArgs): UseOffersTableListingHook => {
   const { data, error, isFetching, isFetchingNextPage, fetchNextPage, hasNextPage } =
     useInfiniteQuery({
-      queryKey: ["offers", { authorId }],
+      queryKey: ["offers", { authorId, status }],
       queryFn: async ({ pageParam = 1 }) => {
         const response = await getPaginatedOffersForUserId({
           page: pageParam,
           limit: PAGINATION_LIMIT,
           authorId,
+          status,
         });
 
         return response;

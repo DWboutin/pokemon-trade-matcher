@@ -16,17 +16,22 @@ import { Input } from "@/components/ui/input";
 import { useFriendInfoForm } from "@/features/friend-info-form/hooks/use-friend-info-form";
 import { PlayerIconDropdown } from "@/features/player-icon-dropdown/player-icon-dropdown";
 import { cn } from "@/lib/utils";
+import { Author } from "@/types/app";
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
 import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { toast } from "sonner";
 
-export const FriendInfoForm = () => {
+type FriendInfoFormProps = {
+  isOwner: boolean;
+  user: Author | null;
+};
+
+export const FriendInfoForm = ({ isOwner, user }: FriendInfoFormProps) => {
   const {
     selectors: { form, isPending, selectedIcon },
     actions: { handleFormSubmit },
-  } = useFriendInfoForm();
+  } = useFriendInfoForm({ defaultValues: user });
 
   const searchParams = useSearchParams();
   const redirected = searchParams.get("redirected");
@@ -49,7 +54,7 @@ export const FriendInfoForm = () => {
         <CardContent>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(handleFormSubmit)}>
-              <fieldset disabled={isPending}>
+              <fieldset disabled={isPending || !isOwner}>
                 <div className="grid gap-4">
                   <FormField
                     control={form.control}

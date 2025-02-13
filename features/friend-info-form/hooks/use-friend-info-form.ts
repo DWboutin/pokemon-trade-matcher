@@ -8,6 +8,7 @@ import { updateUserFriendInfo } from "@/actions/update-user-friend-info";
 import { useConnectedUserStore } from "@/stores/connected-user-store";
 import { formatFriendId } from "@/utils/friendIdFormatters";
 import { toast } from "sonner";
+import { Author } from "@/types/app";
 
 type UseFriendInfoFormSelectors = {
   isPending: boolean;
@@ -24,17 +25,20 @@ type UseFriendInfoForm = {
   actions: UseFriendInfoFormActions;
 };
 
-export const useFriendInfoForm = (): UseFriendInfoForm => {
+export const useFriendInfoForm = ({
+  defaultValues,
+}: {
+  defaultValues: Author | null;
+}): UseFriendInfoForm => {
   const [isPending, setIsPending] = useState(false);
   const isLoading = useConnectedUserStore((state) => state.isLoading);
-  const user = useConnectedUserStore((state) => state.user);
   const fetchUserData = useConnectedUserStore((state) => state.fetchUserData);
   const form = useForm<z.infer<typeof friendInfoFormSchema>>({
     resolver: zodResolver(friendInfoFormSchema),
     defaultValues: {
-      friendId: user?.friend_id ?? "",
-      username: user?.username ?? "",
-      icon: user?.icon ?? "",
+      friendId: defaultValues?.friend_id ?? "",
+      username: defaultValues?.username ?? "",
+      icon: defaultValues?.icon ?? "",
     },
   });
   const selectedIcon = form.watch("icon");
@@ -46,7 +50,8 @@ export const useFriendInfoForm = (): UseFriendInfoForm => {
 
     setIsPending(false);
 
-    if (response === null) {
+    if (response === null || "error" in response) {
+      toast.error(response?.error ?? "An error occurred while updating your profile.");
       return;
     }
 
@@ -54,14 +59,6 @@ export const useFriendInfoForm = (): UseFriendInfoForm => {
 
     toast.success("Your profile has been updated.");
   };
-
-  useEffect(() => {
-    if (user) {
-      form.setValue("friendId", user.friend_id ?? "");
-      form.setValue("username", user.username!);
-      form.setValue("icon", user.icon!);
-    }
-  }, [user]);
 
   return {
     selectors: { isPending: isPending || isLoading, form, selectedIcon },

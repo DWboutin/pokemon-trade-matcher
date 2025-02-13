@@ -32,19 +32,19 @@ const HeaderProfile: FC = () => {
     <div className="flex flex-1 flex-row gap-4 items-center justify-between">
       <Link
         href={`/profile/${user.id}/trades`}
-        className="flex flex-row gap-2 items-center hover:opacity-60"
+        className="flex flex-row gap-2 items-center hover:opacity-60 min-w-0"
       >
         <Avatar>
           <AvatarImage src={`/icons/${user.icon}.png`} />
           <AvatarFallback>{displayedName?.charAt(0)}</AvatarFallback>
         </Avatar>
-        <span className="font-medium">{displayedName}</span>
+        <span className="font-medium truncate">{displayedName}</span>
       </Link>
       <Button
         onClick={handleSignOut}
         variant="secondary"
         size="icon"
-        className="bg-yellow-300 hover:bg-yellow-500"
+        className="bg-yellow-300 hover:bg-yellow-500 flex-shrink-0"
       >
         <HiOutlineLogout />
       </Button>

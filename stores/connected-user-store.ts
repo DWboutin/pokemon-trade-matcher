@@ -23,5 +23,6 @@ export const useConnectedUserStore = create<ConnectedUserStore>((set) => ({
     const supabaseBrowserClient = createClient();
     await supabaseBrowserClient.auth.signOut();
     set({ user: null, isLoading: false });
+    window.location.href = "/";
   },
 }));

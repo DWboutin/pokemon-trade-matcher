@@ -41,10 +41,10 @@ export default async function ProfileTradesPage({
           <TradesInfiniteListing initialData={initialData} authorId={user_id} />
         </TabsContent>
         <TabsContent value="pending">
-          <TradesInfiniteListing initialData={initialData} authorId={user_id} status="pending" />
+          <TradesInfiniteListing initialData={[]} authorId={user_id} status="pending" />
         </TabsContent>
         <TabsContent value="ended">
-          <TradesInfiniteListing initialData={initialData} authorId={user_id} status="ended" />
+          <TradesInfiniteListing initialData={[]} authorId={user_id} status="ended" />
         </TabsContent>
       </Tabs>
     </div>

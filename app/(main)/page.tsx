@@ -6,7 +6,7 @@ export default async function Home() {
   useConnectedUserStore.setState({ user });
 
   if (user && (!user.friend_id || !user.username)) {
-    return redirect("/profile/friend-info?redirected=true");
+    return redirect(`/profile/${user.id}/account?redirected=true`);
   }
 
   return <div className="container mx-auto">Home</div>;

@@ -18,8 +18,8 @@ export default async function TradesPage() {
         <Typography variant="h1" text="Trades" />
 
         <div className="flex flex-1 w-full flex-col gap-4">
-          <TradesListingSearch />
-          <div className="max-md:px-4">
+          <div className="flex flex-col gap-10 max-md:px-4">
+            <TradesListingSearch />
             <TradesInfiniteListing initialData={initialData} status="pending" />
           </div>
         </div>

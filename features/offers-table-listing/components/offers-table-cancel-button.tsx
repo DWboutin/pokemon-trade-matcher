@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ButtonLoading } from "@/components/ui/button-loading";
 import { MouseEvent, useState } from "react";
 import { toast } from "sonner";
-
+import { useQueryClient } from "@tanstack/react-query";
 type OffersTableCancelButtonProps = {
   offerId: string;
   tradeId: string;
@@ -17,8 +17,11 @@ export const OffersTableCancelButton = ({
   tradeId,
   disabled,
 }: OffersTableCancelButtonProps) => {
+  const queryClient = useQueryClient();
   const [isLoading, setIsLoading] = useState(false);
   const handleDeleteOffer = async (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
     const offerId = e.currentTarget.dataset.offerId;
     const tradeId = e.currentTarget.dataset.tradeId;
 
@@ -35,6 +38,8 @@ export const OffersTableCancelButton = ({
       setIsLoading(false);
       return;
     }
+
+    queryClient.invalidateQueries({ queryKey: ["offers"] });
 
     toast.success(response.success);
     setIsLoading(false);
