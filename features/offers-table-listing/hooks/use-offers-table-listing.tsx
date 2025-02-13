@@ -4,9 +4,7 @@ import { useEffect, useRef } from "react";
 import { VirtualItem } from "@tanstack/react-virtual";
 import { PopulatedOffer } from "@/utils/factories/populate-offer-with-card-data";
 import { getPaginatedOffersForUserId } from "@/utils/requests/get-paginated-offers-for-user-id";
-
-const PAGINATION_LIMIT = 30;
-
+import { OFFERS_TABLE_LISTING_PAGINATION_LIMIT } from "@/utils/contants";
 type UseOffersTableListingSelectors = {
   parentRef: React.RefObject<HTMLDivElement | null>;
   rowVirtualizer: ReturnType<typeof useWindowVirtualizer>;
@@ -39,7 +37,7 @@ export const useOffersTableListing = ({
       queryFn: async ({ pageParam = 1 }) => {
         const response = await getPaginatedOffersForUserId({
           page: pageParam,
-          limit: PAGINATION_LIMIT,
+          limit: OFFERS_TABLE_LISTING_PAGINATION_LIMIT,
           authorId,
           status,
         });
@@ -47,7 +45,9 @@ export const useOffersTableListing = ({
         return response;
       },
       getNextPageParam: (lastPage, pages) => {
-        return lastPage?.length === PAGINATION_LIMIT ? pages.length + 1 : undefined;
+        return lastPage?.length === OFFERS_TABLE_LISTING_PAGINATION_LIMIT
+          ? pages.length + 1
+          : undefined;
       },
       initialPageParam: 1,
       initialData: {

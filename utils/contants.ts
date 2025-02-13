@@ -24,3 +24,6 @@ export const valueToImages: Record<CardType, string> = {
   Supporter: "/types/Supporter.png",
   Water: "/types/Water.png",
 };
+
+export const OFFERS_TABLE_LISTING_PAGINATION_LIMIT = 30;
+export const TRADES_LISTING_PAGINATION_LIMIT = 10;

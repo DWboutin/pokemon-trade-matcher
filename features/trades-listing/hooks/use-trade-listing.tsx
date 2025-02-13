@@ -5,8 +5,7 @@ import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import { useEffect, useRef } from "react";
 import { VirtualItem } from "@tanstack/react-virtual";
 import { useTradesListingStore } from "@/stores/trades-listing-store";
-
-const PAGINATION_LIMIT = 10;
+import { TRADES_LISTING_PAGINATION_LIMIT } from "@/utils/contants";
 
 type UseTradeListingSelectors = {
   parentRef: React.RefObject<HTMLDivElement | null>;
@@ -41,7 +40,7 @@ export const useTradeListing = ({
       queryFn: async ({ pageParam = 1 }) => {
         const response = await getPaginatedTrades({
           page: pageParam,
-          limit: PAGINATION_LIMIT,
+          limit: TRADES_LISTING_PAGINATION_LIMIT,
           filters,
           authorId,
           status,
@@ -50,7 +49,7 @@ export const useTradeListing = ({
         return response;
       },
       getNextPageParam: (lastPage, pages) => {
-        return lastPage?.length === PAGINATION_LIMIT ? pages.length + 1 : undefined;
+        return lastPage?.length === TRADES_LISTING_PAGINATION_LIMIT ? pages.length + 1 : undefined;
       },
       initialPageParam: 1,
       initialData: {

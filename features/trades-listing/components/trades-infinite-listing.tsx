@@ -24,52 +24,56 @@ export const TradesInfiniteListing: FC<TradesInfiniteListingProps> = ({
 
   return (
     <div ref={parentRef} className="w-full h-full">
-      <div
-        style={{
-          height: `${rowVirtualizer.getTotalSize()}px`,
-          width: "100%",
-          position: "relative",
-        }}
-      >
-        {items.map((virtualRow) => {
-          const isLoaderRow = virtualRow.index > allRows.length - 1;
-          const trade = allRows[virtualRow.index];
+      {allRows.length === 0 ? (
+        <div className="flex items-center justify-center py-20 text-gray-500">No trades found</div>
+      ) : (
+        <div
+          style={{
+            height: `${rowVirtualizer.getTotalSize()}px`,
+            width: "100%",
+            position: "relative",
+          }}
+        >
+          {items.map((virtualRow) => {
+            const isLoaderRow = virtualRow.index > allRows.length - 1;
+            const trade = allRows[virtualRow.index];
 
-          return (
-            <div
-              key={virtualRow.key}
-              data-index={virtualRow.index}
-              ref={rowVirtualizer.measureElement}
-              className="pb-4"
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                transform: `translateY(${virtualRow.start}px)`,
-              }}
-            >
-              {isLoaderRow
-                ? hasNextPage
-                  ? "Loading more..."
-                  : "Nothing more to load"
-                : trade && (
-                    <Link href={`/trades/${trade.id}`}>
-                      <TradeCard
-                        mainCard={trade.mainCard}
-                        offeredCards={trade.offeredCards}
-                        username={trade.author.username}
-                        icon={trade.author.icon}
-                        friendId={trade.author.id}
-                        time={trade.created_at}
-                        acceptsOffers={trade.accepts_offers}
-                      />
-                    </Link>
-                  )}
-            </div>
-          );
-        })}
-      </div>
+            return (
+              <div
+                key={virtualRow.key}
+                data-index={virtualRow.index}
+                ref={rowVirtualizer.measureElement}
+                className="pb-4"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  transform: `translateY(${virtualRow.start}px)`,
+                }}
+              >
+                {isLoaderRow
+                  ? hasNextPage
+                    ? "Loading more..."
+                    : "Nothing more to load"
+                  : trade && (
+                      <Link href={`/trades/${trade.id}`}>
+                        <TradeCard
+                          mainCard={trade.mainCard}
+                          offeredCards={trade.offeredCards}
+                          username={trade.author.username}
+                          icon={trade.author.icon}
+                          friendId={trade.author.id}
+                          time={trade.created_at}
+                          acceptsOffers={trade.accepts_offers}
+                        />
+                      </Link>
+                    )}
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };

@@ -15,7 +15,9 @@ const ProfileAccountPage = async ({ params }: { params: Promise<{ user_id: strin
         className="text-muted-foreground"
         text="Setup your profile info to be able to make trades and find friends."
       />
-      <FriendInfoForm isOwner={connectedUser?.id === user_id} user={user} />
+      <div className="max-md:px-4">
+        <FriendInfoForm isOwner={connectedUser?.id === user_id} user={user} />
+      </div>
     </div>
   );
 };

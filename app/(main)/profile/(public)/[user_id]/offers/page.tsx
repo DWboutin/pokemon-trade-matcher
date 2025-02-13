@@ -4,6 +4,7 @@ import { Tabs } from "@/components/ui/tabs";
 import { TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TabsContent } from "@/components/ui/tabs";
 import { OffersTableListing } from "@/features/offers-table-listing/offers-table-listing";
+import { OFFERS_TABLE_LISTING_PAGINATION_LIMIT } from "@/utils/contants";
 import { getPaginatedOffersForUserId } from "@/utils/requests/get-paginated-offers-for-user-id";
 
 export default async function ProfileOffersPage({
@@ -15,7 +16,7 @@ export default async function ProfileOffersPage({
   const user = await getUserData();
   const initialData = await getPaginatedOffersForUserId({
     page: 1,
-    limit: 10,
+    limit: OFFERS_TABLE_LISTING_PAGINATION_LIMIT,
     authorId: user_id,
     status: "pending",
   });

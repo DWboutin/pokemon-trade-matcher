@@ -42,99 +42,110 @@ export const OffersTableListing: FC<OffersTableListingProps> = ({
             {isOwner && <div className="w-[15%] text-right">Actions</div>}
           </div>
 
-          {/* Virtual Body */}
-          <div
-            className="relative overflow-hidden"
-            style={{
-              height: `${rowVirtualizer.getTotalSize()}px`,
-              width: "100%",
-            }}
-          >
-            {items.map((virtualRow) => {
-              const isLoaderRow = virtualRow.index > allRows.length - 1;
-              const offer = allRows[virtualRow.index];
+          {allRows.length === 0 ? (
+            <div className="flex items-center justify-center py-20 text-gray-500">
+              No offers found
+            </div>
+          ) : (
+            <div
+              className="relative overflow-hidden"
+              style={{
+                height: `${rowVirtualizer.getTotalSize()}px`,
+                width: "100%",
+              }}
+            >
+              {items.map((virtualRow) => {
+                const isLoaderRow = virtualRow.index > allRows.length - 1;
+                const offer = allRows[virtualRow.index];
 
-              return (
-                <div
-                  key={virtualRow.key}
-                  data-index={virtualRow.index}
-                  ref={rowVirtualizer.measureElement}
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    transform: `translateY(${virtualRow.start}px)`,
-                  }}
-                  className={`
-                    flex px-4 py-2
-                    ${
-                      !isLoaderRow
-                        ? "cursor-pointer hover:bg-muted/70 odd:bg-gray-100 even:rounded-md"
-                        : ""
-                    }
-                  `}
-                  onClick={() => !isLoaderRow && offer && handleRowClick(offer.trade_id)}
-                >
-                  {isLoaderRow ? (
-                    <div className="w-full text-center h-[72px]">
-                      {hasNextPage ? "Loading more..." : "Nothing more to load"}
-                    </div>
-                  ) : (
-                    offer && (
-                      <>
-                        <div className={isOwner ? "w-[35%]" : "w-[40%]"}>
-                          <div className="flex items-center gap-2">
-                            <Image
-                              src={`/cards/${offer.wantedCard.cardNumber.replace(/\s/g, "_")}.png`}
-                              alt={offer.wantedCard.cardName}
-                              width={51}
-                              height={72}
-                            />
-                            <span className="truncate">
-                              {offer.wantedCard.cardName}{" "}
-                              <span className="text-sm text-gray-500 max-md:hidden">
-                                {offer.wantedCard.exclusivePack.name}
+                return (
+                  <div
+                    key={virtualRow.key}
+                    data-index={virtualRow.index}
+                    ref={rowVirtualizer.measureElement}
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      transform: `translateY(${virtualRow.start}px)`,
+                    }}
+                    className={`
+                      flex px-4 py-2
+                      ${
+                        !isLoaderRow
+                          ? "cursor-pointer hover:bg-muted/70 odd:bg-gray-100 even:rounded-md"
+                          : ""
+                      }
+                    `}
+                    onClick={() => !isLoaderRow && offer && handleRowClick(offer.trade_id)}
+                  >
+                    {isLoaderRow ? (
+                      <div className="w-full text-center h-[72px]">
+                        {hasNextPage ? "Loading more..." : "Nothing more to load"}
+                      </div>
+                    ) : (
+                      offer && (
+                        <>
+                          <div className={isOwner ? "w-[35%]" : "w-[40%]"}>
+                            <div className="flex items-center gap-2">
+                              <Image
+                                src={`/cards/${offer.wantedCard.cardNumber.replace(
+                                  /\s/g,
+                                  "_"
+                                )}.png`}
+                                alt={offer.wantedCard.cardName}
+                                width={51}
+                                height={72}
+                              />
+                              <span className="truncate">
+                                {offer.wantedCard.cardName}{" "}
+                                <span className="text-sm text-gray-500 max-md:hidden">
+                                  {offer.wantedCard.exclusivePack.name}
+                                </span>
                               </span>
-                            </span>
+                            </div>
                           </div>
-                        </div>
-                        <div className={isOwner ? "w-[35%]" : "w-[40%]"}>
-                          <div className="flex items-center gap-2">
-                            <Image
-                              src={`/cards/${offer.offeredCard.cardNumber.replace(/\s/g, "_")}.png`}
-                              alt={offer.offeredCard.cardName}
-                              width={51}
-                              height={72}
-                              title={offer.offeredCard.cardName}
-                            />
-                            <span className="truncate flex flex-row gap-2 items-center">
-                              {offer.offeredCard.cardName}
-                              <span className="text-sm text-gray-500 max-md:hidden">
-                                {offer.offeredCard.exclusivePack.name}
+                          <div className={isOwner ? "w-[35%]" : "w-[40%]"}>
+                            <div className="flex items-center gap-2">
+                              <Image
+                                src={`/cards/${offer.offeredCard.cardNumber.replace(
+                                  /\s/g,
+                                  "_"
+                                )}.png`}
+                                alt={offer.offeredCard.cardName}
+                                width={51}
+                                height={72}
+                                title={offer.offeredCard.cardName}
+                              />
+                              <span className="truncate flex flex-row gap-2 items-center">
+                                {offer.offeredCard.cardName}
+                                <span className="text-sm text-gray-500 max-md:hidden">
+                                  {offer.offeredCard.exclusivePack.name}
+                                </span>
                               </span>
-                            </span>
+                            </div>
                           </div>
-                        </div>
-                        <div className={`flex items-center ${isOwner ? "w-[15%]" : "w-[20%]"}`}>
-                          <OfferCardBadge status={offer.status ?? "pending"} />
-                        </div>
-                        {isOwner && (
-                          <div className="w-[15%] flex items-center justify-end">
-                            <OffersTableCancelButton
-                              offerId={offer.id}
-                              tradeId={offer.trade_id}
-                              disabled={offer.status !== "pending"}
-                            />
+                          <div className={`flex items-center ${isOwner ? "w-[15%]" : "w-[20%]"}`}>
+                            <OfferCardBadge status={offer.status ?? "pending"} />
                           </div>
-                        )}
-                      </>
-                    )
-                  )}
-                </div>
-              );
-            })}
-          </div>
+                          {isOwner && (
+                            <div className="w-[15%] flex items-center justify-end">
+                              <OffersTableCancelButton
+                                offerId={offer.id}
+                                tradeId={offer.trade_id}
+                                disabled={offer.status !== "pending"}
+                              />
+                            </div>
+                          )}
+                        </>
+                      )
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
     </div>

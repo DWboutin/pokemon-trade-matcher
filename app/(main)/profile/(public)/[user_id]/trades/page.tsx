@@ -4,6 +4,7 @@ import { TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TabsContent } from "@/components/ui/tabs";
 import { TradesInfiniteListing } from "@/features/trades-listing/components/trades-infinite-listing";
 import { TradesListingSearch } from "@/features/trades-listing/components/trades-listing-search";
+import { TRADES_LISTING_PAGINATION_LIMIT } from "@/utils/contants";
 import { getPaginatedTrades } from "@/utils/requests/get-paginated-trades";
 
 export default async function ProfileTradesPage({
@@ -14,7 +15,7 @@ export default async function ProfileTradesPage({
   const { user_id } = await params;
   const initialData = await getPaginatedTrades({
     page: 1,
-    limit: 10,
+    limit: TRADES_LISTING_PAGINATION_LIMIT,
     authorId: user_id,
     status: "pending",
   });
