@@ -13,14 +13,14 @@ export const generateMetadata = async ({ params }: { params: Promise<{ id: strin
 
   if (data.mainCard) {
     return {
-      title: `Searching for ${data.mainCard?.cardName} ${data.mainCard?.exclusivePack.name} (${data.mainCard?.exclusivePack.series}) card - Trade Matcher`,
+      title: `Searching for ${data.mainCard?.cardName} ${data.mainCard?.exclusivePack.name} (${data.mainCard?.exclusivePack.series}) card - PokeSwap.io`,
       description: `Searching for ${data.mainCard?.cardName} ${data.mainCard?.exclusivePack.name} (${data.mainCard?.exclusivePack.series}) card to trade in Pokemon TCG pocket application`,
     };
   } else {
     const offeredCardNames = data.offeredCards.map((card) => `${card.cardName}`).join(",");
 
     return {
-      title: `Offering ${offeredCardNames} for a trade - Trade Matcher`,
+      title: `Offering ${offeredCardNames} for a trade - PokeSwap.io`,
       description: `Offering ${offeredCardNames} for a trade in Pokemon TCG pocket application`,
     };
   }

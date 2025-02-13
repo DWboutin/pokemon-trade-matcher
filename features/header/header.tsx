@@ -14,7 +14,9 @@ export const Header: FC = () => {
             <div className="w-10 h-10">
               <TradeMatcherLogo className="w-10 h-10" />
             </div>
-            <span className="text-primary text-2xl font-bold">Trade Matcher</span>
+            <span className="text-primary text-2xl font-bold">
+              Poke<span className="text-[#F01616]">Swap</span>.io
+            </span>
           </Link>
           <HeaderNavigation />
         </div>

@@ -36,14 +36,16 @@ export const HeaderMobileNavigation = () => {
           </div>
         </DrawerTrigger>
         <DrawerContent>
-          <DrawerTitle className="sr-only">Trade Matcher</DrawerTitle>
+          <DrawerTitle className="sr-only">PokeSwap.io</DrawerTitle>
           <DrawerHeader>
             <div className="flex flex-row gap-2 justify-center">
               <Link href="/" className="flex flex-row gap-2 items-center">
                 <div className="w-10 h-10">
                   <TradeMatcherLogo className="w-10 h-10" />
                 </div>
-                <span className="text-primary text-2xl font-bold">Trade Matcher</span>
+                <span className="text-primary text-2xl font-bold">
+                  Poke<span className="text-[#F01616]">Swap</span>.io
+                </span>
               </Link>
             </div>
           </DrawerHeader>
@@ -83,7 +85,7 @@ export const HeaderMobileNavigation = () => {
                 </Link>
                 <Typography
                   variant="p"
-                  text="Unofficial Pokemon TCG Pocket Trade Matcher"
+                  text="Unofficial Pokemon TCG Pocket PokeSwap.io"
                   className="text-center text-gray-500"
                 />
               </div>

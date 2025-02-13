@@ -14,7 +14,7 @@ const AuthPage = () => {
             <div className="flex h-20 w-20 items-center justify-center rounded-md text-primary-foreground">
               <TradeMatcherLogo />
             </div>
-            <Typography variant="h1" text="Trade Matcher" />
+            <Typography variant="h1" text="PokeSwap" />
           </Link>
           <SignInForm />
         </div>

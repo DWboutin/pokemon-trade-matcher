@@ -15,7 +15,7 @@ export const SignInFormCard: FC<PropsWithChildren> = ({ children }) => {
             height={100}
           />
         </Link>
-        <CardTitle className="text-xl">Unofficial Pokemon TCG Pocket Trade Matcher</CardTitle>
+        <CardTitle className="text-xl">Unofficial Pokemon TCG Pocket PokeSwap.io</CardTitle>
         <CardDescription>Make friends and trade beautiful cards</CardDescription>
       </CardHeader>
       <CardContent>{children}</CardContent>
