@@ -2,8 +2,23 @@ import { Typography } from "@/components/typography";
 import { TradesInfiniteListing } from "@/features/trades-listing/components/trades-infinite-listing";
 import { TradesListingSearch } from "@/features/trades-listing/components/trades-listing-search";
 import { getPaginatedTrades } from "@/utils/requests/get-paginated-trades";
+import { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Pokemon TCG Pocket Trade Listings | Find & Trade Cards | PokeSwap.io",
+  description:
+    "Browse active Pokemon TCG Pocket trade listings on PokeSwap.io. Find rare cards, make offers, and complete trades with players worldwide. Easy card trading platform for Pokemon TCG Pocket collectors.",
+  keywords:
+    "Pokemon TCG Pocket trades, trading cards, card marketplace, Pokemon card trading, TCG Pocket exchange, rare Pokemon cards",
+  openGraph: {
+    title: "Pokemon TCG Pocket Trade Listings | PokeSwap.io",
+    description:
+      "Browse and create Pokemon TCG Pocket card trades. Find rare cards and connect with traders worldwide.",
+    type: "website",
+  },
+};
 
 export default async function TradesPage() {
   const initialData = await getPaginatedTrades({
