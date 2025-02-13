@@ -10,6 +10,30 @@ export const metadata: Metadata = {
     "PokeSwap.io is the community platform for Pokemon TCG Pocket players to find, connect, and trade cards. Create trade listings, discover rare cards, and build your collection with fellow trainers.",
   keywords:
     "Pokemon TCG Pocket, trading cards, card marketplace, Pokemon card trading, TCG Pocket exchange, rare Pokemon cards",
+  openGraph: {
+    title: "PokeSwap.io - Trade Cards & Connect with Players",
+    description:
+      "PokeSwap.io is the community platform for Pokemon TCG Pocket players to find, connect, and trade cards. Create trade listings, discover rare cards, and build your collection with fellow trainers.",
+    type: "website",
+    url: process.env.NEXT_PUBLIC_APP_URL,
+    siteName: "PokeSwap.io",
+    locale: "en_US",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_APP_URL}/logos/pokeswap.png`,
+        width: 1024,
+        height: 1024,
+        alt: "PokeSwap.io Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PokeSwap.io - Trade Cards & Connect with Players",
+    description:
+      "PokeSwap.io is the community platform for Pokemon TCG Pocket players to find, connect, and trade cards. Create trade listings, discover rare cards, and build your collection with fellow trainers.",
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/logos/pokeswap.png`],
+  },
 };
 
 const AuthPage = () => {

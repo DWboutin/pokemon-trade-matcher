@@ -2,6 +2,7 @@ import { Typography } from "@/components/typography";
 import { TradesInfiniteListing } from "@/features/trades-listing/components/trades-infinite-listing";
 import { TradesListingSearch } from "@/features/trades-listing/components/trades-listing-search";
 import { getPaginatedTrades } from "@/utils/requests/get-paginated-trades";
+import { currentOrigin } from "@/utils/contants";
 import { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
@@ -17,6 +18,17 @@ export const metadata: Metadata = {
     description:
       "Browse and create Pokemon TCG Pocket card trades. Find rare cards and connect with traders worldwide.",
     type: "website",
+    url: currentOrigin,
+    siteName: "PokeSwap.io",
+    locale: "en_US",
+    images: [
+      {
+        url: `${currentOrigin}/logos/pokeswap.png`,
+        width: 1024,
+        height: 1024,
+        alt: "PokeSwap.io Logo",
+      },
+    ],
   },
 };
 

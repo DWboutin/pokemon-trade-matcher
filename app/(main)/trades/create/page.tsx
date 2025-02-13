@@ -1,6 +1,7 @@
 import { getUserData } from "@/actions/get-user-data";
 import { Typography } from "@/components/typography";
 import { TradeCreatorForm } from "@/features/trade-creator-form/trade-creator-form";
+import { currentOrigin } from "@/utils/contants";
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
 
@@ -15,6 +16,17 @@ export const metadata: Metadata = {
     description:
       "List your Pokemon TCG Pocket cards for trade. Specify what you want and connect with traders to make exchanges.",
     type: "website",
+    url: currentOrigin,
+    siteName: "PokeSwap.io",
+    locale: "en_US",
+    images: [
+      {
+        url: `${currentOrigin}/logos/pokeswap.png`,
+        width: 1024,
+        height: 1024,
+        alt: "PokeSwap.io Logo",
+      },
+    ],
   },
 };
 
