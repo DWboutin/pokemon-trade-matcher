@@ -4,6 +4,7 @@ import { Lato } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/providers/providers";
 import { currentOrigin } from "@/utils/contants";
+import { Analytics } from "@vercel/analytics/react";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -49,6 +50,7 @@ export default function RootLayout({
       <body className={`${lato.className}antialiased`}>
         <Providers>{children}</Providers>
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
