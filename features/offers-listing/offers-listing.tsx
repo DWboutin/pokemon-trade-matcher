@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import OfferCard from "@/features/offers-listing/components/offer-card";
 import { useOfferActionModal } from "@/features/offers-listing/hooks/use-offer-action-modal";
 import { useOffersListing } from "@/features/offers-listing/hooks/use-offers-listing";
@@ -20,6 +21,7 @@ type OffersListingProps = {
   initialData: PopulatedOffer[];
   tradeOwnerId: string;
   acceptsOffers: boolean;
+  handleChangeTabToOffers: () => void;
 };
 
 export const OffersListing: FC<OffersListingProps> = ({
@@ -27,6 +29,7 @@ export const OffersListing: FC<OffersListingProps> = ({
   initialData,
   tradeOwnerId,
   acceptsOffers,
+  handleChangeTabToOffers,
 }) => {
   const {
     selectors: { parentRef, rowVirtualizer, items, allRows, hasNextPage },
@@ -35,6 +38,17 @@ export const OffersListing: FC<OffersListingProps> = ({
     selectors: { isModalOpen, isStatusUpdating, offerData, isOwner },
     actions: { setIsModalOpen, handleOfferCardClick, handleOfferStatusUpdate },
   } = useOfferActionModal({ tradeId, tradeOwnerId });
+
+  if (allRows.length === 0) {
+    return (
+      <div className="w-full h-full flex items-center justify-center flex-col gap-4">
+        <p className="text-gray-500 text-lg">No offers found</p>
+        <Button onClick={handleChangeTabToOffers} variant="destructive">
+          Create an offer
+        </Button>
+      </div>
+    );
+  }
 
   return (
     <>

@@ -5,6 +5,7 @@ import { TradePageHeading } from "@/features/trade-page-content/components/trade
 import { TradePageMainImage } from "@/features/trade-page-content/components/trade-page-main-image";
 import { PopulatedOffer } from "@/utils/factories/populate-offer-with-card-data";
 import { PopulatedTrade } from "@/utils/factories/populate-trade-with-cards-data";
+import { TradePageAuthor } from "@/features/trade-page-content/components/trade-page-author";
 
 type TradePageContentProps = {
   trade: PopulatedTrade;
@@ -16,6 +17,8 @@ export const TradePageContent = ({ trade, initialOffers }: TradePageContentProps
     <div className="w-full">
       <div className="flex flex-1 flex-col gap-2 py-10 items-center max-md:px-4">
         <TradePageHeading trade={trade} />
+        {trade.author && <TradePageAuthor author={trade.author} createdAt={trade.created_at} />}
+
         <div className="flex flex-col w-full max-w-[640px] items-center gap-4">
           {trade.mainCard && <CardInfoHeading card={trade.mainCard} />}
           <TradePageMainImage mainCard={trade.mainCard} />

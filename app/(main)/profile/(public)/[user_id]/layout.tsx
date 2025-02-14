@@ -7,7 +7,7 @@ import { Metadata } from "next";
 import { currentOrigin } from "@/utils/contants";
 
 export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
-  const { user_id } = params;
+  const { user_id } = await params;
   const user = await getUserById(user_id);
 
   if (!user) {

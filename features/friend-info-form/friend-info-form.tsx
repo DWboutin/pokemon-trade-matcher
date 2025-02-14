@@ -13,6 +13,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { DeleteProfileButton } from "@/features/friend-info-form/components/delete-profile-button";
 import { useFriendInfoForm } from "@/features/friend-info-form/hooks/use-friend-info-form";
 import { PlayerIconDropdown } from "@/features/player-icon-dropdown/player-icon-dropdown";
 import { cn } from "@/lib/utils";
@@ -111,6 +112,7 @@ export const FriendInfoForm = ({ isOwner, user }: FriendInfoFormProps) => {
           </Form>
         </CardContent>
       </Card>
+      {isOwner && <DeleteProfileButton />}
     </div>
   );
 };

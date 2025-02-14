@@ -27,7 +27,7 @@ const slides: CarouselSlide[] = [
     description:
       "Find and trade the cards you've been looking for with our community of collectors.",
     ctaText: "Start Trading Now",
-    ctaHref: "/register",
+    ctaHref: "/trades",
     noRedirect: false,
   },
   {

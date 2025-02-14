@@ -17,7 +17,7 @@ export const HowToTradeCard = ({ step, title, description }: HowToTradeCardProps
         <Typography
           variant="h4"
           text={title}
-          className="text-sm font-semibold mb-3 text-center text-gray-900 z-10"
+          className="font-semibold mb-4 text-center text-gray-900 z-10"
         />
         <Typography variant="p" text={description} className="text-gray-600 text-center" />
       </CardContent>

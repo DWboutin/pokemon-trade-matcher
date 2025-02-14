@@ -51,3 +51,4 @@ export type Offer = Database["public"]["Tables"]["offers"]["Row"];
 export type Author = {
   [K in keyof Omit<User, "name" | "type" | "email" | "trades">]-?: NonNullable<User[K]>;
 };
+export type TradeAuthor = Omit<Author, "friend_id" | "created_at">;

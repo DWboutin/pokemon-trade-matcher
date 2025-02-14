@@ -12,7 +12,7 @@ type CTAButtonProps = {
 export const CTAButton = ({ href, text, noRedirect = false }: CTAButtonProps) => {
   const user = useConnectedUserStore((state) => state.user);
 
-  const linkHref = user || noRedirect ? href : "/auth";
+  const linkHref = user || !noRedirect ? href : "/auth";
 
   return (
     <Link

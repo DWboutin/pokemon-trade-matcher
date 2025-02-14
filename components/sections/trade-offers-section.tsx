@@ -62,6 +62,7 @@ export const TradeOffersSection = ({
             initialData={initialOffers}
             tradeOwnerId={tradeOwnerId}
             acceptsOffers={acceptsOffers}
+            handleChangeTabToOffers={handleChangeTabToOffers}
           />
         </div>
       </TabsContent>

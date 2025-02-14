@@ -97,7 +97,6 @@ export type Database = {
           icon: string | null
           id: string
           name: string | null
-          trades: string[] | null
           type: string | null
           username: string | null
         }
@@ -108,7 +107,6 @@ export type Database = {
           icon?: string | null
           id: string
           name?: string | null
-          trades?: string[] | null
           type?: string | null
           username?: string | null
         }
@@ -119,7 +117,6 @@ export type Database = {
           icon?: string | null
           id?: string
           name?: string | null
-          trades?: string[] | null
           type?: string | null
           username?: string | null
         }
