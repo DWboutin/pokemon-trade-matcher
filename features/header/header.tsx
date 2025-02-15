@@ -21,11 +21,13 @@ export const Header: FC = () => {
           </Link>
           <HeaderNavigation />
         </div>
-        <div className="flex flex-row gap-4 items-center max-md:hidden">
+        <div className="flex flex-row gap-4 items-center">
           <HeaderNotifications />
-          <HeaderProfile />
+          <div className="max-md:hidden">
+            <HeaderProfile />
+          </div>
+          <HeaderMobileNavigation />
         </div>
-        <HeaderMobileNavigation />
       </div>
     </header>
   );
