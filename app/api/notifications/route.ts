@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/utils/supabase/server";
-import populateOfferWithCardData from "@/utils/factories/populate-offer-with-card-data";
 import { getUserData } from "@/actions/get-user-data";
 
 export async function GET(request: Request) {

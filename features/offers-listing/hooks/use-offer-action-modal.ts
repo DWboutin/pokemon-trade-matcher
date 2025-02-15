@@ -50,31 +50,32 @@ export function useOfferActionModal({
       return;
     }
 
-    const status = e.currentTarget.dataset.offerStatus as Omit<OfferStatus, "pending">;
+    try {
+      const status = e.currentTarget.dataset.offerStatus as Omit<OfferStatus, "pending">;
 
-    setIsStatusUpdating(status);
-    const { error, success } = await updateOfferStatus({ tradeId, offerId: offerData.id, status });
-    setIsStatusUpdating(null);
+      setIsStatusUpdating(status);
+      const { success } = await updateOfferStatus({ tradeId, offerId: offerData.id, status });
+      setIsStatusUpdating(null);
 
-    if (success) {
-      setIsModalOpen(false);
-      setOfferData(null);
+      if (success) {
+        setIsModalOpen(false);
+        setOfferData(null);
 
-      await queryClient.invalidateQueries({ queryKey: ["offers", tradeId] });
+        await queryClient.invalidateQueries({ queryKey: ["offers", tradeId] });
 
-      if (status === "accepted") {
-        toast.success(
-          "The offer has been accepted! Connect with the other user in the application to complete the trade."
-        );
-      } else {
-        toast.success("The offer has been rejected.");
+        if (status === "accepted") {
+          toast.success(
+            "The offer has been accepted! Connect with the other user in the application to complete the trade."
+          );
+        } else {
+          toast.success("The offer has been rejected.");
+        }
+
+        return;
       }
-
-      return;
-    }
-
-    if (error) {
-      toast.error(error);
+    } catch (error) {
+      console.error(error);
+      toast.error("An error occurred while updating the offer status.");
     }
   };
 
