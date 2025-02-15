@@ -9,6 +9,71 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
+      notifications: {
+        Row: {
+          count: number
+          created_at: string
+          id: string
+          offer_id: string | null
+          review_author: string | null
+          seen: boolean
+          trade_id: string
+          type: number
+          user_id: string
+        }
+        Insert: {
+          count?: number
+          created_at?: string
+          id?: string
+          offer_id?: string | null
+          review_author?: string | null
+          seen?: boolean
+          trade_id?: string
+          type: number
+          user_id?: string
+        }
+        Update: {
+          count?: number
+          created_at?: string
+          id?: string
+          offer_id?: string | null
+          review_author?: string | null
+          seen?: boolean
+          trade_id?: string
+          type?: number
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "notifications_offer_id_fkey"
+            columns: ["offer_id"]
+            isOneToOne: false
+            referencedRelation: "offers"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "notifications_review_author_fkey"
+            columns: ["review_author"]
+            isOneToOne: false
+            referencedRelation: "users"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "notifications_trade_id_fkey"
+            columns: ["trade_id"]
+            isOneToOne: false
+            referencedRelation: "trades"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "notifications_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "users"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       offers: {
         Row: {
           author: string

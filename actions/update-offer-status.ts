@@ -1,7 +1,7 @@
 "use server";
 
 import { getUserData } from "@/actions/get-user-data";
-import { OfferStatus } from "@/types/app";
+import { NotificationType, OfferStatus } from "@/types/app";
 import { createClient } from "@/utils/supabase/server";
 import { revalidatePath } from "next/cache";
 
@@ -18,13 +18,19 @@ export const updateOfferStatus = async ({
   const userData = await getUserData();
 
   if (!userData) {
-    return { error: "No user data" };
+    throw new Error("No user data");
   }
 
-  const { error: offerError } = await supabase.from("offers").update({ status }).eq("id", offerId);
+  const { data: offer, error: offerError } = await supabase
+    .from("offers")
+    .update({ status })
+    .eq("id", offerId)
+    .select();
+
+  console.log({ offer });
 
   if (offerError) {
-    return { error: offerError.message };
+    throw new Error(offerError.message);
   }
 
   if (status === "accepted") {
@@ -42,10 +48,22 @@ export const updateOfferStatus = async ({
     ]);
 
     if (updateTradeError.error) {
-      return { error: updateTradeError.error.message };
+      throw new Error(updateTradeError.error.message);
     }
     if (rejectOtherOffersError.error) {
-      return { error: rejectOtherOffersError.error.message };
+      throw new Error(rejectOtherOffersError.error.message);
+    }
+
+    // Create notification after other operations succeed
+    const { error: notificationError } = await supabase.from("notifications").insert({
+      user_id: userData.id,
+      type: NotificationType.OfferAccepted,
+      trade_id: tradeId,
+      offer_id: offerId,
+    });
+
+    if (notificationError) {
+      throw new Error(notificationError.message);
     }
   }
 

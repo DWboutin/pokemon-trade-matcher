@@ -1,12 +1,10 @@
 import { CardRarityWithImages } from "@/components/card-rarity-with-images";
 import { CardTypeWithImage } from "@/components/card-type-with-image";
-import { Badge } from "@/components/ui/badge";
 import { OfferCardBadge } from "@/features/offers-listing/components/offer-card-badge";
 import { UserProfileInfo } from "@/features/user-profile-info/user-profile-info";
 import { cn } from "@/lib/utils";
 import { PopulatedOffer } from "@/utils/factories/populate-offer-with-card-data";
 import Image from "next/image";
-import { useMemo } from "react";
 
 type OfferCardProps = {
   offer: PopulatedOffer;
@@ -18,6 +16,7 @@ type OfferCardProps = {
 const OfferCard = ({ offer, handleClick, isOwner, acceptsOffers }: OfferCardProps) => {
   return (
     <div
+      id={`offer-${offer.id}`}
       className={cn(
         "relative flex flex-col gap-4 p-4 overflow-hidden border-2 border-gray-50 border-t-white border-l-white shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-xl rounded-tl-3xl rounded-br-3xl bg-gradient-to-br from-gray-50 to-gray-100",
         "with-diagonal-gradient",
@@ -26,7 +25,8 @@ const OfferCard = ({ offer, handleClick, isOwner, acceptsOffers }: OfferCardProp
         offer.status === "accepted" && "status-accepted",
         offer.status === "rejected" && "status-rejected"
       )}
-      onClick={acceptsOffers ? handleClick : undefined}
+      // onClick={acceptsOffers ? handleClick : undefined}
+      onClick={handleClick}
     >
       <div className="flex flex-row gap-4 max-md:flex-col max-md:items-center z-10">
         <div>

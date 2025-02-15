@@ -48,6 +48,7 @@ export type OfferStatus = "pending" | "accepted" | "rejected";
 export type User = Database["public"]["Tables"]["users"]["Row"];
 export type Trade = Database["public"]["Tables"]["trades"]["Row"];
 export type Offer = Database["public"]["Tables"]["offers"]["Row"];
+export type Notification = Database["public"]["Tables"]["notifications"]["Row"];
 export type Author = {
   [K in keyof Omit<User, "name" | "type" | "email" | "trades">]-?: NonNullable<User[K]>;
 };
@@ -55,3 +56,10 @@ export type TradeAuthor = Omit<
   Author,
   "friend_id" | "created_at" | "email_opt_in" | "last_acceptation"
 >;
+
+export enum NotificationType {
+  TradeOffer = 0,
+  OfferAccepted = 1,
+  TradeClosed = 2,
+  ProfileReview = 3,
+}

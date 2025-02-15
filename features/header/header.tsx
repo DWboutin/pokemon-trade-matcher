@@ -4,6 +4,7 @@ import { HeaderNavigation } from "@/features/header/components/header-navigation
 import HeaderProfile from "@/features/header/components/header-profile";
 import Link from "next/link";
 import { FC } from "react";
+import HeaderNotifications from "@/features/header/components/header-notifications";
 
 export const Header: FC = () => {
   return (
@@ -20,7 +21,8 @@ export const Header: FC = () => {
           </Link>
           <HeaderNavigation />
         </div>
-        <div className="flex flex-row gap-2 max-md:hidden">
+        <div className="flex flex-row gap-4 items-center max-md:hidden">
+          <HeaderNotifications />
           <HeaderProfile />
         </div>
         <HeaderMobileNavigation />
