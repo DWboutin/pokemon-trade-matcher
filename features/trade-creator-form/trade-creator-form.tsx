@@ -14,8 +14,6 @@ import { CardsSearch } from "@/features/cards-search/cards-search";
 import { useTradeCreator } from "@/features/trade-creator-form/hooks/useTradeCreator";
 import { TradeCreatorCardModal } from "@/features/trade-creator-form/components/trade-creator-card-modal";
 import { TradeCreatorPreview } from "@/features/trade-creator-form/components/trade-creator-preview";
-import { CardsListing } from "@/components/cards-listing";
-import { Typography } from "@/components/typography";
 import { CardsSearchListing } from "@/features/cards-search-listing/cards-search-listing";
 
 export const TradeCreatorForm: FC = () => {

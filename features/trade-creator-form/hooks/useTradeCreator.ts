@@ -4,7 +4,7 @@ import { useCardsSearchStore } from "@/stores/cards-search-store";
 import { CardData } from "@/types/app";
 import { useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
-import { MouseEvent, useState } from "react";
+import { MouseEvent, useEffect, useState } from "react";
 import { toast } from "sonner";
 import { z } from "zod";
 
@@ -116,6 +116,13 @@ export const useTradeCreator = (): UseTradeCreator => {
       behavior: "smooth",
     });
   };
+
+  useEffect(() => {
+    return () => {
+      handleTradeReset();
+      setSelectedCardId(null);
+    };
+  }, []);
 
   return {
     selectors: { selectedCardId, isModalOpen, searchedCard, offeredCards, tradeIsValid, isLoading },

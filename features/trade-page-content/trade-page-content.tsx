@@ -15,11 +15,11 @@ type TradePageContentProps = {
 export const TradePageContent = ({ trade, initialOffers }: TradePageContentProps) => {
   return (
     <div className="w-full">
-      <div className="flex flex-1 flex-col gap-2 py-10 items-center max-md:px-4">
+      <div className="flex flex-1 flex-col gap-4 py-10 items-center max-md:px-4">
         <TradePageHeading trade={trade} />
         {trade.author && <TradePageAuthor author={trade.author} createdAt={trade.created_at} />}
 
-        <div className="flex flex-col w-full max-w-[640px] items-center gap-4">
+        <div className="flex flex-col w-full max-w-[640px] items-center gap-8">
           {trade.mainCard && <CardInfoHeading card={trade.mainCard} />}
           <TradePageMainImage mainCard={trade.mainCard} />
           <div className="flex flex-col gap-10 text-center">

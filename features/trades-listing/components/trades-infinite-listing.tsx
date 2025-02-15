@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { TradeCard } from "@/features/trade-card/trade-card";
 import { useTradeListing } from "@/features/trades-listing/hooks/use-trade-listing";
 import { PopulatedTrade } from "@/utils/factories/populate-trade-with-cards-data";
@@ -25,7 +26,12 @@ export const TradesInfiniteListing: FC<TradesInfiniteListingProps> = ({
   return (
     <div ref={parentRef} className="w-full h-full">
       {allRows.length === 0 ? (
-        <div className="flex items-center justify-center py-20 text-gray-500">No trades found</div>
+        <div className="w-full h-full flex items-center justify-center flex-col gap-4">
+          <p className="text-gray-500 text-lg">No trades found</p>
+          <Link href="/trades/create">
+            <Button variant="destructive">Create a trade</Button>
+          </Link>
+        </div>
       ) : (
         <div
           style={{

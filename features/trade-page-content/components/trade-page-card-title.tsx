@@ -8,13 +8,13 @@ type TradePageCardTitleProps = {
 export const TradePageCardTitle = ({ trade }: TradePageCardTitleProps) => {
   const { mainCard, offeredCards } = trade;
 
-  if (!mainCard && offeredCards.length <= 0) {
-    return <Typography variant="h2" text="Looking to get a good card for these cards" />;
+  if (!mainCard && offeredCards.length >= 0) {
+    return <Typography variant="h2" text="looking to get a good offer for these cards" />;
   }
 
   if (mainCard && offeredCards.length <= 0) {
     return <Typography variant="h2" text="accepting any offers" />;
   }
 
-  return <Typography variant="h2" text="Trade" />;
+  return <Typography variant="h2" text="to get any offers" />;
 };
