@@ -9,7 +9,7 @@ export const AnonymousAndFree = () => {
 
         <Typography
           variant="p"
-          text="Trade your digital items without registration or hidden fees. We believe in keeping things simple, secure, and completely free for our community."
+          text="Trade your digital items with a simple registration process. Your personal information stays private - only your username and friend id is shown publicly. We believe in keeping things simple, secure, and completely free for our community."
           className="text-gray-600 mb-8"
         />
 

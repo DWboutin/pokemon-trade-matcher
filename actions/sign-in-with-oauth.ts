@@ -1,5 +1,6 @@
 "use server";
 
+import { currentOrigin } from "@/utils/contants";
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
 
@@ -9,9 +10,6 @@ type SignInWithOAuthArgs = {
 
 export const signInWithOAuth = async ({ provider }: SignInWithOAuthArgs) => {
   const supabase = await createClient();
-  const currentOrigin = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : process.env.NEXT_PUBLIC_CURRENT_ORIGIN;
 
   const response = await supabase.auth.signInWithOAuth({
     provider,
