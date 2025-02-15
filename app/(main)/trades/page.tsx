@@ -33,6 +33,7 @@ export const metadata: Metadata = {
 };
 
 export default async function TradesPage() {
+  await new Promise((resolve) => setTimeout(resolve, 10000));
   const initialData = await getPaginatedTrades({
     page: 1,
     limit: 10,

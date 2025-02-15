@@ -54,6 +54,7 @@ export function HomeCarousel() {
                   fill
                   className="object-cover sm:rounded-xl sm:rounded-tl-3xl sm:rounded-br-3xl"
                   priority={index === 0}
+                  loading={index === 0 ? "eager" : "lazy"}
                 />
                 <div className="absolute inset-0 bg-black/40 sm:rounded-xl sm:rounded-tl-3xl sm:rounded-br-3xl overflow-hidden" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-[80px]">

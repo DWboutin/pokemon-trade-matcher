@@ -9,7 +9,7 @@ const ProfileAccountPage = async ({ params }: { params: Promise<{ user_id: strin
 
   return (
     <div className="flex flex-col gap-4 py-10 items-center">
-      <Typography variant="h1" text="Friend Info" />
+      <Typography variant="h1" text="Account and Friend Info" />
       <Typography
         variant="p"
         className="text-muted-foreground"

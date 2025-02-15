@@ -1,8 +1,6 @@
 "use client";
 
-import { Typography } from "@/components/typography";
 import { CardsSearchForm } from "@/features/cards-search/components/cards-search-form";
-import { CardsListing } from "@/components/cards-listing";
 import { useCardsSearch } from "@/features/cards-search/hooks/use-cards-search";
 import dynamic from "next/dynamic";
 import { cardsSearchSchema } from "@/features/cards-search/utils/cards-search-schema";
