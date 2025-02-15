@@ -21,7 +21,7 @@ type OffersListingProps = {
   initialData: PopulatedOffer[];
   tradeOwnerId: string;
   acceptsOffers: boolean;
-  handleChangeTabToOffers: () => void;
+  handleChangeTabToCreateOffer: () => void;
 };
 
 export const OffersListing: FC<OffersListingProps> = ({
@@ -29,7 +29,7 @@ export const OffersListing: FC<OffersListingProps> = ({
   initialData,
   tradeOwnerId,
   acceptsOffers,
-  handleChangeTabToOffers,
+  handleChangeTabToCreateOffer,
 }) => {
   const {
     selectors: { parentRef, rowVirtualizer, items, allRows, hasNextPage },
@@ -43,7 +43,7 @@ export const OffersListing: FC<OffersListingProps> = ({
     return (
       <div className="w-full h-full flex items-center justify-center flex-col gap-4">
         <p className="text-gray-500 text-lg">No offers found</p>
-        <Button onClick={handleChangeTabToOffers} variant="destructive">
+        <Button onClick={handleChangeTabToCreateOffer} variant="destructive">
           Create an offer
         </Button>
       </div>

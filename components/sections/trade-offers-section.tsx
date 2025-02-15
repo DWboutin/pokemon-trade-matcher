@@ -38,6 +38,10 @@ export const TradeOffersSection = ({
     setActiveTab("offers");
   };
 
+  const handleChangeTabToCreateOffer = () => {
+    setActiveTab("create-offer");
+  };
+
   return (
     <Tabs
       defaultValue="offers"
@@ -62,7 +66,7 @@ export const TradeOffersSection = ({
             initialData={initialOffers}
             tradeOwnerId={tradeOwnerId}
             acceptsOffers={acceptsOffers}
-            handleChangeTabToOffers={handleChangeTabToOffers}
+            handleChangeTabToCreateOffer={handleChangeTabToCreateOffer}
           />
         </div>
       </TabsContent>

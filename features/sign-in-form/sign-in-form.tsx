@@ -19,6 +19,7 @@ import useSignInEmailForm from "@/features/sign-in-form/hooks/use-sign-in-email-
 import { SignInFormCard } from "@/features/sign-in-form/components/sign-in-form-card";
 import { SignInSubmitted } from "@/features/sign-in-form/components/sign-in-submitted";
 import { Typography } from "@/components/typography";
+import Link from "next/link";
 
 const SignInForm: FC = () => {
   const {
@@ -73,8 +74,9 @@ const SignInForm: FC = () => {
         {signInSubmitted && <SignInSubmitted />}
       </SignInFormCard>
       <div className="text-balance text-center text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary  ">
-        By clicking continue, you agree to our <a href="#">Terms of Service</a> and{" "}
-        <a href="#">Privacy Policy</a>.
+        By signing in, you agree to our <Link href="/legal/terms-of-service">Terms of Service</Link>{" "}
+        and <Link href="/legal/privacy-policy">Privacy Policy</Link> and you opt in for email
+        notifications and marketing emails. You can opt out at any time in your profile settings.
       </div>
     </div>
   );

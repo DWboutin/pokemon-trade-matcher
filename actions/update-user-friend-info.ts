@@ -8,7 +8,8 @@ import { revalidatePath } from "next/cache";
 export const updateUserFriendInfo = async (
   friendId: string,
   username: string,
-  icon: string
+  icon: string,
+  emailNotifications: boolean
 ): Promise<User | { error: string } | null> => {
   const supabase = await createClient();
 
@@ -25,7 +26,12 @@ export const updateUserFriendInfo = async (
 
   const { data, error } = await supabase
     .from("users")
-    .update({ friend_id: formattedFriendId, username, icon: lowerCaseIconName })
+    .update({
+      friend_id: formattedFriendId,
+      username,
+      icon: lowerCaseIconName,
+      email_opt_in: emailNotifications,
+    })
     .eq("id", user.id)
     .select();
 

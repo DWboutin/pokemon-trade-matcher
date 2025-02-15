@@ -39,6 +39,7 @@ export const useFriendInfoForm = ({
       friendId: defaultValues?.friend_id ?? "",
       username: defaultValues?.username ?? "",
       icon: defaultValues?.icon ?? "",
+      emailNotifications: defaultValues?.email_opt_in ?? true,
     },
   });
   const selectedIcon = form.watch("icon");
@@ -46,7 +47,12 @@ export const useFriendInfoForm = ({
   const handleFormSubmit = async (values: z.infer<typeof friendInfoFormSchema>) => {
     setIsPending(true);
 
-    const response = await updateUserFriendInfo(values.friendId, values.username, values.icon);
+    const response = await updateUserFriendInfo(
+      values.friendId,
+      values.username,
+      values.icon,
+      values.emailNotifications ?? true
+    );
 
     setIsPending(false);
 

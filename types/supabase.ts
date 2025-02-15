@@ -93,9 +93,11 @@ export type Database = {
         Row: {
           created_at: string | null
           email: string
+          email_opt_in: boolean
           friend_id: string | null
           icon: string | null
           id: string
+          last_acceptation: string
           name: string | null
           type: string | null
           username: string | null
@@ -103,9 +105,11 @@ export type Database = {
         Insert: {
           created_at?: string | null
           email: string
+          email_opt_in?: boolean
           friend_id?: string | null
           icon?: string | null
           id: string
+          last_acceptation?: string
           name?: string | null
           type?: string | null
           username?: string | null
@@ -113,9 +117,11 @@ export type Database = {
         Update: {
           created_at?: string | null
           email?: string
+          email_opt_in?: boolean
           friend_id?: string | null
           icon?: string | null
           id?: string
+          last_acceptation?: string
           name?: string | null
           type?: string | null
           username?: string | null

@@ -8,4 +8,5 @@ export const friendInfoFormSchema = z.object({
     message: "Username must be less than 16 characters",
   }),
   icon: z.string().min(1, { message: "Icon is required" }),
+  emailNotifications: z.boolean().optional(),
 });

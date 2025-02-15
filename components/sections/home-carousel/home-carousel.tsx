@@ -33,7 +33,7 @@ const slides: CarouselSlide[] = [
   {
     image: "/images/lots-of-cards.jpg",
     title: "Active Trading Community",
-    description: "Browse through thousands of active trades from collectors around the world.",
+    description: "Browse through the active trades from collectors around the world.",
     ctaText: "Explore Trades",
     ctaHref: "/trades",
     noRedirect: true,
@@ -43,19 +43,19 @@ const slides: CarouselSlide[] = [
 export function HomeCarousel() {
   return (
     <section className="w-full relative">
-      <Carousel className="w-full shadow-lg rounded-xl rounded-tl-3xl rounded-br-3xl overflow-hidden">
+      <Carousel className="w-full shadow-lg sm:rounded-xl sm:rounded-tl-3xl sm:rounded-br-3xl overflow-hidden">
         <CarouselContent>
           {slides.map((slide, index) => (
             <CarouselItem key={index}>
-              <div className="relative h-[50vh] w-full rounded-xl rounded-tl-3xl rounded-br-3xl overflow-hidden">
+              <div className="relative h-[50vh] w-full sm:rounded-xl sm:rounded-tl-3xl sm:rounded-br-3xl overflow-hidden">
                 <Image
                   src={slide.image}
                   alt={slide.title}
                   fill
-                  className="object-cover rounded-tl-3xl rounded-br-3xl"
+                  className="object-cover sm:rounded-xl sm:rounded-tl-3xl sm:rounded-br-3xl"
                   priority={index === 0}
                 />
-                <div className="absolute inset-0 bg-black/40 rounded-xl rounded-tl-3xl rounded-br-3xl overflow-hidden" />
+                <div className="absolute inset-0 bg-black/40 sm:rounded-xl sm:rounded-tl-3xl sm:rounded-br-3xl overflow-hidden" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-[80px]">
                   <Typography variant="h1" text={slide.title} className="text-white mb-4" />
                   <Typography
