@@ -1,5 +1,4 @@
 import { Skeleton } from "@/components/ui/skeleton";
-import { Card } from "@/components/ui/card";
 import { SkeletonSearchSection } from "@/components/skeletons/skeleton-seach-section";
 import { SkeletonTradeCard } from "@/components/skeletons/skeleton-trade-card";
 
