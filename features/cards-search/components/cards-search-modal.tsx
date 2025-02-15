@@ -1,16 +1,12 @@
-import Image from "next/image";
 import {
   Dialog,
-  DialogDescription,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogFooter,
   DialogClose,
 } from "@/components/ui/dialog";
-import { CardData } from "@/types/app";
 import { Button } from "@/components/ui/button";
-import { Typography } from "@/components/typography";
 import { FormField } from "@/components/ui/form";
 import { FormLabel } from "@/components/ui/form";
 import { FormControl } from "@/components/ui/form";
