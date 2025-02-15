@@ -33,13 +33,27 @@ export const Footer = () => {
               <Typography variant="p" text="Legal" className="font-bold mb-4 md:hidden" />
               <ul role="list">
                 <li className="mb-2">
-                  <Link href="/terms" className="hover:text-gray-300 transition-colors">
+                  <Link
+                    href="/legal/terms-and-conditions"
+                    className="hover:text-gray-300 transition-colors"
+                  >
                     Terms and Conditions
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link href="/privacy" className="hover:text-gray-300 transition-colors">
+                  <Link
+                    href="/legal/privacy-policy"
+                    className="hover:text-gray-300 transition-colors"
+                  >
                     Privacy Policy
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link
+                    href="/legal/cookie-policy"
+                    className="hover:text-gray-300 transition-colors"
+                  >
+                    Cookie Policy
                   </Link>
                 </li>
               </ul>
