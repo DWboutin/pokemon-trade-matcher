@@ -5,6 +5,8 @@ import { useInfiniteScrollListing } from "@/components/sections/infinite-scroll-
 type InfiniteScrollListingProps<TData> = {
   initialData: TData[];
   queryKey: string[];
+  overscan: number;
+  estimateSize: number;
   paginationLimit: number;
   getPaginatedData: (args: { page: number; limit: number }) => Promise<TData[]>;
   emptyResultComponent: React.ReactNode;
@@ -14,6 +16,8 @@ type InfiniteScrollListingProps<TData> = {
 export const InfiniteScrollListing = <TData,>({
   initialData,
   queryKey,
+  overscan,
+  estimateSize,
   paginationLimit,
   getPaginatedData,
   emptyResultComponent,
@@ -25,6 +29,8 @@ export const InfiniteScrollListing = <TData,>({
     initialData,
     queryKey,
     paginationLimit,
+    overscan,
+    estimateSize,
     getPaginatedData,
   });
 
@@ -33,11 +39,13 @@ export const InfiniteScrollListing = <TData,>({
   }
 
   return (
-    <div className="w-full h-full" ref={parentRef as React.RefObject<HTMLDivElement>}>
+    <div
+      className="w-full h-full overflow-y-auto"
+      ref={parentRef as React.RefObject<HTMLDivElement>}
+    >
       <div
         style={{
           height: `${rowVirtualizer.getTotalSize()}px`,
-          maxHeight: "100%",
           width: "100%",
           position: "relative",
         }}

@@ -5,6 +5,8 @@ import { RefObject, useEffect, useRef } from "react";
 type UseInfiniteScrollListingProps<TData> = {
   initialData: TData[];
   queryKey: string[];
+  overscan: number;
+  estimateSize: number;
   paginationLimit: number;
   getPaginatedData: (args: { page: number; limit: number }) => Promise<TData[]>;
 };
@@ -15,7 +17,7 @@ type UseInfiniteScrollListingSelectors<TData> = {
   allRows: TData[];
   hasNextPage: boolean;
   error: Error | null;
-  parentRef: RefObject<Element>;
+  parentRef: RefObject<Element | null>;
 };
 
 type UseInfiniteScrollListingHook<TData> = {
@@ -25,6 +27,8 @@ type UseInfiniteScrollListingHook<TData> = {
 export const useInfiniteScrollListing = <TData,>({
   initialData,
   queryKey,
+  overscan,
+  estimateSize,
   getPaginatedData,
   paginationLimit,
 }: UseInfiniteScrollListingProps<TData>): UseInfiniteScrollListingHook<TData> => {
@@ -60,8 +64,8 @@ export const useInfiniteScrollListing = <TData,>({
 
   const rowVirtualizer = useVirtualizer({
     count: hasNextPage ? allRows.length + 1 : allRows.length,
-    estimateSize: () => 64,
-    overscan: 10,
+    estimateSize: () => estimateSize,
+    overscan: overscan,
     scrollMargin: 0,
     getScrollElement: () => parentRef?.current,
     measureElement: (element) => {

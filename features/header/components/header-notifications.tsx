@@ -38,7 +38,7 @@ const HeaderNotifications: FC = () => {
   }
 
   return (
-    <Popover modal={true}>
+    <Popover modal>
       <PopoverTrigger asChild>
         <Button variant="ghost" size="icon" className="relative hover:bg-primary/10">
           <Bell className="h-5 w-5" />
@@ -49,7 +49,7 @@ const HeaderNotifications: FC = () => {
           )}
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-80 overflow-y-auto p-0" align="end">
+      <PopoverContent className="w-80 overflow-hidden" align="end">
         <HeaderNotificationPanel />
       </PopoverContent>
     </Popover>

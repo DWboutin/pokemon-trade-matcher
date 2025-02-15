@@ -9,8 +9,8 @@ export const HeaderNotificationPanel: FC = () => {
   const user = useConnectedUserStore((state) => state.user);
 
   return (
-    <div className="flex flex-col h-full overflow-y-auto">
-      <div className="p-4 space-y-4">
+    <div className="flex flex-col h-[300px]">
+      <div className="flex flex-col h-full gap-4">
         <div className="flex flex-row gap-2 items-center justify-between">
           <p className="text-sm font-bold">Notifications</p>
           <Link
@@ -20,11 +20,13 @@ export const HeaderNotificationPanel: FC = () => {
             View all
           </Link>
         </div>
-        <div className="h-[300px]">
+        <div className="flex-1 overflow-hidden">
           <InfiniteScrollListing
             initialData={[]}
             queryKey={["notifications"]}
             paginationLimit={5}
+            estimateSize={64}
+            overscan={4}
             getPaginatedData={getUserPaginatedNotifications}
             emptyResultComponent={<p className="text-sm text-muted-foreground">No notifications</p>}
             renderItem={(notification) => (
