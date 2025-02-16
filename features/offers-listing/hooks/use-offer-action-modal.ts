@@ -54,7 +54,12 @@ export function useOfferActionModal({
       const status = e.currentTarget.dataset.offerStatus as Omit<OfferStatus, "pending">;
 
       setIsStatusUpdating(status);
-      const { success } = await updateOfferStatus({ tradeId, offerId: offerData.id, status });
+      const { success } = await updateOfferStatus({
+        tradeId,
+        offerId: offerData.id,
+        authorId: offerData.author.id,
+        status,
+      });
 
       if (success) {
         setIsModalOpen(false);

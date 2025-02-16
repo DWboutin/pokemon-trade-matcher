@@ -8,10 +8,12 @@ import { revalidatePath, revalidateTag } from "next/cache";
 export const updateOfferStatus = async ({
   tradeId,
   offerId,
+  authorId,
   status,
 }: {
   tradeId: string;
   offerId: string;
+  authorId: string;
   status: Omit<OfferStatus, "pending">;
 }) => {
   const supabase = await createClient();
@@ -37,6 +39,7 @@ export const updateOfferStatus = async ({
       .update({ status: "rejected" })
       .eq("trade_id", tradeId)
       .neq("id", offerId)
+      .neq("author", authorId)
       .select("author");
 
     const updateTrade = supabase.from("trades").update({ accepts_offers: false }).eq("id", tradeId);
@@ -58,11 +61,11 @@ export const updateOfferStatus = async ({
       .select("author")
       .eq("trade_id", tradeId)
       .eq("status", "rejected")
-      .neq("id", offerId);
+      .neq("id", offerId)
+      .neq("author", authorId);
 
     if (rejectedOffersAuthors.data) {
       const uniqueAuthors = [...new Set(rejectedOffersAuthors.data.map((offer) => offer.author))];
-      console.log(uniqueAuthors);
       const notifications = uniqueAuthors.map((authorId) => ({
         user_id: authorId,
         type: NotificationType.TradeClosed,
@@ -81,7 +84,7 @@ export const updateOfferStatus = async ({
 
     // Create notification after other operations succeed
     const { error: notificationError } = await supabase.from("notifications").insert({
-      user_id: userData.id,
+      user_id: authorId,
       type: NotificationType.OfferAccepted,
       trade: tradeId,
       offer: offerId,
