@@ -25,8 +25,7 @@ const OfferCard = ({ offer, handleClick, isOwner, acceptsOffers }: OfferCardProp
         offer.status === "accepted" && "status-accepted",
         offer.status === "rejected" && "status-rejected"
       )}
-      // onClick={acceptsOffers ? handleClick : undefined}
-      onClick={handleClick}
+      onClick={acceptsOffers ? handleClick : undefined}
     >
       <div className="flex flex-row gap-4 max-md:flex-col max-md:items-center z-10">
         <div>

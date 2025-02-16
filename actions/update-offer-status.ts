@@ -23,11 +23,7 @@ export const updateOfferStatus = async ({
     throw new Error("No user data");
   }
 
-  const { error: offerError } = await supabase
-    .from("offers")
-    .update({ status })
-    .eq("id", offerId)
-    .select();
+  const { error: offerError } = await supabase.from("offers").update({ status }).eq("id", offerId);
 
   if (offerError) {
     throw new Error(offerError.message);
