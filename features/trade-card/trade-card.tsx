@@ -1,3 +1,4 @@
+import { TimeAgoDate } from "@/components/time-ago-date";
 import { Typography } from "@/components/typography";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -112,7 +113,9 @@ export const TradeCard = ({
           </CardContent>
           <CardFooter className="flex flex-row w-full">
             <div className="flex w-full flex-row gap-2 items-center justify-end">
-              <div className="text-sm text-gray-500">{timeAgo.format(new Date(time))}</div>
+              <div className="text-sm text-gray-500">
+                <TimeAgoDate date={time} />
+              </div>
               <div className="text-sm text-gray-500">-</div>
               <UserProfileInfo username={username} icon={icon} friendId={friendId} />
             </div>

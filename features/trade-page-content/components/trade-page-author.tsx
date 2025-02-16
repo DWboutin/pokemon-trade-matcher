@@ -1,4 +1,5 @@
 import { HoverableTooltip } from "@/components/hoverable-tooltip";
+import { formatTimeAgoDate } from "@/components/time-ago-date";
 import { Typography } from "@/components/typography";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { TradeAuthor } from "@/types/app";
@@ -24,7 +25,7 @@ export const TradePageAuthor = ({ author, createdAt }: TradePageAuthorProps) => 
         <Typography variant="p" text={author.username} />
       </Link>
       <HoverableTooltip content={new Date(createdAt).toLocaleString()}>
-        <Typography variant="p" text={timeAgo.format(new Date(createdAt))} />
+        <Typography variant="p" text={formatTimeAgoDate(createdAt)} />
       </HoverableTooltip>
     </div>
   );

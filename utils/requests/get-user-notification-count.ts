@@ -9,6 +9,7 @@ export const getUserNotificationCount = async (): Promise<number> => {
     },
     next: {
       revalidate: 600,
+      tags: ["user-notifications-count"],
     },
   });
 

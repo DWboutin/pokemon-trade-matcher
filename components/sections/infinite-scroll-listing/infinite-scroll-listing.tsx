@@ -59,7 +59,7 @@ export const InfiniteScrollListing = <TData,>({
               key={virtualRow.key}
               data-index={virtualRow.index}
               ref={rowVirtualizer.measureElement}
-              className="pb-4"
+              className="[&:not(:last-child)]:pb-4"
               style={{
                 position: "absolute",
                 top: 0,

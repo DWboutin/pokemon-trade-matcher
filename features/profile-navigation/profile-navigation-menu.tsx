@@ -1,3 +1,4 @@
+import { getUserData } from "@/actions/get-user-data";
 import { NavigationMenu, NavigationMenuList } from "@/components/ui/navigation-menu";
 import { ProfileNavigationMenuItem } from "@/features/profile-navigation/components/profile-navigation-menu-item";
 
@@ -5,8 +6,9 @@ type ProfileNavigationMenuProps = {
   userId: string;
 };
 
-export const ProfileNavigationMenu = ({ userId }: ProfileNavigationMenuProps) => {
-  const links = [
+export const ProfileNavigationMenu = async ({ userId }: ProfileNavigationMenuProps) => {
+  const user = await getUserData();
+  let links = [
     {
       href: `/profile/${userId}/trades`,
       label: "Trades",
@@ -15,19 +17,31 @@ export const ProfileNavigationMenu = ({ userId }: ProfileNavigationMenuProps) =>
       href: `/profile/${userId}/offers`,
       label: "Offers",
     },
-    {
-      href: `/profile/${userId}/account`,
-      label: "Account",
-    },
   ];
 
+  if (user && user.id === userId) {
+    links = [
+      ...links,
+      {
+        href: `/profile/${userId}/notifications`,
+        label: "Notifications",
+      },
+      {
+        href: `/profile/${userId}/account`,
+        label: "Account",
+      },
+    ];
+  }
+
   return (
-    <NavigationMenu className="after:absolute">
-      <NavigationMenuList>
-        {links.map((link) => (
-          <ProfileNavigationMenuItem key={link.href} {...link} />
-        ))}
-      </NavigationMenuList>
-    </NavigationMenu>
+    <div className="w-full overflow-x-auto md:justify-center max-md:px-4 flex scrollbar-none [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <NavigationMenu>
+        <NavigationMenuList>
+          {links.map((link) => (
+            <ProfileNavigationMenuItem key={link.href} {...link} />
+          ))}
+        </NavigationMenuList>
+      </NavigationMenu>
+    </div>
   );
 };

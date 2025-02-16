@@ -14,10 +14,10 @@ export type Database = {
           count: number
           created_at: string
           id: string
-          offer_id: string | null
+          offer: string | null
           review_author: string | null
           seen: boolean
-          trade_id: string
+          trade: string
           type: number
           user_id: string
         }
@@ -25,10 +25,10 @@ export type Database = {
           count?: number
           created_at?: string
           id?: string
-          offer_id?: string | null
+          offer?: string | null
           review_author?: string | null
           seen?: boolean
-          trade_id?: string
+          trade?: string
           type: number
           user_id?: string
         }
@@ -36,17 +36,17 @@ export type Database = {
           count?: number
           created_at?: string
           id?: string
-          offer_id?: string | null
+          offer?: string | null
           review_author?: string | null
           seen?: boolean
-          trade_id?: string
+          trade?: string
           type?: number
           user_id?: string
         }
         Relationships: [
           {
             foreignKeyName: "notifications_offer_id_fkey"
-            columns: ["offer_id"]
+            columns: ["offer"]
             isOneToOne: false
             referencedRelation: "offers"
             referencedColumns: ["id"]
@@ -60,7 +60,7 @@ export type Database = {
           },
           {
             foreignKeyName: "notifications_trade_id_fkey"
-            columns: ["trade_id"]
+            columns: ["trade"]
             isOneToOne: false
             referencedRelation: "trades"
             referencedColumns: ["id"]

@@ -16,6 +16,7 @@ const populateOfferWithCardData = (offer: Offer): PopulatedOffer => {
 
   const offeredCard = cardsData.cards.find((card) => card.cardNumber === offer.offered_card);
   const wantedCard = cardsData.cards.find((card) => card.cardNumber === offer.wanted_card);
+
   return {
     ...offer,
     offeredCard,

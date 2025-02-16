@@ -2,10 +2,15 @@ import { getUserData } from "@/actions/get-user-data";
 import { Typography } from "@/components/typography";
 import { FriendInfoForm } from "@/features/friend-info-form/friend-info-form";
 import { getUserById } from "@/utils/requests/get-user-by-id";
+import { redirect } from "next/navigation";
 
 const ProfileAccountPage = async ({ params }: { params: Promise<{ user_id: string }> }) => {
   const { user_id } = await params;
   const [connectedUser, user] = await Promise.all([getUserData(), getUserById(user_id)]);
+
+  if (!connectedUser || connectedUser.id !== user_id) {
+    return redirect(`/profile/${user_id}/trades`);
+  }
 
   return (
     <div className="flex flex-col gap-4 py-10 items-center">

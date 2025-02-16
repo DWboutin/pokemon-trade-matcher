@@ -2,41 +2,45 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import { useEffect, useRef } from "react";
 import { VirtualItem } from "@tanstack/react-virtual";
-import { PopulatedOffer } from "@/utils/factories/populate-offer-with-card-data";
-import { getPaginatedOffersForUserId } from "@/utils/requests/get-paginated-offers-for-user-id";
-import { OFFERS_TABLE_LISTING_PAGINATION_LIMIT } from "@/utils/contants";
+import {
+  NOTIFICATIONS_TABLE_LISTING_PAGINATION_LIMIT,
+  OFFERS_TABLE_LISTING_PAGINATION_LIMIT,
+} from "@/utils/contants";
+import {
+  getUserPaginatedNotifications,
+  PaginatedNotificationStatus,
+} from "@/utils/requests/get-user-paginated-notifications";
+import { PopulatedNotification } from "@/utils/factories/populate-notification-with-card-data";
 
-type UseOffersTableListingSelectors = {
+type UseNotificationsTableListingSelectors = {
   parentRef: React.RefObject<HTMLDivElement | null>;
   rowVirtualizer: ReturnType<typeof useWindowVirtualizer>;
   items: VirtualItem[];
-  allRows: PopulatedOffer[];
+  allRows: PopulatedNotification[];
   hasNextPage: boolean;
 };
 
-type UseOffersTableListingHook = {
-  selectors: UseOffersTableListingSelectors;
+type UseNotificationsTableListingHook = {
+  selectors: UseNotificationsTableListingSelectors;
 };
 
-type UseOffersTableListingArgs = {
-  initialData: PopulatedOffer[];
+type UseNotificationsTableListingArgs = {
+  initialData: PopulatedNotification[];
   authorId?: string;
-  status?: "pending" | "accepted" | "rejected";
+  status?: PaginatedNotificationStatus;
 };
 
-export const useOffersTableListing = ({
+export const useNotificationsTableListing = ({
   initialData,
-  authorId,
-  status = "pending",
-}: UseOffersTableListingArgs): UseOffersTableListingHook => {
+  status,
+}: UseNotificationsTableListingArgs): UseNotificationsTableListingHook => {
   const { data, error, isFetching, isFetchingNextPage, fetchNextPage, hasNextPage } =
     useInfiniteQuery({
-      queryKey: ["offers", { authorId, status }],
+      queryKey: ["user-notifications", { status }],
       queryFn: async ({ pageParam = 1 }) => {
-        const response = await getPaginatedOffersForUserId({
+        const response = await getUserPaginatedNotifications({
           page: pageParam,
-          limit: OFFERS_TABLE_LISTING_PAGINATION_LIMIT,
-          authorId,
+          limit: NOTIFICATIONS_TABLE_LISTING_PAGINATION_LIMIT,
           status,
         });
 

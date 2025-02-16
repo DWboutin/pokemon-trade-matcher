@@ -18,14 +18,20 @@ type TradePageHeadingProps = {
 export const TradePageHeading = ({ trade }: TradePageHeadingProps) => {
   const { mainCard, offeredCards } = trade;
   const title = useMemo(() => {
-    if (mainCard) {
-      return `Searching for ${mainCard.cardName}`;
+    if (mainCard && offeredCards.length === 0) {
+      return `Wants to trade ${mainCard.cardName}`;
     }
 
-    if (offeredCards.length > 0) {
+    if (offeredCards.length > 0 && !mainCard) {
       return `Offering ${
         offeredCards.length === 1 ? "1 card" : `${offeredCards.length} cards`
       } for a trade`;
+    }
+
+    if (mainCard && offeredCards.length > 0) {
+      return `${trade.author.username} is offering ${
+        offeredCards.length === 1 ? "1 card" : `${offeredCards.length} cards`
+      } to get ${mainCard.cardName}`;
     }
 
     return `${trade.author.username} wants to trade`;

@@ -18,8 +18,10 @@ export const CardImage: FC<CardImageProps> = ({ card, handleClick, selectedCardI
   return (
     <div
       className={cn("w-full h-full mr-4", {
-        "opacity-100": selectedCardId === card.cardNumber || selectedCardId === null,
-        "opacity-50": selectedCardId !== null && selectedCardId !== card.cardNumber,
+        "opacity-100": selectedCardId === card.cardNumber,
+        "opacity-50":
+          (selectedCardId !== null && selectedCardId !== card.cardNumber) ||
+          selectedCardId === null,
       })}
       data-card-id={card.cardNumber}
       onClick={handleClick}

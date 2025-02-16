@@ -22,6 +22,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ trad
     `
     )
     .eq("trade_id", trade_id)
+    .order("status", { ascending: true })
     .order("created_at", { ascending: false })
     .range((page - 1) * limit, page * limit - 1);
 

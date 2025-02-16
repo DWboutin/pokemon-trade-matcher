@@ -13,13 +13,15 @@ export default async function ProfileOffersPage({
   params: Promise<{ user_id: string }>;
 }) {
   const { user_id } = await params;
-  const user = await getUserData();
-  const initialData = await getPaginatedOffersForUserId({
-    page: 1,
-    limit: OFFERS_TABLE_LISTING_PAGINATION_LIMIT,
-    authorId: user_id,
-    status: "pending",
-  });
+  const [user, initialData] = await Promise.all([
+    getUserData(),
+    getPaginatedOffersForUserId({
+      page: 1,
+      limit: OFFERS_TABLE_LISTING_PAGINATION_LIMIT,
+      authorId: user_id,
+      status: "pending",
+    }),
+  ]);
 
   return (
     <div className="flex flex-col gap-4 max-md:px-4">

@@ -49,6 +49,9 @@ export type User = Database["public"]["Tables"]["users"]["Row"];
 export type Trade = Database["public"]["Tables"]["trades"]["Row"];
 export type Offer = Database["public"]["Tables"]["offers"]["Row"];
 export type Notification = Database["public"]["Tables"]["notifications"]["Row"];
+export type NotificationWithOffer = Notification & {
+  offer: Omit<Offer, "author" | "trade_id" | "created_at" | "updated_at" | "status">;
+};
 export type Author = {
   [K in keyof Omit<User, "name" | "type" | "email" | "trades">]-?: NonNullable<User[K]>;
 };

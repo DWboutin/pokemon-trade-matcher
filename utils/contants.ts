@@ -26,4 +26,5 @@ export const valueToImages: Record<CardType, string> = {
 };
 
 export const OFFERS_TABLE_LISTING_PAGINATION_LIMIT = 30;
+export const NOTIFICATIONS_TABLE_LISTING_PAGINATION_LIMIT = 10;
 export const TRADES_LISTING_PAGINATION_LIMIT = 10;

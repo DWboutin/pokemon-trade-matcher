@@ -12,13 +12,28 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const page = parseInt(searchParams.get("page") || "1");
   const limit = parseInt(searchParams.get("limit") || "10");
-
+  const status = searchParams.get("status");
   const supabase = await createClient();
-  const query = supabase
+
+  let query = supabase
     .from("notifications")
-    .select("*")
+    .select(
+      `
+      *,
+      offer:offers (
+        id,
+        wanted_card,
+        offered_card
+      )
+    `
+    )
     .eq("user_id", userData.id)
+    .order("seen", { ascending: true })
     .order("created_at", { ascending: false });
+
+  if (!!status) {
+    query = query.eq("seen", status !== "new");
+  }
 
   const { data, error } = await query.range((page - 1) * limit, page * limit - 1);
 

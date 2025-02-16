@@ -55,13 +55,14 @@ export function useOfferActionModal({
 
       setIsStatusUpdating(status);
       const { success } = await updateOfferStatus({ tradeId, offerId: offerData.id, status });
-      setIsStatusUpdating(null);
 
       if (success) {
         setIsModalOpen(false);
         setOfferData(null);
 
         await queryClient.invalidateQueries({ queryKey: ["offers", tradeId] });
+        await queryClient.invalidateQueries({ queryKey: ["user-notifications"] });
+        await queryClient.invalidateQueries({ queryKey: ["user-notifications-count"] });
 
         if (status === "accepted") {
           toast.success(
@@ -76,6 +77,8 @@ export function useOfferActionModal({
     } catch (error) {
       console.error(error);
       toast.error("An error occurred while updating the offer status.");
+    } finally {
+      setIsStatusUpdating(null);
     }
   };
 
