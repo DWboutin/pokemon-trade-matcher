@@ -29,6 +29,15 @@ export const HeaderNavigation: FC = () => {
       >
         Create Trade
       </Link>
+      <Link
+        href="/library"
+        className={cn(
+          "mt-2 pb-1 border-b-2 border-transparent hover:text-[#F01616] hover:border-b-2 hover:border-[#F01616]",
+          isActive("/library") && "font-bold text-[#F01616] border-b-2 border-[#F01616]"
+        )}
+      >
+        Library
+      </Link>
     </nav>
   );
 };
