@@ -22,6 +22,15 @@ interface CarouselSlide {
 
 const slides: CarouselSlide[] = [
   {
+    image: "/images/cards-unofficial-ptcgp.png",
+    title: "The easiest way to trade your vitual cards",
+    description:
+      "This unofficial PTCGP trading site is the easiest way to trade your virtual cards with strangers.",
+    ctaText: "Get your wanted cards now",
+    ctaHref: "/trades",
+    noRedirect: false,
+  },
+  {
     image: "/images/get-your-most-wanted-cards.jpg",
     title: "Get Your Most Wanted Cards",
     description:

@@ -6,6 +6,7 @@ export const cardsSearchSchema = z.object({
   exclusivePackName: z.string().optional(),
   exclusivePackSeries: z.string().optional(),
   type: z.string().optional(),
+  skill: z.string().optional(),
   hp: z
     .any()
     .optional()

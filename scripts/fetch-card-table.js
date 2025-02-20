@@ -12,8 +12,12 @@ async function fetchCardTable() {
 
     // Get the table using the selector
     const table = $(
-      "body > div.l-content > div.l-3col > div.l-3colMain > div.l-3colMain__center.l-3colMain__center--shadow > div.archive-style-wrapper > div.scroll--table.table-header--fixed > table"
+      "body > div.p-archiveBody__container > div.p-archiveBody__main > div.p-archiveContent__container > div.p-archiveContent__main > div.archive-style-wrapper > div.scroll--table.table-header--fixed > table"
     );
+
+    if (!table.length) {
+      throw new Error("Table not found");
+    }
 
     // Save the table HTML to a file
     await fs.writeFile("scripts/data/card-table.html", table.toString());

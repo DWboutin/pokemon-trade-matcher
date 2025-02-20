@@ -14,7 +14,7 @@ import { UseFormReturn } from "react-hook-form";
 import { z } from "zod";
 import { cardsSearchSchema } from "@/features/cards-search/utils/cards-search-schema";
 import { FC, useState } from "react";
-import { AiFillFilter, AiOutlineLoading3Quarters } from "react-icons/ai";
+import { AiFillFilter } from "react-icons/ai";
 import dynamic from "next/dynamic";
 import { ButtonLoading } from "@/components/ui/button-loading";
 

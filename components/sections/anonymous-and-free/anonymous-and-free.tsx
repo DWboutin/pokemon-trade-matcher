@@ -5,7 +5,7 @@ export const AnonymousAndFree = () => {
   return (
     <section className="container mx-auto px-4 py-4 md:py-8">
       <div className="text-center max-w-3xl mx-auto">
-        <Typography variant="h2" text="100% Anonymous & Always Free" className="mb-6" />
+        <Typography variant="h2" text="Anonymous & Always Free" className="mb-6" />
 
         <Typography
           variant="p"

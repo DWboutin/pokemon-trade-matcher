@@ -9,6 +9,16 @@ export type IconsData = {
   icons: IconData[];
 };
 
+export type CardEffect = {
+  name: string;
+  cost: {
+    element: string;
+    count: number;
+  }[];
+  damage: number;
+  description: string;
+};
+
 export type CardData = {
   cardNumber: string;
   cardName: string;
@@ -21,6 +31,7 @@ export type CardData = {
   hp: number;
   stage: string;
   imageUrl: string;
+  effects: CardEffect[];
 };
 
 export type CardsData = {

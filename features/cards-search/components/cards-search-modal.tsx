@@ -21,6 +21,7 @@ import { CardsRarityDropdown } from "@/features/cards-search/components/cards-ra
 import { cardsSearchSchema } from "@/features/cards-search/utils/cards-search-schema";
 import { UseFormReturn } from "react-hook-form";
 import { z } from "zod";
+import { CardsSkillsDropdown } from "@/features/cards-search/components/cards-skills-dropdown";
 
 type CardsSearchModalProps = {
   isOpen: boolean;
@@ -101,6 +102,23 @@ export const CardsSearchModal = ({
                   <FormControl>
                     <div className="min-w-48">
                       <CardsTypeDropdown {...field} />
+                    </div>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              </div>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="skill"
+            render={({ field }) => (
+              <div className="flex flex-1 flex-row justify-between">
+                <FormItem className="flex flex-1 flex-col gap-1 mt-2">
+                  <FormLabel>Skill</FormLabel>
+                  <FormControl>
+                    <div className="min-w-48">
+                      <CardsSkillsDropdown {...field} />
                     </div>
                   </FormControl>
                   <FormMessage />
