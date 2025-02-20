@@ -20,8 +20,8 @@ const skillsData = cardsData.cards
   )
   .sort((a, b) => a.localeCompare(b));
 
-export const CardsSkillsDropdown: React.FC<
-  ControllerRenderProps<{ exclusivePackName: string | undefined }>
-> = (props) => {
+export const CardsSkillsDropdown: React.FC<ControllerRenderProps<{ skill: string | undefined }>> = (
+  props
+) => {
   return <SelectDropdown {...props} options={skillsData} placeholder="Select a skill" />;
 };
