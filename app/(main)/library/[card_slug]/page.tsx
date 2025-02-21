@@ -1,9 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Typography } from "@/components/typography";
 import { currentOrigin } from "@/utils/contants";
 import { Metadata } from "next";
-import { LibraryCardsListing } from "@/features/library-cards-listing/library-cards-listing";
-import { searchCardsData } from "@/actions/search-cards-data";
-import { CardsData } from "@/types/app";
+
+import { unslugifyCard } from "@/utils/slugifyCard";
 
 export const dynamic = "force-dynamic";
 
@@ -32,24 +32,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function LibraryPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
-}) {
-  const sp = await searchParams;
-  const cardsResults = await searchCardsData(sp);
-  const cards = JSON.parse(cardsResults) as CardsData["cards"];
+export default async function LibraryCardPage({ params }: { params: any }) {
+  const { card_slug } = await params;
+  const { cardName, cardNumber } = unslugifyCard(card_slug);
 
   return (
     <div className="container mx-auto">
       <div className="flex flex-col gap-4 py-10 items-center">
-        <Typography variant="h1" text="Library" />
+        <Typography variant="h1" text={`${cardName} ${cardNumber}`} />
 
         <div className="flex flex-1 w-full flex-col gap-4">
-          <div className="flex flex-col gap-10 max-md:px-4">
-            <LibraryCardsListing cards={cards || []} defaultValues={sp} />
-          </div>
+          <div className="flex flex-col gap-10 max-md:px-4"></div>
         </div>
       </div>
     </div>

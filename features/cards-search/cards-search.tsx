@@ -17,13 +17,14 @@ const CardsSearchTags = dynamic(
 type CardsSearchProps = {
   isLoading: boolean;
   handleSearchSubmit: (values: z.infer<typeof cardsSearchSchema>) => Promise<void> | void;
+  defaultValues?: z.infer<typeof cardsSearchSchema>;
 };
 
-export const CardsSearch = ({ isLoading, handleSearchSubmit }: CardsSearchProps) => {
+export const CardsSearch = ({ isLoading, handleSearchSubmit, defaultValues }: CardsSearchProps) => {
   const {
     selectors: { form, isSameValues, tagValues },
     actions: { handleSubmit, handleRemoveTag },
-  } = useCardsSearch({ handleSearchSubmit });
+  } = useCardsSearch({ handleSearchSubmit, defaultValues });
 
   return (
     <div className="flex flex-col gap-4">
@@ -33,7 +34,7 @@ export const CardsSearch = ({ isLoading, handleSearchSubmit }: CardsSearchProps)
         isLoading={isLoading}
         isDisabled={isSameValues}
       />
-      {form.formState.isDirty && form.formState.isSubmitted && (
+      {form.formState.isDirty && (form.formState.isSubmitted || defaultValues) && (
         <CardsSearchTags
           tagValues={tagValues}
           handleRemoveTag={handleRemoveTag}

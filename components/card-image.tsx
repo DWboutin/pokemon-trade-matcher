@@ -10,6 +10,7 @@ type CardImageProps = {
   handleClick?: (e: React.MouseEvent<HTMLDivElement>) => void;
   selectedCardId?: string | null;
   notSelectable?: boolean;
+  className?: string;
 };
 
 export const CardImage: FC<CardImageProps> = ({
@@ -17,13 +18,14 @@ export const CardImage: FC<CardImageProps> = ({
   handleClick,
   selectedCardId,
   notSelectable,
+  className,
 }) => {
   const src = `/cards/${card.cardNumber.replace(/\s/g, "_")}.png`;
   const alt = `${card.cardName} ${card.exclusivePack.name} ${card.exclusivePack.series}`;
 
   return (
     <div
-      className={cn("w-full h-full mr-4", {
+      className={cn("w-full h-full", className, {
         "opacity-100": selectedCardId === card.cardNumber || notSelectable,
         "opacity-50":
           (selectedCardId !== null && selectedCardId !== card.cardNumber && !notSelectable) ||

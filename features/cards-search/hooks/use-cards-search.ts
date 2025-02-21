@@ -3,7 +3,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { cardsSearchSchema } from "@/features/cards-search/utils/cards-search-schema";
-import { useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 
 type UseCardsSearchSelectors = {
   tagValues: z.infer<typeof cardsSearchSchema>;
@@ -34,10 +34,15 @@ const formDefaultValues: z.infer<typeof cardsSearchSchema> = {
 
 type UseCardsSearchArgs = {
   handleSearchSubmit: (values: z.infer<typeof cardsSearchSchema>) => Promise<void> | void;
+  defaultValues?: z.infer<typeof cardsSearchSchema>;
 };
 
-export const useCardsSearch = ({ handleSearchSubmit }: UseCardsSearchArgs): UseCardsSearch => {
-  const lastSubmittedValues = useRef<z.infer<typeof cardsSearchSchema>>({});
+export const useCardsSearch = ({
+  handleSearchSubmit,
+  defaultValues = {},
+}: UseCardsSearchArgs): UseCardsSearch => {
+  const mergedDefaultValues = { ...formDefaultValues, ...defaultValues };
+  const lastSubmittedValues = useRef<z.infer<typeof cardsSearchSchema>>(mergedDefaultValues);
   const form = useForm<z.infer<typeof cardsSearchSchema>>({
     resolver: zodResolver(cardsSearchSchema),
     defaultValues: formDefaultValues,
@@ -61,8 +66,22 @@ export const useCardsSearch = ({ handleSearchSubmit }: UseCardsSearchArgs): UseC
 
     if (tagKey) {
       form.resetField(tagKey as keyof z.infer<typeof cardsSearchSchema>);
+      form.setValue(tagKey as keyof z.infer<typeof cardsSearchSchema>, "", {
+        shouldDirty: true,
+      });
     }
   };
+
+  useEffect(() => {
+    if (defaultValues) {
+      Object.entries(defaultValues).forEach(([key, value]) => {
+        form.setValue(key as keyof z.infer<typeof cardsSearchSchema>, value, {
+          shouldDirty: true,
+          shouldValidate: true,
+        });
+      });
+    }
+  }, [defaultValues]);
 
   return {
     selectors: {

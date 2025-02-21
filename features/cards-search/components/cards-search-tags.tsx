@@ -23,6 +23,19 @@ type CardsSearchTagsProps = {
   >;
 };
 
+const nameFormatter = (key: string) => {
+  switch (key) {
+    case "cardName":
+      return "Name";
+    case "exclusivePackName":
+      return "Exclusive Pack";
+    case "exclusivePackSeries":
+      return "Exclusive Pack Series";
+    default:
+      return key;
+  }
+};
+
 const renderTagValue = (key: string, value: string | number | undefined) => {
   switch (key) {
     case "rarity":
@@ -47,7 +60,12 @@ const renderTagValue = (key: string, value: string | number | undefined) => {
         </div>
       );
     default:
-      return value;
+      return (
+        <div className="flex flex-row gap-2 items-center">
+          <span className="text-xs text-gray-500 capitalize">{nameFormatter(key)}:</span>
+          <span>{value}</span>
+        </div>
+      );
   }
 };
 

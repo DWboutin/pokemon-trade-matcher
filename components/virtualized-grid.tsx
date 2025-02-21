@@ -55,9 +55,8 @@ export const VirtualizedGrid = ({
   const virtualItems = rowVirtualizer.getVirtualItems();
 
   return (
-    <div className={`container mx-auto px-4 ${className}`}>
+    <div className={className}>
       <div
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
         style={{
           height: `${rowVirtualizer.getTotalSize()}px`,
           position: "relative",
@@ -74,13 +73,13 @@ export const VirtualizedGrid = ({
               return (
                 <div
                   key={itemIndex}
+                  ref={rowVirtualizer.measureElement}
                   style={{
                     position: "absolute",
                     top: 0,
                     left: `${(columnIndex / columnCount) * 100}%`,
                     width: `${100 / columnCount}%`,
                     transform: `translateY(${virtualRow.start}px)`,
-                    padding: "0 0.5rem",
                   }}
                 >
                   {child}
