@@ -75,10 +75,15 @@ export const CardsSearchTags = ({
   dirtyFields,
 }: CardsSearchTagsProps) => {
   const dirtyFieldsKeys = dirtyFields ? Object.keys(dirtyFields) : [];
+  const filteredDirtyFieldsKeys = dirtyFieldsKeys.filter(
+    (key) =>
+      tagValues[key as keyof typeof tagValues] !== undefined &&
+      tagValues[key as keyof typeof tagValues] !== ""
+  );
 
   return (
     <div className="flex flex-wrap gap-2">
-      {dirtyFieldsKeys.map((key) => (
+      {filteredDirtyFieldsKeys.map((key) => (
         <Badge key={`search-tag-${key}`} variant="outline" className="flex flex-row gap-2">
           {renderTagValue(key, tagValues[key as keyof typeof tagValues])}
           <Button data-tag-key={key} variant="ghost" size="icon" onClick={handleRemoveTag}>

@@ -22,6 +22,7 @@ import { cardsSearchSchema } from "@/features/cards-search/utils/cards-search-sc
 import { UseFormReturn } from "react-hook-form";
 import { z } from "zod";
 import { CardsSkillsDropdown } from "@/features/cards-search/components/cards-skills-dropdown";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 type CardsSearchModalProps = {
   isOpen: boolean;
@@ -43,119 +44,121 @@ export const CardsSearchModal = ({
           <DialogTitle>Refine my search</DialogTitle>
         </DialogHeader>
         <div className="flex flex-col gap-4">
-          <FormField
-            control={form.control}
-            name="rarity"
-            render={({ field }) => (
-              <div className="flex flex-1 flex-row justify-between">
-                <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                  <FormLabel>Rarity</FormLabel>
-                  <FormControl>
-                    <CardsRarityDropdown {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              </div>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="exclusivePackName"
-            render={({ field }) => (
-              <div className="flex flex-1 flex-row justify-between">
-                <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                  <FormLabel>Pack Name</FormLabel>
-                  <FormControl>
-                    <div className="min-w-64">
-                      <CardsPackNameDropdown {...field} />
-                    </div>
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              </div>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="exclusivePackSeries"
-            render={({ field }) => (
-              <div className="flex flex-1 flex-row justify-between">
-                <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                  <FormLabel>Pack Serie</FormLabel>
-                  <FormControl>
-                    <div className="min-w-52">
-                      <CardsPackSerieDropdown {...field} />
-                    </div>
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              </div>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="type"
-            render={({ field }) => (
-              <div className="flex flex-1 flex-row justify-between">
-                <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                  <FormLabel>Type</FormLabel>
-                  <FormControl>
-                    <div className="min-w-48">
-                      <CardsTypeDropdown {...field} />
-                    </div>
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              </div>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="skill"
-            render={({ field }) => (
-              <div className="flex flex-1 flex-row justify-between">
-                <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                  <FormLabel>Skill</FormLabel>
-                  <FormControl>
-                    <div className="min-w-48">
-                      <CardsSkillsDropdown {...field} />
-                    </div>
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              </div>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="hp"
-            render={({ field }) => (
-              <div className="flex flex-1 flex-row justify-between">
-                <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                  <FormLabel>HP</FormLabel>
-                  <FormControl>
-                    <Input type="number" placeholder="100" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              </div>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="stage"
-            render={({ field }) => (
-              <div className="flex flex-1 flex-row justify-between">
-                <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                  <FormLabel>Stage</FormLabel>
-                  <FormControl>
-                    <CardsStageDropdown {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              </div>
-            )}
-          />
+          <ScrollArea className="h-[400px]">
+            <FormField
+              control={form.control}
+              name="rarity"
+              render={({ field }) => (
+                <div className="flex flex-1 flex-row justify-between">
+                  <FormItem className="flex flex-1 flex-col gap-1 mt-2">
+                    <FormLabel>Rarity</FormLabel>
+                    <FormControl>
+                      <CardsRarityDropdown {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                </div>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="exclusivePackName"
+              render={({ field }) => (
+                <div className="flex flex-1 flex-row justify-between">
+                  <FormItem className="flex flex-1 flex-col gap-1 mt-2">
+                    <FormLabel>Pack Name</FormLabel>
+                    <FormControl>
+                      <div className="min-w-64">
+                        <CardsPackNameDropdown {...field} />
+                      </div>
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                </div>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="exclusivePackSeries"
+              render={({ field }) => (
+                <div className="flex flex-1 flex-row justify-between">
+                  <FormItem className="flex flex-1 flex-col gap-1 mt-2">
+                    <FormLabel>Pack Serie</FormLabel>
+                    <FormControl>
+                      <div className="min-w-52">
+                        <CardsPackSerieDropdown {...field} />
+                      </div>
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                </div>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="type"
+              render={({ field }) => (
+                <div className="flex flex-1 flex-row justify-between">
+                  <FormItem className="flex flex-1 flex-col gap-1 mt-2">
+                    <FormLabel>Type</FormLabel>
+                    <FormControl>
+                      <div className="min-w-48">
+                        <CardsTypeDropdown {...field} />
+                      </div>
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                </div>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="skill"
+              render={({ field }) => (
+                <div className="flex flex-1 flex-row justify-between">
+                  <FormItem className="flex flex-1 flex-col gap-1 mt-2">
+                    <FormLabel>Skill</FormLabel>
+                    <FormControl>
+                      <div className="min-w-48">
+                        <CardsSkillsDropdown {...field} />
+                      </div>
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                </div>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="hp"
+              render={({ field }) => (
+                <div className="flex flex-1 flex-row justify-between">
+                  <FormItem className="flex flex-1 flex-col gap-1 mt-2">
+                    <FormLabel>HP</FormLabel>
+                    <FormControl>
+                      <Input type="number" placeholder="100" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                </div>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="stage"
+              render={({ field }) => (
+                <div className="flex flex-1 flex-row justify-between">
+                  <FormItem className="flex flex-1 flex-col gap-1 mt-2">
+                    <FormLabel>Stage</FormLabel>
+                    <FormControl>
+                      <CardsStageDropdown {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                </div>
+              )}
+            />
+          </ScrollArea>
         </div>
         <DialogFooter className="flex flex-row gap-2 justify-end">
           <DialogClose asChild>
