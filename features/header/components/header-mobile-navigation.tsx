@@ -68,6 +68,15 @@ export const HeaderMobileNavigation = () => {
             >
               Create Trade
             </Link>
+            <Link
+              href="/library"
+              className={cn(
+                "text-xl mt-2 pb-1",
+                isActive("/library") && "font-bold text-[#F01616] border-b-2 border-[#F01616]"
+              )}
+            >
+              Library
+            </Link>
           </nav>
           <DrawerFooter>
             <div className="flex flex-col gap-2 justify-center items-center">
