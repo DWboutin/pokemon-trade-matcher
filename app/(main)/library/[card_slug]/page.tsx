@@ -58,7 +58,7 @@ export default async function LibraryCardPage({ params }: { params: any }) {
 
   return (
     <article className="container mx-auto">
-      <div className="flex flex-col gap-20 py-10 items-center max-md:px-4">
+      <div className="flex flex-col gap-6 py-10 items-center max-md:px-4">
         <div className="flex w-full flex-col gap-4 items-center">
           <CardInfoHeading card={card} mainHeading />
 
@@ -86,7 +86,7 @@ export default async function LibraryCardPage({ params }: { params: any }) {
           </div>
         </div>
         {!NON_POKEMON_TYPES.includes(card.type) && (
-          <div className="w-full flex flex-col gap-10">
+          <div className="w-full flex flex-col gap-4">
             <CardInfoEvolutions card={card} />
             <CardInfoVariations card={card} />
           </div>

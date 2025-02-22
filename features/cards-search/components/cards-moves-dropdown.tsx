@@ -10,7 +10,7 @@ const movesData = cardsData.cards
   .reduce<string[]>(
     (acc, card) => {
       card.effects.forEach((effect) => {
-        if (!acc.includes(effect.name)) {
+        if (effect.name && !acc.includes(effect.name)) {
           acc.push(effect.name);
         }
       });

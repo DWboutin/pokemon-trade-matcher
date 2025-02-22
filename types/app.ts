@@ -10,13 +10,13 @@ export type IconsData = {
 };
 
 export type CardEffect = {
-  name: string;
+  name: string | null;
   cost: {
     element: CardType;
     count: number;
   }[];
-  damage: number;
-  description: string;
+  damage: number | null;
+  description: string | null;
 };
 
 export type CardData = {

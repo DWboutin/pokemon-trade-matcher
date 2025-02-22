@@ -1,5 +1,6 @@
 import fs from "fs";
-import { NON_POKEMON_TYPES } from "@/utils/contants";
+
+const NON_POKEMON_TYPES = ["Pokemon Tool", "Supporter", "Item"];
 // Read and parse the JSON file
 const pokemonApiUrl = "https://pokeapi.co/api/v2/";
 const cardsData = JSON.parse(fs.readFileSync("scripts/data/cards.json", "utf8"));

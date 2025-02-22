@@ -28,7 +28,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -67,7 +67,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -143,7 +143,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         },
         {
           "name": "Giant Bloom",
@@ -226,7 +226,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -265,7 +265,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -298,7 +298,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -333,7 +333,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -368,7 +368,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -401,7 +401,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -440,7 +440,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -517,7 +517,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -556,7 +556,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -589,7 +589,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -657,7 +657,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -696,7 +696,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -735,7 +735,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -768,7 +768,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -908,7 +908,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -977,7 +977,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -1012,7 +1012,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -1148,7 +1148,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -1220,7 +1220,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -1296,7 +1296,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         },
         {
           "name": "Crimson Storm",
@@ -1412,7 +1412,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -1521,7 +1521,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -1556,7 +1556,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -1589,7 +1589,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -1713,7 +1713,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -1746,7 +1746,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -1779,7 +1779,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -1818,7 +1818,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -1851,7 +1851,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -1923,7 +1923,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -1962,7 +1962,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -2038,7 +2038,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         },
         {
           "name": "Hydro Bazooka",
@@ -2121,7 +2121,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -2154,7 +2154,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -2189,7 +2189,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -2229,7 +2229,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -2262,7 +2262,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -2334,7 +2334,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -2369,7 +2369,7 @@
             }
           ],
           "damage": 90,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -2402,7 +2402,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -2441,7 +2441,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -2478,7 +2478,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -2550,7 +2550,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -2620,7 +2620,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -2688,7 +2688,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -2723,7 +2723,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -2756,7 +2756,7 @@
             }
           ],
           "damage": 90,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -2789,7 +2789,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -2927,7 +2927,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -3040,7 +3040,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         },
         {
           "name": "Blizzard",
@@ -3084,7 +3084,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -3119,7 +3119,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -3152,7 +3152,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -3187,7 +3187,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -3226,7 +3226,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -3259,7 +3259,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -3329,7 +3329,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -3401,7 +3401,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -3504,7 +3504,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -3543,7 +3543,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -3578,7 +3578,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -3613,7 +3613,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -3755,7 +3755,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         },
         {
           "name": "Thundering Hurricane",
@@ -3799,7 +3799,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -3867,7 +3867,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -3902,7 +3902,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -3974,7 +3974,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -4075,7 +4075,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -4110,7 +4110,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -4182,7 +4182,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -4258,7 +4258,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -4298,7 +4298,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -4331,7 +4331,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -4366,7 +4366,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -4434,7 +4434,7 @@
             }
           ],
           "damage": 100,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -4471,7 +4471,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -4510,7 +4510,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -4660,7 +4660,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         },
         {
           "name": "Psydrive",
@@ -4708,7 +4708,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -4747,7 +4747,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -4787,7 +4787,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -4820,7 +4820,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -4859,7 +4859,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -4896,7 +4896,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -4968,7 +4968,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -5003,7 +5003,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -5036,7 +5036,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -5104,7 +5104,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -5174,7 +5174,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -5209,7 +5209,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -5244,7 +5244,7 @@
             }
           ],
           "damage": 100,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -5277,7 +5277,7 @@
             }
           ],
           "damage": 120,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -5310,7 +5310,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -5349,7 +5349,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -5421,7 +5421,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -5491,7 +5491,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -5590,7 +5590,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -5627,7 +5627,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -5666,7 +5666,7 @@
             }
           ],
           "damage": 100,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -5701,7 +5701,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -5769,7 +5769,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -5804,7 +5804,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -5841,7 +5841,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -5913,7 +5913,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -6020,7 +6020,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -6092,7 +6092,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -6131,7 +6131,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -6203,7 +6203,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -6238,7 +6238,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -6345,7 +6345,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -6380,7 +6380,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -6446,7 +6446,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -6481,7 +6481,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -6553,7 +6553,7 @@
             }
           ],
           "damage": 120,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -6590,7 +6590,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -6633,7 +6633,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -6709,7 +6709,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -6744,7 +6744,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -6779,7 +6779,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -6812,7 +6812,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -6847,7 +6847,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -6880,7 +6880,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -6948,7 +6948,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -6983,7 +6983,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -7118,7 +7118,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -7153,7 +7153,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -7188,7 +7188,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -7256,7 +7256,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -7324,7 +7324,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -7390,7 +7390,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -7432,7 +7432,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -7474,7 +7474,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -7516,7 +7516,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -7584,7 +7584,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -7617,7 +7617,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -7685,7 +7685,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -7720,7 +7720,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
@@ -7743,7 +7743,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4004042/6f1a71c0a509b36ccf7dd29bf8bfa967.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Play this card as if it were a 40-HP Basic Colorless Pokemon. At any time during your turn, you may discard this card from play. This card can't retreat."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts"
     },
@@ -7761,7 +7768,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4003420/3a48e38a9b18a8b2cbbe31cf2ab073ce.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Play this card as if it were a 40-HP Basic Colorless Pokemon. At any time during your turn, you may discard this card from play. This card can't retreat."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts"
     },
@@ -7779,7 +7793,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4004046/7f7c477d6e42fd30ea75f71d6e26d51b.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Play this card as if it were a 40-HP Basic Colorless Pokemon. At any time during your turn, you may discard this card from play. This card can't retreat."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts"
     },
@@ -7797,7 +7818,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/3995535/5bc1164c2b9a79f4c40f21a8975adbb3.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Heal 50 damage from 1 of your Grass Pokemon."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts"
     },
@@ -7815,7 +7843,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4000884/23ddf240cf20e7f45d028c39b070072e.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Choose 1 of your Water Pokemon, and flip a coin until you get tails. For each heads, take a Water Energy from your Energy Zone and attach it to that Pokemon."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts"
     },
@@ -7833,7 +7868,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4003402/360b3b8340f9bb16d72ccfcee2e77d48.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "During this turn, attacks used by your Ninetales, Rapidash, or Magmar do +30 damage to your opponent's Active Pokemon."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts"
     },
@@ -7851,7 +7893,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4006599/5e73bc4a027588078823269865149861.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Put your Muk or Weezing in the Active Spot into your hand."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts"
     },
@@ -7869,7 +7918,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4004047/6feadf37e41d8f0974ff9041ea4e5612.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "During this turn, attacks used by your Pokemon do +10 damage to your opponent's Active Pokemon."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts"
     },
@@ -7887,7 +7943,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/3995521/f1b8235c638e64025383439980233625.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Take a Fighting Energy from your Energy Zone and attach it to Golem or Onix."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts"
     },
@@ -7905,7 +7968,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4000883/c336f16fef841ed9fd954977a134344e.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Switch out your opponent’s Active Pokemon to the Bench. (Your opponent chooses the new Active Pokemon.)"
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts"
     },
@@ -7923,7 +7993,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4003515/ad83ced6f5c6f10d8a78640d1a1d497f.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Move all Electric Energy from your Benched Pokemon to your Raichu, Electrode, or Electabuzz in the Active Spot."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts"
     },
@@ -7955,7 +8032,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -7994,7 +8071,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -8098,7 +8175,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -8131,7 +8208,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -8232,7 +8309,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -8306,7 +8383,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -8342,7 +8419,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -8486,7 +8563,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -8521,7 +8598,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -8595,7 +8672,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -8697,7 +8774,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -8739,7 +8816,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -8774,7 +8851,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
@@ -8811,7 +8888,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         },
         {
           "name": "Giant Bloom",
@@ -8896,7 +8973,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         },
         {
           "name": "Crimson Storm",
@@ -8996,7 +9073,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -9033,7 +9110,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         },
         {
           "name": "Hydro Bazooka",
@@ -9081,7 +9158,7 @@
             }
           ],
           "damage": 90,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -9118,7 +9195,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         },
         {
           "name": "Blizzard",
@@ -9197,7 +9274,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         },
         {
           "name": "Thundering Hurricane",
@@ -9241,7 +9318,7 @@
             }
           ],
           "damage": 100,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -9278,7 +9355,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         },
         {
           "name": "Psydrive",
@@ -9326,7 +9403,7 @@
             }
           ],
           "damage": 120,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -9415,7 +9492,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4006301/e377eb2d11dc67d3a56e5d8266ee7dbc.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Heal 50 damage from 1 of your Grass Pokemon."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "1,250 Pts"
     },
@@ -9433,7 +9517,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4006313/883b68da489048a408c4b042d3e9f3a7.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Choose 1 of your Water Pokemon, and flip a coin until you get tails. For each heads, take a Water Energy from your Energy Zone and attach it to that Pokemon."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "1,250 Pts"
     },
@@ -9451,7 +9542,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4009514/a2735a2f51c75b7de641e1ffc015093f.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "During this turn, attacks used by your Ninetales, Rapidash, or Magmar do +30 damage to your opponent's Active Pokemon."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "1,250 Pts"
     },
@@ -9469,7 +9567,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4004062/0c2bbaf7e3e34c46d1593b6780108de9.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Put your Muk or Weezing in the Active Spot into your hand."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "1,250 Pts"
     },
@@ -9487,7 +9592,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4006600/181c9ad102c86d25cd7fc4110324e035.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "During this turn, attacks used by your Pokemon do +10 damage to your opponent's Active Pokemon."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "1,250 Pts"
     },
@@ -9505,7 +9617,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4006295/45b892bab21569de57759d90f85a6368.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Take a Fighting Energy from your Energy Zone and attach it to Golem or Onix."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "1,250 Pts"
     },
@@ -9523,7 +9642,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/3995570/5363412994d6d586a28f14002fd2919d.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Switch out your opponent’s Active Pokemon to the Bench. (Your opponent chooses the new Active Pokemon.)"
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "1,250 Pts"
     },
@@ -9541,7 +9667,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4006305/8742024b4fa2f2d51cde1662b0207935.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Move all Electric Energy from your Benched Pokemon to your Raichu, Electrode, or Electabuzz in the Active Spot."
+        }
+      ],
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "1,250 Pts"
     },
@@ -9584,7 +9717,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -9621,7 +9754,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         },
         {
           "name": "Blizzard",
@@ -9665,7 +9798,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         },
         {
           "name": "Thundering Hurricane",
@@ -9709,7 +9842,7 @@
             }
           ],
           "damage": 100,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
@@ -9742,7 +9875,7 @@
             }
           ],
           "damage": 120,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
@@ -9812,7 +9945,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         },
         {
           "name": "Crimson Storm",
@@ -9899,7 +10032,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         },
         {
           "name": "Psydrive",
@@ -9984,7 +10117,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         },
         {
           "name": "Crimson Storm",
@@ -10071,7 +10204,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         },
         {
           "name": "Psydrive",
@@ -10232,7 +10365,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -10271,7 +10404,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -10310,7 +10443,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -10343,7 +10476,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -10555,7 +10688,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -10771,7 +10904,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -10804,7 +10937,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -10876,7 +11009,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -11084,7 +11217,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -11218,7 +11351,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         },
         {
           "name": "Genome Hacking",
@@ -11295,7 +11428,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -11466,7 +11599,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -11505,7 +11638,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -11573,7 +11706,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -11612,7 +11745,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -11651,7 +11784,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -11727,7 +11860,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -11797,7 +11930,7 @@
             }
           ],
           "damage": 90,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -11898,7 +12031,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -11933,7 +12066,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -11966,7 +12099,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -12081,7 +12214,7 @@
             }
           ],
           "damage": 90,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -12109,7 +12242,7 @@
           "name": "Flap",
           "cost": [],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -12144,7 +12277,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -12310,7 +12443,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4004046/7f7c477d6e42fd30ea75f71d6e26d51b.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Play this card as if it were a 40-HP Basic Colorless Pokemon. At any time during your turn, you may discard this card from play. This card can't retreat."
+        }
+      ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts"
     },
@@ -12328,7 +12468,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4069948/4860009590f76ef59eed15814ec393db.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Put a Basic Pokemon from your opponent's discard pile onto their Bench."
+        }
+      ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts"
     },
@@ -12346,7 +12493,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4069950/f310ca7133d07193b8bedf27ac247f14.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Look at the top card of your deck. If that card is a Psychic Pokemon, put it in your hand. If it is not a Psychic Pokemon, put it on the bottom of your deck."
+        }
+      ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts"
     },
@@ -12364,7 +12518,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4069952/01abdab83ac4cbcb02f354987d4465d0.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Put your Mew ex in the Active Spot into your hand."
+        }
+      ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts"
     },
@@ -12382,7 +12543,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4069954/3587b1c03e9f3f08e3f71a94fa0b87a8.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "During your opponent's next turn, all of your Pokemon take -10 damage from attacks from your opponent's Pokemon."
+        }
+      ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts"
     },
@@ -12400,7 +12568,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4069953/29125970619597d71cf68dd51a100fcd.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "During this turn, the Retreat Cost of your Active Pokemon is 2 less."
+        }
+      ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts"
     },
@@ -12469,7 +12644,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -12541,7 +12716,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -12718,7 +12893,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         },
         {
           "name": "Genome Hacking",
@@ -12766,7 +12941,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -12822,7 +12997,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4070036/017579c61bbe589c3e42afcd249be873.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Put your Mew ex in the Active Spot into your hand."
+        }
+      ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "1250 Pts"
     },
@@ -12840,7 +13022,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4070033/0b25786513c8f9513a4e5429e550f5be.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "During your opponent's next turn, all of your Pokemon take -10 damage from attacks from your opponent's Pokemon."
+        }
+      ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "1250 Pts"
     },
@@ -12858,7 +13047,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4070024/fb431690e70d55df20af595b16d795ad.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "During this turn, the Retreat Cost of your Active Pokemon is 2 less."
+        }
+      ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "1250 Pts"
     },
@@ -12886,7 +13082,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         },
         {
           "name": "Genome Hacking",
@@ -12934,7 +13130,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Mythical Island (A1a) Mew packs",
@@ -13004,7 +13200,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         },
         {
           "name": "Genome Hacking",
@@ -13083,7 +13279,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -13119,7 +13315,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -13156,7 +13352,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -13228,7 +13424,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -13296,7 +13492,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -13372,7 +13568,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -13411,7 +13607,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -13483,7 +13679,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -13555,7 +13751,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -13663,7 +13859,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -13912,7 +14108,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -13984,7 +14180,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -14019,7 +14215,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -14128,7 +14324,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -14167,7 +14363,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -14206,7 +14402,7 @@
             }
           ],
           "damage": 120,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -14239,7 +14435,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -14311,7 +14507,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -14383,7 +14579,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -14455,7 +14651,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -14562,7 +14758,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -14634,7 +14830,7 @@
             }
           ],
           "damage": 120,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -14700,7 +14896,7 @@
             }
           ],
           "damage": 39,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -14766,7 +14962,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         },
         {
           "name": "Dimensional Storm",
@@ -14847,7 +15043,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -14882,7 +15078,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -14989,7 +15185,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -15129,7 +15325,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -15263,7 +15459,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -15298,7 +15494,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -15366,7 +15562,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -15469,7 +15665,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -15505,7 +15701,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -15544,7 +15740,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -15583,7 +15779,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -15651,7 +15847,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -15787,7 +15983,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -15857,7 +16053,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -15892,7 +16088,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -15960,7 +16156,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -16028,7 +16224,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -16061,7 +16257,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -16100,7 +16296,7 @@
             }
           ],
           "damage": 100,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -16133,7 +16329,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -16205,7 +16401,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -16238,7 +16434,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -16273,7 +16469,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -16310,7 +16506,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -16349,7 +16545,7 @@
             }
           ],
           "damage": 120,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -16415,7 +16611,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -16552,7 +16748,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -16591,7 +16787,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -16624,7 +16820,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -16733,7 +16929,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -16910,7 +17106,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -16976,7 +17172,7 @@
             }
           ],
           "damage": 90,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -17013,7 +17209,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -17052,7 +17248,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -17122,7 +17318,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -17246,7 +17442,7 @@
             }
           ],
           "damage": 100,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -17312,7 +17508,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -17351,7 +17547,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -17390,7 +17586,7 @@
             }
           ],
           "damage": 100,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -17423,7 +17619,7 @@
             }
           ],
           "damage": 50,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -17533,7 +17729,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -17568,7 +17764,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -17636,7 +17832,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -17739,7 +17935,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -17842,7 +18038,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -17875,7 +18071,7 @@
             }
           ],
           "damage": 10,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -18100,7 +18296,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093227/397d34b53ea044ff215952b9c8c87d57.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Play this card as if it were a 40-HP Basic Colorless Pokemon. At any time during your turn, you may discard this card from play. This card can't retreat."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts"
     },
@@ -18118,7 +18321,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093224/ff066419ccbc3a68f1fb5ae39c670013.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Play this card as if it were a 40-HP Basic Colorless Pokemon. At any time during your turn, you may discard this card from play. This card can't retreat."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts"
     },
@@ -18136,7 +18346,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093220/0593bad9cc1033728f4858ff7e0622f8.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Choose a Pokemon in your hand and switch it with a random Pokemon from your deck."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts"
     },
@@ -18154,7 +18371,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093222/c3428915fc3c343f965b06f393e4bbe3.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "The Pokemon this card is attatched to gets +20 HP."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts"
     },
@@ -18172,7 +18396,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093226/bfd8227e5c520b26b5be32ea16acdf22.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "If the Pokemon this card is attatched to is in the Active Spot and is damaged by your opponent's Pokemon, do 20 damage to the attacking Pokemon."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts"
     },
@@ -18190,7 +18421,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093219/d59a25878f9ebf930292153ab85ea8ac.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "At the end of each turn, if the Pokemon this card is attatched to is affected by any Special Conditions, it recovers from all of them, and discard this card."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts"
     },
@@ -18208,7 +18446,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093221/cea94d1e578a7a24a5be2146848a6f96.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Switch 1 of your opponent's Pokemon that has damage on it to the Active Spot."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts"
     },
@@ -18226,7 +18471,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093232/7d7b7cbe13b1fe770914150fc908ef82.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Put 1 random Glameow, Stunky, or Croagunk from your deck to your hand."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts"
     },
@@ -18244,7 +18496,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093237/2e41c8924477142ce053ae3faa40d00e.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "During this turn, attacks used by your Garchomp or Togekiss do +50 damage to your opponent's Active Pokemon."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts"
     },
@@ -18262,7 +18521,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093236/0a9ac6e4d6f3d358df98f15dc5adf322.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Choose 1 of your Electivire or Luxray. Attatch 2 Lightning Energy from your discard pile to that Pokemon."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts"
     },
@@ -18280,7 +18546,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093230/1e0dced8b2b233eacf1f04d1e9dc5643.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Move an Energy from 1 of your Benched Pokemon to your Active Pokemon."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts"
     },
@@ -18298,7 +18571,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093234/e5ecae2cdf1ff2bec62cc7031318aa01.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Your opponent shuffles their hand into their deck and draws a card for each of their remaining points needed to win."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts"
     },
@@ -18439,7 +18719,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -18719,7 +18999,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -18818,7 +19098,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -18855,7 +19135,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -18995,7 +19275,7 @@
             }
           ],
           "damage": 100,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
@@ -19230,7 +19510,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         },
         {
           "name": "Dimensional Storm",
@@ -19414,7 +19694,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -19462,7 +19742,7 @@
             }
           ],
           "damage": 100,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -19518,7 +19798,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093339/02768b1d252b382f6c3af6e9ca6eaed4.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Switch 1 of your opponent's Pokemon that has damage on it to the Active Spot."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "1,250 Pts"
     },
@@ -19536,7 +19823,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093337/982529af402f013196924a3f849399f0.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Put 1 random Glameow, Stunky, or Croagunk from your deck to your hand."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "1,250 Pts"
     },
@@ -19554,7 +19848,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4090820/c02481b100fe30af364ca642b6f30e4b.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "During this turn, attacks used by your Garchomp or Togekiss do +50 damage to your opponent's Active Pokemon."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "1,250 Pts"
     },
@@ -19572,7 +19873,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093344/77b5c80d3ac52fc8709a5e0d8adc5a87.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Choose 1 of your Electivire or Luxray. Attatch 2 Lightning Energy from your discard pile to that Pokemon."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "1,250 Pts"
     },
@@ -19590,7 +19898,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093351/7b0607b77229dc4d110aee108ed155cd.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Move an Energy from 1 of your Benched Pokemon to your Active Pokemon."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "1,250 Pts"
     },
@@ -19608,7 +19923,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4093352/0a94032c29f43c37151ac28ea49e950b.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Your opponent shuffles their hand into their deck and draws a card for each of their remaining points needed to win."
+        }
+      ],
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "1,250 Pts"
     },
@@ -19838,7 +20160,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -19904,7 +20226,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         },
         {
           "name": "Dimensional Storm",
@@ -19967,7 +20289,7 @@
             }
           ],
           "damage": 100,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
@@ -20000,7 +20322,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         },
         {
           "name": "Dimensional Storm",
@@ -20063,7 +20385,7 @@
             }
           ],
           "damage": 100,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
@@ -20086,7 +20408,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/3998353/d3f67748817342fa3fad937b1284fea1.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Heal 20 damage from 1 of your Pokemon."
+        }
+      ],
       "howToGet": "Purchase in Shop with Shop Tickets",
       "packPoints": "-"
     },
@@ -20104,7 +20433,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4000891/75f81b1837366532a6ce88aa0c01fcb1.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "During this turn, the Retreat Cost of your Active Pokemon is 1 less."
+        }
+      ],
       "howToGet": "Purchase in Shop with Shop Tickets",
       "packPoints": "-"
     },
@@ -20122,7 +20458,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4000890/8a9e7bf254b1025a6138b24db0bf052e.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Your opponent reveals their hand."
+        }
+      ],
       "howToGet": "Purchase in Shop with Shop Tickets",
       "packPoints": "-"
     },
@@ -20140,7 +20483,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4000889/3bd683bcf30fe47bf77ccf0df3b3a26c.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Look at the top 3 cards of your deck."
+        }
+      ],
       "howToGet": "Purchase in Shop with Shop Tickets",
       "packPoints": "-"
     },
@@ -20158,7 +20508,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/3998351/d2ca1646332bd0640346f06449f4d942.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Put 1 random Basic Pokemon from your deck into your hand."
+        }
+      ],
       "howToGet": "Purchase in Shop with Shop Tickets",
       "packPoints": "-"
     },
@@ -20176,7 +20533,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4006596/ed3924da2e7ba5e19dbcdd4795f9be57.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Your opponent shuffles their hand into their deck and draws 3 cards."
+        }
+      ],
       "howToGet": "Purchase in Shop with Shop Tickets",
       "packPoints": "-"
     },
@@ -20194,7 +20558,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/3998352/af036f8053fc2b903b144d532ad7b52e.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Draw 2 cards."
+        }
+      ],
       "howToGet": "Purchase in Shop with Shop Tickets",
       "packPoints": "-"
     },
@@ -20212,7 +20583,14 @@
       "hp": 0,
       "stage": "",
       "imageUrl": "https://img.game8.co/4085295/7fca9c4b4ac359d5aa70c3cee327de50.png/original",
-      "effects": [],
+      "effects": [
+        {
+          "name": null,
+          "cost": [],
+          "damage": null,
+          "description": "Look at the top 3 cards of your deck."
+        }
+      ],
       "howToGet": "Obtained from a gift",
       "packPoints": "-"
     },
@@ -20240,7 +20618,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Obtained with Premium Pass subscription",
@@ -20312,7 +20690,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Obtainable from Chansey Wonder Picks",
@@ -20387,7 +20765,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Promo Pack A Series Vol. 1",
@@ -20457,7 +20835,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Promo Pack A Series Vol. 1",
@@ -20492,7 +20870,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Promo Pack A Series Vol. 1",
@@ -20603,7 +20981,7 @@
             }
           ],
           "damage": 60,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Promo Pack A Series Vol. 2",
@@ -20671,7 +21049,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Open Promo Pack A Series Vol. 2",
@@ -20745,7 +21123,7 @@
             }
           ],
           "damage": 40,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Obtainable from Chansey Wonder Picks",
@@ -20780,7 +21158,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Obtainable from Chansey Wonder Picks",
@@ -20830,7 +21208,7 @@
             }
           ],
           "damage": 70,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Obtained from a mission",
@@ -20863,7 +21241,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Obtained from a campaign",
@@ -20898,7 +21276,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Obtained from a promo pack",
@@ -21117,7 +21495,7 @@
             }
           ],
           "damage": 20,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Obtainable from Chansey Wonder Picks",
@@ -21156,7 +21534,7 @@
             }
           ],
           "damage": 30,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Obtained from a promo pack",
@@ -21228,7 +21606,7 @@
             }
           ],
           "damage": 80,
-          "description": ""
+          "description": null
         }
       ],
       "howToGet": "Obtained from a promo pack",

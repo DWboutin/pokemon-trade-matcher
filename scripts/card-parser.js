@@ -1,28 +1,15 @@
 import fs from "fs";
 import * as cheerio from "cheerio";
 
+const NON_POKEMON_TYPES = ["Pokemon Tool", "Supporter", "Item"];
+
 // Read the HTML file
 const html = fs.readFileSync("scripts/data/card-table.html", "utf8");
 const $ = cheerio.load(html);
 
 const cards = [];
 
-// Parse each row in the table body
-$("tbody tr").each((i, row) => {
-  const $row = $(row);
-
-  // Extract data from cells
-  const cardNumber = $row.find("td:nth-child(2)").text().trim();
-  const cardName = $row.find("td:nth-child(3) a").text().trim();
-  const cardDetailsUrl = $row.find("td:nth-child(3) a").attr("href")?.trim() || "";
-  const rarity = $row.find("td:nth-child(4)").text(); // Get text after line break
-  const type = $row.find("td:nth-child(6) img").attr("alt");
-  const hp = $row.find("td:nth-child(7)").text().trim();
-  const stage = $row.find("td:nth-child(8)").text().trim();
-  const packPoints = $row.find("td:nth-child(9)").text().trim().replace(/\s+/g, " ");
-  const effects = $row.find("td:nth-child(10)").html()?.trim() || "";
-  const howToGet = $row.find("td:nth-child(11)").html()?.trim() || "";
-
+function cleanEffect(effects) {
   // Clean up effects by keeping only content after horizontal line
   const effectsMatch = effects.match(/<hr class="a-table__line">([\s\S]*)/);
   const cleanedEffects = effectsMatch ? effectsMatch[1].trim() : "";
@@ -77,7 +64,7 @@ $("tbody tr").each((i, row) => {
 
     const parsedDescription = textContent.split("\n").pop();
 
-    description = parsedDescription === damage.toString() ? "" : parsedDescription;
+    description = parsedDescription === damage.toString() ? null : parsedDescription;
 
     return {
       name,
@@ -86,6 +73,41 @@ $("tbody tr").each((i, row) => {
       description,
     };
   });
+
+  return parsedEffects;
+}
+
+// Parse each row in the table body
+$("tbody tr").each((i, row) => {
+  const $row = $(row);
+
+  // Extract data from cells
+  const cardNumber = $row.find("td:nth-child(2)").text().trim();
+  const cardName = $row.find("td:nth-child(3) a").text().trim();
+  const cardDetailsUrl = $row.find("td:nth-child(3) a").attr("href")?.trim() || "";
+  const rarity = $row.find("td:nth-child(4)").text(); // Get text after line break
+  const type = $row.find("td:nth-child(6) img").attr("alt");
+  const cleanedType = type?.replace("Pokemon TCG Pocket - ", "").trim();
+  const hp = $row.find("td:nth-child(7)").text().trim();
+  const stage = $row.find("td:nth-child(8)").text().trim();
+  const packPoints = $row.find("td:nth-child(9)").text().trim().replace(/\s+/g, " ");
+  const effects = $row.find("td:nth-child(10)").html()?.trim() || "";
+  const howToGet = $row.find("td:nth-child(11)").html()?.trim() || "";
+
+  let parsedEffects;
+
+  if (NON_POKEMON_TYPES.includes(cleanedType)) {
+    parsedEffects = [
+      {
+        name: null,
+        cost: [],
+        damage: null,
+        description: effects,
+      },
+    ];
+  } else {
+    parsedEffects = cleanEffect(effects);
+  }
 
   // Extract image ID from the image URL
   const imageUrl = $row.find("td:nth-child(3) .imageLink").attr("data-image-url")?.trim() || "";
@@ -106,7 +128,7 @@ $("tbody tr").each((i, row) => {
       series: exclusivePackSeries,
       image: exclusivePackImage,
     },
-    type: type?.replace("Pokemon TCG Pocket - ", "").trim(),
+    type: cleanedType,
     hp: parseInt(hp) || 0,
     stage,
     imageUrl,
