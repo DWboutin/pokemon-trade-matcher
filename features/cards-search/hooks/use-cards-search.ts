@@ -52,8 +52,8 @@ export const useCardsSearch = ({
     return JSON.stringify(lastSubmittedValues.current) === JSON.stringify(values);
   }, [values]);
 
-  const handleSubmit = async (values: z.infer<typeof cardsSearchSchema>) => {
-    if (isSameValues) {
+  const handleSubmit = async (values: z.infer<typeof cardsSearchSchema>, force = false) => {
+    if (isSameValues && !force) {
       return;
     }
 
@@ -69,6 +69,7 @@ export const useCardsSearch = ({
       form.setValue(tagKey as keyof z.infer<typeof cardsSearchSchema>, "", {
         shouldDirty: true,
       });
+      handleSubmit(form.getValues(), true);
     }
   };
 

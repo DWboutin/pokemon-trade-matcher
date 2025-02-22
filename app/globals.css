@@ -95,4 +95,8 @@ body {
   @apply before:bg-gradient-to-br before:from-gray-200 before:to-gray-300
 }
 
+.with-diagonal-gradient.subtle-gradient {
+  @apply before:bg-gradient-to-br before:from-gray-100 before:to-gray-200
+}
+
 

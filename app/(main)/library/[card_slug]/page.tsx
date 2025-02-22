@@ -1,50 +1,88 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Typography } from "@/components/typography";
 import { currentOrigin } from "@/utils/contants";
-import { Metadata } from "next";
-
 import { unslugifyCard } from "@/utils/slugifyCard";
+import { getCardByCardNumber } from "@/utils/requests/get-card-by-card-number";
+import { CardInfoHeading } from "@/components/sections/card-info-heading";
+import { notFound } from "next/navigation";
+import Image from "next/image";
+import { CardInfoGameDetails } from "@/components/sections/card-info-game-details";
+import { CardInfoSkills } from "@/components/sections/card-info-skills";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
-export const metadata: Metadata = {
-  title: "Pokemon TCG Pocket Trade Listings | Find & Trade Cards | PokeSwap.io",
-  description:
-    "Browse active Pokemon TCG Pocket trade listings on PokeSwap.io. Find rare cards, make offers, and complete trades with players worldwide. Easy card trading platform for Pokemon TCG Pocket collectors.",
-  keywords:
-    "Pokemon TCG Pocket trades, trading cards, card marketplace, Pokemon card trading, TCG Pocket exchange, rare Pokemon cards",
-  openGraph: {
-    title: "Pokemon TCG Pocket Trade Listings | PokeSwap.io",
-    description:
-      "Browse and create Pokemon TCG Pocket card trades. Find rare cards and connect with traders worldwide.",
-    type: "website",
-    url: currentOrigin,
-    siteName: "PokeSwap.io",
-    locale: "en_US",
-    images: [
-      {
-        url: `${currentOrigin}/logos/pokeswap.png`,
-        width: 1024,
-        height: 1024,
-        alt: "PokeSwap.io Logo",
-      },
-    ],
-  },
+export const generateMetadata = async ({ params }: { params: Promise<{ card_slug: string }> }) => {
+  const paramsValues = await params;
+  const { cardName, cardNumber } = unslugifyCard(paramsValues.card_slug);
+  const card = await getCardByCardNumber(cardNumber);
+
+  if (!card) {
+    return {
+      title: "Card Not Found | PokeSwap.io",
+      description: "The requested Pokemon card could not be found.",
+    };
+  }
+
+  return {
+    title: `${cardName} ${cardNumber} | Pokemon TCG Pocket Card | PokeSwap.io`,
+    description: `View details and trade listings for ${cardName} (${cardNumber}) from ${card.exclusivePack.name} (${card.exclusivePack.series}) on PokeSwap.io.`,
+    keywords: `${cardName}, ${cardNumber}, ${card.exclusivePack.name}, ${card.exclusivePack.series}, Pokemon TCG Pocket, trading cards`,
+    openGraph: {
+      title: `${cardName} ${cardNumber} | PokeSwap.io`,
+      description: `View and trade ${cardName} from ${card.exclusivePack.name} (${card.exclusivePack.series}) on PokeSwap.io`,
+      type: "website",
+      url: `${currentOrigin}/library/${paramsValues.card_slug}`,
+      siteName: "PokeSwap.io",
+      locale: "en_US",
+      images: [
+        {
+          url: `${currentOrigin}/cards/${cardNumber.replace(/\s/g, "_")}.png`,
+          width: 490,
+          height: 683,
+          alt: `${cardName} Pokemon Card`,
+        },
+      ],
+    },
+  };
 };
 
 export default async function LibraryCardPage({ params }: { params: any }) {
   const { card_slug } = await params;
-  const { cardName, cardNumber } = unslugifyCard(card_slug);
+  const { cardNumber } = unslugifyCard(card_slug);
+  const card = await getCardByCardNumber(cardNumber);
+
+  if (!card) {
+    return notFound();
+  }
 
   return (
-    <div className="container mx-auto">
+    <article className="container mx-auto">
       <div className="flex flex-col gap-4 py-10 items-center">
-        <Typography variant="h1" text={`${cardName} ${cardNumber}`} />
+        <CardInfoHeading card={card} mainHeading />
 
-        <div className="flex flex-1 w-full flex-col gap-4">
-          <div className="flex flex-col gap-10 max-md:px-4"></div>
+        {/* Grid container */}
+        <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl">
+          {/* First column - will be third on mobile */}
+          <div className="order-3 lg:order-1">
+            <CardInfoGameDetails card={card} />
+          </div>
+
+          {/* Second column - will be first on mobile */}
+          <div className="order-1 lg:order-2 flex justify-center min-w-[240px]">
+            <Image
+              src={`/cards/${card.cardNumber.replace(/\s/g, "_")}.png`}
+              alt={`${card.cardName} ${card.exclusivePack.name} ${card.exclusivePack.series}`}
+              width={240}
+              height={320}
+              className="w-auto h-auto shadow-xl rounded-lg"
+            />
+          </div>
+
+          {/* Third column - will be second on mobile */}
+          <div className="order-2 lg:order-3">
+            <CardInfoSkills card={card} />
+          </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 }

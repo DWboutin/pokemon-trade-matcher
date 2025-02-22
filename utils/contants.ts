@@ -9,7 +9,7 @@ export const currentOrigin = process.env.NEXT_PUBLIC_VERCEL_URL
 TimeAgo.addDefaultLocale(en);
 export const timeAgo = new TimeAgo("en-US");
 
-export const valueToImages: Record<CardType, string> = {
+export const typeToImages: Record<CardType, string> = {
   Colorless: "/types/Colorless.png",
   Darkness: "/types/Darkness.png",
   Dragon: "/types/Dragon.png",

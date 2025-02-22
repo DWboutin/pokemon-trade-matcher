@@ -1,14 +1,15 @@
 import { CardRarityWithImages } from "@/components/card-rarity-with-images";
 import { CardData } from "@/types/app";
-import { valueToImages } from "@/utils/contants";
+import { typeToImages } from "@/utils/contants";
 import Image from "next/image";
 
 type CardInfoHeadingProps = {
   card: CardData;
+  mainHeading?: boolean;
 };
 
-export const CardInfoHeading = ({ card }: CardInfoHeadingProps) => {
-  const image = valueToImages[card.type];
+export const CardInfoHeading = ({ card, mainHeading = false }: CardInfoHeadingProps) => {
+  const image = typeToImages[card.type];
 
   return (
     <div className="flex w-full flex-col gap-2">
@@ -17,7 +18,10 @@ export const CardInfoHeading = ({ card }: CardInfoHeadingProps) => {
       >
         <div className="flex flex-row items-center gap-2">
           <div className="py-1 px-2 text-sm bg-white rounded-md italic">{card.stage}</div>
-          <div className="py-1 px-2 text-base font-extrabold">{card.cardName}</div>
+          {mainHeading && <h1 className="py-1 px-2 text-xl font-extrabold">{card.cardName}</h1>}
+          {!mainHeading && (
+            <div className="py-1 px-2 text-base font-extrabold">{card.cardName}</div>
+          )}
         </div>
         <div className="flex flex-row items-center gap-2 text-base">
           <div>

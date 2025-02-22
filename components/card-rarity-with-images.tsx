@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FC } from "react";
 
-const valueToImages = {
+const typeToImages = {
   "◇": "/rarities/diamond.png",
   "☆": "/rarities/star.png",
   "♛": "/rarities/crown.png",
@@ -12,9 +12,9 @@ type CardRarityWithImagesProps = {
 };
 
 export const CardRarityWithImages: FC<CardRarityWithImagesProps> = ({ rarity }) => {
-  const firstChar = rarity[0] as keyof typeof valueToImages;
+  const firstChar = rarity[0] as keyof typeof typeToImages;
   const rarityLength = rarity.length;
-  const image = firstChar in valueToImages ? valueToImages[firstChar] : null;
+  const image = firstChar in typeToImages ? typeToImages[firstChar] : null;
 
   return (
     <div className="flex items-center">

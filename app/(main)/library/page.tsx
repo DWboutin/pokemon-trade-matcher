@@ -2,10 +2,7 @@ import { Typography } from "@/components/typography";
 import { currentOrigin } from "@/utils/contants";
 import { Metadata } from "next";
 import { LibraryCardsListing } from "@/features/library-cards-listing/library-cards-listing";
-import { searchCardsData } from "@/actions/search-cards-data";
-import { CardsData } from "@/types/app";
-
-export const dynamic = "force-dynamic";
+import { getSearchCards } from "@/utils/requests/get-search-cards";
 
 export const metadata: Metadata = {
   title: "Pokemon TCG Pocket Trade Listings | Find & Trade Cards | PokeSwap.io",
@@ -38,8 +35,7 @@ export default async function LibraryPage({
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
   const sp = await searchParams;
-  const cardsResults = await searchCardsData(sp);
-  const cards = JSON.parse(cardsResults) as CardsData["cards"];
+  const cards = await getSearchCards(sp);
 
   return (
     <div className="container mx-auto">

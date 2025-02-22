@@ -12,7 +12,7 @@ export type IconsData = {
 export type CardEffect = {
   name: string;
   cost: {
-    element: string;
+    element: CardType;
     count: number;
   }[];
   damage: number;
@@ -26,12 +26,15 @@ export type CardData = {
   exclusivePack: {
     name: string;
     series: string;
+    image: string;
   };
   type: CardType;
   hp: number;
   stage: string;
   imageUrl: string;
   effects: CardEffect[];
+  howToGet: string;
+  packPoints: string;
 };
 
 export type CardsData = {

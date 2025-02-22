@@ -18,7 +18,9 @@ $("tbody tr").each((i, row) => {
   const type = $row.find("td:nth-child(6) img").attr("alt");
   const hp = $row.find("td:nth-child(7)").text().trim();
   const stage = $row.find("td:nth-child(8)").text().trim();
+  const packPoints = $row.find("td:nth-child(9)").text().trim();
   const effects = $row.find("td:nth-child(10)").html()?.trim() || "";
+  const howToGet = $row.find("td:nth-child(11)").html()?.trim() || "";
 
   // Clean up effects by keeping only content after horizontal line
   const effectsMatch = effects.match(/<hr class="a-table__line">([\s\S]*)/);
@@ -50,10 +52,12 @@ $("tbody tr").each((i, row) => {
       const elementMatch = element?.match(/(\d+)/);
       const count = elementMatch ? parseInt(elementMatch[1]) : 1;
       const cleanElement = element?.replace(/\d+/g, "").trim();
+      const capitalizedElement =
+        cleanElement?.charAt(0).toUpperCase() + cleanElement?.slice(1).toLowerCase();
 
       if (cleanElement) {
         costElements.push({
-          element: cleanElement,
+          element: capitalizedElement,
           count: count,
         });
       }
@@ -85,6 +89,7 @@ $("tbody tr").each((i, row) => {
   // Extract image ID from the image URL
   const imageUrl = $row.find("td:nth-child(3) .imageLink").attr("data-image-url")?.trim() || "";
 
+  const exclusivePackImage = $row.find("td:nth-child(5) img").attr("data-src")?.trim() || "";
   const exclusivePackNameRaw = $row.find("td:nth-child(5)").html()?.split("<br>")[1]?.trim() || "";
   const exclusivePackName = exclusivePackNameRaw.replace(/<[^>]*>/g, "");
   const exclusivePackSeries = $row.find("td:nth-child(5)").html()?.split("<br>")[2]?.trim() || "";
@@ -97,12 +102,15 @@ $("tbody tr").each((i, row) => {
     exclusivePack: {
       name: exclusivePackName,
       series: exclusivePackSeries,
+      image: exclusivePackImage,
     },
     type: type?.replace("Pokemon TCG Pocket - ", "").trim(),
     hp: parseInt(hp) || 0,
     stage,
     imageUrl,
     effects: parsedEffects,
+    howToGet,
+    packPoints,
   };
 
   cards.push(card);

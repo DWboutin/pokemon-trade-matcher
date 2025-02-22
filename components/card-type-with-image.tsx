@@ -1,5 +1,5 @@
 import { CardType } from "@/types/app";
-import { valueToImages } from "@/utils/contants";
+import { typeToImages } from "@/utils/contants";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -9,7 +9,7 @@ type CardTypeWithImageProps = {
 };
 
 export const CardTypeWithImage: FC<CardTypeWithImageProps> = ({ type, showTypeName = true }) => {
-  const image = valueToImages[type];
+  const image = typeToImages[type];
 
   if (!image) {
     return <div className="flex items-center gap-2">{type}</div>;
