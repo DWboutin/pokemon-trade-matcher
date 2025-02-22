@@ -81,7 +81,6 @@ export const useInfiniteScrollListing = <TData,>({
     const isCloseToBottom = lastItem.index >= allRows.length - 1 - 5; // Start loading 5 items before the end
 
     if (isCloseToBottom && hasNextPage && !isFetchingNextPage) {
-      console.log("Fetching next page..."); // Add this to debug
       fetchNextPage();
     }
   }, [hasNextPage, fetchNextPage, allRows.length, isFetchingNextPage, items]);

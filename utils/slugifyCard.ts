@@ -11,12 +11,14 @@ const specialCases: Record<string, string> = {
 export const slugifyCard = (card: CardData) => {
   const name = card.cardName.toLowerCase().replace(/[ .:]/g, "-").replace(/'/g, "");
 
-  return `${name}-${card.cardNumber.replace(/\s/g, "-")}`;
+  const cardNumber = card.cardNumber.replace(/\s/g, "-");
+
+  return `${name}-${cardNumber}`;
 };
 
 export const unslugifyCard = (slug: string) => {
-  // Find the last occurrence of cardNumber pattern (e.g. A1-001) and split there
-  const match = slug.match(/(.*)-([A-Z]\d-\d+)$/);
+  // Updated pattern to handle "-ex" in card names
+  const match = slug.match(/(.*?)-([A-Z]\d-\d+|[A-Z]-[A-Z]-\d+)$/);
   if (!match) {
     throw new Error(`Invalid slug format: ${slug}`);
   }
@@ -26,8 +28,11 @@ export const unslugifyCard = (slug: string) => {
     ? specialCases[slugCardName]
     : slugCardName.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
 
+  // Convert the last hyphen before the number to a space
+  const formattedCardNumber = cardNumber.replace(/-([\d]+)$/, " $1");
+
   return {
     cardName,
-    cardNumber,
+    cardNumber: formattedCardNumber,
   };
 };

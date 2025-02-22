@@ -25,6 +25,8 @@ export const typeToImages: Record<CardType, string> = {
   Water: "/types/Water.png",
 };
 
+export const NON_POKEMON_TYPES = ["Pokemon Tool", "Supporter", "Item"];
+
 export const OFFERS_TABLE_LISTING_PAGINATION_LIMIT = 30;
 export const NOTIFICATIONS_TABLE_LISTING_PAGINATION_LIMIT = 10;
 export const TRADES_LISTING_PAGINATION_LIMIT = 10;

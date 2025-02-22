@@ -1,14 +1,13 @@
 import fs from "fs";
-
+import { NON_POKEMON_TYPES } from "@/utils/contants";
 // Read and parse the JSON file
 const pokemonApiUrl = "https://pokeapi.co/api/v2/";
 const cardsData = JSON.parse(fs.readFileSync("scripts/data/cards.json", "utf8"));
-const nonPokemonTypes = ["Pokemon Tool", "Supporter", "Item"];
 
 // Process all cards
 async function updateCardsWithPokemonDetails() {
   for (const [index, card] of cardsData.cards.entries()) {
-    if (nonPokemonTypes.includes(card.type)) {
+    if (NON_POKEMON_TYPES.includes(card.type)) {
       console.log(
         `${index + 1}/${cardsData.cards.length} - Skipped details for ${card.cardName}...`
       );
@@ -52,14 +51,14 @@ async function updateCardsWithPokemonDetails() {
 
       // Update card with pokemon ID
       card.pokemonId = pokemonData.id || null;
-      card.evolveFrom = evolveFrom || null;
+      card.evolvedFrom = evolveFrom || null;
       card.evolvesTo = evolvesTo.length > 0 ? evolvesTo : null;
 
       // Add a small delay to avoid rate limiting
       // await new Promise((resolve) => setTimeout(resolve, 1000));
     } catch (error) {
       card.pokemonId = null;
-      card.evolveFrom = null;
+      card.evolvedFrom = null;
       card.evolvesTo = null;
       console.error(`Error fetching details for ${card.cardName}:`, error.message);
     }

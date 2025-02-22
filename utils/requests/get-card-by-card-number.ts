@@ -1,8 +1,10 @@
-import { CardData } from "@/types/app";
+import { PopulatedCardData } from "@/types/app";
 import { currentOrigin } from "@/utils/contants";
 import { notFound } from "next/navigation";
 
-export const getCardByCardNumber = async (cardNumber: string): Promise<CardData | null> => {
+export const getCardByCardNumber = async (
+  cardNumber: string
+): Promise<PopulatedCardData | null> => {
   const response = await fetch(`${currentOrigin}/api/cards/${cardNumber}`, {
     method: "GET",
     headers: {

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 
 import { CardsData } from "@/types/app";
 import cardsDataJson from "@/scripts/data/cards.json";
+import { populateCardWithRelatedCards } from "@/utils/factories/populate-card-with-related-cards";
 
 const cardsData = cardsDataJson as CardsData;
 const cardsByNumber = cardsData.cards.reduce((acc, card) => {
@@ -14,13 +15,13 @@ export async function GET(
   { params }: { params: Promise<{ card_number: string }> }
 ) {
   const { card_number } = await params;
-  const cardNumber = card_number.replace("-", " ");
-
-  const card = cardsByNumber[cardNumber];
+  const card = cardsByNumber[card_number];
 
   if (!card) {
     return NextResponse.json({ error: "Card not found" }, { status: 404 });
   }
 
-  return NextResponse.json({ data: card });
+  const populatedCard = await populateCardWithRelatedCards(card);
+
+  return NextResponse.json({ data: populatedCard });
 }

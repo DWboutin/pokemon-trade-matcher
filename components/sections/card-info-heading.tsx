@@ -17,17 +17,21 @@ export const CardInfoHeading = ({ card, mainHeading = false }: CardInfoHeadingPr
         className={`flex flex-row items-center justify-between gap-2 p-2 rounded-md bg-${card.type.toLowerCase()}`}
       >
         <div className="flex flex-row items-center gap-2">
-          <div className="py-1 px-2 text-sm bg-white rounded-md italic">{card.stage}</div>
+          {card.stage && (
+            <div className="py-1 px-2 text-sm bg-white rounded-md italic">{card.stage}</div>
+          )}
           {mainHeading && <h1 className="py-1 px-2 text-xl font-extrabold">{card.cardName}</h1>}
           {!mainHeading && (
             <div className="py-1 px-2 text-base font-extrabold">{card.cardName}</div>
           )}
         </div>
         <div className="flex flex-row items-center gap-2 text-base">
-          <div>
-            <span className="text-xs font-bold">HP</span>
-            <span className="font-extrabold">{card.hp}</span>
-          </div>
+          {card.hp > 0 && (
+            <div>
+              <span className="text-xs font-bold">HP</span>
+              <span className="font-extrabold">{card.hp}</span>
+            </div>
+          )}
           <Image src={image} alt={card.type} width={32} height={32} className="w-8 h-8" />
         </div>
       </div>

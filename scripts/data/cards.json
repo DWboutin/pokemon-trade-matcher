@@ -34,7 +34,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 1,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "ivysaur"
       ]
@@ -73,7 +73,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 2,
-      "evolveFrom": "bulbasaur",
+      "evolvedFrom": "bulbasaur",
       "evolvesTo": [
         "venusaur"
       ]
@@ -112,7 +112,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 3,
-      "evolveFrom": "ivysaur",
+      "evolvedFrom": "ivysaur",
       "evolvesTo": null
     },
     {
@@ -164,7 +164,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "500 Pts",
       "pokemonId": 3,
-      "evolveFrom": "ivysaur",
+      "evolvedFrom": "ivysaur",
       "evolvesTo": null
     },
     {
@@ -197,7 +197,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 10,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "metapod"
       ]
@@ -232,7 +232,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 11,
-      "evolveFrom": "caterpie",
+      "evolvedFrom": "caterpie",
       "evolvesTo": [
         "butterfree"
       ]
@@ -271,7 +271,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 12,
-      "evolveFrom": "metapod",
+      "evolvedFrom": "metapod",
       "evolvesTo": null
     },
     {
@@ -304,7 +304,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 13,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "kakuna"
       ]
@@ -339,7 +339,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 14,
-      "evolveFrom": "weedle",
+      "evolvedFrom": "weedle",
       "evolvesTo": [
         "beedrill"
       ]
@@ -374,7 +374,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 15,
-      "evolveFrom": "kakuna",
+      "evolvedFrom": "kakuna",
       "evolvesTo": null
     },
     {
@@ -407,7 +407,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 43,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "gloom"
       ]
@@ -446,7 +446,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 44,
-      "evolveFrom": "oddish",
+      "evolvedFrom": "oddish",
       "evolvesTo": [
         "vileplume",
         "bellossom"
@@ -486,7 +486,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 45,
-      "evolveFrom": "gloom",
+      "evolvedFrom": "gloom",
       "evolvesTo": null
     },
     {
@@ -523,7 +523,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 46,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "parasect"
       ]
@@ -562,7 +562,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 47,
-      "evolveFrom": "paras",
+      "evolvedFrom": "paras",
       "evolvesTo": null
     },
     {
@@ -595,7 +595,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 48,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "venomoth"
       ]
@@ -630,7 +630,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 49,
-      "evolveFrom": "venonat",
+      "evolvedFrom": "venonat",
       "evolvesTo": null
     },
     {
@@ -663,7 +663,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 69,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "weepinbell"
       ]
@@ -702,7 +702,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 70,
-      "evolveFrom": "bellsprout",
+      "evolvedFrom": "bellsprout",
       "evolvesTo": [
         "victreebel"
       ]
@@ -741,7 +741,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 71,
-      "evolveFrom": "weepinbell",
+      "evolvedFrom": "weepinbell",
       "evolvesTo": null
     },
     {
@@ -774,7 +774,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 102,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "exeggutor"
       ]
@@ -809,7 +809,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 103,
-      "evolveFrom": "exeggcute",
+      "evolvedFrom": "exeggcute",
       "evolvesTo": null
     },
     {
@@ -842,7 +842,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "500 Pts",
       "pokemonId": 103,
-      "evolveFrom": "exeggcute",
+      "evolvedFrom": "exeggcute",
       "evolvesTo": null
     },
     {
@@ -879,7 +879,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 114,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "tangrowth"
       ]
@@ -914,7 +914,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 123,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "scizor",
         "kleavor"
@@ -950,7 +950,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 127,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -983,7 +983,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 546,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "whimsicott"
       ]
@@ -1018,7 +1018,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 547,
-      "evolveFrom": "cottonee",
+      "evolvedFrom": "cottonee",
       "evolvesTo": null
     },
     {
@@ -1051,7 +1051,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 548,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "lilligant"
       ]
@@ -1086,7 +1086,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 549,
-      "evolveFrom": "petilil",
+      "evolvedFrom": "petilil",
       "evolvesTo": null
     },
     {
@@ -1119,7 +1119,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 672,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "gogoat"
       ]
@@ -1154,7 +1154,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 673,
-      "evolveFrom": "skiddo",
+      "evolvedFrom": "skiddo",
       "evolvesTo": null
     },
     {
@@ -1187,7 +1187,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 4,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "charmeleon"
       ]
@@ -1226,7 +1226,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 5,
-      "evolveFrom": "charmander",
+      "evolvedFrom": "charmander",
       "evolvesTo": [
         "charizard"
       ]
@@ -1265,7 +1265,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 6,
-      "evolveFrom": "charmeleon",
+      "evolvedFrom": "charmeleon",
       "evolvesTo": null
     },
     {
@@ -1317,7 +1317,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "500 Pts",
       "pokemonId": 6,
-      "evolveFrom": "charmeleon",
+      "evolvedFrom": "charmeleon",
       "evolvesTo": null
     },
     {
@@ -1350,7 +1350,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 37,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "ninetales"
       ]
@@ -1385,7 +1385,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 38,
-      "evolveFrom": "vulpix",
+      "evolvedFrom": "vulpix",
       "evolvesTo": null
     },
     {
@@ -1418,7 +1418,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 58,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "arcanine"
       ]
@@ -1457,7 +1457,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 59,
-      "evolveFrom": "growlithe",
+      "evolvedFrom": "growlithe",
       "evolvesTo": null
     },
     {
@@ -1494,7 +1494,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "500 Pts",
       "pokemonId": 59,
-      "evolveFrom": "growlithe",
+      "evolvedFrom": "growlithe",
       "evolvesTo": null
     },
     {
@@ -1527,7 +1527,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 77,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "rapidash"
       ]
@@ -1562,7 +1562,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 78,
-      "evolveFrom": "ponyta",
+      "evolvedFrom": "ponyta",
       "evolvesTo": null
     },
     {
@@ -1595,7 +1595,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 126,
-      "evolveFrom": "magby",
+      "evolvedFrom": "magby",
       "evolvesTo": [
         "magmortar"
       ]
@@ -1634,7 +1634,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 136,
-      "evolveFrom": "eevee",
+      "evolvedFrom": "eevee",
       "evolvesTo": null
     },
     {
@@ -1671,7 +1671,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 146,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -1719,7 +1719,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "500 Pts",
       "pokemonId": 146,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -1752,7 +1752,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 631,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -1785,7 +1785,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 757,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "salazzle"
       ]
@@ -1824,7 +1824,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 758,
-      "evolveFrom": "salandit",
+      "evolvedFrom": "salandit",
       "evolvesTo": null
     },
     {
@@ -1857,7 +1857,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 850,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "centiskorch"
       ]
@@ -1896,7 +1896,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 851,
-      "evolveFrom": "sizzlipede",
+      "evolvedFrom": "sizzlipede",
       "evolvesTo": null
     },
     {
@@ -1929,7 +1929,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 7,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "wartortle"
       ]
@@ -1968,7 +1968,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 8,
-      "evolveFrom": "squirtle",
+      "evolvedFrom": "squirtle",
       "evolvesTo": [
         "blastoise"
       ]
@@ -2007,7 +2007,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 9,
-      "evolveFrom": "wartortle",
+      "evolvedFrom": "wartortle",
       "evolvesTo": null
     },
     {
@@ -2059,7 +2059,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "500 Pts",
       "pokemonId": 9,
-      "evolveFrom": "wartortle",
+      "evolvedFrom": "wartortle",
       "evolvesTo": null
     },
     {
@@ -2092,7 +2092,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 54,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "golduck"
       ]
@@ -2127,7 +2127,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 55,
-      "evolveFrom": "psyduck",
+      "evolvedFrom": "psyduck",
       "evolvesTo": null
     },
     {
@@ -2160,7 +2160,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 60,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "poliwhirl"
       ]
@@ -2195,7 +2195,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 61,
-      "evolveFrom": "poliwag",
+      "evolvedFrom": "poliwag",
       "evolvesTo": [
         "poliwrath",
         "politoed"
@@ -2235,7 +2235,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 62,
-      "evolveFrom": "poliwhirl",
+      "evolvedFrom": "poliwhirl",
       "evolvesTo": null
     },
     {
@@ -2268,7 +2268,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 72,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "tentacruel"
       ]
@@ -2307,7 +2307,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 73,
-      "evolveFrom": "tentacool",
+      "evolvedFrom": "tentacool",
       "evolvesTo": null
     },
     {
@@ -2340,7 +2340,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 86,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "dewgong"
       ]
@@ -2375,7 +2375,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 87,
-      "evolveFrom": "seel",
+      "evolvedFrom": "seel",
       "evolvesTo": null
     },
     {
@@ -2408,7 +2408,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 90,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "cloyster"
       ]
@@ -2447,7 +2447,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 91,
-      "evolveFrom": "shellder",
+      "evolvedFrom": "shellder",
       "evolvesTo": null
     },
     {
@@ -2484,7 +2484,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 98,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "kingler"
       ]
@@ -2523,7 +2523,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 99,
-      "evolveFrom": "krabby",
+      "evolvedFrom": "krabby",
       "evolvesTo": null
     },
     {
@@ -2556,7 +2556,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 116,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "seadra"
       ]
@@ -2591,7 +2591,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 117,
-      "evolveFrom": "horsea",
+      "evolvedFrom": "horsea",
       "evolvesTo": [
         "kingdra"
       ]
@@ -2626,7 +2626,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 118,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "seaking"
       ]
@@ -2661,7 +2661,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 119,
-      "evolveFrom": "goldeen",
+      "evolvedFrom": "goldeen",
       "evolvesTo": null
     },
     {
@@ -2694,7 +2694,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 120,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "starmie"
       ]
@@ -2729,7 +2729,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 121,
-      "evolveFrom": "staryu",
+      "evolvedFrom": "staryu",
       "evolvesTo": null
     },
     {
@@ -2762,7 +2762,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "500 Pts",
       "pokemonId": 121,
-      "evolveFrom": "staryu",
+      "evolvedFrom": "staryu",
       "evolvesTo": null
     },
     {
@@ -2795,7 +2795,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 129,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "gyarados"
       ]
@@ -2830,7 +2830,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 130,
-      "evolveFrom": "magikarp",
+      "evolvedFrom": "magikarp",
       "evolvesTo": null
     },
     {
@@ -2863,7 +2863,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 131,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -2900,7 +2900,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 134,
-      "evolveFrom": "eevee",
+      "evolvedFrom": "eevee",
       "evolvesTo": null
     },
     {
@@ -2933,7 +2933,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 138,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "omastar"
       ]
@@ -2972,7 +2972,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 139,
-      "evolveFrom": "omanyte",
+      "evolvedFrom": "omanyte",
       "evolvesTo": null
     },
     {
@@ -3009,7 +3009,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 144,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -3057,7 +3057,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "500 Pts",
       "pokemonId": 144,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -3090,7 +3090,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 580,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "swanna"
       ]
@@ -3125,7 +3125,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 581,
-      "evolveFrom": "ducklett",
+      "evolvedFrom": "ducklett",
       "evolvesTo": null
     },
     {
@@ -3158,7 +3158,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 656,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "frogadier"
       ]
@@ -3193,7 +3193,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 657,
-      "evolveFrom": "froakie",
+      "evolvedFrom": "froakie",
       "evolvesTo": [
         "greninja"
       ]
@@ -3232,7 +3232,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 658,
-      "evolveFrom": "frogadier",
+      "evolvedFrom": "frogadier",
       "evolvesTo": null
     },
     {
@@ -3265,7 +3265,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 771,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -3302,7 +3302,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 779,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -3335,7 +3335,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 872,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "frosmoth"
       ]
@@ -3374,7 +3374,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 873,
-      "evolveFrom": "snom",
+      "evolvedFrom": "snom",
       "evolvesTo": null
     },
     {
@@ -3407,7 +3407,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 25,
-      "evolveFrom": "pichu",
+      "evolvedFrom": "pichu",
       "evolvesTo": [
         "raichu"
       ]
@@ -3442,7 +3442,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 26,
-      "evolveFrom": "pikachu",
+      "evolvedFrom": "pikachu",
       "evolvesTo": null
     },
     {
@@ -3475,7 +3475,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "500 Pts",
       "pokemonId": 25,
-      "evolveFrom": "pichu",
+      "evolvedFrom": "pichu",
       "evolvesTo": [
         "raichu"
       ]
@@ -3510,7 +3510,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 81,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "magneton"
       ]
@@ -3549,7 +3549,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 82,
-      "evolveFrom": "magnemite",
+      "evolvedFrom": "magnemite",
       "evolvesTo": [
         "magnezone"
       ]
@@ -3584,7 +3584,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 100,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "electrode"
       ]
@@ -3619,7 +3619,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 101,
-      "evolveFrom": "voltorb",
+      "evolvedFrom": "voltorb",
       "evolvesTo": null
     },
     {
@@ -3652,7 +3652,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 125,
-      "evolveFrom": "elekid",
+      "evolvedFrom": "elekid",
       "evolvesTo": [
         "electivire"
       ]
@@ -3691,7 +3691,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 135,
-      "evolveFrom": "eevee",
+      "evolvedFrom": "eevee",
       "evolvesTo": null
     },
     {
@@ -3728,7 +3728,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 145,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -3772,7 +3772,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "500 Pts",
       "pokemonId": 145,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -3805,7 +3805,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 522,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "zebstrika"
       ]
@@ -3840,7 +3840,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 523,
-      "evolveFrom": "blitzle",
+      "evolvedFrom": "blitzle",
       "evolvesTo": null
     },
     {
@@ -3873,7 +3873,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 602,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "eelektrik"
       ]
@@ -3908,7 +3908,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 603,
-      "evolveFrom": "tynamo",
+      "evolvedFrom": "tynamo",
       "evolvesTo": [
         "eelektross"
       ]
@@ -3947,7 +3947,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 604,
-      "evolveFrom": "eelektrik",
+      "evolvedFrom": "eelektrik",
       "evolvesTo": null
     },
     {
@@ -3980,7 +3980,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 694,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "heliolisk"
       ]
@@ -4015,7 +4015,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 695,
-      "evolveFrom": "helioptile",
+      "evolvedFrom": "helioptile",
       "evolvesTo": null
     },
     {
@@ -4048,7 +4048,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 871,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -4081,7 +4081,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 35,
-      "evolveFrom": "cleffa",
+      "evolvedFrom": "cleffa",
       "evolvesTo": [
         "clefable"
       ]
@@ -4116,7 +4116,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 36,
-      "evolveFrom": "clefairy",
+      "evolvedFrom": "clefairy",
       "evolvesTo": null
     },
     {
@@ -4149,7 +4149,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 63,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "kadabra"
       ]
@@ -4188,7 +4188,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 64,
-      "evolveFrom": "abra",
+      "evolvedFrom": "abra",
       "evolvesTo": [
         "alakazam"
       ]
@@ -4227,7 +4227,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 65,
-      "evolveFrom": "kadabra",
+      "evolvedFrom": "kadabra",
       "evolvesTo": null
     },
     {
@@ -4264,7 +4264,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 79,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "slowbro",
         "slowking"
@@ -4304,7 +4304,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 80,
-      "evolveFrom": "slowpoke",
+      "evolvedFrom": "slowpoke",
       "evolvesTo": null
     },
     {
@@ -4337,7 +4337,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 92,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "haunter"
       ]
@@ -4372,7 +4372,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 93,
-      "evolveFrom": "gastly",
+      "evolvedFrom": "gastly",
       "evolvesTo": [
         "gengar"
       ]
@@ -4407,7 +4407,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 94,
-      "evolveFrom": "haunter",
+      "evolvedFrom": "haunter",
       "evolvesTo": null
     },
     {
@@ -4440,7 +4440,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "500 Pts",
       "pokemonId": 94,
-      "evolveFrom": "haunter",
+      "evolvedFrom": "haunter",
       "evolvesTo": null
     },
     {
@@ -4477,7 +4477,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 96,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "hypno"
       ]
@@ -4516,7 +4516,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 97,
-      "evolveFrom": "drowzee",
+      "evolvedFrom": "drowzee",
       "evolvesTo": null
     },
     {
@@ -4553,7 +4553,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 122,
-      "evolveFrom": "mime-jr",
+      "evolvedFrom": "mime-jr",
       "evolvesTo": [
         "mr-rime"
       ]
@@ -4592,7 +4592,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 124,
-      "evolveFrom": "smoochum",
+      "evolvedFrom": "smoochum",
       "evolvesTo": null
     },
     {
@@ -4629,7 +4629,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 150,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -4681,7 +4681,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "500 Pts",
       "pokemonId": 150,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -4714,7 +4714,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 280,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "kirlia"
       ]
@@ -4753,7 +4753,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 281,
-      "evolveFrom": "ralts",
+      "evolvedFrom": "ralts",
       "evolvesTo": [
         "gardevoir",
         "gallade"
@@ -4793,7 +4793,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 282,
-      "evolveFrom": "kirlia",
+      "evolvedFrom": "kirlia",
       "evolvesTo": null
     },
     {
@@ -4826,7 +4826,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 527,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "swoobat"
       ]
@@ -4865,7 +4865,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 528,
-      "evolveFrom": "woobat",
+      "evolvedFrom": "woobat",
       "evolvesTo": null
     },
     {
@@ -4902,7 +4902,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 622,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "golurk"
       ]
@@ -4941,7 +4941,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 623,
-      "evolveFrom": "golett",
+      "evolvedFrom": "golett",
       "evolvesTo": null
     },
     {
@@ -4974,7 +4974,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 27,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "sandslash"
       ]
@@ -5009,7 +5009,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 28,
-      "evolveFrom": "sandshrew",
+      "evolvedFrom": "sandshrew",
       "evolvesTo": null
     },
     {
@@ -5042,7 +5042,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 50,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "dugtrio"
       ]
@@ -5077,7 +5077,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 51,
-      "evolveFrom": "diglett",
+      "evolvedFrom": "diglett",
       "evolvesTo": null
     },
     {
@@ -5110,7 +5110,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 56,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "primeape"
       ]
@@ -5145,7 +5145,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 57,
-      "evolveFrom": "mankey",
+      "evolvedFrom": "mankey",
       "evolvesTo": [
         "annihilape"
       ]
@@ -5180,7 +5180,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 66,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "machoke"
       ]
@@ -5215,7 +5215,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 67,
-      "evolveFrom": "machop",
+      "evolvedFrom": "machop",
       "evolvesTo": [
         "machamp"
       ]
@@ -5250,7 +5250,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 68,
-      "evolveFrom": "machoke",
+      "evolvedFrom": "machoke",
       "evolvesTo": null
     },
     {
@@ -5283,7 +5283,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "500 Pts",
       "pokemonId": 68,
-      "evolveFrom": "machoke",
+      "evolvedFrom": "machoke",
       "evolvesTo": null
     },
     {
@@ -5316,7 +5316,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 74,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "graveler"
       ]
@@ -5355,7 +5355,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 75,
-      "evolveFrom": "geodude",
+      "evolvedFrom": "geodude",
       "evolvesTo": [
         "golem"
       ]
@@ -5394,7 +5394,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 76,
-      "evolveFrom": "graveler",
+      "evolvedFrom": "graveler",
       "evolvesTo": null
     },
     {
@@ -5427,7 +5427,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 95,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "steelix"
       ]
@@ -5462,7 +5462,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 104,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "marowak"
       ]
@@ -5497,7 +5497,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 105,
-      "evolveFrom": "cubone",
+      "evolvedFrom": "cubone",
       "evolvesTo": null
     },
     {
@@ -5530,7 +5530,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "500 Pts",
       "pokemonId": 105,
-      "evolveFrom": "cubone",
+      "evolvedFrom": "cubone",
       "evolvesTo": null
     },
     {
@@ -5563,7 +5563,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 106,
-      "evolveFrom": "tyrogue",
+      "evolvedFrom": "tyrogue",
       "evolvesTo": null
     },
     {
@@ -5596,7 +5596,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 107,
-      "evolveFrom": "tyrogue",
+      "evolvedFrom": "tyrogue",
       "evolvesTo": null
     },
     {
@@ -5633,7 +5633,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 111,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "rhydon"
       ]
@@ -5672,7 +5672,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 112,
-      "evolveFrom": "rhyhorn",
+      "evolvedFrom": "rhyhorn",
       "evolvesTo": [
         "rhyperior"
       ]
@@ -5707,7 +5707,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 140,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "kabutops"
       ]
@@ -5742,7 +5742,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 141,
-      "evolveFrom": "kabuto",
+      "evolvedFrom": "kabuto",
       "evolvesTo": null
     },
     {
@@ -5775,7 +5775,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 619,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "mienshao"
       ]
@@ -5810,7 +5810,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 620,
-      "evolveFrom": "mienfoo",
+      "evolvedFrom": "mienfoo",
       "evolvesTo": null
     },
     {
@@ -5847,7 +5847,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 852,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "grapploct"
       ]
@@ -5886,7 +5886,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 853,
-      "evolveFrom": "clobbopus",
+      "evolvedFrom": "clobbopus",
       "evolvesTo": null
     },
     {
@@ -5919,7 +5919,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 23,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "arbok"
       ]
@@ -5958,7 +5958,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 24,
-      "evolveFrom": "ekans",
+      "evolvedFrom": "ekans",
       "evolvesTo": null
     },
     {
@@ -5991,7 +5991,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 29,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "nidorina"
       ]
@@ -6026,7 +6026,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 30,
-      "evolveFrom": "nidoran-f",
+      "evolvedFrom": "nidoran-f",
       "evolvesTo": [
         "nidoqueen"
       ]
@@ -6065,7 +6065,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 31,
-      "evolveFrom": "nidorina",
+      "evolvedFrom": "nidorina",
       "evolvesTo": null
     },
     {
@@ -6098,7 +6098,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 32,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "nidorino"
       ]
@@ -6137,7 +6137,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 33,
-      "evolveFrom": "nidoran-m",
+      "evolvedFrom": "nidoran-m",
       "evolvesTo": [
         "nidoking"
       ]
@@ -6176,7 +6176,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 34,
-      "evolveFrom": "nidorino",
+      "evolvedFrom": "nidorino",
       "evolvesTo": null
     },
     {
@@ -6209,7 +6209,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 41,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "golbat"
       ]
@@ -6244,7 +6244,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 42,
-      "evolveFrom": "zubat",
+      "evolvedFrom": "zubat",
       "evolvesTo": [
         "crobat"
       ]
@@ -6279,7 +6279,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 88,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "muk"
       ]
@@ -6318,7 +6318,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 89,
-      "evolveFrom": "grimer",
+      "evolvedFrom": "grimer",
       "evolvesTo": null
     },
     {
@@ -6351,7 +6351,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 109,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "weezing"
       ]
@@ -6386,7 +6386,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 110,
-      "evolveFrom": "koffing",
+      "evolvedFrom": "koffing",
       "evolvesTo": null
     },
     {
@@ -6419,7 +6419,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 303,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -6452,7 +6452,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 624,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "bisharp"
       ]
@@ -6487,7 +6487,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 625,
-      "evolveFrom": "pawniard",
+      "evolvedFrom": "pawniard",
       "evolvesTo": [
         "kingambit"
       ]
@@ -6522,7 +6522,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 808,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -6559,7 +6559,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 809,
-      "evolveFrom": "meltan",
+      "evolvedFrom": "meltan",
       "evolvesTo": null
     },
     {
@@ -6596,7 +6596,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 147,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "dragonair"
       ]
@@ -6639,7 +6639,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 148,
-      "evolveFrom": "dratini",
+      "evolvedFrom": "dratini",
       "evolvesTo": [
         "dragonite"
       ]
@@ -6682,7 +6682,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 149,
-      "evolveFrom": "dragonair",
+      "evolvedFrom": "dragonair",
       "evolvesTo": null
     },
     {
@@ -6715,7 +6715,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 16,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "pidgeotto"
       ]
@@ -6750,7 +6750,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 17,
-      "evolveFrom": "pidgey",
+      "evolvedFrom": "pidgey",
       "evolvesTo": [
         "pidgeot"
       ]
@@ -6785,7 +6785,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 18,
-      "evolveFrom": "pidgeotto",
+      "evolvedFrom": "pidgeotto",
       "evolvesTo": null
     },
     {
@@ -6818,7 +6818,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 19,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "raticate"
       ]
@@ -6853,7 +6853,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 20,
-      "evolveFrom": "rattata",
+      "evolvedFrom": "rattata",
       "evolvesTo": null
     },
     {
@@ -6886,7 +6886,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 21,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "fearow"
       ]
@@ -6921,7 +6921,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 22,
-      "evolveFrom": "spearow",
+      "evolvedFrom": "spearow",
       "evolvesTo": null
     },
     {
@@ -6954,7 +6954,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 39,
-      "evolveFrom": "igglybuff",
+      "evolvedFrom": "igglybuff",
       "evolvesTo": [
         "wigglytuff"
       ]
@@ -6989,7 +6989,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 40,
-      "evolveFrom": "jigglypuff",
+      "evolvedFrom": "jigglypuff",
       "evolvesTo": null
     },
     {
@@ -7022,7 +7022,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "500 Pts",
       "pokemonId": 40,
-      "evolveFrom": "jigglypuff",
+      "evolvedFrom": "jigglypuff",
       "evolvesTo": null
     },
     {
@@ -7055,7 +7055,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 52,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "persian",
         "perrserker"
@@ -7091,7 +7091,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 53,
-      "evolveFrom": "meowth",
+      "evolvedFrom": "meowth",
       "evolvesTo": null
     },
     {
@@ -7124,7 +7124,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 83,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "sirfetchd"
       ]
@@ -7159,7 +7159,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 84,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "dodrio"
       ]
@@ -7194,7 +7194,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 85,
-      "evolveFrom": "doduo",
+      "evolvedFrom": "doduo",
       "evolvesTo": null
     },
     {
@@ -7227,7 +7227,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 108,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "lickilicky"
       ]
@@ -7262,7 +7262,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "70 Pts",
       "pokemonId": 113,
-      "evolveFrom": "happiny",
+      "evolvedFrom": "happiny",
       "evolvesTo": [
         "blissey"
       ]
@@ -7297,7 +7297,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "150 Pts",
       "pokemonId": 115,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -7330,7 +7330,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "70 Pts",
       "pokemonId": 128,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -7363,7 +7363,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 132,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -7396,7 +7396,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "35 Pts",
       "pokemonId": 133,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "vaporeon",
         "jolteon",
@@ -7438,7 +7438,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 133,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "vaporeon",
         "jolteon",
@@ -7480,7 +7480,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "35 Pts",
       "pokemonId": 133,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "vaporeon",
         "jolteon",
@@ -7522,7 +7522,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 137,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "porygon2"
       ]
@@ -7557,7 +7557,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "150 Pts",
       "pokemonId": 142,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -7590,7 +7590,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "150 Pts",
       "pokemonId": 143,
-      "evolveFrom": "munchlax",
+      "evolvedFrom": "munchlax",
       "evolvesTo": null
     },
     {
@@ -7623,7 +7623,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 572,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "cinccino"
       ]
@@ -7658,7 +7658,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "70 Pts",
       "pokemonId": 573,
-      "evolveFrom": "minccino",
+      "evolvedFrom": "minccino",
       "evolvesTo": null
     },
     {
@@ -7691,7 +7691,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 831,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "dubwool"
       ]
@@ -7726,7 +7726,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "35 Pts",
       "pokemonId": 832,
-      "evolveFrom": "wooloo",
+      "evolvedFrom": "wooloo",
       "evolvesTo": null
     },
     {
@@ -7961,7 +7961,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "400 Pts",
       "pokemonId": 1,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "ivysaur"
       ]
@@ -8000,7 +8000,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "400 Pts",
       "pokemonId": 44,
-      "evolveFrom": "oddish",
+      "evolvedFrom": "oddish",
       "evolvesTo": [
         "vileplume",
         "bellossom"
@@ -8036,7 +8036,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "400 Pts",
       "pokemonId": 127,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -8069,7 +8069,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "400 Pts",
       "pokemonId": 4,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "charmeleon"
       ]
@@ -8104,7 +8104,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "400 Pts",
       "pokemonId": 78,
-      "evolveFrom": "ponyta",
+      "evolvedFrom": "ponyta",
       "evolvesTo": null
     },
     {
@@ -8137,7 +8137,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "400 Pts",
       "pokemonId": 7,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "wartortle"
       ]
@@ -8172,7 +8172,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "400 Pts",
       "pokemonId": 130,
-      "evolveFrom": "magikarp",
+      "evolvedFrom": "magikarp",
       "evolvesTo": null
     },
     {
@@ -8205,7 +8205,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "400 Pts",
       "pokemonId": 131,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -8238,7 +8238,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "400 Pts",
       "pokemonId": 101,
-      "evolveFrom": "voltorb",
+      "evolvedFrom": "voltorb",
       "evolvesTo": null
     },
     {
@@ -8275,7 +8275,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "400 Pts",
       "pokemonId": 65,
-      "evolveFrom": "kadabra",
+      "evolvedFrom": "kadabra",
       "evolvesTo": null
     },
     {
@@ -8312,7 +8312,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "400 Pts",
       "pokemonId": 79,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "slowbro",
         "slowking"
@@ -8348,7 +8348,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "400 Pts",
       "pokemonId": 50,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "dugtrio"
       ]
@@ -8383,7 +8383,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "400 Pts",
       "pokemonId": 104,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "marowak"
       ]
@@ -8422,7 +8422,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "400 Pts",
       "pokemonId": 31,
-      "evolveFrom": "nidorina",
+      "evolvedFrom": "nidorina",
       "evolvesTo": null
     },
     {
@@ -8459,7 +8459,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "400 Pts",
       "pokemonId": 34,
-      "evolveFrom": "nidorino",
+      "evolvedFrom": "nidorino",
       "evolvesTo": null
     },
     {
@@ -8492,7 +8492,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "400 Pts",
       "pokemonId": 42,
-      "evolveFrom": "zubat",
+      "evolvedFrom": "zubat",
       "evolvesTo": [
         "crobat"
       ]
@@ -8527,7 +8527,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "400 Pts",
       "pokemonId": 110,
-      "evolveFrom": "koffing",
+      "evolvedFrom": "koffing",
       "evolvesTo": null
     },
     {
@@ -8568,7 +8568,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "400 Pts",
       "pokemonId": 149,
-      "evolveFrom": "dragonair",
+      "evolvedFrom": "dragonair",
       "evolvesTo": null
     },
     {
@@ -8601,7 +8601,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "400 Pts",
       "pokemonId": 18,
-      "evolveFrom": "pidgeotto",
+      "evolvedFrom": "pidgeotto",
       "evolvesTo": null
     },
     {
@@ -8634,7 +8634,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "400 Pts",
       "pokemonId": 52,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "persian",
         "perrserker"
@@ -8670,7 +8670,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "400 Pts",
       "pokemonId": 132,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -8703,7 +8703,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "400 Pts",
       "pokemonId": 133,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "vaporeon",
         "jolteon",
@@ -8745,7 +8745,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "400 Pts",
       "pokemonId": 137,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "porygon2"
       ]
@@ -8780,7 +8780,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "400 Pts",
       "pokemonId": 143,
-      "evolveFrom": "munchlax",
+      "evolvedFrom": "munchlax",
       "evolvesTo": null
     },
     {
@@ -8832,7 +8832,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 3,
-      "evolveFrom": "ivysaur",
+      "evolvedFrom": "ivysaur",
       "evolvesTo": null
     },
     {
@@ -8865,7 +8865,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 103,
-      "evolveFrom": "exeggcute",
+      "evolvedFrom": "exeggcute",
       "evolvesTo": null
     },
     {
@@ -8917,7 +8917,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 6,
-      "evolveFrom": "charmeleon",
+      "evolvedFrom": "charmeleon",
       "evolvesTo": null
     },
     {
@@ -8954,7 +8954,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 59,
-      "evolveFrom": "growlithe",
+      "evolvedFrom": "growlithe",
       "evolvesTo": null
     },
     {
@@ -9002,7 +9002,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 146,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -9054,7 +9054,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 9,
-      "evolveFrom": "wartortle",
+      "evolvedFrom": "wartortle",
       "evolvesTo": null
     },
     {
@@ -9087,7 +9087,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 121,
-      "evolveFrom": "staryu",
+      "evolvedFrom": "staryu",
       "evolvesTo": null
     },
     {
@@ -9135,7 +9135,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 144,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -9168,7 +9168,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 25,
-      "evolveFrom": "pichu",
+      "evolvedFrom": "pichu",
       "evolvesTo": [
         "raichu"
       ]
@@ -9214,7 +9214,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 145,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -9247,7 +9247,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 94,
-      "evolveFrom": "haunter",
+      "evolvedFrom": "haunter",
       "evolvesTo": null
     },
     {
@@ -9299,7 +9299,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 150,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -9332,7 +9332,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 68,
-      "evolveFrom": "machoke",
+      "evolvedFrom": "machoke",
       "evolvesTo": null
     },
     {
@@ -9365,7 +9365,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 105,
-      "evolveFrom": "cubone",
+      "evolvedFrom": "cubone",
       "evolvesTo": null
     },
     {
@@ -9398,7 +9398,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 40,
-      "evolveFrom": "jigglypuff",
+      "evolvedFrom": "jigglypuff",
       "evolvesTo": null
     },
     {
@@ -9590,7 +9590,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 146,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -9638,7 +9638,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 144,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -9682,7 +9682,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 145,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -9715,7 +9715,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 94,
-      "evolveFrom": "haunter",
+      "evolvedFrom": "haunter",
       "evolvesTo": null
     },
     {
@@ -9748,7 +9748,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 68,
-      "evolveFrom": "machoke",
+      "evolvedFrom": "machoke",
       "evolvesTo": null
     },
     {
@@ -9781,7 +9781,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 40,
-      "evolveFrom": "jigglypuff",
+      "evolvedFrom": "jigglypuff",
       "evolvesTo": null
     },
     {
@@ -9833,7 +9833,7 @@
       "howToGet": "Open Genetic Apex (A1) Charizard packs",
       "packPoints": "1,500 Pts",
       "pokemonId": 6,
-      "evolveFrom": "charmeleon",
+      "evolvedFrom": "charmeleon",
       "evolvesTo": null
     },
     {
@@ -9866,7 +9866,7 @@
       "howToGet": "Open Genetic Apex (A1) Pikachu packs",
       "packPoints": "1,500 Pts",
       "pokemonId": 25,
-      "evolveFrom": "pichu",
+      "evolvedFrom": "pichu",
       "evolvesTo": [
         "raichu"
       ]
@@ -9920,7 +9920,7 @@
       "howToGet": "Open Genetic Apex (A1) Mewtwo packs",
       "packPoints": "1,500 Pts",
       "pokemonId": 150,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -9953,7 +9953,7 @@
       "howToGet": "Collect all Kanto Pokedex cards in Genetic Apex (A1) set",
       "packPoints": "-",
       "pokemonId": 151,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -10005,7 +10005,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "2,500 Pts",
       "pokemonId": 6,
-      "evolveFrom": "charmeleon",
+      "evolvedFrom": "charmeleon",
       "evolvesTo": null
     },
     {
@@ -10038,7 +10038,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "2,500 Pts",
       "pokemonId": 25,
-      "evolveFrom": "pichu",
+      "evolvedFrom": "pichu",
       "evolvesTo": [
         "raichu"
       ]
@@ -10092,7 +10092,7 @@
       "howToGet": "Open either Genetic Apex (A1) Pikachu, Charizard or Mewtwo packs",
       "packPoints": "2,500 Pts",
       "pokemonId": 150,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -10125,7 +10125,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 102,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "exeggutor"
       ]
@@ -10164,7 +10164,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 103,
-      "evolveFrom": "exeggcute",
+      "evolvedFrom": "exeggcute",
       "evolvesTo": null
     },
     {
@@ -10201,7 +10201,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "500 Pts",
       "pokemonId": 251,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -10238,7 +10238,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 495,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "servine"
       ]
@@ -10277,7 +10277,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 496,
-      "evolveFrom": "snivy",
+      "evolvedFrom": "snivy",
       "evolvesTo": [
         "serperior"
       ]
@@ -10316,7 +10316,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "150 Pts",
       "pokemonId": 497,
-      "evolveFrom": "servine",
+      "evolvedFrom": "servine",
       "evolvesTo": null
     },
     {
@@ -10349,7 +10349,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 755,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "shiinotic"
       ]
@@ -10384,7 +10384,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 756,
-      "evolveFrom": "morelull",
+      "evolvedFrom": "morelull",
       "evolvesTo": null
     },
     {
@@ -10417,7 +10417,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 781,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -10450,7 +10450,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 77,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "rapidash"
       ]
@@ -10489,7 +10489,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 78,
-      "evolveFrom": "ponyta",
+      "evolvedFrom": "ponyta",
       "evolvesTo": null
     },
     {
@@ -10522,7 +10522,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 126,
-      "evolveFrom": "magby",
+      "evolvedFrom": "magby",
       "evolvesTo": [
         "magmortar"
       ]
@@ -10561,7 +10561,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 636,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "volcarona"
       ]
@@ -10600,7 +10600,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "150 Pts",
       "pokemonId": 637,
-      "evolveFrom": "larvesta",
+      "evolvedFrom": "larvesta",
       "evolvesTo": null
     },
     {
@@ -10633,7 +10633,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 757,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "salazzle"
       ]
@@ -10668,7 +10668,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 758,
-      "evolveFrom": "salandit",
+      "evolvedFrom": "salandit",
       "evolvesTo": null
     },
     {
@@ -10701,7 +10701,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 129,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "gyarados"
       ]
@@ -10740,7 +10740,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "500 Pts",
       "pokemonId": 130,
-      "evolveFrom": "magikarp",
+      "evolvedFrom": "magikarp",
       "evolvesTo": null
     },
     {
@@ -10777,7 +10777,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "150 Pts",
       "pokemonId": 134,
-      "evolveFrom": "eevee",
+      "evolvedFrom": "eevee",
       "evolvesTo": null
     },
     {
@@ -10810,7 +10810,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 456,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "lumineon"
       ]
@@ -10845,7 +10845,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 457,
-      "evolveFrom": "finneon",
+      "evolvedFrom": "finneon",
       "evolvesTo": null
     },
     {
@@ -10882,7 +10882,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 833,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "drednaw"
       ]
@@ -10917,7 +10917,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 834,
-      "evolveFrom": "chewtle",
+      "evolvedFrom": "chewtle",
       "evolvesTo": null
     },
     {
@@ -10954,7 +10954,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 845,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -10987,7 +10987,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 25,
-      "evolveFrom": "pichu",
+      "evolvedFrom": "pichu",
       "evolvesTo": [
         "raichu"
       ]
@@ -11022,7 +11022,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "150 Pts",
       "pokemonId": 26,
-      "evolveFrom": "pikachu",
+      "evolvedFrom": "pikachu",
       "evolvesTo": null
     },
     {
@@ -11055,7 +11055,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 125,
-      "evolveFrom": "elekid",
+      "evolvedFrom": "elekid",
       "evolvesTo": [
         "electivire"
       ]
@@ -11090,7 +11090,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 595,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "galvantula"
       ]
@@ -11125,7 +11125,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 596,
-      "evolveFrom": "joltik",
+      "evolvedFrom": "joltik",
       "evolvesTo": null
     },
     {
@@ -11158,7 +11158,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 702,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -11191,7 +11191,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "150 Pts",
       "pokemonId": 151,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -11235,7 +11235,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "500 Pts",
       "pokemonId": 151,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -11268,7 +11268,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 561,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -11301,7 +11301,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 605,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "beheeyem"
       ]
@@ -11336,7 +11336,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 606,
-      "evolveFrom": "elgyem",
+      "evolvedFrom": "elgyem",
       "evolvesTo": null
     },
     {
@@ -11369,7 +11369,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 669,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "floette"
       ]
@@ -11404,7 +11404,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 670,
-      "evolveFrom": "flabebe",
+      "evolvedFrom": "flabebe",
       "evolvesTo": [
         "florges"
       ]
@@ -11439,7 +11439,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 671,
-      "evolveFrom": "floette",
+      "evolvedFrom": "floette",
       "evolvesTo": null
     },
     {
@@ -11472,7 +11472,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 684,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "slurpuff"
       ]
@@ -11511,7 +11511,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 685,
-      "evolveFrom": "swirlix",
+      "evolvedFrom": "swirlix",
       "evolvesTo": null
     },
     {
@@ -11544,7 +11544,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 56,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "primeape"
       ]
@@ -11579,7 +11579,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 57,
-      "evolveFrom": "mankey",
+      "evolvedFrom": "mankey",
       "evolvesTo": [
         "annihilape"
       ]
@@ -11618,7 +11618,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 74,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "graveler"
       ]
@@ -11657,7 +11657,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 75,
-      "evolveFrom": "geodude",
+      "evolvedFrom": "geodude",
       "evolvesTo": [
         "golem"
       ]
@@ -11696,7 +11696,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "150 Pts",
       "pokemonId": 76,
-      "evolveFrom": "graveler",
+      "evolvedFrom": "graveler",
       "evolvesTo": null
     },
     {
@@ -11733,7 +11733,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "500 Pts",
       "pokemonId": 142,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -11770,7 +11770,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "150 Pts",
       "pokemonId": 802,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -11803,7 +11803,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 874,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -11836,7 +11836,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 109,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "weezing"
       ]
@@ -11871,7 +11871,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 110,
-      "evolveFrom": "koffing",
+      "evolvedFrom": "koffing",
       "evolvesTo": null
     },
     {
@@ -11904,7 +11904,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 509,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "liepard"
       ]
@@ -11939,7 +11939,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 510,
-      "evolveFrom": "purrloin",
+      "evolvedFrom": "purrloin",
       "evolvesTo": null
     },
     {
@@ -11972,7 +11972,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 543,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "whirlipede"
       ]
@@ -12007,7 +12007,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 544,
-      "evolveFrom": "venipede",
+      "evolvedFrom": "venipede",
       "evolvesTo": [
         "scolipede"
       ]
@@ -12046,7 +12046,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 545,
-      "evolveFrom": "whirlipede",
+      "evolvedFrom": "whirlipede",
       "evolvesTo": null
     },
     {
@@ -12087,7 +12087,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "70 Pts",
       "pokemonId": 621,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -12115,7 +12115,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 16,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "pidgeotto"
       ]
@@ -12150,7 +12150,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 17,
-      "evolveFrom": "pidgey",
+      "evolvedFrom": "pidgey",
       "evolvesTo": [
         "pidgeot"
       ]
@@ -12185,7 +12185,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "500 Pts",
       "pokemonId": 18,
-      "evolveFrom": "pidgeotto",
+      "evolvedFrom": "pidgeotto",
       "evolvesTo": null
     },
     {
@@ -12218,7 +12218,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "150 Pts",
       "pokemonId": 128,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -12251,7 +12251,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 133,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "vaporeon",
         "jolteon",
@@ -12293,7 +12293,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "35 Pts",
       "pokemonId": 441,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -12438,7 +12438,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "400 Pts",
       "pokemonId": 103,
-      "evolveFrom": "exeggcute",
+      "evolvedFrom": "exeggcute",
       "evolvesTo": null
     },
     {
@@ -12475,7 +12475,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "400 Pts",
       "pokemonId": 497,
-      "evolveFrom": "servine",
+      "evolvedFrom": "servine",
       "evolvesTo": null
     },
     {
@@ -12508,7 +12508,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "400 Pts",
       "pokemonId": 757,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "salazzle"
       ]
@@ -12547,7 +12547,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "400 Pts",
       "pokemonId": 134,
-      "evolveFrom": "eevee",
+      "evolvedFrom": "eevee",
       "evolvesTo": null
     },
     {
@@ -12580,7 +12580,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "400 Pts",
       "pokemonId": 702,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -12617,7 +12617,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "400 Pts",
       "pokemonId": 802,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -12654,7 +12654,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "1250 Pts",
       "pokemonId": 251,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -12691,7 +12691,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "1250 Pts",
       "pokemonId": 130,
-      "evolveFrom": "magikarp",
+      "evolvedFrom": "magikarp",
       "evolvesTo": null
     },
     {
@@ -12735,7 +12735,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "1250 Pts",
       "pokemonId": 151,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -12772,7 +12772,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "1250 Pts",
       "pokemonId": 142,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -12805,7 +12805,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "1250 Pts",
       "pokemonId": 18,
-      "evolveFrom": "pidgeotto",
+      "evolvedFrom": "pidgeotto",
       "evolvesTo": null
     },
     {
@@ -12903,7 +12903,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "1250 Pts",
       "pokemonId": 151,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -12940,7 +12940,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "1250 Pts",
       "pokemonId": 142,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -12977,7 +12977,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "1500 Pts",
       "pokemonId": 251,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -13021,7 +13021,7 @@
       "howToGet": "Open Mythical Island (A1a) Mew packs",
       "packPoints": "2500 Pts",
       "pokemonId": 151,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -13054,7 +13054,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 43,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "gloom"
       ]
@@ -13089,7 +13089,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 44,
-      "evolveFrom": "oddish",
+      "evolvedFrom": "oddish",
       "evolvesTo": [
         "vileplume",
         "bellossom"
@@ -13125,7 +13125,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 182,
-      "evolveFrom": "gloom",
+      "evolvedFrom": "gloom",
       "evolvesTo": null
     },
     {
@@ -13162,7 +13162,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 114,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "tangrowth"
       ]
@@ -13201,7 +13201,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts",
       "pokemonId": 465,
-      "evolveFrom": "tangela",
+      "evolvedFrom": "tangela",
       "evolvesTo": null
     },
     {
@@ -13234,7 +13234,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 193,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "yanmega"
       ]
@@ -13269,7 +13269,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "500 Pts",
       "pokemonId": 469,
-      "evolveFrom": "yanma",
+      "evolvedFrom": "yanma",
       "evolvesTo": null
     },
     {
@@ -13302,7 +13302,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 315,
-      "evolveFrom": "budew",
+      "evolvedFrom": "budew",
       "evolvesTo": [
         "roserade"
       ]
@@ -13341,7 +13341,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 407,
-      "evolveFrom": "roselia",
+      "evolvedFrom": "roselia",
       "evolvesTo": null
     },
     {
@@ -13378,7 +13378,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 387,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "grotle"
       ]
@@ -13417,7 +13417,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 388,
-      "evolveFrom": "turtwig",
+      "evolvedFrom": "turtwig",
       "evolvesTo": [
         "torterra"
       ]
@@ -13456,7 +13456,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 389,
-      "evolveFrom": "grotle",
+      "evolvedFrom": "grotle",
       "evolvesTo": null
     },
     {
@@ -13489,7 +13489,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 401,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "kricketune"
       ]
@@ -13528,7 +13528,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 402,
-      "evolveFrom": "kricketot",
+      "evolvedFrom": "kricketot",
       "evolvesTo": null
     },
     {
@@ -13561,7 +13561,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 412,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "wormadam",
         "mothim"
@@ -13601,7 +13601,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 413,
-      "evolveFrom": "burmy",
+      "evolvedFrom": "burmy",
       "evolvesTo": null
     },
     {
@@ -13634,7 +13634,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 415,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "vespiquen"
       ]
@@ -13669,7 +13669,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts",
       "pokemonId": 416,
-      "evolveFrom": "combee",
+      "evolvedFrom": "combee",
       "evolvesTo": null
     },
     {
@@ -13706,7 +13706,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 455,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -13743,7 +13743,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "150 Pts",
       "pokemonId": 470,
-      "evolveFrom": "eevee",
+      "evolvedFrom": "eevee",
       "evolvesTo": null
     },
     {
@@ -13780,7 +13780,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 479,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -13817,7 +13817,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "150 Pts",
       "pokemonId": 492,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -13850,7 +13850,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 126,
-      "evolveFrom": "magby",
+      "evolvedFrom": "magby",
       "evolvesTo": [
         "magmortar"
       ]
@@ -13885,7 +13885,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 467,
-      "evolveFrom": "magmar",
+      "evolvedFrom": "magmar",
       "evolvesTo": null
     },
     {
@@ -13918,7 +13918,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 218,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "magcargo"
       ]
@@ -13957,7 +13957,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 219,
-      "evolveFrom": "slugma",
+      "evolvedFrom": "slugma",
       "evolvesTo": null
     },
     {
@@ -13990,7 +13990,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 390,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "monferno"
       ]
@@ -14025,7 +14025,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 391,
-      "evolveFrom": "chimchar",
+      "evolvedFrom": "chimchar",
       "evolvesTo": [
         "infernape"
       ]
@@ -14060,7 +14060,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "500 Pts",
       "pokemonId": 392,
-      "evolveFrom": "monferno",
+      "evolvedFrom": "monferno",
       "evolvesTo": null
     },
     {
@@ -14097,7 +14097,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 479,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -14134,7 +14134,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 220,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "piloswine"
       ]
@@ -14173,7 +14173,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts",
       "pokemonId": 221,
-      "evolveFrom": "swinub",
+      "evolvedFrom": "swinub",
       "evolvesTo": [
         "mamoswine"
       ]
@@ -14212,7 +14212,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "150 Pts",
       "pokemonId": 473,
-      "evolveFrom": "piloswine",
+      "evolvedFrom": "piloswine",
       "evolvesTo": null
     },
     {
@@ -14245,7 +14245,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 378,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -14278,7 +14278,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 393,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "prinplup"
       ]
@@ -14317,7 +14317,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 394,
-      "evolveFrom": "piplup",
+      "evolvedFrom": "piplup",
       "evolvesTo": [
         "empoleon"
       ]
@@ -14356,7 +14356,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 395,
-      "evolveFrom": "prinplup",
+      "evolvedFrom": "prinplup",
       "evolvesTo": null
     },
     {
@@ -14389,7 +14389,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 418,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "floatzel"
       ]
@@ -14424,7 +14424,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 419,
-      "evolveFrom": "buizel",
+      "evolvedFrom": "buizel",
       "evolvesTo": null
     },
     {
@@ -14461,7 +14461,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 422,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "gastrodon"
       ]
@@ -14500,7 +14500,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 423,
-      "evolveFrom": "shellos",
+      "evolvedFrom": "shellos",
       "evolvesTo": null
     },
     {
@@ -14533,7 +14533,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 456,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "lumineon"
       ]
@@ -14568,7 +14568,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 457,
-      "evolveFrom": "finneon",
+      "evolvedFrom": "finneon",
       "evolvesTo": null
     },
     {
@@ -14601,7 +14601,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 459,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "abomasnow"
       ]
@@ -14640,7 +14640,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 460,
-      "evolveFrom": "snover",
+      "evolvedFrom": "snover",
       "evolvesTo": null
     },
     {
@@ -14673,7 +14673,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 471,
-      "evolveFrom": "eevee",
+      "evolvedFrom": "eevee",
       "evolvesTo": null
     },
     {
@@ -14706,7 +14706,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 479,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -14739,7 +14739,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 479,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -14787,7 +14787,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "500 Pts",
       "pokemonId": 484,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -14820,7 +14820,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 490,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -14853,7 +14853,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 81,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "magneton"
       ]
@@ -14888,7 +14888,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 82,
-      "evolveFrom": "magnemite",
+      "evolvedFrom": "magnemite",
       "evolvesTo": [
         "magnezone"
       ]
@@ -14927,7 +14927,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 462,
-      "evolveFrom": "magneton",
+      "evolvedFrom": "magneton",
       "evolvesTo": null
     },
     {
@@ -14960,7 +14960,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 100,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "electrode"
       ]
@@ -14995,7 +14995,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 101,
-      "evolveFrom": "voltorb",
+      "evolvedFrom": "voltorb",
       "evolvesTo": null
     },
     {
@@ -15028,7 +15028,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 125,
-      "evolveFrom": "elekid",
+      "evolvedFrom": "elekid",
       "evolvesTo": [
         "electivire"
       ]
@@ -15063,7 +15063,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "150 Pts",
       "pokemonId": 466,
-      "evolveFrom": "electabuzz",
+      "evolvedFrom": "electabuzz",
       "evolvesTo": null
     },
     {
@@ -15096,7 +15096,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 403,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "luxio"
       ]
@@ -15135,7 +15135,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts",
       "pokemonId": 404,
-      "evolveFrom": "shinx",
+      "evolvedFrom": "shinx",
       "evolvesTo": [
         "luxray"
       ]
@@ -15170,7 +15170,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "150 Pts",
       "pokemonId": 405,
-      "evolveFrom": "luxio",
+      "evolvedFrom": "luxio",
       "evolvesTo": null
     },
     {
@@ -15203,7 +15203,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "500 Pts",
       "pokemonId": 417,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -15236,7 +15236,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 479,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -15269,7 +15269,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 175,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "togetic"
       ]
@@ -15304,7 +15304,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 176,
-      "evolveFrom": "togepi",
+      "evolvedFrom": "togepi",
       "evolvesTo": [
         "togekiss"
       ]
@@ -15339,7 +15339,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 468,
-      "evolveFrom": "togetic",
+      "evolvedFrom": "togetic",
       "evolvesTo": null
     },
     {
@@ -15372,7 +15372,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 200,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "mismagius"
       ]
@@ -15407,7 +15407,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "500 Pts",
       "pokemonId": 429,
-      "evolveFrom": "misdreavus",
+      "evolvedFrom": "misdreavus",
       "evolvesTo": null
     },
     {
@@ -15440,7 +15440,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 280,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "kirlia"
       ]
@@ -15475,7 +15475,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 281,
-      "evolveFrom": "ralts",
+      "evolvedFrom": "ralts",
       "evolvesTo": [
         "gardevoir",
         "gallade"
@@ -15511,7 +15511,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 355,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "dusclops"
       ]
@@ -15550,7 +15550,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts",
       "pokemonId": 356,
-      "evolveFrom": "duskull",
+      "evolvedFrom": "duskull",
       "evolvesTo": [
         "dusknoir"
       ]
@@ -15589,7 +15589,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "150 Pts",
       "pokemonId": 477,
-      "evolveFrom": "dusclops",
+      "evolvedFrom": "dusclops",
       "evolvesTo": null
     },
     {
@@ -15622,7 +15622,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 425,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "drifblim"
       ]
@@ -15657,7 +15657,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts",
       "pokemonId": 426,
-      "evolveFrom": "drifloon",
+      "evolvedFrom": "drifloon",
       "evolvesTo": null
     },
     {
@@ -15690,7 +15690,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 480,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -15723,7 +15723,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 481,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -15756,7 +15756,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 482,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -15793,7 +15793,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 487,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -15826,7 +15826,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 488,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -15863,7 +15863,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 111,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "rhydon"
       ]
@@ -15898,7 +15898,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 112,
-      "evolveFrom": "rhyhorn",
+      "evolvedFrom": "rhyhorn",
       "evolvesTo": [
         "rhyperior"
       ]
@@ -15933,7 +15933,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 464,
-      "evolveFrom": "rhydon",
+      "evolvedFrom": "rhydon",
       "evolvesTo": null
     },
     {
@@ -15966,7 +15966,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 207,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "gliscor"
       ]
@@ -16001,7 +16001,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts",
       "pokemonId": 472,
-      "evolveFrom": "gligar",
+      "evolvedFrom": "gligar",
       "evolvesTo": null
     },
     {
@@ -16034,7 +16034,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 237,
-      "evolveFrom": "tyrogue",
+      "evolvedFrom": "tyrogue",
       "evolvesTo": null
     },
     {
@@ -16067,7 +16067,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 299,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "probopass"
       ]
@@ -16106,7 +16106,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 377,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -16139,7 +16139,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts",
       "pokemonId": 408,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "rampardos"
       ]
@@ -16174,7 +16174,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "150 Pts",
       "pokemonId": 409,
-      "evolveFrom": "cranidos",
+      "evolvedFrom": "cranidos",
       "evolvesTo": null
     },
     {
@@ -16211,7 +16211,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 413,
-      "evolveFrom": "burmy",
+      "evolvedFrom": "burmy",
       "evolvesTo": null
     },
     {
@@ -16244,7 +16244,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 447,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "lucario"
       ]
@@ -16279,7 +16279,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "150 Pts",
       "pokemonId": 448,
-      "evolveFrom": "riolu",
+      "evolvedFrom": "riolu",
       "evolvesTo": null
     },
     {
@@ -16316,7 +16316,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 449,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "hippowdon"
       ]
@@ -16355,7 +16355,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 450,
-      "evolveFrom": "hippopotas",
+      "evolvedFrom": "hippopotas",
       "evolvesTo": null
     },
     {
@@ -16388,7 +16388,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "500 Pts",
       "pokemonId": 475,
-      "evolveFrom": "kirlia",
+      "evolvedFrom": "kirlia",
       "evolvesTo": null
     },
     {
@@ -16421,7 +16421,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 198,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "honchkrow"
       ]
@@ -16456,7 +16456,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts",
       "pokemonId": 430,
-      "evolveFrom": "murkrow",
+      "evolvedFrom": "murkrow",
       "evolvesTo": null
     },
     {
@@ -16489,7 +16489,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 215,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "weavile",
         "sneasler"
@@ -16525,7 +16525,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "500 Pts",
       "pokemonId": 461,
-      "evolveFrom": "sneasel",
+      "evolvedFrom": "sneasel",
       "evolvesTo": null
     },
     {
@@ -16558,7 +16558,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 261,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "mightyena"
       ]
@@ -16597,7 +16597,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 262,
-      "evolveFrom": "poochyena",
+      "evolvedFrom": "poochyena",
       "evolvesTo": null
     },
     {
@@ -16630,7 +16630,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 434,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "skuntank"
       ]
@@ -16669,7 +16669,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts",
       "pokemonId": 435,
-      "evolveFrom": "stunky",
+      "evolvedFrom": "stunky",
       "evolvesTo": null
     },
     {
@@ -16702,7 +16702,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 442,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -16739,7 +16739,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 451,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "drapion"
       ]
@@ -16774,7 +16774,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 452,
-      "evolveFrom": "skorupi",
+      "evolvedFrom": "skorupi",
       "evolvesTo": null
     },
     {
@@ -16807,7 +16807,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 453,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "toxicroak"
       ]
@@ -16842,7 +16842,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts",
       "pokemonId": 454,
-      "evolveFrom": "croagunk",
+      "evolvedFrom": "croagunk",
       "evolvesTo": null
     },
     {
@@ -16879,7 +16879,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "150 Pts",
       "pokemonId": 491,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -16916,7 +16916,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "500 Pts",
       "pokemonId": 491,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -16949,7 +16949,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 227,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -16982,7 +16982,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts",
       "pokemonId": 379,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -17019,7 +17019,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 410,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "bastiodon"
       ]
@@ -17058,7 +17058,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 411,
-      "evolveFrom": "shieldon",
+      "evolvedFrom": "shieldon",
       "evolvesTo": null
     },
     {
@@ -17091,7 +17091,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 413,
-      "evolveFrom": "burmy",
+      "evolvedFrom": "burmy",
       "evolvesTo": null
     },
     {
@@ -17128,7 +17128,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 436,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "bronzong"
       ]
@@ -17167,7 +17167,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "70 Pts",
       "pokemonId": 437,
-      "evolveFrom": "bronzor",
+      "evolvedFrom": "bronzor",
       "evolvesTo": null
     },
     {
@@ -17204,7 +17204,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 476,
-      "evolveFrom": "nosepass",
+      "evolvedFrom": "nosepass",
       "evolvesTo": null
     },
     {
@@ -17252,7 +17252,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "500 Pts",
       "pokemonId": 483,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -17285,7 +17285,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "150 Pts",
       "pokemonId": 485,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -17318,7 +17318,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 443,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "gabite"
       ]
@@ -17357,7 +17357,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 444,
-      "evolveFrom": "gible",
+      "evolvedFrom": "gible",
       "evolvesTo": [
         "garchomp"
       ]
@@ -17396,7 +17396,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 445,
-      "evolveFrom": "gabite",
+      "evolvedFrom": "gabite",
       "evolvesTo": null
     },
     {
@@ -17429,7 +17429,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 108,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "lickilicky"
       ]
@@ -17464,7 +17464,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "500 Pts",
       "pokemonId": 463,
-      "evolveFrom": "lickitung",
+      "evolvedFrom": "lickitung",
       "evolvesTo": null
     },
     {
@@ -17497,7 +17497,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 133,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "vaporeon",
         "jolteon",
@@ -17539,7 +17539,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 137,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "porygon2"
       ]
@@ -17574,7 +17574,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 233,
-      "evolveFrom": "porygon",
+      "evolvedFrom": "porygon",
       "evolvesTo": [
         "porygon-z"
       ]
@@ -17609,7 +17609,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 474,
-      "evolveFrom": "porygon2",
+      "evolvedFrom": "porygon2",
       "evolvesTo": null
     },
     {
@@ -17642,7 +17642,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 190,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "ambipom"
       ]
@@ -17677,7 +17677,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 424,
-      "evolveFrom": "aipom",
+      "evolvedFrom": "aipom",
       "evolvesTo": null
     },
     {
@@ -17710,7 +17710,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 396,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "staravia"
       ]
@@ -17745,7 +17745,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 397,
-      "evolveFrom": "starly",
+      "evolvedFrom": "starly",
       "evolvesTo": [
         "staraptor"
       ]
@@ -17780,7 +17780,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 398,
-      "evolveFrom": "staravia",
+      "evolvedFrom": "staravia",
       "evolvesTo": null
     },
     {
@@ -17813,7 +17813,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 399,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "bibarel"
       ]
@@ -17848,7 +17848,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 400,
-      "evolveFrom": "bidoof",
+      "evolvedFrom": "bidoof",
       "evolvesTo": null
     },
     {
@@ -17881,7 +17881,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 427,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "lopunny"
       ]
@@ -17916,7 +17916,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "35 Pts",
       "pokemonId": 428,
-      "evolveFrom": "buneary",
+      "evolvedFrom": "buneary",
       "evolvesTo": null
     },
     {
@@ -17949,7 +17949,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 431,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "purugly"
       ]
@@ -17984,7 +17984,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "70 Pts",
       "pokemonId": 432,
-      "evolveFrom": "glameow",
+      "evolvedFrom": "glameow",
       "evolvesTo": null
     },
     {
@@ -18017,7 +18017,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 441,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -18050,7 +18050,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "35 Pts",
       "pokemonId": 479,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -18083,7 +18083,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "150 Pts",
       "pokemonId": 486,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -18336,7 +18336,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "400 Pts",
       "pokemonId": 465,
-      "evolveFrom": "tangela",
+      "evolvedFrom": "tangela",
       "evolvesTo": null
     },
     {
@@ -18369,7 +18369,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "400 Pts",
       "pokemonId": 415,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "vespiquen"
       ]
@@ -18408,7 +18408,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "400 Pts",
       "pokemonId": 455,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -18445,7 +18445,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "400 Pts",
       "pokemonId": 492,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -18482,7 +18482,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "400 Pts",
       "pokemonId": 473,
-      "evolveFrom": "piloswine",
+      "evolvedFrom": "piloswine",
       "evolvesTo": null
     },
     {
@@ -18519,7 +18519,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "400 Pts",
       "pokemonId": 423,
-      "evolveFrom": "shellos",
+      "evolvedFrom": "shellos",
       "evolvesTo": null
     },
     {
@@ -18552,7 +18552,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "400 Pts",
       "pokemonId": 490,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -18585,7 +18585,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "400 Pts",
       "pokemonId": 403,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "luxio"
       ]
@@ -18620,7 +18620,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "400 Pts",
       "pokemonId": 479,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -18653,7 +18653,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "400 Pts",
       "pokemonId": 425,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "drifblim"
       ]
@@ -18688,7 +18688,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "400 Pts",
       "pokemonId": 481,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -18725,7 +18725,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "400 Pts",
       "pokemonId": 487,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -18758,7 +18758,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "400 Pts",
       "pokemonId": 488,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -18791,7 +18791,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "400 Pts",
       "pokemonId": 464,
-      "evolveFrom": "rhydon",
+      "evolvedFrom": "rhydon",
       "evolvesTo": null
     },
     {
@@ -18824,7 +18824,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "400 Pts",
       "pokemonId": 448,
-      "evolveFrom": "riolu",
+      "evolvedFrom": "riolu",
       "evolvesTo": null
     },
     {
@@ -18861,7 +18861,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "400 Pts",
       "pokemonId": 449,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "hippowdon"
       ]
@@ -18896,7 +18896,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "400 Pts",
       "pokemonId": 442,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -18929,7 +18929,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "400 Pts",
       "pokemonId": 453,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "toxicroak"
       ]
@@ -18964,7 +18964,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "400 Pts",
       "pokemonId": 485,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -19001,7 +19001,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "400 Pts",
       "pokemonId": 445,
-      "evolveFrom": "gabite",
+      "evolvedFrom": "gabite",
       "evolvesTo": null
     },
     {
@@ -19034,7 +19034,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "400 Pts",
       "pokemonId": 398,
-      "evolveFrom": "staravia",
+      "evolvedFrom": "staravia",
       "evolvesTo": null
     },
     {
@@ -19067,7 +19067,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "400 Pts",
       "pokemonId": 399,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "bibarel"
       ]
@@ -19102,7 +19102,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "400 Pts",
       "pokemonId": 431,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "purugly"
       ]
@@ -19137,7 +19137,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "400 Pts",
       "pokemonId": 486,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -19170,7 +19170,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 469,
-      "evolveFrom": "yanma",
+      "evolvedFrom": "yanma",
       "evolvesTo": null
     },
     {
@@ -19203,7 +19203,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 392,
-      "evolveFrom": "monferno",
+      "evolvedFrom": "monferno",
       "evolvesTo": null
     },
     {
@@ -19251,7 +19251,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 484,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -19284,7 +19284,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 417,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -19317,7 +19317,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 429,
-      "evolveFrom": "misdreavus",
+      "evolvedFrom": "misdreavus",
       "evolvesTo": null
     },
     {
@@ -19350,7 +19350,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 475,
-      "evolveFrom": "kirlia",
+      "evolvedFrom": "kirlia",
       "evolvesTo": null
     },
     {
@@ -19383,7 +19383,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 461,
-      "evolveFrom": "sneasel",
+      "evolvedFrom": "sneasel",
       "evolvesTo": null
     },
     {
@@ -19420,7 +19420,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 491,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -19468,7 +19468,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 483,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -19501,7 +19501,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 463,
-      "evolveFrom": "lickitung",
+      "evolvedFrom": "lickitung",
       "evolvesTo": null
     },
     {
@@ -19642,7 +19642,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 469,
-      "evolveFrom": "yanma",
+      "evolvedFrom": "yanma",
       "evolvesTo": null
     },
     {
@@ -19675,7 +19675,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 392,
-      "evolveFrom": "monferno",
+      "evolvedFrom": "monferno",
       "evolvesTo": null
     },
     {
@@ -19708,7 +19708,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 417,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -19741,7 +19741,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 429,
-      "evolveFrom": "misdreavus",
+      "evolvedFrom": "misdreavus",
       "evolvesTo": null
     },
     {
@@ -19774,7 +19774,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 475,
-      "evolveFrom": "kirlia",
+      "evolvedFrom": "kirlia",
       "evolvesTo": null
     },
     {
@@ -19807,7 +19807,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 461,
-      "evolveFrom": "sneasel",
+      "evolvedFrom": "sneasel",
       "evolvesTo": null
     },
     {
@@ -19844,7 +19844,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 491,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -19877,7 +19877,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "1,250 Pts",
       "pokemonId": 463,
-      "evolveFrom": "lickitung",
+      "evolvedFrom": "lickitung",
       "evolvesTo": null
     },
     {
@@ -19925,7 +19925,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Palkia packs",
       "packPoints": "1,500 Pts",
       "pokemonId": 484,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -19973,7 +19973,7 @@
       "howToGet": "Open Space-Time Smackdown (A2) Dialga packs",
       "packPoints": "1,500 Pts",
       "pokemonId": 483,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -20021,7 +20021,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "2,500 Pts",
       "pokemonId": 484,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -20069,7 +20069,7 @@
       "howToGet": "Open either Space-Time Smackdown (A2) Dialga or Palkia packs",
       "packPoints": "2,500 Pts",
       "pokemonId": 483,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -20246,7 +20246,7 @@
       "howToGet": "Obtained with Premium Pass subscription",
       "packPoints": "-",
       "pokemonId": 25,
-      "evolveFrom": "pichu",
+      "evolvedFrom": "pichu",
       "evolvesTo": [
         "raichu"
       ]
@@ -20285,7 +20285,7 @@
       "howToGet": "Obtained with Premium Pass subscription",
       "packPoints": "-",
       "pokemonId": 150,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -20318,7 +20318,7 @@
       "howToGet": "Obtainable from Chansey Wonder Picks",
       "packPoints": "-",
       "pokemonId": 113,
-      "evolveFrom": "happiny",
+      "evolvedFrom": "happiny",
       "evolvesTo": [
         "blissey"
       ]
@@ -20353,7 +20353,7 @@
       "howToGet": "Obtainable from Chansey Wonder Picks",
       "packPoints": "-",
       "pokemonId": 52,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "persian",
         "perrserker"
@@ -20393,7 +20393,7 @@
       "howToGet": "Open Promo Pack A Series Vol. 1",
       "packPoints": "-",
       "pokemonId": 12,
-      "evolveFrom": "metapod",
+      "evolvedFrom": "metapod",
       "evolvesTo": null
     },
     {
@@ -20430,7 +20430,7 @@
       "howToGet": "Open Promo Pack A Series Vol. 1",
       "packPoints": "-",
       "pokemonId": 131,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -20463,7 +20463,7 @@
       "howToGet": "Open Promo Pack A Series Vol. 1",
       "packPoints": "-",
       "pokemonId": 25,
-      "evolveFrom": "pichu",
+      "evolvedFrom": "pichu",
       "evolvesTo": [
         "raichu"
       ]
@@ -20498,7 +20498,7 @@
       "howToGet": "Open Promo Pack A Series Vol. 1",
       "packPoints": "-",
       "pokemonId": 35,
-      "evolveFrom": "cleffa",
+      "evolvedFrom": "cleffa",
       "evolvesTo": [
         "clefable"
       ]
@@ -20533,7 +20533,7 @@
       "howToGet": "Open Promo Pack A Series Vol. 1",
       "packPoints": "-",
       "pokemonId": 56,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "primeape"
       ]
@@ -20572,7 +20572,7 @@
       "howToGet": "Open Promo Pack A Series Vol. 2",
       "packPoints": "-",
       "pokemonId": 3,
-      "evolveFrom": "ivysaur",
+      "evolvedFrom": "ivysaur",
       "evolvesTo": null
     },
     {
@@ -20609,7 +20609,7 @@
       "howToGet": "Open Promo Pack A Series Vol. 2",
       "packPoints": "-",
       "pokemonId": 658,
-      "evolveFrom": "frogadier",
+      "evolvedFrom": "frogadier",
       "evolvesTo": null
     },
     {
@@ -20642,7 +20642,7 @@
       "howToGet": "Open Promo Pack A Series Vol. 2",
       "packPoints": "-",
       "pokemonId": 93,
-      "evolveFrom": "gastly",
+      "evolvedFrom": "gastly",
       "evolvesTo": [
         "gengar"
       ]
@@ -20677,7 +20677,7 @@
       "howToGet": "Open Promo Pack A Series Vol. 2",
       "packPoints": "-",
       "pokemonId": 95,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "steelix"
       ]
@@ -20712,7 +20712,7 @@
       "howToGet": "Open Promo Pack A Series Vol. 2",
       "packPoints": "-",
       "pokemonId": 39,
-      "evolveFrom": "igglybuff",
+      "evolvedFrom": "igglybuff",
       "evolvesTo": [
         "wigglytuff"
       ]
@@ -20751,7 +20751,7 @@
       "howToGet": "Obtainable from Chansey Wonder Picks",
       "packPoints": "-",
       "pokemonId": 1,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "ivysaur"
       ]
@@ -20786,7 +20786,7 @@
       "howToGet": "Obtainable from Chansey Wonder Picks",
       "packPoints": "-",
       "pokemonId": 81,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "magneton"
       ]
@@ -20836,7 +20836,7 @@
       "howToGet": "Obtained from a mission",
       "packPoints": "-",
       "pokemonId": 146,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -20869,7 +20869,7 @@
       "howToGet": "Obtained from a campaign",
       "packPoints": "-",
       "pokemonId": 25,
-      "evolveFrom": "pichu",
+      "evolvedFrom": "pichu",
       "evolvesTo": [
         "raichu"
       ]
@@ -20904,7 +20904,7 @@
       "howToGet": "Obtained from a promo pack",
       "packPoints": "-",
       "pokemonId": 495,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "servine"
       ]
@@ -20943,7 +20943,7 @@
       "howToGet": "Obtained from a promo pack",
       "packPoints": "-",
       "pokemonId": 637,
-      "evolveFrom": "larvesta",
+      "evolvedFrom": "larvesta",
       "evolvesTo": null
     },
     {
@@ -20980,7 +20980,7 @@
       "howToGet": "Obtained from a promo pack",
       "packPoints": "-",
       "pokemonId": 9,
-      "evolveFrom": "wartortle",
+      "evolvedFrom": "wartortle",
       "evolvesTo": null
     },
     {
@@ -21013,7 +21013,7 @@
       "howToGet": "Obtained from a promo pack",
       "packPoints": "-",
       "pokemonId": 133,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "vaporeon",
         "jolteon",
@@ -21055,7 +21055,7 @@
       "howToGet": "Obtained from a promo pack",
       "packPoints": "-",
       "pokemonId": 573,
-      "evolveFrom": "minccino",
+      "evolvedFrom": "minccino",
       "evolvesTo": null
     },
     {
@@ -21088,7 +21088,7 @@
       "howToGet": "Obtainable from Chansey Wonder Picks",
       "packPoints": "-",
       "pokemonId": 4,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "charmeleon"
       ]
@@ -21123,7 +21123,7 @@
       "howToGet": "Obtainable from Chansey Wonder Picks",
       "packPoints": "-",
       "pokemonId": 7,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "wartortle"
       ]
@@ -21162,7 +21162,7 @@
       "howToGet": "Obtained from a promo pack",
       "packPoints": "-",
       "pokemonId": 387,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "grotle"
       ]
@@ -21197,7 +21197,7 @@
       "howToGet": "Obtained from a promo pack",
       "packPoints": "-",
       "pokemonId": 466,
-      "evolveFrom": "electabuzz",
+      "evolvedFrom": "electabuzz",
       "evolvesTo": null
     },
     {
@@ -21234,7 +21234,7 @@
       "howToGet": "Obtained from a promo pack",
       "packPoints": "-",
       "pokemonId": 488,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     },
     {
@@ -21267,7 +21267,7 @@
       "howToGet": "Obtained from a promo pack",
       "packPoints": "-",
       "pokemonId": 200,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": [
         "mismagius"
       ]
@@ -21302,7 +21302,7 @@
       "howToGet": "Obtained from a promo pack",
       "packPoints": "-",
       "pokemonId": 227,
-      "evolveFrom": null,
+      "evolvedFrom": null,
       "evolvesTo": null
     }
   ]

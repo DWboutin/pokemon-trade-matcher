@@ -36,6 +36,16 @@ export type CardData = {
   effects: CardEffect[];
   howToGet: string;
   packPoints: string;
+  pokemonId: number | null;
+  evolvedFrom: string | null;
+  evolvesTo: string[] | null;
+};
+
+export type PopulatedCardData = CardData & {
+  evolvedFromCards: CardData[] | null;
+  evolvesToCards: CardData[] | null;
+  variations: CardData[] | null;
+  variationsEx: CardData[] | null;
 };
 
 export type CardsData = {
