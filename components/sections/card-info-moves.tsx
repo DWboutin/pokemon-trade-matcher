@@ -3,18 +3,19 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { CardData, CardEffect } from "@/types/app";
 import Image from "next/image";
+import Link from "next/link";
 
-const CardInfoSkill = ({ skill }: { skill: CardEffect }) => {
+const CardInfoMove = ({ move }: { move: CardEffect }) => {
   return (
     <div className="flex flex-col items-start gap-3 [&:not(:last-child)]:border-b border-neutral-200 pb-6">
       <div className="flex w-full items-center justify-between">
-        <Typography
-          variant="h3"
-          text={skill.name}
-          className="text-neutral-900 font-medium !text-lg"
-        />
+        <h3 className="scroll-m-12 font-semibold tracking-tight lg:text-3xl text-neutral-900 !text-lg">
+          <Link href={`/library?move=${encodeURIComponent(move.name)}`} className="hover:underline">
+            {move.name}
+          </Link>
+        </h3>
         <div className="flex flex-row items-center gap-1 rounded-full">
-          {skill.cost.map((cost) => {
+          {move.cost.map((cost) => {
             return Array.from({ length: cost.count }).map((_, i) => (
               <Image
                 key={`${cost.element}-${i}`}
@@ -33,16 +34,16 @@ const CardInfoSkill = ({ skill }: { skill: CardEffect }) => {
         <Typography variant="p" text="Damage" className="text-neutral-600 text-sm tracking-wider" />
         <Typography
           variant="p"
-          text={skill.damage.toString()}
+          text={move.damage.toString()}
           className="text-neutral-900 font-medium"
         />
       </div>
 
-      {skill.description && (
+      {move.description && (
         <div className="flex w-full flex-col gap-2 mt-1">
           <Typography
             variant="p"
-            text={skill.description}
+            text={move.description}
             className="text-neutral-700 text-sm leading-relaxed"
           />
         </div>
@@ -51,24 +52,24 @@ const CardInfoSkill = ({ skill }: { skill: CardEffect }) => {
   );
 };
 
-export const CardInfoSkills = ({ card }: { card: CardData }) => {
+export const CardInfoMoves = ({ card }: { card: CardData }) => {
   return (
     <Card
       className={cn(
-        "shadow-sm relative overflow-hidden border-2 border-gray-50 border-t-white border-l-white hover:shadow-2xl transition-shadow duration-300 rounded-tl-3xl rounded-br-3xl bg-gradient-to-br from-gray-50 to-gray-100",
+        "shadow-sm relative overflow-hidden border-2 border-gray-50 border-t-white border-l-white transition-shadow duration-300 rounded-tl-3xl rounded-br-3xl bg-gradient-to-br from-gray-50 to-gray-100",
         "with-diagonal-gradient subtle-gradient"
       )}
     >
       <section className="relative rounded-xl p-6 z-20">
         <Typography
           variant="h2"
-          text="Skills"
+          text="Moves"
           className="!text-xl font-semibold text-neutral-900 mb-6"
         />
 
         <div className="flex flex-col gap-6">
           {card.effects.map((effect, index) => (
-            <CardInfoSkill key={index} skill={effect} />
+            <CardInfoMove key={index} move={effect} />
           ))}
         </div>
       </section>

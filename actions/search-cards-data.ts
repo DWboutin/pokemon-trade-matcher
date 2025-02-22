@@ -8,7 +8,7 @@ import { CardsData } from "@/types/app";
 const cardsData = cardsDataJson as CardsData;
 
 export const searchCardsData = async (values: z.infer<typeof cardsSearchSchema>) => {
-  const { cardName, rarity, exclusivePackName, exclusivePackSeries, type, hp, stage, skill } =
+  const { cardName, rarity, exclusivePackName, exclusivePackSeries, type, hp, stage, move } =
     values;
 
   const filteredCards = cardsData.cards.filter((card) => {
@@ -40,7 +40,7 @@ export const searchCardsData = async (values: z.infer<typeof cardsSearchSchema>)
       return false;
     }
 
-    if (skill && !card.effects.some((effect) => effect.name === skill)) {
+    if (move && !card.effects.some((effect) => effect.name === move)) {
       return false;
     }
 

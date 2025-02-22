@@ -6,7 +6,7 @@ import { ControllerRenderProps } from "react-hook-form";
 import { SelectDropdown } from "@/components/select-dropdown";
 
 const cardsData = cardsDataJson as CardsData;
-const skillsData = cardsData.cards
+const movesData = cardsData.cards
   .reduce<string[]>(
     (acc, card) => {
       card.effects.forEach((effect) => {
@@ -20,8 +20,8 @@ const skillsData = cardsData.cards
   )
   .sort((a, b) => a.localeCompare(b));
 
-export const CardsSkillsDropdown: React.FC<ControllerRenderProps<{ skill: string | undefined }>> = (
+export const CardsMovesDropdown: React.FC<ControllerRenderProps<{ move: string | undefined }>> = (
   props
 ) => {
-  return <SelectDropdown {...props} options={skillsData} placeholder="Select a skill" />;
+  return <SelectDropdown {...props} options={movesData} placeholder="Select a move" />;
 };

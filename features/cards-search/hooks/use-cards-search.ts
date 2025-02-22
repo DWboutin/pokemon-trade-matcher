@@ -27,7 +27,7 @@ const formDefaultValues: z.infer<typeof cardsSearchSchema> = {
   exclusivePackName: "",
   exclusivePackSeries: "",
   type: "",
-  skill: "",
+  move: "",
   hp: undefined,
   stage: "",
 };

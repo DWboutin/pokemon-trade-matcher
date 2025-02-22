@@ -21,7 +21,7 @@ import { CardsRarityDropdown } from "@/features/cards-search/components/cards-ra
 import { cardsSearchSchema } from "@/features/cards-search/utils/cards-search-schema";
 import { UseFormReturn } from "react-hook-form";
 import { z } from "zod";
-import { CardsSkillsDropdown } from "@/features/cards-search/components/cards-skills-dropdown";
+import { CardsMovesDropdown } from "@/features/cards-search/components/cards-moves-dropdown";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 type CardsSearchModalProps = {
@@ -113,14 +113,14 @@ export const CardsSearchModal = ({
             />
             <FormField
               control={form.control}
-              name="skill"
+              name="move"
               render={({ field }) => (
                 <div className="flex flex-1 flex-row justify-between">
                   <FormItem className="flex flex-1 flex-col gap-1 mt-2">
-                    <FormLabel>Skill</FormLabel>
+                    <FormLabel>Move</FormLabel>
                     <FormControl>
                       <div className="min-w-48">
-                        <CardsSkillsDropdown {...field} />
+                        <CardsMovesDropdown {...field} />
                       </div>
                     </FormControl>
                     <FormMessage />

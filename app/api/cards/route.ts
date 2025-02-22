@@ -15,7 +15,7 @@ export async function GET(request: Request) {
     const type = params.get("type");
     const hp = params.get("hp");
     const stage = params.get("stage");
-    const skill = params.get("skill");
+    const move = params.get("move");
 
     const filteredCards = cardsData.cards.filter((card) => {
       if (cardName && !card.cardName.toLowerCase().includes(cardName.toLowerCase())) {
@@ -46,7 +46,7 @@ export async function GET(request: Request) {
         return false;
       }
 
-      if (skill && !card.effects.some((effect) => effect.name === skill)) {
+      if (move && !card.effects.some((effect) => effect.name === move)) {
         return false;
       }
 

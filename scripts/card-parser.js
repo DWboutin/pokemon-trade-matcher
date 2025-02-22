@@ -14,11 +14,12 @@ $("tbody tr").each((i, row) => {
   // Extract data from cells
   const cardNumber = $row.find("td:nth-child(2)").text().trim();
   const cardName = $row.find("td:nth-child(3) a").text().trim();
+  const cardDetailsUrl = $row.find("td:nth-child(3) a").attr("href")?.trim() || "";
   const rarity = $row.find("td:nth-child(4)").text(); // Get text after line break
   const type = $row.find("td:nth-child(6) img").attr("alt");
   const hp = $row.find("td:nth-child(7)").text().trim();
   const stage = $row.find("td:nth-child(8)").text().trim();
-  const packPoints = $row.find("td:nth-child(9)").text().trim();
+  const packPoints = $row.find("td:nth-child(9)").text().trim().replace(/\s+/g, " ");
   const effects = $row.find("td:nth-child(10)").html()?.trim() || "";
   const howToGet = $row.find("td:nth-child(11)").html()?.trim() || "";
 
@@ -98,6 +99,7 @@ $("tbody tr").each((i, row) => {
   const card = {
     cardNumber,
     cardName,
+    cardDetailsUrl,
     rarity,
     exclusivePack: {
       name: exclusivePackName,

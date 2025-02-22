@@ -6,7 +6,7 @@ import { CardInfoHeading } from "@/components/sections/card-info-heading";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { CardInfoGameDetails } from "@/components/sections/card-info-game-details";
-import { CardInfoSkills } from "@/components/sections/card-info-skills";
+import { CardInfoMoves } from "@/components/sections/card-info-moves";
 
 export const dynamic = "force-static";
 
@@ -56,10 +56,9 @@ export default async function LibraryCardPage({ params }: { params: any }) {
 
   return (
     <article className="container mx-auto">
-      <div className="flex flex-col gap-4 py-10 items-center">
+      <div className="flex flex-col gap-4 py-10 items-center max-md:px-4">
         <CardInfoHeading card={card} mainHeading />
 
-        {/* Grid container */}
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl">
           {/* First column - will be third on mobile */}
           <div className="order-3 lg:order-1">
@@ -79,7 +78,7 @@ export default async function LibraryCardPage({ params }: { params: any }) {
 
           {/* Third column - will be second on mobile */}
           <div className="order-2 lg:order-3">
-            <CardInfoSkills card={card} />
+            <CardInfoMoves card={card} />
           </div>
         </div>
       </div>

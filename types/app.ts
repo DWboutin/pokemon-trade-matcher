@@ -22,6 +22,7 @@ export type CardEffect = {
 export type CardData = {
   cardNumber: string;
   cardName: string;
+  cardDetailsUrl: string;
   rarity: string;
   exclusivePack: {
     name: string;
