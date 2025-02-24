@@ -3,6 +3,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { OffersListing } from "@/features/offers-listing/offers-listing";
 import { cn } from "@/lib/utils";
+import { useConnectedUserStore } from "@/stores/connected-user-store";
 import { CardData } from "@/types/app";
 import { PopulatedOffer } from "@/utils/factories/populate-offer-with-card-data";
 import dynamic from "next/dynamic";
@@ -32,7 +33,10 @@ export const TradeOffersSection = ({
   tradeOwnerId,
   acceptsOffers,
 }: TradeOffersSectionProps) => {
-  const [activeTab, setActiveTab] = useState<"offers" | "create-offer">("offers");
+  const userId = useConnectedUserStore((state) => state.user?.id);
+  const [activeTab, setActiveTab] = useState<"offers" | "create-offer">(
+    mainCard || userId === tradeOwnerId ? "offers" : "create-offer"
+  );
 
   const handleChangeTabToOffers = () => {
     setActiveTab("offers");
