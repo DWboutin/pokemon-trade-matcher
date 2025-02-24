@@ -31,15 +31,20 @@ export const TradeCard = ({
   time,
   acceptsOffers,
 }: TradeCardProps) => {
-  const tradeType = useMemo(() => {
-    return getTradeType(mainCard, offeredCards);
-  }, [mainCard, offeredCards]);
-
-  const descriptionText = useMemo(() => {
-    if (mainCard === null) {
-      return `${username} searches for any trade.`;
+  const tradeType = getTradeType(mainCard, offeredCards);
+  const tradeTitle = useMemo(() => {
+    if (tradeType === "want") {
+      return `Wants to get ${mainCard?.cardName} ${mainCard?.exclusivePack.name} ${mainCard?.exclusivePack.series}.`;
     }
 
+    if (tradeType === "offer") {
+      return `Offers to trade ${offeredCards[0]?.cardName} ${offeredCards[0]?.exclusivePack.name} ${offeredCards[0]?.exclusivePack.series}.`;
+    }
+
+    return `${username} offers theses cards below to get ${mainCard?.cardName} ${mainCard?.exclusivePack.name} ${mainCard?.exclusivePack.series}.`;
+  }, [mainCard, offeredCards, tradeType, username]);
+
+  const descriptionText = useMemo(() => {
     if (tradeType === "want") {
       return `${username} searches for any trade offers to get ${mainCard?.cardName} ${mainCard?.exclusivePack.name} ${mainCard?.exclusivePack.series}.`;
     }
@@ -50,6 +55,7 @@ export const TradeCard = ({
 
     return `${username} offers theses cards below to get ${mainCard?.cardName} ${mainCard?.exclusivePack.name} ${mainCard?.exclusivePack.series}.`;
   }, [mainCard, username, tradeType]);
+  const primaryCard = mainCard || offeredCards[0];
 
   return (
     <Card
@@ -66,10 +72,10 @@ export const TradeCard = ({
       )}
       <div className="flex flex-row max-sm:flex-col max-sm:items-center z-10">
         <div className="py-6 pl-6 max-sm:pb-0 flex-shrink-0 z-10">
-          {mainCard && (
+          {primaryCard && (
             <Image
-              src={`/cards/${mainCard.cardNumber.replace(/\s/g, "_")}.png`}
-              alt={`${mainCard.cardName} ${mainCard.exclusivePack.name} ${mainCard.exclusivePack.series}`}
+              src={`/cards/${primaryCard.cardNumber.replace(/\s/g, "_")}.png`}
+              alt={`${primaryCard.cardName} ${primaryCard.exclusivePack.name} ${primaryCard.exclusivePack.series}`}
               width={135}
               height={190}
               style={{ width: "135px", height: "190px" }}
@@ -77,7 +83,7 @@ export const TradeCard = ({
               priority
             />
           )}
-          {!mainCard && (
+          {!primaryCard && (
             <div className="w-[135px] h-[190px] bg-gray-200 rounded-md flex flex-col items-center justify-center gap-2 drop-shadow-md">
               <div className="[text-shadow:_0px_1px_1px_#ffffff]">
                 <MdCatchingPokemon className="w-20 h-20 text-gray-500" />
@@ -88,13 +94,13 @@ export const TradeCard = ({
         </div>
         <div className="flex flex-col flex-1 w-full max-sm:items-start z-10">
           <CardHeader>
-            <CardTitle className="text-xl capitalize text-shadow-embossed">{tradeType}</CardTitle>
+            <CardTitle className="text-xl capitalize text-shadow-embossed">{tradeTitle}</CardTitle>
             <CardDescription>
               <Typography variant="p" text={descriptionText} />
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2 flex-1" aria-description="offered cards">
-            {offeredCards.length > 0 && (
+            {offeredCards.length > 1 && (
               <div className="flex flex-row gap-2 overflow-x-auto flex-shrink-0">
                 {offeredCards.map((card) => (
                   <Image

@@ -15,7 +15,7 @@ export const deleteTrade = async (tradeId: string) => {
   const { error } = await supabase.from("trades").delete().eq("id", tradeId);
 
   if (error) {
-    return { error: error.message };
+    throw new Error(error.message);
   }
 
   revalidatePath("/trades");

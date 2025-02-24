@@ -19,7 +19,7 @@ export const getUserById = async (id: string): Promise<Author | null> => {
   }
 
   if (!response.ok) {
-    throw new Error("Failed to fetch trade");
+    throw new Error("Failed to fetch user");
   }
 
   const data = await response.json();
