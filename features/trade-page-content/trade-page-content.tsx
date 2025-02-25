@@ -13,6 +13,9 @@ type TradePageContentProps = {
 };
 
 export const TradePageContent = ({ trade, initialOffers }: TradePageContentProps) => {
+  const primaryCard =
+    !trade.mainCard && trade.offeredCards.length === 1 ? trade.offeredCards[0] : trade.mainCard;
+
   return (
     <div className="w-full">
       <div className="flex flex-1 flex-col gap-4 py-10 items-center max-md:px-4">
@@ -20,8 +23,8 @@ export const TradePageContent = ({ trade, initialOffers }: TradePageContentProps
         {trade.author && <TradePageAuthor author={trade.author} createdAt={trade.created_at} />}
 
         <div className="flex flex-col w-full max-w-[640px] items-center gap-8">
-          {trade.mainCard && <CardInfoHeading card={trade.mainCard} />}
-          <TradePageMainImage mainCard={trade.mainCard} />
+          {primaryCard && <CardInfoHeading card={primaryCard} />}
+          <TradePageMainImage mainCard={primaryCard} />
           <div className="flex flex-col gap-10 text-center">
             <TradePageCardTitle trade={trade} />
           </div>

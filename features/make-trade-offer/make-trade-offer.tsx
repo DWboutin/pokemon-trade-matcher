@@ -52,7 +52,7 @@ export const MakeTradeOffer = ({
 
   return (
     <div className="flex flex-col px-4 gap-4">
-      {(tradeType === "offer" || tradeType === "trade") && (
+      {(tradeType === "offer" || tradeType === "trade") && offeredCards.length > 1 && (
         <>
           <div className="text-center">
             <Typography variant="h3" text="Choose the card you want to get" />

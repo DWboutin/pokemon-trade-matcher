@@ -1,5 +1,7 @@
 import { Typography } from "@/components/typography";
 import { PopulatedTrade } from "@/utils/factories/populate-trade-with-cards-data";
+import { getTradeDetailsDescription, getTradeDetailsTitle } from "@/utils/get-trade-details-text";
+import { getTradeType } from "@/utils/get-trade-type";
 import dynamic from "next/dynamic";
 import { useMemo } from "react";
 
@@ -17,30 +19,22 @@ type TradePageHeadingProps = {
 
 export const TradePageHeading = ({ trade }: TradePageHeadingProps) => {
   const { mainCard, offeredCards } = trade;
-  const title = useMemo(() => {
-    if (mainCard && offeredCards.length === 0) {
-      return `Wants to trade ${mainCard.cardName}`;
-    }
+  const tradeType = getTradeType(mainCard, offeredCards);
+  const title = useMemo(
+    () => getTradeDetailsTitle(mainCard, offeredCards, tradeType),
+    [mainCard, offeredCards, tradeType]
+  );
 
-    if (offeredCards.length > 0 && !mainCard) {
-      return `Offering ${
-        offeredCards.length === 1 ? "1 card" : `${offeredCards.length} cards`
-      } for a trade`;
-    }
-
-    if (mainCard && offeredCards.length > 0) {
-      return `${trade.author.username} is offering ${
-        offeredCards.length === 1 ? "1 card" : `${offeredCards.length} cards`
-      } to get ${mainCard.cardName}`;
-    }
-
-    return `${trade.author.username} wants to trade`;
-  }, [mainCard, offeredCards, trade.author.username]);
+  const descriptionText = useMemo(
+    () => getTradeDetailsDescription(mainCard, offeredCards, tradeType, trade.author.username),
+    [mainCard, offeredCards, tradeType, trade.author.username]
+  );
 
   return (
     <div className="w-full flex flex-1 flex-col gap-4">
       <div className="w-full flex flex-col gap-4 py-4 items-center text-center">
         <Typography variant="h1" text={title} />
+        <Typography variant="p" text={descriptionText} />
       </div>
       {trade.accepts_offers && <TradePageOwnerActions authorId={trade.author.id} />}
     </div>

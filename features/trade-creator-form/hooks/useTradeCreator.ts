@@ -68,7 +68,17 @@ export const useTradeCreator = (): UseTradeCreator => {
   };
 
   const handleOfferedCardsChange = () => {
-    if (selectedCard && offeredCards.length < 10) {
+    if (!selectedCard) {
+      return;
+    }
+
+    if (offeredCards.includes(selectedCard)) {
+      toast.warning("You can't offer the same card twice.");
+      setIsModalOpen(false);
+      return;
+    }
+
+    if (offeredCards.length < 10) {
       setOfferedCards([...offeredCards, selectedCard]);
       setIsModalOpen(false);
     }

@@ -9,9 +9,7 @@ import {
 } from "@/components/ui/dialog";
 import { CardData } from "@/types/app";
 import { Button } from "@/components/ui/button";
-import { useCardsSearchStore } from "@/stores/cards-search-store";
 import { TradeMatcherLogo } from "@/components/icons/trade-matcher-logo";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { ButtonLoading } from "@/components/ui/button-loading";
 
 type MakeTradeOfferModalProps = {

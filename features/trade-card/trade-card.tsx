@@ -7,6 +7,7 @@ import { CardContent } from "@/components/ui/card";
 import { UserProfileInfo } from "@/features/user-profile-info/user-profile-info";
 import { cn } from "@/lib/utils";
 import { CardData } from "@/types/app";
+import { getTradeDetailsDescription, getTradeDetailsTitle } from "@/utils/get-trade-details-text";
 import { getTradeType } from "@/utils/get-trade-type";
 import Image from "next/image";
 import { useMemo } from "react";
@@ -32,30 +33,17 @@ export const TradeCard = ({
   acceptsOffers,
 }: TradeCardProps) => {
   const tradeType = getTradeType(mainCard, offeredCards);
-  const tradeTitle = useMemo(() => {
-    if (tradeType === "want") {
-      return `Wants to get ${mainCard?.cardName} ${mainCard?.exclusivePack.name} ${mainCard?.exclusivePack.series}.`;
-    }
+  const tradeTitle = useMemo(
+    () => getTradeDetailsTitle(mainCard, offeredCards, tradeType),
+    [mainCard, offeredCards, tradeType]
+  );
 
-    if (tradeType === "offer") {
-      return `Offers to trade ${offeredCards[0]?.cardName} ${offeredCards[0]?.exclusivePack.name} ${offeredCards[0]?.exclusivePack.series}.`;
-    }
-
-    return `${username} offers theses cards below to get ${mainCard?.cardName} ${mainCard?.exclusivePack.name} ${mainCard?.exclusivePack.series}.`;
-  }, [mainCard, offeredCards, tradeType, username]);
-
-  const descriptionText = useMemo(() => {
-    if (tradeType === "want") {
-      return `${username} searches for any trade offers to get ${mainCard?.cardName} ${mainCard?.exclusivePack.name} ${mainCard?.exclusivePack.series}.`;
-    }
-
-    if (tradeType === "offer") {
-      return `${username} offers theses cards below to get any trade offers.`;
-    }
-
-    return `${username} offers theses cards below to get ${mainCard?.cardName} ${mainCard?.exclusivePack.name} ${mainCard?.exclusivePack.series}.`;
-  }, [mainCard, username, tradeType]);
+  const descriptionText = useMemo(
+    () => getTradeDetailsDescription(mainCard, offeredCards, tradeType, username),
+    [mainCard, offeredCards, username, tradeType]
+  );
   const primaryCard = mainCard || offeredCards[0];
+  const filteredOfferedCards = !mainCard ? offeredCards.slice(1) : offeredCards;
 
   return (
     <Card
@@ -94,15 +82,15 @@ export const TradeCard = ({
         </div>
         <div className="flex flex-col flex-1 w-full max-sm:items-start z-10">
           <CardHeader>
-            <CardTitle className="text-xl capitalize text-shadow-embossed">{tradeTitle}</CardTitle>
+            <CardTitle className="text-xl text-shadow-embossed">{tradeTitle}</CardTitle>
             <CardDescription>
               <Typography variant="p" text={descriptionText} />
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2 flex-1" aria-description="offered cards">
-            {offeredCards.length > 1 && (
+            {filteredOfferedCards.length > 0 && (
               <div className="flex flex-row gap-2 overflow-x-auto flex-shrink-0">
-                {offeredCards.map((card) => (
+                {filteredOfferedCards.map((card) => (
                   <Image
                     key={card.cardNumber}
                     src={`/cards/${card.cardNumber.replace(/\s/g, "_")}.png`}

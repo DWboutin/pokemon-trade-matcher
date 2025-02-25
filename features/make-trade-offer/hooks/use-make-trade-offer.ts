@@ -120,6 +120,12 @@ export const useMakeTradeOffer = ({
     };
   }, []);
 
+  useEffect(() => {
+    if (offeredCards.length === 1) {
+      setWantedCardId(offeredCards[0].cardNumber);
+    }
+  }, [offeredCards]);
+
   return {
     selectors: {
       isModalOpen,
