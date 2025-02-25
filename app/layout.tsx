@@ -12,6 +12,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(currentOrigin!),
   title: "Pokemon TCG Pocket Trading | PokeSwap.io - Trade Cards & Connect with Players",
   description:
     "PokeSwap.io - The community platform for Pokemon TCG Pocket players to find, connect, and trade cards. Create trade listings, discover rare cards, and build your collection with fellow trainers.",
