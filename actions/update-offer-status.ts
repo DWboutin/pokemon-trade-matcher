@@ -38,7 +38,10 @@ export const updateOfferStatus = async ({
       .neq("author", authorId)
       .select("author");
 
-    const updateTrade = supabase.from("trades").update({ accepts_offers: false }).eq("id", tradeId);
+    const updateTrade = supabase
+      .from("trades")
+      .update({ accepts_offers: false, accepted_at: new Date() })
+      .eq("id", tradeId);
 
     const [rejectOtherOffersError, updateTradeError] = await Promise.all([
       rejectOtherOffers,

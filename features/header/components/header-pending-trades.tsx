@@ -1,32 +1,34 @@
 "use client";
 
-import { Bell } from "lucide-react";
-import { FC, useState } from "react";
-import { Button } from "@/components/ui/button";
-import { useQuery } from "@tanstack/react-query";
+import { FC, useMemo, useState } from "react";
 import { useConnectedUserStore } from "@/stores/connected-user-store";
+import { Button } from "@/components/ui/button";
 import { ButtonLoading } from "@/components/ui/button-loading";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { HeaderNotificationPanel } from "@/features/header/components/header-notification-panel";
+import { LuTriangleAlert } from "react-icons/lu";
+import { usePendingTrades } from "@/utils/hooks/use-pending-trades";
+import { HeaderPendingTradesPanel } from "@/features/header/components/header-pending-trades-panel";
 
-export const HeaderNotifications: FC = () => {
+export const HeaderPendingTrades: FC = () => {
   const user = useConnectedUserStore((state) => state.user);
   const isLoading = useConnectedUserStore((state) => state.isLoading);
   const [isOpen, setIsOpen] = useState(false);
-  const { data: notificationCount } = useQuery({
-    queryKey: ["user-notifications-count"],
-    queryFn: async () => {
-      const response = await fetch("/api/notifications/count");
-      if (!response.ok) {
-        throw new Error("Failed to fetch notification count");
-      }
-      const data = await response.json();
-      return data.count;
-    },
-    enabled: !!user,
-  });
+  const {
+    selectors: { data, isLoading: pendingTradesLoading, isFetching },
+  } = usePendingTrades();
 
-  if (isLoading) {
+  const count = useMemo(() => {
+    if (!data) {
+      return 0;
+    }
+
+    const tradesCount = data?.trades.length || 0;
+    const offersCount = data?.offers.length || 0;
+
+    return tradesCount + offersCount;
+  }, [data]);
+
+  if (isLoading || pendingTradesLoading || isFetching) {
     return (
       <Button variant="ghost" size="icon" className="relative hover:bg-primary/10">
         <ButtonLoading />
@@ -34,7 +36,7 @@ export const HeaderNotifications: FC = () => {
     );
   }
 
-  if (!user && !isLoading) {
+  if ((!user && !isLoading) || count === 0) {
     return null;
   }
 
@@ -42,16 +44,16 @@ export const HeaderNotifications: FC = () => {
     <Popover open={isOpen} onOpenChange={setIsOpen}>
       <PopoverTrigger asChild>
         <Button variant="ghost" size="icon" className="relative hover:bg-primary/10">
-          <Bell className="h-5 w-5" />
-          {notificationCount > 0 && (
+          <LuTriangleAlert className="h-4 w-4" />
+          {count > 0 && (
             <span className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-red-500 text-[10px] text-white flex items-center justify-center">
-              {notificationCount}
+              {count}
             </span>
           )}
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-80 overflow-hidden" align="end">
-        <HeaderNotificationPanel handlePanelClose={() => setIsOpen(false)} />
+        <HeaderPendingTradesPanel handlePanelClose={() => setIsOpen(false)} />
       </PopoverContent>
     </Popover>
   );

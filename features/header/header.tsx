@@ -4,7 +4,8 @@ import { HeaderNavigation } from "@/features/header/components/header-navigation
 import HeaderProfile from "@/features/header/components/header-profile";
 import Link from "next/link";
 import { FC } from "react";
-import HeaderNotifications from "@/features/header/components/header-notifications";
+import { HeaderNotifications } from "@/features/header/components/header-notifications";
+import { HeaderPendingTrades } from "@/features/header/components/header-pending-trades";
 
 export const Header: FC = () => {
   return (
@@ -22,7 +23,10 @@ export const Header: FC = () => {
           <HeaderNavigation />
         </div>
         <div className="flex flex-row gap-4 items-center">
-          <HeaderNotifications />
+          <div className="flex flex-row gap-2 items-center">
+            <HeaderPendingTrades />
+            <HeaderNotifications />
+          </div>
           <div className="max-md:hidden">
             <HeaderProfile />
           </div>

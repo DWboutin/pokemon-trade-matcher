@@ -91,3 +91,26 @@ export enum NotificationType {
   TradeClosed = 2,
   ProfileReview = 3,
 }
+
+export type TradeWithOffers = Trade & {
+  offers: Offer[];
+};
+
+export type OfferWithTrade = Offer & {
+  trade: Trade;
+};
+
+export type PendingTrade = {
+  id: string;
+  trader: {
+    id: string;
+    username: string;
+    friend_id: string;
+    icon: string;
+  };
+  acceptedAt: string;
+};
+
+export type PendingTradeWithType = PendingTrade & {
+  type: "trade" | "offer";
+};

@@ -15,7 +15,7 @@
     "fetch-cards-details": "node scripts/add-pokemon-details.js",
     "update-cards": "npm run fetch-card-table && npm run parse-card-table && npm run download-cards && npm run download-packs && npm run fetch-cards-details",
     "update-icons": "node scripts/scrape-icons.js",
-    "update-types": "bunx supabase gen types typescript --project-id \"ipefhkokewqpgfagtimu\" --schema public > types/supabase.ts"
+    "update-types": "bunx supabase gen types typescript --project-id \"qwvzjletsmmwhvjwkmvm\" --schema public > types/supabase.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^4.1.0",

@@ -121,24 +121,30 @@ export type Database = {
       }
       trades: {
         Row: {
+          accepted_at: string | null
           accepts_offers: boolean
           author: string
+          completed_at: string | null
           created_at: string
           id: string
           main_card: string | null
           offered_cards: string[]
         }
         Insert: {
+          accepted_at?: string | null
           accepts_offers?: boolean
           author?: string
+          completed_at?: string | null
           created_at?: string
           id?: string
           main_card?: string | null
           offered_cards: string[]
         }
         Update: {
+          accepted_at?: string | null
           accepts_offers?: boolean
           author?: string
+          completed_at?: string | null
           created_at?: string
           id?: string
           main_card?: string | null
