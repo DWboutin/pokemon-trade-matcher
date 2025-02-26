@@ -18,6 +18,7 @@ import { formatFriendId } from "@/utils/friendIdFormatters";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
 import { TradeConnectionModalCardInfo } from "@/features/trade-page-content/components/trade-connection-modal-card-info";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 type TradeConnectionModalProps = {
   acceptedOffer: PopulatedOffer;
@@ -44,43 +45,49 @@ export const TradeConnectionModal = ({ acceptedOffer, trade }: TradeConnectionMo
         <DialogHeader>
           <DialogTitle className="text-center">It&apos;s time to connect</DialogTitle>
         </DialogHeader>
-        <div className="flex flex-col gap-6 mt-6">
-          <div className="flex flex-row gap-4 justify-between items-center">
-            <div className="flex flex-row gap-2 items-center">
-              <Avatar>
-                <AvatarImage src={`/icons/${otherUser.icon}.png`} />
-                <AvatarFallback>{otherUser.username?.charAt(0)}</AvatarFallback>
-              </Avatar>
-              <span className="text-base font-bold text-gray-500">{otherUser.username}</span>
+        <ScrollArea className="h-[500px]">
+          <div className="flex flex-col gap-6 mt-6">
+            <div className="flex flex-row gap-4 justify-between items-center">
+              <div className="flex flex-row gap-2 items-center">
+                <Avatar>
+                  <AvatarImage src={`/icons/${otherUser.icon}.png`} />
+                  <AvatarFallback>{otherUser.username?.charAt(0)}</AvatarFallback>
+                </Avatar>
+                <span className="text-base font-bold text-gray-500">{otherUser.username}</span>
+              </div>
+              <Typography
+                variant="p"
+                text={formatFriendId(otherUser.friend_id)}
+                className="text-gray-500"
+              />
             </div>
-            <Typography
-              variant="p"
-              text={formatFriendId(otherUser.friend_id)}
-              className="text-gray-500"
-            />
-          </div>
-          <div className="flex flex-col gap-2 p-4 bg-gray-100 rounded-lg">
-            <Typography
-              variant="p"
-              text={`${otherUser.username} is waiting for you to connect in Pokemon TCG Pocket. Add them using their Friend ID shown above.`}
-              className="text-gray-600"
-            />
-          </div>
-          <div className="flex flex-col gap-2">
-            <Typography variant="p" text="Trade Details:" className="font-semibold text-gray-700" />
-            <div className="grid grid-cols-2 gap-4">
-              <TradeConnectionModalCardInfo card={currentUserCard} isOwnCard={true} />
-              <TradeConnectionModalCardInfo card={otherUserCard} isOwnCard={false} />
+            <div className="flex flex-col gap-2 p-4 bg-gray-100 rounded-lg">
+              <Typography
+                variant="p"
+                text={`${otherUser.username} is waiting for you to connect in Pokemon TCG Pocket. Add them using their Friend ID shown above.`}
+                className="text-gray-600"
+              />
+            </div>
+            <div className="flex flex-col gap-2">
+              <Typography
+                variant="p"
+                text="Trade Details:"
+                className="font-semibold text-gray-700"
+              />
+              <div className="grid grid-cols-2 gap-4">
+                <TradeConnectionModalCardInfo card={currentUserCard} isOwnCard={true} />
+                <TradeConnectionModalCardInfo card={otherUserCard} isOwnCard={false} />
+              </div>
+            </div>
+            <div className="flex flex-col gap-2 p-4 bg-gray-100 rounded-lg">
+              <Typography
+                variant="p"
+                text={`When the trade is completed, mark it as completed by clicking the button below.`}
+                className="text-gray-600"
+              />
             </div>
           </div>
-          <div className="flex flex-col gap-2 p-4 bg-gray-100 rounded-lg">
-            <Typography
-              variant="p"
-              text={`When the trade is completed, mark it as completed by clicking the button below.`}
-              className="text-gray-600"
-            />
-          </div>
-        </div>
+        </ScrollArea>
         <DialogFooter className="flex flex-row gap-2 justify-center items-center">
           <DialogClose asChild>
             <Button variant="outline">Cancel</Button>
