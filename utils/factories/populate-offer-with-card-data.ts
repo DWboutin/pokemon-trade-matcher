@@ -8,6 +8,7 @@ export type PopulatedOffer = Offer & {
     id: string;
     username: string;
     icon: string;
+    friend_id: string;
   };
 };
 

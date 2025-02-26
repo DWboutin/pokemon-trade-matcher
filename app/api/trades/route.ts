@@ -28,7 +28,8 @@ export async function GET(request: Request) {
       author:users (
         id,
         username,
-        icon
+        icon,
+        friend_id
       )
     `
     )

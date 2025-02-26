@@ -69,7 +69,7 @@ export const TradesInfiniteListing: FC<TradesInfiniteListingProps> = ({
                           offeredCards={trade.offeredCards}
                           username={trade.author.username}
                           icon={trade.author.icon}
-                          friendId={trade.author.id}
+                          friendId={trade.author.friend_id}
                           time={trade.created_at}
                           acceptsOffers={trade.accepts_offers}
                         />

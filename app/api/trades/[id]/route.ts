@@ -14,7 +14,8 @@ export async function GET(request: Request, { params }: { params: Promise<{ id: 
       author:users (
         id,
         username,
-        icon
+        icon,
+        friend_id
       )
     `
     )

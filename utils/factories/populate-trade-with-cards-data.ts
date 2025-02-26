@@ -8,6 +8,7 @@ export type PopulatedTrade = Trade & {
     id: string;
     username: string;
     icon: string;
+    friend_id: string;
   };
 };
 

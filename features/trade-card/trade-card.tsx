@@ -7,6 +7,7 @@ import { CardContent } from "@/components/ui/card";
 import { UserProfileInfo } from "@/features/user-profile-info/user-profile-info";
 import { cn } from "@/lib/utils";
 import { CardData } from "@/types/app";
+import { formatFriendId } from "@/utils/friendIdFormatters";
 import { getTradeDetailsDescription, getTradeDetailsTitle } from "@/utils/get-trade-details-text";
 import { getTradeType } from "@/utils/get-trade-type";
 import Image from "next/image";
@@ -110,7 +111,11 @@ export const TradeCard = ({
                 <TimeAgoDate date={time} />
               </div>
               <div className="text-sm text-gray-500">-</div>
-              <UserProfileInfo username={username} icon={icon} friendId={friendId} />
+              <UserProfileInfo
+                username={username}
+                icon={icon}
+                friendId={formatFriendId(friendId)}
+              />
             </div>
           </CardFooter>
         </div>

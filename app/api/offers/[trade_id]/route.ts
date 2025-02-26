@@ -17,7 +17,8 @@ export async function GET(request: Request, { params }: { params: Promise<{ trad
       author:users (
         id,
         username,
-        icon
+        icon,
+        friend_id
       )
     `
     )

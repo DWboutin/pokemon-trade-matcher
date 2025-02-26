@@ -6,7 +6,7 @@ import { TradePageMainImage } from "@/features/trade-page-content/components/tra
 import { PopulatedOffer } from "@/utils/factories/populate-offer-with-card-data";
 import { PopulatedTrade } from "@/utils/factories/populate-trade-with-cards-data";
 import { TradePageAuthor } from "@/features/trade-page-content/components/trade-page-author";
-import { TradeConnexionModal } from "@/features/trade-page-content/components/trade-connexion-modal";
+import { TradeConnectionModal } from "@/features/trade-page-content/components/trade-connection-modal";
 
 type TradePageContentProps = {
   trade: PopulatedTrade;
@@ -45,7 +45,7 @@ export const TradePageContent = ({ trade, initialOffers }: TradePageContentProps
           initialOffers={initialOffers}
         />
       </div>
-      {acceptedOffer && <TradeConnexionModal acceptedOffer={acceptedOffer} />}
+      {acceptedOffer && <TradeConnectionModal acceptedOffer={acceptedOffer} trade={trade} />}
     </>
   );
 };
