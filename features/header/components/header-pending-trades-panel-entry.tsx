@@ -12,7 +12,10 @@ export const HeaderPendingTradesPanelEntry: FC<HeaderPendingTradesPanelEntryProp
   entry,
 }) => {
   return (
-    <Link href={`/trades/${entry.id}`} className="p-3 rounded-lg text-sm cursor-pointer bg-muted">
+    <Link
+      href={`/trades/${entry.id}?action=connect`}
+      className="p-3 rounded-lg text-sm cursor-pointer bg-muted"
+    >
       <div className="flex w-full flex-col items-start gap-1">
         <div className="flex w-full flex-row gap-2 relative">
           {entry.type === "trade" && (

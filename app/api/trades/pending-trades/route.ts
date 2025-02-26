@@ -1,8 +1,5 @@
 import { NextResponse } from "next/server";
-import populateTradeWithCardsData from "@/utils/factories/populate-trade-with-cards-data";
 import { createClient } from "@/utils/supabase/server";
-import { searchCardsData } from "@/actions/search-cards-data";
-import { CardData } from "@/types/app";
 import { getUserData } from "@/actions/get-user-data";
 
 export async function GET() {
