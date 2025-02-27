@@ -47,10 +47,9 @@ export const useInfiniteScrollListing = <TData,>({
       return lastPage?.length === paginationLimit ? pages.length + 1 : undefined;
     },
     refetchOnWindowFocus: false,
-    staleTime: 0,
     initialPageParam: 1,
     initialData: {
-      pages: [initialData],
+      pages: initialData.length > 0 ? [initialData] : [],
       pageParams: [1],
     },
   });

@@ -6,15 +6,18 @@ import Link from "next/link";
 
 type HeaderPendingTradesPanelEntryProps = {
   entry: PendingTradeWithType;
+  handleClick: () => void;
 };
 
 export const HeaderPendingTradesPanelEntry: FC<HeaderPendingTradesPanelEntryProps> = ({
   entry,
+  handleClick,
 }) => {
   return (
     <Link
       href={`/trades/${entry.id}?action=connect`}
       className="p-3 rounded-lg text-sm cursor-pointer bg-muted"
+      onClick={handleClick}
     >
       <div className="flex w-full flex-col items-start gap-1">
         <div className="flex w-full flex-row gap-2 relative">

@@ -35,7 +35,11 @@ export const HeaderPendingTradesPanel: FC<HeaderPendingTradesPanelProps> = ({
         <div className="flex-1 overflow-y-auto">
           <div className="flex flex-col gap-2">
             {pendingItems.map((item) => (
-              <HeaderPendingTradesPanelEntry key={item.id} entry={item} />
+              <HeaderPendingTradesPanelEntry
+                key={item.id}
+                entry={item}
+                handleClick={handlePanelClose}
+              />
             ))}
           </div>
         </div>

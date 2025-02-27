@@ -68,6 +68,7 @@ export function useOfferActionModal({
         await queryClient.invalidateQueries({ queryKey: ["offers", tradeId] });
         await queryClient.invalidateQueries({ queryKey: ["user-notifications"] });
         await queryClient.invalidateQueries({ queryKey: ["user-notifications-count"] });
+        await queryClient.invalidateQueries({ queryKey: ["user-pending-trades"] });
 
         if (status === "accepted") {
           toast.success(

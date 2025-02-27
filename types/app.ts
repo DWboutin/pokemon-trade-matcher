@@ -90,6 +90,7 @@ export enum NotificationType {
   OfferAccepted = 1,
   TradeClosed = 2,
   ProfileReview = 3,
+  TradeCompleted = 4,
 }
 
 export type TradeWithOffers = Trade & {

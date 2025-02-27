@@ -28,15 +28,7 @@ export const HeaderPendingTrades: FC = () => {
     return tradesCount + offersCount;
   }, [data]);
 
-  if (isLoading || pendingTradesLoading || isFetching) {
-    return (
-      <Button variant="ghost" size="icon" className="relative hover:bg-primary/10">
-        <ButtonLoading />
-      </Button>
-    );
-  }
-
-  if ((!user && !isLoading) || count === 0) {
+  if ((!user && !isLoading) || count === 0 || isLoading || pendingTradesLoading || isFetching) {
     return null;
   }
 

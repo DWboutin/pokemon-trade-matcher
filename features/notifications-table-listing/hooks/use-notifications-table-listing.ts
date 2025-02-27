@@ -1,3 +1,5 @@
+"use client";
+
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import { useEffect, useRef } from "react";
@@ -18,6 +20,9 @@ type UseNotificationsTableListingSelectors = {
   items: VirtualItem[];
   allRows: PopulatedNotification[];
   hasNextPage: boolean;
+  isFetching: boolean;
+  isFetchingNextPage: boolean;
+  error: Error | null;
 };
 
 type UseNotificationsTableListingHook = {
@@ -92,6 +97,9 @@ export const useNotificationsTableListing = ({
       items,
       allRows,
       hasNextPage,
+      isFetching,
+      isFetchingNextPage,
+      error,
     },
   };
 };

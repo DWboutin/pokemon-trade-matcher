@@ -20,7 +20,7 @@ export const HeaderNotificationPanelEntry: FC<HeaderNotificationPanelEntryProps>
       data-notification-id={notification.id}
       data-notification-seen={notification.seen}
       data-trade-id={notification.trade}
-      data-offer-id={notification.offer.id}
+      data-offer-id={notification.offer?.id}
       onClick={handleClick}
     >
       <div className="flex w-full flex-col items-start gap-1">

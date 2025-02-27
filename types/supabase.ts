@@ -128,6 +128,7 @@ export type Database = {
           created_at: string
           id: string
           main_card: string | null
+          marked_completed_by: string | null
           offered_cards: string[]
         }
         Insert: {
@@ -138,6 +139,7 @@ export type Database = {
           created_at?: string
           id?: string
           main_card?: string | null
+          marked_completed_by?: string | null
           offered_cards: string[]
         }
         Update: {
@@ -148,6 +150,7 @@ export type Database = {
           created_at?: string
           id?: string
           main_card?: string | null
+          marked_completed_by?: string | null
           offered_cards?: string[]
         }
         Relationships: [

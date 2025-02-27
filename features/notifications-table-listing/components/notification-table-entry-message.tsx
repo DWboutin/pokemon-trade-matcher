@@ -17,7 +17,7 @@ export const NotificationTableEntryMessage: FC<NotificationTableEntryMessageProp
       return (
         <Typography
           variant="p"
-          text={`Your offer to trade ${notification.offeredCard.cardName} for ${notification.wantedCard.cardName} has been accepted`}
+          text={`Your offer to trade ${notification.offeredCard?.cardName} for ${notification.wantedCard?.cardName} has been accepted`}
         />
       );
     case NotificationType.TradeClosed:
@@ -26,5 +26,12 @@ export const NotificationTableEntryMessage: FC<NotificationTableEntryMessageProp
       );
     case NotificationType.ProfileReview:
       return <Typography variant="p" text="Profile" />;
+    case NotificationType.TradeCompleted:
+      return (
+        <Typography variant="p" text={`A trade you participated in has been marked as completed`} />
+      );
+
+    default:
+      return null;
   }
 };

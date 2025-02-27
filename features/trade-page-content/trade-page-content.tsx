@@ -20,6 +20,7 @@ export const TradePageContent = ({ trade, initialOffers }: TradePageContentProps
     initialOffers[0]?.status === "accepted"
       ? initialOffers[0]
       : initialOffers.find((offer) => offer.status === "accepted");
+  const isTradeCompleted = trade.completed_at !== null;
 
   return (
     <>
@@ -45,7 +46,9 @@ export const TradePageContent = ({ trade, initialOffers }: TradePageContentProps
           initialOffers={initialOffers}
         />
       </div>
-      {acceptedOffer && <TradeConnectionModal acceptedOffer={acceptedOffer} trade={trade} />}
+      {acceptedOffer && !isTradeCompleted && (
+        <TradeConnectionModal acceptedOffer={acceptedOffer} trade={trade} />
+      )}
     </>
   );
 };

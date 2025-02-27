@@ -51,7 +51,7 @@ export const HeaderNotifications: FC = () => {
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-80 overflow-hidden" align="end">
-        <HeaderNotificationPanel handlePanelClose={() => setIsOpen(false)} />
+        {isOpen && <HeaderNotificationPanel handlePanelClose={() => setIsOpen(false)} />}
       </PopoverContent>
     </Popover>
   );

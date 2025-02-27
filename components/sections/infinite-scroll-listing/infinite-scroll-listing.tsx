@@ -52,7 +52,7 @@ export const InfiniteScrollListing = <TData,>({
       >
         {items.map((virtualRow) => {
           const isLoaderRow = virtualRow.index > allRows.length - 1;
-          const offer = allRows[virtualRow.index];
+          const item = allRows[virtualRow.index];
 
           return (
             <div
@@ -72,7 +72,7 @@ export const InfiniteScrollListing = <TData,>({
                 ? hasNextPage
                   ? "Loading more..."
                   : "Nothing more to load"
-                : renderItem(offer)}
+                : renderItem(item)}
             </div>
           );
         })}

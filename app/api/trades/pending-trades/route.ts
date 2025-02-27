@@ -62,19 +62,22 @@ export async function GET() {
     return NextResponse.json({ error: error?.message || "An error occurred" }, { status: 400 });
   }
 
+  const filteredTradesData = tradesData.filter((trade) => trade.offers.length >= 0);
+  const filteredOffersData = offersData.filter((offer) => offer.trade);
+
   return NextResponse.json({
     data: {
-      trades: tradesData.map((trade) => ({
+      trades: filteredTradesData.map((trade) => ({
         id: trade.id,
         type: "trade",
         trader: trade.offers[0].author,
         acceptedAt: trade.accepted_at,
       })),
-      offers: offersData.map((offer) => ({
-        id: offer.trade.id,
+      offers: filteredOffersData.map((offer) => ({
+        id: offer.trade?.id,
         type: "offer",
-        trader: offer.trade.author,
-        acceptedAt: offer.trade.accepted_at,
+        trader: offer.trade?.author,
+        acceptedAt: offer.trade?.accepted_at,
       })),
     },
   });

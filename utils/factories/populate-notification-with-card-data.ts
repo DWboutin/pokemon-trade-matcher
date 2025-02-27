@@ -1,28 +1,30 @@
 import { CardData, CardsData, NotificationWithOffer } from "@/types/app";
 import cardsDataJson from "@/scripts/data/cards.json";
 
+const cardsData = cardsDataJson as CardsData;
+
 export type PopulatedNotification = NotificationWithOffer & {
-  offeredCard: CardData;
-  wantedCard: CardData;
+  offeredCard: CardData | null;
+  wantedCard: CardData | null;
 };
 
 const populateNotificationWithCardData = (
   notification: NotificationWithOffer
 ): PopulatedNotification => {
-  const cardsData = cardsDataJson as CardsData;
+  const offeredCard = notification.offer
+    ? cardsData.cards.find((card) => card.cardNumber === notification.offer.offered_card)
+    : null;
+  const wantedCard = notification.offer
+    ? cardsData.cards.find((card) => card.cardNumber === notification.offer.wanted_card)
+    : null;
 
-  const offeredCard = cardsData.cards.find(
-    (card) => card.cardNumber === notification.offer.offered_card
-  );
-  const wantedCard = cardsData.cards.find(
-    (card) => card.cardNumber === notification.offer.wanted_card
-  );
-
-  return {
+  const results = {
     ...notification,
-    offeredCard,
-    wantedCard,
-  } as PopulatedNotification;
+    offeredCard: offeredCard || null,
+    wantedCard: wantedCard || null,
+  };
+
+  return results as PopulatedNotification;
 };
 
 export default populateNotificationWithCardData;

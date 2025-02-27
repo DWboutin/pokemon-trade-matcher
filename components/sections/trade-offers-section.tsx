@@ -34,8 +34,9 @@ export const TradeOffersSection = ({
   acceptsOffers,
 }: TradeOffersSectionProps) => {
   const userId = useConnectedUserStore((state) => state.user?.id);
+  const isTradeOwner = userId === tradeOwnerId;
   const [activeTab, setActiveTab] = useState<"offers" | "create-offer">(
-    mainCard || userId === tradeOwnerId ? "offers" : "create-offer"
+    !acceptsOffers || isTradeOwner ? "offers" : "create-offer"
   );
 
   const handleChangeTabToOffers = () => {

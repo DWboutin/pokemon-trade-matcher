@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useForm, UseFormReturn } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -6,7 +6,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { friendInfoFormSchema } from "@/features/friend-info-form/utils/friend-info-form-schema";
 import { updateUserFriendInfo } from "@/actions/update-user-friend-info";
 import { useConnectedUserStore } from "@/stores/connected-user-store";
-import { formatFriendId } from "@/utils/friendIdFormatters";
 import { toast } from "sonner";
 import { Author } from "@/types/app";
 

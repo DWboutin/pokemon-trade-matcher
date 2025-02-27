@@ -68,13 +68,15 @@ export const HeaderNotificationPanel: FC<HeaderNotificationPanelProps> = ({ hand
             emptyResultComponent={
               <p className="text-sm text-muted-foreground">There&apos;s no notifications yet</p>
             }
-            renderItem={(notification) => (
-              <HeaderNotificationPanelEntry
-                key={notification.id}
-                notification={notification}
-                handleClick={handleClick}
-              />
-            )}
+            renderItem={(notification) => {
+              return (
+                <HeaderNotificationPanelEntry
+                  key={notification.id}
+                  notification={notification}
+                  handleClick={handleClick}
+                />
+              );
+            }}
           />
         </div>
       </div>
