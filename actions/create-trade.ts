@@ -6,7 +6,13 @@ import { createClient } from "@/utils/supabase/server";
 
 type CreateTradeArgs = Omit<
   Trade,
-  "id" | "created_at" | "author" | "accepts_offers" | "accepted_at" | "completed_at"
+  | "id"
+  | "created_at"
+  | "author"
+  | "accepts_offers"
+  | "accepted_at"
+  | "completed_at"
+  | "marked_completed_by"
 >;
 
 export const createTrade = async (trade: CreateTradeArgs) => {
