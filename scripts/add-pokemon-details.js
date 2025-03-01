@@ -20,7 +20,8 @@ async function updateCardsWithPokemonDetails() {
         .replace(" ex", "")
         .replace("'", "")
         .replace(" ", "-")
-        .replace(".", "");
+        .replace(".", "")
+        .replace("origin-forme ", "");
 
       if (pokemonName.includes("rotom")) {
         pokemonName = "rotom";

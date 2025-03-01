@@ -62,6 +62,7 @@ async function downloadAllImages() {
       await new Promise((resolve) => setTimeout(resolve, 100));
     } catch (error) {
       console.error(`Error downloading ${filename}:`, error.message);
+      console.error("--- ", imageUrl);
     }
   }
 }

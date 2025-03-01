@@ -18,7 +18,7 @@ export const slugifyCard = (card: CardData) => {
 
 export const unslugifyCard = (slug: string) => {
   // Updated pattern to handle "-ex" in card names
-  const match = slug.match(/(.*?)-([A-Z]\d-\d+|[A-Z]-[A-Z]-\d+)$/);
+  const match = slug.match(/(.*?)-([A-Z]\d[a-z]?-\d+|[A-Z]-[A-Z]-\d+)$/);
   if (!match) {
     throw new Error(`Invalid slug format: ${slug}`);
   }
