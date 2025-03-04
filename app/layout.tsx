@@ -5,6 +5,7 @@ import "./globals.css";
 import { Providers } from "@/providers/providers";
 import { currentOrigin } from "@/utils/contants";
 import { Analytics } from "@vercel/analytics/react";
+import { BodyStartScripts } from "@/components/body-start-scripts";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -49,6 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lato.className}antialiased`}>
+        <BodyStartScripts />
         <Providers>{children}</Providers>
         <Toaster />
         <Analytics />
