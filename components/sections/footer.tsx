@@ -65,7 +65,7 @@ export const Footer = () => {
             <ul role="list" className="flex gap-4 justify-center md:justify-end">
               <li>
                 <a
-                  href="https://facebook.com/pokeswap"
+                  href="facebook.com/pokeswap.trading"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gray-300 transition-colors inline-flex items-center gap-2"
@@ -76,7 +76,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://x.com/pokeswap"
+                  href="https://x.com/PokeSwapTrades"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gray-300 transition-colors inline-flex items-center gap-2"
