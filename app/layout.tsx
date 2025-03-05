@@ -4,7 +4,6 @@ import { Lato } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/providers/providers";
 import { currentOrigin } from "@/utils/contants";
-import { Analytics } from "@vercel/analytics/react";
 import { BodyStartScripts } from "@/components/body-start-scripts";
 
 const lato = Lato({
@@ -53,7 +52,6 @@ export default function RootLayout({
         <BodyStartScripts />
         <Providers>{children}</Providers>
         <Toaster />
-        <Analytics />
       </body>
     </html>
   );

@@ -71,6 +71,8 @@ async function scrapeIcons() {
           console.error(`Error downloading ${filename}:`, err);
           continue;
         }
+      } else {
+        console.log(`Skipping ${filename} because it already exists`);
       }
 
       // Update imageUrl to local path
