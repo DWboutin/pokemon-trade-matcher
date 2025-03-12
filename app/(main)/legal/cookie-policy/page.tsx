@@ -20,8 +20,8 @@ export default function CookiePolicy() {
           </li>
           <li>
             Company: when this policy mentions &ldquo;Company,&rdquo; &ldquo;we,&rdquo;
-            &ldquo;us,&rdquo; or &ldquo;our,&rdquo; it refers to PokeSwap.io, that is responsible
-            for your information under this Cookie Policy.
+            &ldquo;us,&rdquo; or &ldquo;our,&rdquo; it refers to SWAT, that is responsible for your
+            information under this Cookie Policy.
           </li>
           <li>
             Device: any internet connected device such as a phone, tablet, computer or any other
