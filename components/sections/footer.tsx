@@ -91,7 +91,7 @@ export const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center pt-4 border-t border-white/20">
-          <small>© 2025 SWAT. All rights reserved.</small>
+          <small>© 2025 Mikael Boutin. All rights reserved.</small>
         </div>
       </div>
     </footer>
