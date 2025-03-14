@@ -10,15 +10,15 @@ export default function TermsAndConditions() {
         <Typography variant="h1" text="General Terms" />
         <Typography
           variant="p"
-          text="By accessing and placing an order with SWAT, you confirm that you are in agreement with and bound by the terms of service contained in the Terms & Conditions outlined below. These terms apply to the entire website and any email or other type of communication between you and SWAT."
+          text="By accessing and placing an order with Mikael Boutin, you confirm that you are in agreement with and bound by the terms of service contained in the Terms & Conditions outlined below. These terms apply to the entire website and any email or other type of communication between you and Mikael Boutin."
         />
         <Typography
           variant="p"
-          text="Under no circumstances shall SWAT team be liable for any direct, indirect, special, incidental or consequential damages, including, but not limited to, loss of data or profit, arising out of the use, or the inability to use, the materials on this site, even if SWAT team or an authorized representative has been advised of the possibility of such damages. If your use of materials from this site results in the need for servicing, repair or correction of equipment or data, you assume any costs thereof."
+          text="Under no circumstances shall Mikael Boutin team be liable for any direct, indirect, special, incidental or consequential damages, including, but not limited to, loss of data or profit, arising out of the use, or the inability to use, the materials on this site, even if Mikael Boutin team or an authorized representative has been advised of the possibility of such damages. If your use of materials from this site results in the need for servicing, repair or correction of equipment or data, you assume any costs thereof."
         />
         <Typography
           variant="p"
-          text={`SWAT will not be responsible for any outcome that may occur during the course of usage of our resources. We reserve the rights to change prices and revise the resources usage policy in any moment. This Terms & Conditions was created with `}
+          text={`Mikael Boutin will not be responsible for any outcome that may occur during the course of usage of our resources. We reserve the rights to change prices and revise the resources usage policy in any moment. This Terms & Conditions was created with `}
         >
           <a href="https://termify.io" target="_blank">
             Termify
@@ -29,18 +29,18 @@ export default function TermsAndConditions() {
         <Typography variant="h1" text="License" />
         <Typography
           variant="p"
-          text="SWAT grants you a revocable, non-exclusive, non-transferable, limited license to download, install and use the website strictly in accordance with the terms of this Agreement."
+          text="Mikael Boutin grants you a revocable, non-exclusive, non-transferable, limited license to download, install and use the website strictly in accordance with the terms of this Agreement."
         />
         <Typography
           variant="p"
           text={
-            'These Terms & Conditions are a contract between you and SWAT (referred to in these Terms & Conditions as "SWAT", "us", "we" or "our"), the provider of the SWAT website and the services accessible from the SWAT website (which are collectively referred to in these Terms & Conditions as the "SWAT Service").'
+            'These Terms & Conditions are a contract between you and Mikael Boutin (referred to in these Terms & Conditions as "Mikael Boutin", "us", "we" or "our"), the provider of the Mikael Boutin website and the services accessible from the Mikael Boutin website (which are collectively referred to in these Terms & Conditions as the "Mikael Boutin Service").'
           }
         />
         <Typography
           variant="p"
           text={
-            'You are agreeing to be bound by these Terms & Conditions. If you do not agree to these Terms & Conditions, please do not use the SWAT Service. In these Terms & Conditions, "you" refers both to you as an individual and to the entity you represent. If you violate any of these Terms & Conditions, we reserve the right to cancel your account or block access to your account without notice.'
+            'You are agreeing to be bound by these Terms & Conditions. If you do not agree to these Terms & Conditions, please do not use the Mikael Boutin Service. In these Terms & Conditions, "you" refers both to you as an individual and to the entity you represent. If you violate any of these Terms & Conditions, we reserve the right to cancel your account or block access to your account without notice.'
           }
         />
 
@@ -62,21 +62,7 @@ export default function TermsAndConditions() {
             <Typography
               variant="p"
               text={
-                'Company: when this policy mentions "Company," "we," "us," or "our," it refers to SWAT, that is responsible for your information under this Terms & Conditions.'
-              }
-            />
-          </li>
-          <li>
-            <Typography
-              variant="p"
-              text={"Country: where SWAT or the owners/founders of SWAT are based, in this case is"}
-            />
-          </li>
-          <li>
-            <Typography
-              variant="p"
-              text={
-                "Device: any internet connected device such as a phone, tablet, computer or any other device that can be used to visit SWAT and use the services."
+                'Company: when this policy mentions "Company," "we," "us," or "our," it refers to Mikael Boutin, that is responsible for your information under this Terms & Conditions.'
               }
             />
           </li>
@@ -84,7 +70,23 @@ export default function TermsAndConditions() {
             <Typography
               variant="p"
               text={
-                "Service: refers to the service provided by SWAT as described in the relative terms (if available) and on this platform."
+                "Country: where Mikael Boutin or the owners/founders of Mikael Boutin are based, in this case is"
+              }
+            />
+          </li>
+          <li>
+            <Typography
+              variant="p"
+              text={
+                "Device: any internet connected device such as a phone, tablet, computer or any other device that can be used to visit Mikael Boutin and use the services."
+              }
+            />
+          </li>
+          <li>
+            <Typography
+              variant="p"
+              text={
+                "Service: refers to the service provided by Mikael Boutin as described in the relative terms (if available) and on this platform."
               }
             />
           </li>
@@ -99,13 +101,17 @@ export default function TermsAndConditions() {
           <li>
             <Typography
               variant="p"
-              text={"Website: SWAT's site, which can be accessed via this URL: https://pokeswap.io"}
+              text={
+                "Website: Mikael Boutin's site, which can be accessed via this URL: https://pokeswap.io"
+              }
             />
           </li>
           <li>
             <Typography
               variant="p"
-              text={"You: a person or entity that is registered with SWAT to use the Services."}
+              text={
+                "You: a person or entity that is registered with Mikael Boutin to use the Services."
+              }
             />
           </li>
         </ul>
@@ -133,7 +139,7 @@ export default function TermsAndConditions() {
             <Typography
               variant="p"
               text={
-                "Remove, alter or obscure any proprietary notice (including any notice of copyright or trademark) of SWAT or its affiliates, partners, suppliers or the licensors of the website."
+                "Remove, alter or obscure any proprietary notice (including any notice of copyright or trademark) of Mikael Boutin or its affiliates, partners, suppliers or the licensors of the website."
               }
             />
           </li>
@@ -141,11 +147,11 @@ export default function TermsAndConditions() {
         <Typography variant="h1" text="Return and Refund Policy" />
         <Typography
           variant="p"
-          text="Thanks for shopping at SWAT. We appreciate the fact that you like to buy the stuff we build. We also want to make sure you have a rewarding experience while you're exploring, evaluating, and purchasing our products."
+          text="Thanks for shopping at Mikael Boutin. We appreciate the fact that you like to buy the stuff we build. We also want to make sure you have a rewarding experience while you're exploring, evaluating, and purchasing our products."
         />
         <Typography
           variant="p"
-          text="As with any shopping experience, there are terms and conditions that apply to transactions at SWAT. We'll be as brief as our attorneys will allow. The main thing to remember is that by placing an order or making a purchase at SWAT, you agree to the terms along with SWAT's Privacy Policy."
+          text="As with any shopping experience, there are terms and conditions that apply to transactions at Mikael Boutin. We'll be as brief as our attorneys will allow. The main thing to remember is that by placing an order or making a purchase at Mikael Boutin, you agree to the terms along with Mikael Boutin's Privacy Policy."
         />
         <Typography
           variant="p"
@@ -156,12 +162,12 @@ export default function TermsAndConditions() {
         <Typography
           variant="p"
           text={
-            'Any feedback, comments, ideas, improvements or suggestions (collectively, "Suggestions") provided by you to SWAT with respect to the website shall remain the sole and exclusive property of SWAT.'
+            'Any feedback, comments, ideas, improvements or suggestions (collectively, "Suggestions") provided by you to Mikael Boutin with respect to the website shall remain the sole and exclusive property of Mikael Boutin.'
           }
         />
         <Typography
           variant="p"
-          text="SWAT shall be free to use, copy, modify, publish, or redistribute the Suggestions for any purpose and in any way without any credit or any compensation to you."
+          text="Mikael Boutin shall be free to use, copy, modify, publish, or redistribute the Suggestions for any purpose and in any way without any credit or any compensation to you."
         />
 
         <Typography variant="h1" text="Your Consent" />
@@ -173,19 +179,19 @@ export default function TermsAndConditions() {
         <Typography variant="h1" text="Links to Other Websites" />
         <Typography
           variant="p"
-          text="This Terms & Conditions applies only to the Services. The Services may contain links to other websites not operated or controlled by SWAT. We are not responsible for the content, accuracy or opinions expressed in such websites, and such websites are not investigated, monitored or checked for accuracy or completeness by us. Please remember that when you use a link to go from the Services to another website, our Terms & Conditions are no longer in effect. Your browsing and interaction on any other website, including those that have a link on our platform, is subject to that website's own rules and policies. Such third parties may use their own cookies or other methods to collect information about you."
+          text="This Terms & Conditions applies only to the Services. The Services may contain links to other websites not operated or controlled by Mikael Boutin. We are not responsible for the content, accuracy or opinions expressed in such websites, and such websites are not investigated, monitored or checked for accuracy or completeness by us. Please remember that when you use a link to go from the Services to another website, our Terms & Conditions are no longer in effect. Your browsing and interaction on any other website, including those that have a link on our platform, is subject to that website's own rules and policies. Such third parties may use their own cookies or other methods to collect information about you."
         />
 
         <Typography variant="h1" text="Cookies" />
         <Typography
           variant="p"
-          text={`SWAT uses "Cookies" to identify the areas of our website that you have visited. A Cookie is a small piece of data stored on your computer or mobile device by your web browser. We use Cookies to enhance the performance and functionality of our website but are non-essential to their use. However, without these cookies, certain functionality like videos may become unavailable or you would be required to enter your login details every time you visit the website as we would not be able to remember that you had logged in previously. Most web browsers can be set to disable the use of Cookies. However, if you disable Cookies, you may not be able to access functionality on our website correctly or at all. We never place Personally Identifiable Information in Cookies.`}
+          text={`Mikael Boutin uses "Cookies" to identify the areas of our website that you have visited. A Cookie is a small piece of data stored on your computer or mobile device by your web browser. We use Cookies to enhance the performance and functionality of our website but are non-essential to their use. However, without these cookies, certain functionality like videos may become unavailable or you would be required to enter your login details every time you visit the website as we would not be able to remember that you had logged in previously. Most web browsers can be set to disable the use of Cookies. However, if you disable Cookies, you may not be able to access functionality on our website correctly or at all. We never place Personally Identifiable Information in Cookies.`}
         />
 
         <Typography variant="h1" text="Changes To Our Terms & Conditions" />
         <Typography
           variant="p"
-          text="You acknowledge and agree that SWAT may stop (permanently or temporarily) providing the Service (or any features within the Service) to you or to users generally at sole discretion, without prior notice to you. You may stop using the Service at any time. You do not need to specifically inform SWAT when you stop using the Service. You acknowledge and agree that if SWAT disables access to your account, you may be prevented from accessing the Service, your account details or any files or other materials which is contained in your account."
+          text="You acknowledge and agree that Mikael Boutin may stop (permanently or temporarily) providing the Service (or any features within the Service) to you or to users generally at sole discretion, without prior notice to you. You may stop using the Service at any time. You do not need to specifically inform Mikael Boutin when you stop using the Service. You acknowledge and agree that if Mikael Boutin disables access to your account, you may be prevented from accessing the Service, your account details or any files or other materials which is contained in your account."
         />
         <Typography
           variant="p"
@@ -195,17 +201,17 @@ export default function TermsAndConditions() {
         <Typography variant="h1" text="Modifications to Our website" />
         <Typography
           variant="p"
-          text="SWAT reserves the right to modify, suspend or discontinue, temporarily or permanently, the website or any service to which it connects, with or without notice and without liability to you."
+          text="Mikael Boutin reserves the right to modify, suspend or discontinue, temporarily or permanently, the website or any service to which it connects, with or without notice and without liability to you."
         />
 
         <Typography variant="h1" text="Updates to Our website" />
         <Typography
           variant="p"
-          text={`SWAT may from time to time provide enhancements or improvements to the features/functionality of the website, which may include patches, bug fixes, updates, upgrades and other modifications ("Updates").`}
+          text={`Mikael Boutin may from time to time provide enhancements or improvements to the features/functionality of the website, which may include patches, bug fixes, updates, upgrades and other modifications ("Updates").`}
         />
         <Typography
           variant="p"
-          text="Updates may modify or delete certain features and/or functionalities of the website. You agree that SWAT has no obligation to (i) provide any Updates, or (ii) continue to provide or enable any particular features and/or functionalities of the website to you."
+          text="Updates may modify or delete certain features and/or functionalities of the website. You agree that Mikael Boutin has no obligation to (i) provide any Updates, or (ii) continue to provide or enable any particular features and/or functionalities of the website to you."
         />
         <Typography
           variant="p"
@@ -219,7 +225,7 @@ export default function TermsAndConditions() {
         />
         <Typography
           variant="p"
-          text="You acknowledge and agree that SWAT shall not be responsible for any Third-Party Services, including their accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect thereof. SWAT does not assume and shall not have any liability or responsibility to you or any other person or entity for any Third-Party Services."
+          text="You acknowledge and agree that Mikael Boutin shall not be responsible for any Third-Party Services, including their accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect thereof. Mikael Boutin does not assume and shall not have any liability or responsibility to you or any other person or entity for any Third-Party Services."
         />
         <Typography
           variant="p"
@@ -229,15 +235,15 @@ export default function TermsAndConditions() {
         <Typography variant="h1" text="Term and Termination" />
         <Typography
           variant="p"
-          text="This Agreement shall remain in effect until terminated by you or SWAT."
+          text="This Agreement shall remain in effect until terminated by you or Mikael Boutin."
         />
         <Typography
           variant="p"
-          text="SWAT may, in its sole discretion, at any time and for any or no reason, suspend or terminate this Agreement with or without prior notice."
+          text="Mikael Boutin may, in its sole discretion, at any time and for any or no reason, suspend or terminate this Agreement with or without prior notice."
         />
         <Typography
           variant="p"
-          text="This Agreement will terminate immediately, without prior notice from SWAT, in the event that you fail to comply with any provision of this Agreement. You may also terminate this Agreement by deleting the website and all copies thereof from your computer."
+          text="This Agreement will terminate immediately, without prior notice from Mikael Boutin, in the event that you fail to comply with any provision of this Agreement. You may also terminate this Agreement by deleting the website and all copies thereof from your computer."
         />
         <Typography
           variant="p"
@@ -245,7 +251,7 @@ export default function TermsAndConditions() {
         />
         <Typography
           variant="p"
-          text="Termination of this Agreement will not limit any of SWAT's rights or remedies at law or in equity in case of breach by you (during the term of this Agreement) of any of your obligations under the present Agreement."
+          text="Termination of this Agreement will not limit any of Mikael Boutin's rights or remedies at law or in equity in case of breach by you (during the term of this Agreement) of any of your obligations under the present Agreement."
         />
 
         <Typography variant="h1" text="Copyright Infringement Notice" />
@@ -257,17 +263,17 @@ export default function TermsAndConditions() {
         <Typography variant="h1" text="Indemnification" />
         <Typography
           variant="p"
-          text="You agree to indemnify and hold SWAT and its parents, subsidiaries, affiliates, officers, employees, agents, partners and licensors (if any) harmless from any claim or demand, including reasonable attorneys' fees, due to or arising out of your: (a) use of the website; (b) violation of this Agreement or any law or regulation; or (c) violation of any right of a third party."
+          text="You agree to indemnify and hold Mikael Boutin and its parents, subsidiaries, affiliates, officers, employees, agents, partners and licensors (if any) harmless from any claim or demand, including reasonable attorneys' fees, due to or arising out of your: (a) use of the website; (b) violation of this Agreement or any law or regulation; or (c) violation of any right of a third party."
         />
 
         <Typography variant="h1" text="No Warranties" />
         <Typography
           variant="p"
-          text={`The website is provided to you "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind. To the maximum extent permitted under applicable law, SWAT, on its own behalf and on behalf of its affiliates and its and their respective licensors and service providers, expressly disclaims all warranties, whether express, implied, statutory or otherwise, with respect to the website, including all implied warranties of merchantability, fitness for a particular purpose, title and non-infringement, and warranties that may arise out of course of dealing, course of performance, usage or trade practice. Without limitation to the foregoing, SWAT provides no warranty or undertaking, and makes no representation of any kind that the website will meet your requirements, achieve any intended results, be compatible or work with any other software, systems or services, operate without interruption, meet any performance or reliability standards or be error free or that any errors or defects can or will be corrected.`}
+          text={`The website is provided to you "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind. To the maximum extent permitted under applicable law, Mikael Boutin, on its own behalf and on behalf of its affiliates and its and their respective licensors and service providers, expressly disclaims all warranties, whether express, implied, statutory or otherwise, with respect to the website, including all implied warranties of merchantability, fitness for a particular purpose, title and non-infringement, and warranties that may arise out of course of dealing, course of performance, usage or trade practice. Without limitation to the foregoing, Mikael Boutin provides no warranty or undertaking, and makes no representation of any kind that the website will meet your requirements, achieve any intended results, be compatible or work with any other software, systems or services, operate without interruption, meet any performance or reliability standards or be error free or that any errors or defects can or will be corrected.`}
         />
         <Typography
           variant="p"
-          text="Without limiting the foregoing, neither SWAT nor any SWAT's provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the website, or the information, content, and materials or products included thereon; (ii) that the website will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content provided through the website; or (iv) that the website, its servers, the content, or e-mails sent from or on behalf of SWAT are free of viruses, scripts, trojan horses, worms, malware, timebombs or other harmful components."
+          text="Without limiting the foregoing, neither Mikael Boutin nor any Mikael Boutin's provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the website, or the information, content, and materials or products included thereon; (ii) that the website will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content provided through the website; or (iv) that the website, its servers, the content, or e-mails sent from or on behalf of Mikael Boutin are free of viruses, scripts, trojan horses, worms, malware, timebombs or other harmful components."
         />
         <Typography
           variant="p"
@@ -277,11 +283,11 @@ export default function TermsAndConditions() {
         <Typography variant="h1" text="Limitation of Liability" />
         <Typography
           variant="p"
-          text="Notwithstanding any damages that you might incur, the entire liability of SWAT and any of its suppliers under any provision of this Agreement and your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by you for the website."
+          text="Notwithstanding any damages that you might incur, the entire liability of Mikael Boutin and any of its suppliers under any provision of this Agreement and your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by you for the website."
         />
         <Typography
           variant="p"
-          text="To the maximum extent permitted by applicable law, in no event shall SWAT or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, for loss of data or other information, for business interruption, for personal injury, for loss of privacy arising out of or in any way related to the use of or inability to use the website, third-party software and/or third-party hardware used with the website, or otherwise in connection with any provision of this Agreement), even if SWAT or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose."
+          text="To the maximum extent permitted by applicable law, in no event shall Mikael Boutin or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, for loss of data or other information, for business interruption, for personal injury, for loss of privacy arising out of or in any way related to the use of or inability to use the website, third-party software and/or third-party hardware used with the website, or otherwise in connection with any provision of this Agreement), even if Mikael Boutin or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose."
         />
         <Typography
           variant="p"
@@ -295,7 +301,7 @@ export default function TermsAndConditions() {
         />
         <Typography
           variant="p"
-          text="This Agreement, together with the Privacy Policy and any other legal notices published by SWAT on the Services, shall constitute the entire agreement between you and SWAT concerning the Services. If any provision of this Agreement is deemed invalid by a court of competent jurisdiction, the invalidity of such provision shall not affect the validity of the remaining provisions of this Agreement, which shall remain in full force and effect. No waiver of any term of this Agreement shall be deemed a further or continuing waiver of such term or any other term, and SWAT's failure to assert any right or provision under this Agreement shall not constitute a waiver of such right or provision. YOU AND SWAT AGREE THAT ANY CAUSE OF ACTION ARISING OUT OF OR RELATED TO THE SERVICES MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES. OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED."
+          text="This Agreement, together with the Privacy Policy and any other legal notices published by Mikael Boutin on the Services, shall constitute the entire agreement between you and Mikael Boutin concerning the Services. If any provision of this Agreement is deemed invalid by a court of competent jurisdiction, the invalidity of such provision shall not affect the validity of the remaining provisions of this Agreement, which shall remain in full force and effect. No waiver of any term of this Agreement shall be deemed a further or continuing waiver of such term or any other term, and Mikael Boutin's failure to assert any right or provision under this Agreement shall not constitute a waiver of such right or provision. YOU AND Mikael Boutin AGREE THAT ANY CAUSE OF ACTION ARISING OUT OF OR RELATED TO THE SERVICES MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES. OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED."
         />
 
         <Typography variant="h1" text="Waiver" />
@@ -311,21 +317,21 @@ export default function TermsAndConditions() {
         <Typography variant="h1" text="Amendments to this Agreement" />
         <Typography
           variant="p"
-          text="SWAT reserves the right, at its sole discretion, to modify or replace this Agreement at any time. If a revision is material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion."
+          text="Mikael Boutin reserves the right, at its sole discretion, to modify or replace this Agreement at any time. If a revision is material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion."
         />
         <Typography
           variant="p"
-          text="By continuing to access or use our website after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use SWAT."
+          text="By continuing to access or use our website after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use Mikael Boutin."
         />
 
         <Typography variant="h1" text="Entire Agreement" />
         <Typography
           variant="p"
-          text="The Agreement constitutes the entire agreement between you and SWAT regarding your use of the website and supersedes all prior and contemporaneous written or oral agreements between you and SWAT."
+          text="The Agreement constitutes the entire agreement between you and Mikael Boutin regarding your use of the website and supersedes all prior and contemporaneous written or oral agreements between you and Mikael Boutin."
         />
         <Typography
           variant="p"
-          text="You may be subject to additional terms and conditions that apply when you use or purchase other SWAT's services, which SWAT will provide to you at the time of such use or purchase."
+          text="You may be subject to additional terms and conditions that apply when you use or purchase other Mikael Boutin's services, which Mikael Boutin will provide to you at the time of such use or purchase."
         />
 
         <Typography variant="h1" text="Updates to Our Terms" />
@@ -337,19 +343,19 @@ export default function TermsAndConditions() {
         <Typography variant="h1" text="Intellectual Property" />
         <Typography
           variant="p"
-          text="The website and its entire contents, features and functionality (including but not limited to all information, software, text, displays, images, video and audio, and the design, selection and arrangement thereof), are owned by SWAT, its licensors or other providers of such material and are protected by and international copyright, trademark, patent, trade secret and other intellectual property or proprietary rights laws. The material may not be copied, modified, reproduced, downloaded or distributed in any way, in whole or in part, without the express prior written permission of SWAT, unless and except as is expressly provided in these Terms & Conditions. Any unauthorized use of the material is prohibited."
+          text="The website and its entire contents, features and functionality (including but not limited to all information, software, text, displays, images, video and audio, and the design, selection and arrangement thereof), are owned by Mikael Boutin, its licensors or other providers of such material and are protected by and international copyright, trademark, patent, trade secret and other intellectual property or proprietary rights laws. The material may not be copied, modified, reproduced, downloaded or distributed in any way, in whole or in part, without the express prior written permission of Mikael Boutin, unless and except as is expressly provided in these Terms & Conditions. Any unauthorized use of the material is prohibited."
         />
 
         <Typography variant="h1" text="Agreement to Arbitrate" />
         <Typography
           variant="p"
-          text={`This section applies to any dispute EXCEPT IT DOESN'T INCLUDE A DISPUTE RELATING TO CLAIMS FOR INJUNCTIVE OR EQUITABLE RELIEF REGARDING THE ENFORCEMENT OR VALIDITY OF YOUR OR SWAT's INTELLECTUAL PROPERTY RIGHTS. The term "dispute" means any dispute, action, or other controversy between you and SWAT concerning the Services or this agreement, whether in contract, warranty, tort, statute, regulation, ordinance, or any other legal or equitable basis. "Dispute" will be given the broadest possible meaning allowable under law.`}
+          text={`This section applies to any dispute EXCEPT IT DOESN'T INCLUDE A DISPUTE RELATING TO CLAIMS FOR INJUNCTIVE OR EQUITABLE RELIEF REGARDING THE ENFORCEMENT OR VALIDITY OF YOUR OR Mikael Boutin's INTELLECTUAL PROPERTY RIGHTS. The term "dispute" means any dispute, action, or other controversy between you and Mikael Boutin concerning the Services or this agreement, whether in contract, warranty, tort, statute, regulation, ordinance, or any other legal or equitable basis. "Dispute" will be given the broadest possible meaning allowable under law.`}
         />
 
         <Typography variant="h1" text="Notice of Dispute" />
         <Typography
           variant="p"
-          text={`In the event of a dispute, you or SWAT must give the other a Notice of Dispute, which is a written statement that sets forth the name, address, and contact information of the party giving it, the facts giving rise to the dispute, and the relief requested. You must send any Notice of Dispute via email to: `}
+          text={`In the event of a dispute, you or Mikael Boutin must give the other a Notice of Dispute, which is a written statement that sets forth the name, address, and contact information of the party giving it, the facts giving rise to the dispute, and the relief requested. You must send any Notice of Dispute via email to: `}
         >
           <a
             href="/cdn-cgi/l/email-protection"
@@ -358,25 +364,25 @@ export default function TermsAndConditions() {
           >
             [email&#160;protected]
           </a>
-          {`. SWAT will send any Notice of Dispute to you by mail to your address if we have it, or otherwise to your email address. You and SWAT will attempt to resolve any dispute through informal negotiation within sixty (60) days from the date the Notice of Dispute is sent. After sixty (60) days, you or SWAT may commence arbitration.`}
+          {`. Mikael Boutin will send any Notice of Dispute to you by mail to your address if we have it, or otherwise to your email address. You and Mikael Boutin will attempt to resolve any dispute through informal negotiation within sixty (60) days from the date the Notice of Dispute is sent. After sixty (60) days, you or Mikael Boutin may commence arbitration.`}
         </Typography>
 
         <Typography variant="h1" text="Binding Arbitration" />
         <Typography
           variant="p"
-          text="If you and SWAT don't resolve any dispute by informal negotiation, any other effort to resolve the dispute will be conducted exclusively by binding arbitration as described in this section. You are giving up the right to litigate (or participate in as a party or class member) all disputes in court before a judge or jury. The dispute shall be settled by binding arbitration in accordance with the commercial arbitration rules of the American Arbitration Association. Either party may seek any interim or preliminary injunctive relief from any court of competent jurisdiction, as necessary to protect the party's rights or property pending the completion of arbitration. Any and all legal, accounting, and other costs, fees, and expenses incurred by the prevailing party shall be borne by the non-prevailing party."
+          text="If you and Mikael Boutin don't resolve any dispute by informal negotiation, any other effort to resolve the dispute will be conducted exclusively by binding arbitration as described in this section. You are giving up the right to litigate (or participate in as a party or class member) all disputes in court before a judge or jury. The dispute shall be settled by binding arbitration in accordance with the commercial arbitration rules of the American Arbitration Association. Either party may seek any interim or preliminary injunctive relief from any court of competent jurisdiction, as necessary to protect the party's rights or property pending the completion of arbitration. Any and all legal, accounting, and other costs, fees, and expenses incurred by the prevailing party shall be borne by the non-prevailing party."
         />
 
         <Typography variant="h1" text="Submissions and Privacy" />
         <Typography
           variant="p"
-          text="In the event that you submit or post any ideas, creative suggestions, designs, photographs, information, advertisements, data or proposals, including ideas for new or improved products, services, features, technologies or promotions, you expressly agree that such submissions will automatically be treated as non-confidential and non-proprietary and will become the sole property of SWAT without any compensation or credit to you whatsoever. SWAT and its affiliates shall have no obligations with respect to such submissions or posts and may use the ideas contained in such submissions or posts for any purposes in any medium in perpetuity, including, but not limited to, developing, manufacturing, and marketing products and services using such ideas."
+          text="In the event that you submit or post any ideas, creative suggestions, designs, photographs, information, advertisements, data or proposals, including ideas for new or improved products, services, features, technologies or promotions, you expressly agree that such submissions will automatically be treated as non-confidential and non-proprietary and will become the sole property of Mikael Boutin without any compensation or credit to you whatsoever. Mikael Boutin and its affiliates shall have no obligations with respect to such submissions or posts and may use the ideas contained in such submissions or posts for any purposes in any medium in perpetuity, including, but not limited to, developing, manufacturing, and marketing products and services using such ideas."
         />
 
         <Typography variant="h1" text="Promotions" />
         <Typography
           variant="p"
-          text={`SWAT may, from time to time, include contests, promotions, sweepstakes, or other activities ("Promotions") that require you to submit material or information concerning yourself. Please note that all Promotions may be governed by separate rules that may contain certain eligibility requirements, such as restrictions as to age and geographic location. You are responsible to read all Promotions rules to determine whether or not you are eligible to participate. If you enter any Promotion, you agree to abide by and to comply with all Promotions Rules.`}
+          text={`Mikael Boutin may, from time to time, include contests, promotions, sweepstakes, or other activities ("Promotions") that require you to submit material or information concerning yourself. Please note that all Promotions may be governed by separate rules that may contain certain eligibility requirements, such as restrictions as to age and geographic location. You are responsible to read all Promotions rules to determine whether or not you are eligible to participate. If you enter any Promotion, you agree to abide by and to comply with all Promotions Rules.`}
         />
         <Typography
           variant="p"
@@ -392,22 +398,22 @@ export default function TermsAndConditions() {
         <Typography variant="h1" text="Miscellaneous" />
         <Typography
           variant="p"
-          text="If for any reason a court of competent jurisdiction finds any provision or portion of these Terms & Conditions to be unenforceable, the remainder of these Terms & Conditions will continue in full force and effect. Any waiver of any provision of these Terms & Conditions will be effective only if in writing and signed by an authorized representative of SWAT. SWAT will be entitled to injunctive or other equitable relief (without the obligations of posting any bond or surety) in the event of any breach or anticipatory breach by you. SWAT operates and controls the SWAT Service from its offices in . The Service is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation. Accordingly, those persons who choose to access the SWAT Service from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable. These Terms & Conditions (which include and incorporate the SWAT Privacy Policy) contains the entire understanding, and supersedes all prior understandings, between you and SWAT concerning its subject matter, and cannot be changed or modified by you. The section headings used in this Agreement are for convenience only and will not be given any legal import."
+          text="If for any reason a court of competent jurisdiction finds any provision or portion of these Terms & Conditions to be unenforceable, the remainder of these Terms & Conditions will continue in full force and effect. Any waiver of any provision of these Terms & Conditions will be effective only if in writing and signed by an authorized representative of Mikael Boutin. Mikael Boutin will be entitled to injunctive or other equitable relief (without the obligations of posting any bond or surety) in the event of any breach or anticipatory breach by you. Mikael Boutin operates and controls the Mikael Boutin Service from its offices in . The Service is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation. Accordingly, those persons who choose to access the Mikael Boutin Service from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable. These Terms & Conditions (which include and incorporate the Mikael Boutin Privacy Policy) contains the entire understanding, and supersedes all prior understandings, between you and Mikael Boutin concerning its subject matter, and cannot be changed or modified by you. The section headings used in this Agreement are for convenience only and will not be given any legal import."
         />
 
         <Typography variant="h1" text="Disclaimer" />
         <Typography
           variant="p"
-          text="SWAT is not responsible for any content, code or any other imprecision."
+          text="Mikael Boutin is not responsible for any content, code or any other imprecision."
         />
-        <Typography variant="p" text="SWAT does not provide warranties or guarantees." />
+        <Typography variant="p" text="Mikael Boutin does not provide warranties or guarantees." />
         <Typography
           variant="p"
-          text="In no event shall SWAT be liable for any special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether in an action of contract, negligence or other tort, arising out of or in connection with the use of the Service or the contents of the Service. The Company reserves the right to make additions, deletions, or modifications to the contents on the Service at any time without prior notice."
+          text="In no event shall Mikael Boutin be liable for any special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether in an action of contract, negligence or other tort, arising out of or in connection with the use of the Service or the contents of the Service. The Company reserves the right to make additions, deletions, or modifications to the contents on the Service at any time without prior notice."
         />
         <Typography
           variant="p"
-          text={`The SWAT Service and its contents are provided "as is" and "as available" without any warranty or representations of any kind, whether express or implied. SWAT is a distributor and not a publisher of the content supplied by third parties; as such, SWAT exercises no editorial control over such content and makes no warranty or representation as to the accuracy, reliability or currency of any information, content, service or merchandise provided through or accessible via the SWAT Service. Without limiting the foregoing, SWAT specifically disclaims all warranties and representations in any content transmitted on or in connection with the SWAT Service or on sites that may appear as links on the SWAT Service, or in the products provided as a part of, or otherwise in connection with, the SWAT Service, including without limitation any warranties of merchantability, fitness for a particular purpose or non-infringement of third party rights. No oral advice or written information given by SWAT or any of its affiliates, employees, officers, directors, agents, or the like will create a warranty. Price and availability information is subject to change without notice. Without limiting the foregoing, SWAT does not warrant that the SWAT Service will be uninterrupted, uncorrupted, timely, or error-free.`}
+          text={`The Mikael Boutin Service and its contents are provided "as is" and "as available" without any warranty or representations of any kind, whether express or implied. Mikael Boutin is a distributor and not a publisher of the content supplied by third parties; as such, Mikael Boutin exercises no editorial control over such content and makes no warranty or representation as to the accuracy, reliability or currency of any information, content, service or merchandise provided through or accessible via the Mikael Boutin Service. Without limiting the foregoing, Mikael Boutin specifically disclaims all warranties and representations in any content transmitted on or in connection with the Mikael Boutin Service or on sites that may appear as links on the Mikael Boutin Service, or in the products provided as a part of, or otherwise in connection with, the Mikael Boutin Service, including without limitation any warranties of merchantability, fitness for a particular purpose or non-infringement of third party rights. No oral advice or written information given by Mikael Boutin or any of its affiliates, employees, officers, directors, agents, or the like will create a warranty. Price and availability information is subject to change without notice. Without limiting the foregoing, Mikael Boutin does not warrant that the Mikael Boutin Service will be uninterrupted, uncorrupted, timely, or error-free.`}
         />
 
         <Typography variant="h1" text="Contact Us" />

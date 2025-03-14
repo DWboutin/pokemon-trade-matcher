@@ -9,12 +9,12 @@ export default function PrivacyPolicy() {
 
         <Typography
           variant="p"
-          text="SWAT ('we,' 'our,' or 'us') is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by SWAT."
+          text="Mikael Boutin ('we,' 'our,' or 'us') is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by Mikael Boutin."
         />
 
         <Typography
           variant="p"
-          text="This Privacy Policy applies to our website, and its associated subdomains (collectively, our 'Service') alongside our application, SWAT. By accessing or using our Service, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy and our Terms of Service."
+          text="This Privacy Policy applies to our website, and its associated subdomains (collectively, our 'Service') alongside our application, Mikael Boutin. By accessing or using our Service, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy and our Terms of Service."
         />
 
         <Typography variant="h2" text="Definitions and key terms" />
@@ -33,25 +33,25 @@ export default function PrivacyPolicy() {
           <li>
             <Typography
               variant="p"
-              text="Company: when this policy mentions 'Company,' 'we,' 'us,' or 'our,' it refers to SWAT, that is responsible for your information under this Privacy Policy."
+              text="Company: when this policy mentions 'Company,' 'we,' 'us,' or 'our,' it refers to Mikael Boutin, that is responsible for your information under this Privacy Policy."
             />
           </li>
           <li>
             <Typography
               variant="p"
-              text="Country: where SWAT or the owners/founders of SWAT are based, in this case is Canada."
+              text="Country: where Mikael Boutin or the owners/founders of Mikael Boutin are based, in this case is Canada."
             />
           </li>
           <li>
             <Typography
               variant="p"
-              text="Customer: refers to the company, organization or person that signs up to use the SWAT Service to manage the relationships with your consumers or service users."
+              text="Customer: refers to the company, organization or person that signs up to use the Mikael Boutin Service to manage the relationships with your consumers or service users."
             />
           </li>
           <li>
             <Typography
               variant="p"
-              text="Device: any internet connected device such as a phone, tablet, computer or any other device that can be used to visit SWAT and use the services."
+              text="Device: any internet connected device such as a phone, tablet, computer or any other device that can be used to visit Mikael Boutin and use the services."
             />
           </li>
           <li>
@@ -63,7 +63,7 @@ export default function PrivacyPolicy() {
           <li>
             <Typography
               variant="p"
-              text="Personnel: refers to those individuals who are employed by SWAT or are under contract to perform a service on behalf of one of the parties."
+              text="Personnel: refers to those individuals who are employed by Mikael Boutin or are under contract to perform a service on behalf of one of the parties."
             />
           </li>
           <li>
@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
           <li>
             <Typography
               variant="p"
-              text="Service: refers to the service provided by SWAT as described in the relative terms (if available) and on this platform."
+              text="Service: refers to the service provided by Mikael Boutin as described in the relative terms (if available) and on this platform."
             />
           </li>
           <li>
@@ -87,13 +87,13 @@ export default function PrivacyPolicy() {
           <li>
             <Typography
               variant="p"
-              text="Website: SWAT's site, which can be accessed via this URL: https://pokeswap.io"
+              text="Website: Mikael Boutin's site, which can be accessed via this URL: https://pokeswap.io"
             />
           </li>
           <li>
             <Typography
               variant="p"
-              text="You: a person or entity that is registered with SWAT to use the Services."
+              text="You: a person or entity that is registered with Mikael Boutin to use the Services."
             />
           </li>
         </ul>
@@ -154,11 +154,11 @@ export default function PrivacyPolicy() {
 
         <Typography
           variant="h2"
-          text="When does SWAT use end user information from third parties?"
+          text="When does Mikael Boutin use end user information from third parties?"
         />
         <Typography
           variant="p"
-          text="SWAT will collect End User Data necessary to provide the SWAT services to our customers."
+          text="Mikael Boutin will collect End User Data necessary to provide the Mikael Boutin services to our customers."
         />
         <Typography
           variant="p"
@@ -167,11 +167,11 @@ export default function PrivacyPolicy() {
 
         <Typography
           variant="h2"
-          text="When does SWAT use customer information from third parties?"
+          text="When does Mikael Boutin use customer information from third parties?"
         />
         <Typography
           variant="p"
-          text="We receive some information from the third parties when you contact us. For example, when you submit your email address to us to show interest in becoming a SWAT customer, we receive information from a third party that provides automated fraud detection services to SWAT. We also occasionally collect information that is made publicly available on social media websites. You can control how much of your information social media websites make public by visiting these websites and changing your privacy settings."
+          text="We receive some information from the third parties when you contact us. For example, when you submit your email address to us to show interest in becoming a Mikael Boutin customer, we receive information from a third party that provides automated fraud detection services to Mikael Boutin. We also occasionally collect information that is made publicly available on social media websites. You can control how much of your information social media websites make public by visiting these websites and changing your privacy settings."
         />
 
         <Typography
@@ -197,7 +197,7 @@ export default function PrivacyPolicy() {
         />
         <Typography
           variant="p"
-          text="SWAT will collect personal information that you submit to us. We may also receive personal information about you from third parties as described above."
+          text="Mikael Boutin will collect personal information that you submit to us. We may also receive personal information about you from third parties as described above."
         />
 
         <Typography variant="h2" text="How Do We Use Your Email Address?" />
@@ -209,24 +209,24 @@ export default function PrivacyPolicy() {
         <Typography variant="h2" text="How Long Do We Keep Your Information?" />
         <Typography
           variant="p"
-          text="We keep your information only so long as we need it to provide SWAT to you and fulfill the purposes described in this policy. This is also the case for anyone that we share your information with and who carries out services on our behalf. When we no longer need to use your information and there is no need for us to keep it to comply with our legal or regulatory obligations, we'll either remove it from our systems or depersonalize it so that we can't identify you."
+          text="We keep your information only so long as we need it to provide Mikael Boutin to you and fulfill the purposes described in this policy. This is also the case for anyone that we share your information with and who carries out services on our behalf. When we no longer need to use your information and there is no need for us to keep it to comply with our legal or regulatory obligations, we'll either remove it from our systems or depersonalize it so that we can't identify you."
         />
 
         <Typography variant="h2" text="How Do We Protect Your Information?" />
         <Typography
           variant="p"
-          text="We implement a variety of security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your personal information. We offer the use of a secure server. All supplied sensitive/credit information is transmitted via Secure Socket Layer (SSL) technology and then encrypted into our Payment gateway providers database only to be accessible by those authorized with special access rights to such systems, and are required to keep the information confidential. After a transaction, your private information (credit cards, social security numbers, financials, etc.) is never kept on file. We cannot, however, ensure or warrant the absolute security of any information you transmit to SWAT or guarantee that your information on the Service may not be accessed, disclosed, altered, or destroyed by a breach of any of our physical, technical, or managerial safeguards."
+          text="We implement a variety of security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your personal information. We offer the use of a secure server. All supplied sensitive/credit information is transmitted via Secure Socket Layer (SSL) technology and then encrypted into our Payment gateway providers database only to be accessible by those authorized with special access rights to such systems, and are required to keep the information confidential. After a transaction, your private information (credit cards, social security numbers, financials, etc.) is never kept on file. We cannot, however, ensure or warrant the absolute security of any information you transmit to Mikael Boutin or guarantee that your information on the Service may not be accessed, disclosed, altered, or destroyed by a breach of any of our physical, technical, or managerial safeguards."
         />
 
         <Typography variant="h2" text="Could my information be transferred to other countries?" />
         <Typography
           variant="p"
-          text="SWAT is incorporated in Canada. Information collected via our website, through direct interactions with you, or from use of our help services may be transferred from time to time to our offices or personnel, or to third parties, located throughout the world, and may be viewed and hosted anywhere in the world, including countries that may not have laws of general applicability regulating the use and transfer of such data. To the fullest extent allowed by applicable law, by using any of the above, you voluntarily consent to the trans-border transfer and hosting of such information."
+          text="Mikael Boutin is incorporated in Canada. Information collected via our website, through direct interactions with you, or from use of our help services may be transferred from time to time to our offices or personnel, or to third parties, located throughout the world, and may be viewed and hosted anywhere in the world, including countries that may not have laws of general applicability regulating the use and transfer of such data. To the fullest extent allowed by applicable law, by using any of the above, you voluntarily consent to the trans-border transfer and hosting of such information."
         />
 
         <Typography
           variant="h2"
-          text="Is the information collected through the SWAT Service secure?"
+          text="Is the information collected through the Mikael Boutin Service secure?"
         />
         <Typography
           variant="p"
@@ -236,7 +236,7 @@ export default function PrivacyPolicy() {
         <Typography variant="h2" text="Can I update or correct my information?" />
         <Typography
           variant="p"
-          text="The rights you have to request updates or corrections to the information SWAT collects depend on your relationship with SWAT. Personnel may update or correct their information as detailed in our internal company employment policies."
+          text="The rights you have to request updates or corrections to the information Mikael Boutin collects depend on your relationship with Mikael Boutin. Personnel may update or correct their information as detailed in our internal company employment policies."
         />
         <Typography
           variant="p"
@@ -254,13 +254,13 @@ export default function PrivacyPolicy() {
         <Typography variant="h2" text="Sale of Business" />
         <Typography
           variant="p"
-          text="We reserve the right to transfer information to a third party in the event of a sale, merger or other transfer of all or substantially all of the assets of SWAT or any of its Corporate Affiliates (as defined herein), or that portion of SWAT or any of its Corporate Affiliates to which the Service relates, or in the event that we discontinue our business or file a petition or have filed against us a petition in bankruptcy, reorganization or similar proceeding, provided that the third party agrees to adhere to the terms of this Privacy Policy."
+          text="We reserve the right to transfer information to a third party in the event of a sale, merger or other transfer of all or substantially all of the assets of Mikael Boutin or any of its Corporate Affiliates (as defined herein), or that portion of Mikael Boutin or any of its Corporate Affiliates to which the Service relates, or in the event that we discontinue our business or file a petition or have filed against us a petition in bankruptcy, reorganization or similar proceeding, provided that the third party agrees to adhere to the terms of this Privacy Policy."
         />
 
         <Typography variant="h2" text="Affiliates" />
         <Typography
           variant="p"
-          text="We may disclose information (including personal information) about you to our Corporate Affiliates. For purposes of this Privacy Policy, 'Corporate Affiliate' means any person or entity which directly or indirectly controls, is controlled by or is under common control with SWAT, whether by ownership or otherwise. Any information relating to you that we provide to our Corporate Affiliates will be treated by those Corporate Affiliates in accordance with the terms of this Privacy Policy."
+          text="We may disclose information (including personal information) about you to our Corporate Affiliates. For purposes of this Privacy Policy, 'Corporate Affiliate' means any person or entity which directly or indirectly controls, is controlled by or is under common control with Mikael Boutin, whether by ownership or otherwise. Any information relating to you that we provide to our Corporate Affiliates will be treated by those Corporate Affiliates in accordance with the terms of this Privacy Policy."
         />
 
         <Typography variant="h2" text="Governing Law" />
@@ -274,7 +274,7 @@ export default function PrivacyPolicy() {
         />
         <Typography
           variant="p"
-          text="By using SWAT or contacting us directly, you signify your acceptance of this Privacy Policy. If you do not agree to this Privacy Policy, you should not engage with our website, or use our services. Continued use of the website, direct engagement with us, or following the posting of changes to this Privacy Policy that do not significantly affect the use or disclosure of your personal information will mean that you accept those changes."
+          text="By using Mikael Boutin or contacting us directly, you signify your acceptance of this Privacy Policy. If you do not agree to this Privacy Policy, you should not engage with our website, or use our services. Continued use of the website, direct engagement with us, or following the posting of changes to this Privacy Policy that do not significantly affect the use or disclosure of your personal information will mean that you accept those changes."
         />
 
         <Typography variant="h2" text="Your Consent" />
@@ -286,21 +286,21 @@ export default function PrivacyPolicy() {
         <Typography variant="h2" text="Links to Other Websites" />
         <Typography
           variant="p"
-          text="This Privacy Policy applies only to the Services. The Services may contain links to other websites not operated or controlled by SWAT. We are not responsible for the content, accuracy or opinions expressed in such websites, and such websites are not investigated, monitored or checked for accuracy or completeness by us. Please remember that when you use a link to go from the Services to another website, our Privacy Policy is no longer in effect. Your browsing and interaction on any other website, including those that have a link on our platform, is subject to that website's own rules and policies. Such third parties may use their own cookies or other methods to collect information about you."
+          text="This Privacy Policy applies only to the Services. The Services may contain links to other websites not operated or controlled by Mikael Boutin. We are not responsible for the content, accuracy or opinions expressed in such websites, and such websites are not investigated, monitored or checked for accuracy or completeness by us. Please remember that when you use a link to go from the Services to another website, our Privacy Policy is no longer in effect. Your browsing and interaction on any other website, including those that have a link on our platform, is subject to that website's own rules and policies. Such third parties may use their own cookies or other methods to collect information about you."
         />
 
         <Typography variant="h2" text="Advertising" />
         <Typography
           variant="p"
-          text="This website may contain third party advertisements and links to third party sites. SWAT does not make any representation as to the accuracy or suitability of any of the information contained in those advertisements or sites and does not accept any responsibility or liability for the conduct or content of those advertisements and sites and the offerings made by the third parties."
+          text="This website may contain third party advertisements and links to third party sites. Mikael Boutin does not make any representation as to the accuracy or suitability of any of the information contained in those advertisements or sites and does not accept any responsibility or liability for the conduct or content of those advertisements and sites and the offerings made by the third parties."
         />
         <Typography
           variant="p"
-          text="Advertising keeps SWAT and many of the websites and services you use free of charge. We work hard to make sure that ads are safe, unobtrusive, and as relevant as possible."
+          text="Advertising keeps Mikael Boutin and many of the websites and services you use free of charge. We work hard to make sure that ads are safe, unobtrusive, and as relevant as possible."
         />
         <Typography
           variant="p"
-          text="Third party advertisements and links to other sites where goods or services are advertised are not endorsements or recommendations by SWAT of the third party sites, goods or services. SWAT takes no responsibility for the content of any of the ads, promises made, or the quality/reliability of the products or services offered in all advertisements."
+          text="Third party advertisements and links to other sites where goods or services are advertised are not endorsements or recommendations by Mikael Boutin of the third party sites, goods or services. Mikael Boutin takes no responsibility for the content of any of the ads, promises made, or the quality/reliability of the products or services offered in all advertisements."
         />
 
         <Typography variant="h2" text="Cookies for Advertising" />
@@ -312,7 +312,7 @@ export default function PrivacyPolicy() {
         <Typography variant="h2" text="Cookies" />
         <Typography
           variant="p"
-          text="SWAT uses 'Cookies' to identify the areas of our website that you have visited. A Cookie is a small piece of data stored on your computer or mobile device by your web browser. We use Cookies to enhance the performance and functionality of our website but are non-essential to their use. However, without these cookies, certain functionality like videos may become unavailable or you would be required to enter your login details every time you visit the website as we would not be able to remember that you had logged in previously. Most web browsers can be set to disable the use of Cookies. However, if you disable Cookies, you may not be able to access functionality on our website correctly or at all. We never place Personally Identifiable Information in Cookies."
+          text="Mikael Boutin uses 'Cookies' to identify the areas of our website that you have visited. A Cookie is a small piece of data stored on your computer or mobile device by your web browser. We use Cookies to enhance the performance and functionality of our website but are non-essential to their use. However, without these cookies, certain functionality like videos may become unavailable or you would be required to enter your login details every time you visit the website as we would not be able to remember that you had logged in previously. Most web browsers can be set to disable the use of Cookies. However, if you disable Cookies, you may not be able to access functionality on our website correctly or at all. We never place Personally Identifiable Information in Cookies."
         />
 
         <Typography variant="h2" text="Tracking Technologies" />
