@@ -21,7 +21,8 @@ async function updateCardsWithPokemonDetails() {
         .replace("'", "")
         .replace(" ", "-")
         .replace(".", "")
-        .replace("origin-forme ", "");
+        .replace("origin-forme ", "")
+        .replace("paldean-", "");
 
       if (pokemonName.includes("rotom")) {
         pokemonName = "rotom";
@@ -62,7 +63,10 @@ async function updateCardsWithPokemonDetails() {
       card.pokemonId = null;
       card.evolvedFrom = null;
       card.evolvesTo = null;
-      console.error(`Error fetching details for ${card.cardName}:`, error.message);
+      console.error(
+        `Error fetching details for ${card.cardName} type: ${card.type}`,
+        error.message
+      );
     }
   }
 
