@@ -20,7 +20,11 @@ export const LibraryCardsListing: FC<LibraryCardsListingProps> = ({ cards, defau
       <LibraryCardsSearch defaultValues={defaultValues} />
       <VirtualizedGrid>
         {cards.map((card) => (
-          <Link href={`/library/${slugifyCard(card)}`} key={card.cardNumber} className="group">
+          <Link
+            href={`/library/${slugifyCard(card)}`}
+            key={card.cardNumber}
+            className="group block p-2 min-w-[48px] min-h-[48px]"
+          >
             <CardImage
               card={card}
               notSelectable

@@ -17,7 +17,9 @@ export const CTAButton = ({ href, text, noRedirect = false }: CTAButtonProps) =>
   return (
     <Link
       href={linkHref}
-      className="inline-flex items-center px-6 py-3 bg-[#F01616] hover:bg-[#d91414] text-white font-semibold rounded-lg transition-colors"
+      aria-label={text}
+      role="button"
+      className="inline-flex items-center px-6 py-3 bg-[#D01010] hover:bg-[#B00D0D] text-white font-semibold rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D01010]"
     >
       {text}
     </Link>

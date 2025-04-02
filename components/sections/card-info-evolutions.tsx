@@ -32,11 +32,11 @@ export const CardInfoEvolutions = ({ card }: { card: PopulatedCardData }) => {
         )}
 
         <div className="flex flex-row justify-between gap-4 max-md:flex-col">
-          {card.evolvedFromCards && (
+          {card.evolvedFromCards && card.evolvedFromCards.length > 0 && (
             <div className="flex flex-1 flex-col gap-4">
               <Typography
                 variant="h3"
-                text={`Evolved from - ${card.evolvedFromCards[0].stage}`}
+                text={`Evolved from - ${card.evolvedFromCards[0].stage || "Basic"}`}
                 className="!text-lg font-semibold text-neutral-900"
               />
               <div className="flex flex-row gap-4 flex-wrap">
@@ -60,11 +60,11 @@ export const CardInfoEvolutions = ({ card }: { card: PopulatedCardData }) => {
               </div>
             </div>
           )}
-          {card.evolvesToCards && (
+          {card.evolvesToCards && card.evolvesToCards.length > 0 && (
             <div className="flex flex-1 flex-col gap-4">
               <Typography
                 variant="h3"
-                text={`Evolves to - ${card.evolvesToCards[0].stage}`}
+                text={`Evolves to - ${card.evolvesToCards[0].stage || "Stage 1"}`}
                 className="!text-lg font-semibold text-neutral-900"
               />
               <div className="flex flex-row gap-4 flex-wrap">
