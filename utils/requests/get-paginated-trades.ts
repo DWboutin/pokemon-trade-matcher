@@ -11,6 +11,15 @@ interface GetPaginatedTradesParams {
   status?: "all" | "pending" | "ended";
 }
 
+interface TradesResponse {
+  data: PopulatedTrade[];
+  error?: {
+    message: string;
+    details?: string;
+    code?: string;
+  };
+}
+
 export const getPaginatedTrades = async ({
   page = 1,
   limit = 10,
@@ -18,29 +27,40 @@ export const getPaginatedTrades = async ({
   authorId,
   status = "all",
 }: GetPaginatedTradesParams = {}): Promise<PopulatedTrade[]> => {
-  const queryParams = new URLSearchParams({
-    page: page.toString(),
-    limit: limit.toString(),
-    filters: JSON.stringify(filters),
-    authorId: authorId || "",
-    status,
-  });
+  try {
+    const queryParams = new URLSearchParams({
+      page: page.toString(),
+      limit: limit.toString(),
+      filters: JSON.stringify(filters),
+      authorId: authorId || "",
+      status,
+    });
 
-  const response = await fetch(`${currentOrigin}/api/trades?${queryParams.toString()}`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    next: {
-      revalidate: 60,
-    },
-  });
+    const response = await fetch(`${currentOrigin}/api/trades?${queryParams.toString()}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      next: {
+        revalidate: 60,
+      },
+    });
 
-  if (!response.ok) {
-    throw new Error("Failed to fetch trades");
+    const responseData: TradesResponse = await response.json();
+
+    if (!response.ok) {
+      const errorMessage = responseData.error
+        ? `${responseData.error.message}${
+            responseData.error.details ? `: ${responseData.error.details}` : ""
+          }`
+        : `Failed to fetch trades: ${response.status} ${response.statusText}`;
+
+      throw new Error(errorMessage);
+    }
+
+    return responseData.data || [];
+  } catch (error) {
+    console.error("Error fetching trades:", error);
+    throw error instanceof Error ? error : new Error("Failed to fetch trades");
   }
-
-  const data = await response.json();
-
-  return data.data;
 };

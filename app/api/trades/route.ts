@@ -5,58 +5,79 @@ import { searchCardsData } from "@/actions/search-cards-data";
 import { CardData } from "@/types/app";
 
 export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
-  const page = parseInt(searchParams.get("page") || "1");
-  const limit = parseInt(searchParams.get("limit") || "10");
-  const filters = JSON.parse(searchParams.get("filters") || "{}");
-  const authorId = searchParams.get("authorId") || "";
-  const status = searchParams.get("status") || "all";
-  const containsValidFilters = Object.values(filters).filter(Boolean).length > 0;
+  try {
+    const { searchParams } = new URL(request.url);
+    const page = parseInt(searchParams.get("page") || "1");
+    const limit = parseInt(searchParams.get("limit") || "10");
+    const filters = JSON.parse(searchParams.get("filters") || "{}");
+    const authorId = searchParams.get("authorId") || "";
+    const status = searchParams.get("status") || "all";
+    const containsValidFilters = Object.values(filters).filter(Boolean).length > 0;
 
-  const filteredCards = containsValidFilters ? await searchCardsData(filters) : "[]";
-  const parsedFilteredCards = JSON.parse(filteredCards);
-  const cardsToSearchOn = parsedFilteredCards
-    .map((card: CardData) => `"${card.cardNumber}"`)
-    .join(",");
+    let parsedFilteredCards = [];
+    try {
+      const filteredCards = containsValidFilters ? await searchCardsData(filters) : "[]";
+      parsedFilteredCards = JSON.parse(filteredCards);
+    } catch (searchError) {
+      console.error("Error searching cards:", searchError);
+      return NextResponse.json(
+        { error: "Failed to process card filters", details: (searchError as Error).message },
+        { status: 400 }
+      );
+    }
 
-  const supabase = await createClient();
-  let query = supabase
-    .from("trades")
-    .select(
+    const cardsToSearchOn = parsedFilteredCards
+      .map((card: CardData) => `"${card.cardNumber}"`)
+      .join(",");
+
+    const supabase = await createClient();
+    let query = supabase
+      .from("trades")
+      .select(
+        `
+        *,
+        author:users (
+          id,
+          username,
+          icon,
+          friend_id
+        )
       `
-      *,
-      author:users (
-        id,
-        username,
-        icon,
-        friend_id
       )
-    `
-    )
-    .order("created_at", { ascending: false });
+      .order("created_at", { ascending: false });
 
-  if (authorId) {
-    query = query.eq("author", authorId);
+    if (authorId) {
+      query = query.eq("author", authorId);
+    }
+
+    if (status === "pending") {
+      query = query.eq("accepts_offers", true);
+    } else if (status === "ended") {
+      query = query.eq("accepts_offers", false);
+    }
+
+    if (cardsToSearchOn) {
+      query = query.or(`main_card.in.(${cardsToSearchOn}),offered_cards.ov.{${cardsToSearchOn}}`);
+    }
+
+    const { data, error } = await query.range((page - 1) * limit, page * limit - 1);
+
+    if (error) {
+      console.error("Database query error:", error);
+      return NextResponse.json(
+        { error: error.message, code: error.code },
+        { status: error.code === "22P02" ? 404 : 400 }
+      );
+    }
+
+    const trades = data.map((trade) => populateTradeWithCardsData(trade));
+
+    return NextResponse.json({ data: trades });
+  } catch (error) {
+    console.error("Unexpected error in GET /api/trades:", error);
+    return NextResponse.json(
+      { error: "An unexpected error occurred", details: (error as Error).message },
+      { status: 500 }
+    );
   }
-
-  if (status === "pending") {
-    query = query.eq("accepts_offers", true);
-  } else if (status === "ended") {
-    query = query.eq("accepts_offers", false);
-  }
-
-  if (cardsToSearchOn) {
-    query = query.or(`main_card.in.(${cardsToSearchOn}),offered_cards.ov.{${cardsToSearchOn}}`);
-  }
-
-  const { data, error } = await query.range((page - 1) * limit, page * limit - 1);
-
-  if (error) {
-    console.error(error);
-    return NextResponse.json({ error: error.message }, { status: 400 });
-  }
-
-  const trades = data.map((trade) => populateTradeWithCardsData(trade));
-
-  return NextResponse.json({ data: trades });
 }
