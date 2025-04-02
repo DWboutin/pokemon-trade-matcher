@@ -12,7 +12,7 @@ dotenv.config({ path: join(__dirname, "../.env.production") });
 
 const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.SERVICE_ROLE);
 
-const baseUrl = process.env.NEXT_PUBLIC_CURRENT_ORIGIN;
+const baseUrl = "https://pokeswap.io";
 
 // Function to slugify card name and number for URL
 function slugifyCard(card) {
@@ -39,7 +39,7 @@ async function generateSitemap() {
     staticPages.forEach((page) => {
       xml += `  <url>\n`;
       xml += `    <loc>${baseUrl}${page}</loc>\n`;
-      xml += `    <changefreq>daily</changefreq>\n`;
+      xml += `    <changefreq>weekly</changefreq>\n`;
       xml += `    <priority>${page === "" ? "1.0" : "0.8"}</priority>\n`;
       xml += `  </url>\n`;
     });
@@ -48,7 +48,7 @@ async function generateSitemap() {
     trades.forEach((trade) => {
       xml += `  <url>\n`;
       xml += `    <loc>${baseUrl}/trades/${trade.id}</loc>\n`;
-      xml += `    <changefreq>hourly</changefreq>\n`;
+      xml += `    <changefreq>weekly</changefreq>\n`;
       xml += `    <priority>0.6</priority>\n`;
       xml += `  </url>\n`;
     });
