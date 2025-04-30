@@ -22,7 +22,8 @@ async function updateCardsWithPokemonDetails() {
         .replace(" ", "-")
         .replace(".", "")
         .replace("origin-forme ", "")
-        .replace("paldean-", "");
+        .replace("paldean-", "")
+        .replace("alolan-", "");
 
       if (pokemonName.includes("rotom")) {
         pokemonName = "rotom";
